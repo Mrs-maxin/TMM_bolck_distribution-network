@@ -1,0 +1,17 @@
+{
+  "stage": "targets_fixed_before_fits",
+  "smoke": false,
+  "UTC": "2026-10-21T16:07:31Z",
+  "sha256": {
+    "protocol.json": "e7d18cf6387ea6e3b68cb027f387f94d0f8f514a62762f9e1e5564bc48a57d8a",
+    "two_cloud_regions/targets.csv": "b80afeb64bcee829f3d7a12c2f38877627d56e7f2a490b62d59df5dccc0aa01e",
+    "two_cloud_regions/target_rules.txt": "177b09c7492d6b95897953a0fb0b4b4563364904a2058f7ce6817167578e4315",
+    "two_cloud_regions/AC_features_train_validation.csv": "f1cb0ffa7914f99fc0b47171eacc6aefd0b40ccdb70277b995845400c306fa00",
+    "two_cloud_regions/strength_diagnostics.json": "588dfb4dd6c905f9e284b03e0ee473219e1561f34e75b02863325fddd885bc31",
+    "two_cloud_regions/training_inputs.npz": "00d1981923323fe3f6fa1fa26fc86962f4e708be51b1f6b6e7afa7118425867c",
+    "two_cloud_regions/validation_inputs.npz": "2ab24bd8ce9022c5e8d077061f49abc6f79a6cee25dfe810bbc620df5fcb6bbd",
+    "two_cloud_regions/reference_inputs.npz": "2c31ed4e09c969feca0917d7c767d2f944bfd3f71815b388479a663478e86fe5",
+    "two_cloud_regions/training_AC.npz": "03c7001b1d2a7263210bba9efad8504a5b6f788e22c58be1b52e6e271b762450",
+    "two_cloud_regions/validation_AC.npz": "a77376ee9fd49394083d23ce4277c659d267bff261fcc430f75f847b96ac27a9"
+  }
+}

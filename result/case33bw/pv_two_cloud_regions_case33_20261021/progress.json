@@ -1,0 +1,19 @@
+{
+  "UTC": "2026-10-21T17:28:40Z",
+  "PID": 65791,
+  "stage": "JUDGMENT_COMPLETE",
+  "elapsed_seconds": 160.74770233299932,
+  "scene": "two_cloud_regions",
+  "challenger": "MBTMM",
+  "targets": 6,
+  "targets_passed": 4,
+  "other_comparable_fraction_by_K": {
+    "1": 1.0,
+    "3": 0.9777777777777777,
+    "5": 0.9222222222222223,
+    "6": 0.7222222222222222,
+    "12": 0.9333333333333333
+  },
+  "other_objects_over_1p5_KS": 3,
+  "criteria": "plan section 8.1, fixed before model errors"
+}

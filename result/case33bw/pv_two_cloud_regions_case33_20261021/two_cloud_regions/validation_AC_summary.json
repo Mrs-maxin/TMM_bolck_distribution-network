@@ -1,0 +1,15 @@
+{
+  "scene": "two_cloud_regions",
+  "split": "validation",
+  "snapshots": 4096,
+  "processes": 4096,
+  "failures": 0,
+  "max_iterations": 4,
+  "max_residual_pu": 1.1580840453273566e-13,
+  "max_balance_MW": 1.5316359291972503e-12,
+  "min_voltage_pu": 0.9519616352507577,
+  "max_voltage_pu": 1.093201369011769,
+  "seconds": 14.627927749999799,
+  "input_SHA256": "2ab24bd8ce9022c5e8d077061f49abc6f79a6cee25dfe810bbc620df5fcb6bbd",
+  "AC_SHA256": "a77376ee9fd49394083d23ce4277c659d267bff261fcc430f75f847b96ac27a9"
+}

@@ -1,0 +1,17 @@
+{
+  "stage": "targets_fixed_before_fits",
+  "smoke": false,
+  "UTC": "2026-10-21T15:53:25Z",
+  "sha256": {
+    "protocol.json": "a676cb496c704481a7035be03b7dc6ab9b29f1cf410ad2675f0ace467df9e50e",
+    "strong_weather_nominal_load/targets.csv": "c68ca5e9f29a2215fed2aed7924762385c7eee43999a233883ff2b11b4f67622",
+    "strong_weather_nominal_load/target_rules.txt": "177b09c7492d6b95897953a0fb0b4b4563364904a2058f7ce6817167578e4315",
+    "strong_weather_nominal_load/AC_features_train_validation.csv": "de5c6237bb5f97c836b27c825e77cb1b10f35882349e63663f6f3bbc157ae851",
+    "strong_weather_nominal_load/strength_diagnostics.json": "b2e51a8c3f8d03d02d6a139e7713a5b52880fed96a13aafc49433c60fc41cedc",
+    "strong_weather_nominal_load/training_inputs.npz": "9d7357e4dc3f4ecc7ca92500f40e0318ae155b52f8e00a7148bdffbd12aed4df",
+    "strong_weather_nominal_load/validation_inputs.npz": "a3abedca782ab416dd546762fd0c96c6ede5556b19c897934e12ca3d6725db22",
+    "strong_weather_nominal_load/reference_inputs.npz": "10a8e7f8c3f1347496864fb51ee34583132da5fe6bd0794fb725d9ece005207e",
+    "strong_weather_nominal_load/training_AC.npz": "b67798d3bd901e0aad4d423a35801c24493866470798afbec90d776f62b63997",
+    "strong_weather_nominal_load/validation_AC.npz": "ba76893a73583fc87f1fc4fbd639e9530abf04f70e9777bddf89b2a01e87e7c8"
+  }
+}

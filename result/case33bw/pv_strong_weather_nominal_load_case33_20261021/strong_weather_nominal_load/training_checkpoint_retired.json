@@ -1,0 +1,6 @@
+{
+  "path": "result/validation/pv_strong_weather_nominal_load_case33_20261021/strong_weather_nominal_load/training_AC_checkpoint.npz",
+  "bytes": 8070730,
+  "SHA256": "524d8b6f96b7e26df15005329bed459b200bc01aade3e9e11d2ce8dda49e7675",
+  "retained_AC_SHA256": "b67798d3bd901e0aad4d423a35801c24493866470798afbec90d776f62b63997"
+}

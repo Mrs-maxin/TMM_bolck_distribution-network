@@ -1,0 +1,19 @@
+{
+  "UTC": "2026-10-21T16:27:35Z",
+  "PID": 57046,
+  "stage": "JUDGMENT_COMPLETE",
+  "elapsed_seconds": 588.6330628339929,
+  "scene": "strong_weather_nominal_load",
+  "challenger": "BTMM",
+  "targets": 7,
+  "targets_passed": 4,
+  "other_comparable_fraction_by_K": {
+    "1": 0.9550561797752809,
+    "3": 0.797752808988764,
+    "5": 0.4606741573033708,
+    "6": 0.3707865168539326,
+    "12": 0.9213483146067416
+  },
+  "other_objects_over_1p5_KS": 26,
+  "criteria": "plan section 8.1, fixed before model errors"
+}

@@ -1,0 +1,15 @@
+{
+  "scene": "strong_weather_nominal_load",
+  "challenger": "TMM",
+  "targets": 7,
+  "targets_passed": 1,
+  "other_comparable_fraction_by_K": {
+    "1": 0.8651685393258427,
+    "3": 0.9325842696629213,
+    "5": 1.0,
+    "6": 0.9887640449438202,
+    "12": 1.0
+  },
+  "other_objects_over_1p5_KS": 1,
+  "criteria": "plan section 8.1, fixed before model errors"
+}

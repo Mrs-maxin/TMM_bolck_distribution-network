@@ -1,0 +1,14 @@
+{
+  "scene": "common_strength",
+  "challenger": "BTMM",
+  "targets": 6,
+  "targets_passed": 5,
+  "other_comparable_fraction_by_K": {
+    "1": 0.9565217391304348,
+    "3": 0.9806763285024155,
+    "6": 0.9758454106280193,
+    "12": 0.9830917874396136
+  },
+  "other_objects_over_1p5_KS": 0,
+  "criteria": "plan section 8.1, fixed before model errors"
+}

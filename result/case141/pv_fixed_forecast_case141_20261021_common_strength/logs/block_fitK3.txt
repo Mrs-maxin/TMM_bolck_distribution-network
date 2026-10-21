@@ -1,0 +1,9 @@
+COMMAND python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene common_strength --K 3
+START 2026-10-21T16:20:13Z
+{"UTC": "2026-10-21T16:20:15Z", "PID": 4353, "stage": "fitting", "elapsed_seconds": 0.4229238099999293, "scene": "common_strength", "K": 3, "family": "BTMM", "partition": 1, "initial_df": 12}
+{"UTC": "2026-10-21T16:20:16Z", "PID": 4353, "stage": "fitting", "elapsed_seconds": 2.1356262490000972, "scene": "common_strength", "K": 3, "family": "BTMM", "partition": 1, "initial_df": 200}
+{"UTC": "2026-10-21T16:20:24Z", "PID": 4353, "stage": "fitting", "elapsed_seconds": 9.607426451000038, "scene": "common_strength", "K": 3, "family": "BTMM", "partition": 2, "initial_df": 12}
+{"UTC": "2026-10-21T16:20:29Z", "PID": 4353, "stage": "fitting", "elapsed_seconds": 15.264339089000032, "scene": "common_strength", "K": 3, "family": "BTMM", "partition": 2, "initial_df": 200}
+{"UTC": "2026-10-21T16:20:37Z", "PID": 4353, "stage": "selected", "elapsed_seconds": 23.016801904999966, "scene": "common_strength", "K": 3, "family": "BTMM", "candidate": "K3_p01_gmm_warm_df200_BLOCK", "df": "[5.883912048225242, 7.676645166259121, 6.566646353656449]"}
+{"UTC": "2026-10-21T16:20:37Z", "PID": 4353, "stage": "BLOCK_FIT_COMPLETE", "elapsed_seconds": 23.017050569000048, "scene": "common_strength", "K": 3}
+END 2026-10-21T16:20:37Z EXIT 0 SECONDS 24

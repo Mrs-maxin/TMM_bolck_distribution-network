@@ -1,0 +1,8 @@
+COMMAND python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene common_strength --with-K12
+START 2026-10-21T16:38:35Z
+{"UTC": "2026-10-21T16:38:35Z", "PID": 5565, "stage": "selected", "elapsed_seconds": 0.2883289999999761, "scene": "common_strength", "K": 1}
+{"UTC": "2026-10-21T16:38:36Z", "PID": 5565, "stage": "selected", "elapsed_seconds": 0.3879042560001835, "scene": "common_strength", "K": 3}
+{"UTC": "2026-10-21T16:38:36Z", "PID": 5565, "stage": "selected", "elapsed_seconds": 0.4867195960000572, "scene": "common_strength", "K": 6}
+{"UTC": "2026-10-21T16:38:36Z", "PID": 5565, "stage": "selected", "elapsed_seconds": 0.5886196679998648, "scene": "common_strength", "K": 12}
+{"UTC": "2026-10-21T16:38:36Z", "PID": 5565, "stage": "FIT_COMPLETE", "elapsed_seconds": 0.5888315510001121, "scene": "common_strength", "K": "all"}
+END 2026-10-21T16:38:36Z EXIT 0 SECONDS 1

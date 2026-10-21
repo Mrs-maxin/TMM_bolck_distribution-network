@@ -1,0 +1,36 @@
+COMMAND python3 tests/python/run_pv_fixed_forecast.py reference_ac --case case141 --scene strong_weather 
+START 2026-10-21T16:19:43Z
+{"UTC": "2026-10-21T16:20:03Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 18.120869691000053, "scene": "strong_weather", "split": "reference", "completed": 1024, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:20:17Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 32.44541852900011, "scene": "strong_weather", "split": "reference", "completed": 2048, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:20:30Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 45.50168021800005, "scene": "strong_weather", "split": "reference", "completed": 3072, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:20:42Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 56.839479468000036, "scene": "strong_weather", "split": "reference", "completed": 4096, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:20:52Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 66.87529135399996, "scene": "strong_weather", "split": "reference", "completed": 5120, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:21:04Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 79.33913364299997, "scene": "strong_weather", "split": "reference", "completed": 6144, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:21:14Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 89.50484357799996, "scene": "strong_weather", "split": "reference", "completed": 7168, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:21:25Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 99.89007099300011, "scene": "strong_weather", "split": "reference", "completed": 8192, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:21:35Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 110.60842387899993, "scene": "strong_weather", "split": "reference", "completed": 9216, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:21:46Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 120.95312130399998, "scene": "strong_weather", "split": "reference", "completed": 10240, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:21:56Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 131.4711617150001, "scene": "strong_weather", "split": "reference", "completed": 11264, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:22:07Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 142.0859233650001, "scene": "strong_weather", "split": "reference", "completed": 12288, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:22:18Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 153.01441353500013, "scene": "strong_weather", "split": "reference", "completed": 13312, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:22:29Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 164.007512207, "scene": "strong_weather", "split": "reference", "completed": 14336, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:22:40Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 175.46185982499992, "scene": "strong_weather", "split": "reference", "completed": 15360, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:22:52Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 187.2940087280001, "scene": "strong_weather", "split": "reference", "completed": 16384, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:23:04Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 199.3525512660001, "scene": "strong_weather", "split": "reference", "completed": 17408, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:23:17Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 211.78458377200013, "scene": "strong_weather", "split": "reference", "completed": 18432, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:23:28Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 223.72660685000005, "scene": "strong_weather", "split": "reference", "completed": 19456, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:23:41Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 235.93789165099997, "scene": "strong_weather", "split": "reference", "completed": 20480, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:23:53Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 248.57105115700006, "scene": "strong_weather", "split": "reference", "completed": 21504, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:24:05Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 260.73126081300006, "scene": "strong_weather", "split": "reference", "completed": 22528, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:24:18Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 273.1692224390001, "scene": "strong_weather", "split": "reference", "completed": 23552, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:24:30Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 285.6413811120001, "scene": "strong_weather", "split": "reference", "completed": 24576, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:24:43Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 298.4580063579999, "scene": "strong_weather", "split": "reference", "completed": 25600, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:24:57Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 311.83860247200005, "scene": "strong_weather", "split": "reference", "completed": 26624, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:25:10Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 325.0525562350001, "scene": "strong_weather", "split": "reference", "completed": 27648, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:25:24Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 338.9175439390001, "scene": "strong_weather", "split": "reference", "completed": 28672, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:25:38Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 353.28593688499996, "scene": "strong_weather", "split": "reference", "completed": 29696, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:25:53Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 367.8348973940001, "scene": "strong_weather", "split": "reference", "completed": 30720, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:26:07Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 382.56304240500003, "scene": "strong_weather", "split": "reference", "completed": 31744, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:26:22Z", "PID": 4248, "stage": "AC_checkpoint", "elapsed_seconds": 397.04936122899994, "scene": "strong_weather", "split": "reference", "completed": 32768, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:26:33Z", "PID": 4248, "stage": "REFERENCE_AC_COMPLETE", "elapsed_seconds": 408.021458509, "scene": "strong_weather"}
+END 2026-10-21T16:26:33Z EXIT 0 SECONDS 410

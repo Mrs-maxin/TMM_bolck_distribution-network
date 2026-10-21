@@ -1,0 +1,36 @@
+COMMAND python3 tests/python/run_pv_fixed_forecast.py reference_ac --case case141 --scene common_strength 
+START 2026-10-21T16:19:43Z
+{"UTC": "2026-10-21T16:20:02Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 17.14386055900013, "scene": "common_strength", "split": "reference", "completed": 1024, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:20:16Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 30.997376537000036, "scene": "common_strength", "split": "reference", "completed": 2048, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:20:34Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 49.23741000500013, "scene": "common_strength", "split": "reference", "completed": 3072, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:20:44Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 59.62207968500002, "scene": "common_strength", "split": "reference", "completed": 4096, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:20:55Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 70.15290386200013, "scene": "common_strength", "split": "reference", "completed": 5120, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:21:07Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 82.18654910400005, "scene": "common_strength", "split": "reference", "completed": 6144, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:21:17Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 92.354977147, "scene": "common_strength", "split": "reference", "completed": 7168, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:21:28Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 102.74293555899999, "scene": "common_strength", "split": "reference", "completed": 8192, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:21:38Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 113.20627777000004, "scene": "common_strength", "split": "reference", "completed": 9216, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:21:48Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 123.4630086950001, "scene": "common_strength", "split": "reference", "completed": 10240, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:21:59Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 134.08164641200005, "scene": "common_strength", "split": "reference", "completed": 11264, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:22:10Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 144.86119980900003, "scene": "common_strength", "split": "reference", "completed": 12288, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:22:20Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 155.66285225599995, "scene": "common_strength", "split": "reference", "completed": 13312, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:22:32Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 166.795922776, "scene": "common_strength", "split": "reference", "completed": 14336, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:22:43Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 178.218979559, "scene": "common_strength", "split": "reference", "completed": 15360, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:22:55Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 190.2807352530001, "scene": "common_strength", "split": "reference", "completed": 16384, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:23:07Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 202.46398784200005, "scene": "common_strength", "split": "reference", "completed": 17408, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:23:19Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 214.40433866500007, "scene": "common_strength", "split": "reference", "completed": 18432, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:23:31Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 226.25165204500013, "scene": "common_strength", "split": "reference", "completed": 19456, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:23:44Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 238.741588159, "scene": "common_strength", "split": "reference", "completed": 20480, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:23:56Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 251.24666504300012, "scene": "common_strength", "split": "reference", "completed": 21504, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:24:08Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 263.2853556, "scene": "common_strength", "split": "reference", "completed": 22528, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:24:20Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 275.68720828999994, "scene": "common_strength", "split": "reference", "completed": 23552, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:24:33Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 288.11318967400007, "scene": "common_strength", "split": "reference", "completed": 24576, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:24:46Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 300.971804796, "scene": "common_strength", "split": "reference", "completed": 25600, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:24:59Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 314.2761565359999, "scene": "common_strength", "split": "reference", "completed": 26624, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:25:12Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 327.53144204299997, "scene": "common_strength", "split": "reference", "completed": 27648, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:25:26Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 341.4703427520001, "scene": "common_strength", "split": "reference", "completed": 28672, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:25:41Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 355.85609823799996, "scene": "common_strength", "split": "reference", "completed": 29696, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:25:55Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 370.411241713, "scene": "common_strength", "split": "reference", "completed": 30720, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:26:10Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 385.06321601700006, "scene": "common_strength", "split": "reference", "completed": 31744, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:26:24Z", "PID": 4219, "stage": "AC_checkpoint", "elapsed_seconds": 399.4178074619999, "scene": "common_strength", "split": "reference", "completed": 32768, "total": 32768, "failures": 0}
+{"UTC": "2026-10-21T16:26:35Z", "PID": 4219, "stage": "REFERENCE_AC_COMPLETE", "elapsed_seconds": 410.315696807, "scene": "common_strength"}
+END 2026-10-21T16:26:35Z EXIT 0 SECONDS 412

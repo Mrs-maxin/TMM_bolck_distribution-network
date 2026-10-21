@@ -1,0 +1,30 @@
+{
+  "scene": "strong_weather",
+  "K": 12,
+  "family": "GMM",
+  "replicate": 1,
+  "seed": 2026314115,
+  "candidate": "K12_p01_GMM",
+  "model_SHA256": "ad0c93161f57fc7acbb924784cce1dd34fe2ca64630f4b689da5c47a5e305d45",
+  "component_counts": [
+    5464,
+    5464,
+    5456,
+    5464,
+    5464,
+    5456,
+    5465,
+    5463,
+    5456,
+    5464,
+    5464,
+    5456
+  ],
+  "weights_sum": 0.9999999999999996,
+  "ESS": 65535.99982393012,
+  "propagation_seconds": 1.9281290730000364,
+  "processing_seconds": 9.76129260200014,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

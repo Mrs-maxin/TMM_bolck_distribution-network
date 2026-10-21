@@ -1,0 +1,132 @@
+{
+ "case": "case141",
+ "scene": "strong_weather",
+ "objects": [
+  {
+   "output": "V",
+   "node": 78,
+   "branch": 0,
+   "unit": "p.u.",
+   "priority": false
+  },
+  {
+   "output": "V",
+   "node": 80,
+   "branch": 0,
+   "unit": "p.u.",
+   "priority": false
+  },
+  {
+   "output": "V",
+   "node": 87,
+   "branch": 0,
+   "unit": "p.u.",
+   "priority": false
+  },
+  {
+   "output": "V",
+   "node": 141,
+   "branch": 0,
+   "unit": "p.u.",
+   "priority": false
+  },
+  {
+   "output": "P",
+   "node": 0,
+   "branch": 49,
+   "unit": "MW",
+   "priority": false
+  },
+  {
+   "output": "P",
+   "node": 0,
+   "branch": 51,
+   "unit": "MW",
+   "priority": false
+  },
+  {
+   "output": "P",
+   "node": 0,
+   "branch": 86,
+   "unit": "MW",
+   "priority": false
+  },
+  {
+   "output": "P",
+   "node": 0,
+   "branch": 138,
+   "unit": "MW",
+   "priority": false
+  }
+ ],
+ "quadratic_reconstruction_max_error": 2.8421709430404007e-12,
+ "strength_nodes": 40,
+ "eigenvalue_merge_relative_tolerance": 1e-10,
+ "reference_scenarios": 32768,
+ "max_abs_difference_analytic_vs_numerical": 0.0016709937889493598,
+ "max_tail_cf": 3.715401789631511e-31,
+ "timing_seconds": [
+  {
+   "K": 1,
+   "family": "GMM",
+   "seconds": 1.0777756259999478
+  },
+  {
+   "K": 1,
+   "family": "TMM",
+   "seconds": 1.6464286270002049
+  },
+  {
+   "K": 1,
+   "family": "BTMM",
+   "seconds": 1.903797159000078
+  },
+  {
+   "K": 3,
+   "family": "GMM",
+   "seconds": 1.137573610000345
+  },
+  {
+   "K": 3,
+   "family": "TMM",
+   "seconds": 2.893965488000049
+  },
+  {
+   "K": 3,
+   "family": "BTMM",
+   "seconds": 3.610309450999921
+  },
+  {
+   "K": 6,
+   "family": "GMM",
+   "seconds": 1.1967714900001738
+  },
+  {
+   "K": 6,
+   "family": "TMM",
+   "seconds": 5.273177189000307
+  },
+  {
+   "K": 6,
+   "family": "BTMM",
+   "seconds": 6.876395946999764
+  },
+  {
+   "K": 12,
+   "family": "GMM",
+   "seconds": 1.3895021090002047
+  },
+  {
+   "K": 12,
+   "family": "TMM",
+   "seconds": 10.202031800999976
+  },
+  {
+   "K": 12,
+   "family": "BTMM",
+   "seconds": 13.241072978000375
+  }
+ ],
+ "total_seconds": 62.435677750000195,
+ "script_SHA256": "241a35bd6e8e68fe9e4a61bc980e83a1d6ce3a0c1003d041c1e57c396b9469a2"
+}

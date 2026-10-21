@@ -1,0 +1,52 @@
+{
+  "status": "converged",
+  "iterations": 23,
+  "train_ll": -232.33791634933385,
+  "minimum_effective_count": 1519.4904167551128,
+  "effective_counts": [
+    1592.3281219161297,
+    5080.181461328755,
+    1519.4904167551128
+  ],
+  "df": [
+    203.89630932803908,
+    720.1789905616869,
+    180.22832841090295
+  ],
+  "weights": [
+    0.1943757552084524,
+    0.6201072769661911,
+    0.1855169678253595
+  ],
+  "scatter_eigen_min": [
+    0.2158933257580663,
+    0.02961797785574226,
+    0.18456390955978072
+  ],
+  "scatter_condition": [
+    16.700532552528674,
+    41.01943089765489,
+    18.822268011535996
+  ],
+  "floor_active_max": 0,
+  "seconds": 2.2659445439999217,
+  "actual_covariance_floor": true,
+  "relative_tolerance": true,
+  "scene": "strong_weather",
+  "K": 3,
+  "family": "TMM",
+  "acceleration": "PX",
+  "initial_df": 12,
+  "partition": 2,
+  "seed": 202610191,
+  "rule": "PC2 deterministic balanced",
+  "validation_ll": -237.77091579964275,
+  "model_sha256": "01dacb8c61070f42582e67fc83ec3d3f340da2bda49ada53367f5c0846beccab",
+  "covariance_eigen_min": [
+    0.2180319812538167,
+    0.029700458625146496,
+    0.18663500466800922
+  ],
+  "df_lower_boundary": false,
+  "df_upper_boundary": false
+}

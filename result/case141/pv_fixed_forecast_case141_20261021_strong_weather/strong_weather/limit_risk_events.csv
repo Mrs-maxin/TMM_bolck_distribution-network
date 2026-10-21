@@ -1,0 +1,15 @@
+event,object_index,output,node,branch,unit,threshold,side,source
+V80 < 0.95,78,V,80,0,p.u.,0.95,below,lowest median voltage bus
+V80 > 1.05,78,V,80,0,p.u.,1.05,above,lowest median voltage bus
+V141 < 0.95,139,V,141,0,p.u.,0.95,below,highest median voltage bus
+V141 > 1.05,139,V,141,0,p.u.,1.05,above,highest median voltage bus
+V87 < 0.95,85,V,87,0,p.u.,0.95,below,target
+V87 > 1.05,85,V,87,0,p.u.,1.05,above,target
+V78 < 0.95,76,V,78,0,p.u.,0.95,below,target
+V78 > 1.05,76,V,78,0,p.u.,1.05,above,target
+V87 < 0.96,85,V,87,0,p.u.,0.96,below,target-specific
+V78 < 0.96,76,V,78,0,p.u.,0.96,below,target-specific
+P138 < -1.0806 MW,277,P,0,138,MW,-1.0806225538417793,below,target-specific: reverse flow 20% above median
+P51 < -0.9996 MW,190,P,0,51,MW,-0.9995706878665257,below,target-specific: reverse flow 20% above median
+P86 > 0 MW,225,P,0,86,MW,0.0,above,target-specific: reverse flow turns to import
+P49 > 0 MW,188,P,0,49,MW,0.0,above,target-specific: reverse flow turns to import

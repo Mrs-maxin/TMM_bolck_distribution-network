@@ -1,0 +1,16 @@
+COMMAND python3 tests/python/analytic_limit_risk_general.py --case case141 --scene common_strength --with-K12
+START 2026-10-21T16:42:14Z
+done 1 GMM 1.1
+done 1 TMM 1.6
+done 1 BTMM 1.8
+done 3 GMM 1.1
+done 3 TMM 2.9
+done 3 BTMM 3.4
+done 6 GMM 1.2
+done 6 TMM 5.1
+done 6 BTMM 6.3
+done 12 GMM 1.5
+done 12 TMM 9.0
+done 12 BTMM 12.7
+quadratic check 2.1600499167107046e-12 max |analytic-numerical| 0.0017854388698166357
+END 2026-10-21T16:43:13Z EXIT 0 SECONDS 59

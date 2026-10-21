@@ -1,0 +1,30 @@
+{
+  "scene": "strong_weather",
+  "K": 12,
+  "family": "BTMM",
+  "replicate": 3,
+  "seed": 2026314117,
+  "candidate": "K12_p01_gmm_warm_df12_BLOCK",
+  "model_SHA256": "e7686460070db5034672b6ddec6ce8db790a03fd53cbc575d8248f15881cc3d0",
+  "component_counts": [
+    5456,
+    5480,
+    5456,
+    5448,
+    5472,
+    5456,
+    5472,
+    5456,
+    5464,
+    5456,
+    5472,
+    5448
+  ],
+  "weights_sum": 0.9999999999999993,
+  "ESS": 65535.99997752419,
+  "propagation_seconds": 1.9571123620003164,
+  "processing_seconds": 9.705081366000286,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

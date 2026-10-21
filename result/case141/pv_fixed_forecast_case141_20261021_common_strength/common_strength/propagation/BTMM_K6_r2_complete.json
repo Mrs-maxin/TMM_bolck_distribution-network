@@ -1,0 +1,24 @@
+{
+  "scene": "common_strength",
+  "K": 6,
+  "family": "BTMM",
+  "replicate": 2,
+  "seed": 2026108116,
+  "candidate": "K6_p01_gmm_warm_df200_BLOCK",
+  "model_SHA256": "d85fc30ff342fd3cece8c18f7ceeab02aac574116c0006ab692afc3cda2a4b69",
+  "component_counts": [
+    10350,
+    11530,
+    10888,
+    11008,
+    11426,
+    10334
+  ],
+  "weights_sum": 0.9999999999999991,
+  "ESS": 65535.99996443681,
+  "propagation_seconds": 2.073585914000205,
+  "processing_seconds": 10.096671727000057,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

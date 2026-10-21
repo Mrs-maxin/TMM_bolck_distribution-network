@@ -1,0 +1,2854 @@
+{
+ "entry": "tests/python/run_pv_fixed_forecast.py",
+ "case": "case141",
+ "scene": "strong_weather",
+ "plan_section": "16, 16.1, 11, 12, 14 and 8.1",
+ "written_utc": "2026-10-21T16:45:33Z",
+ "git": {
+  "branch": "cloud/case141-20261021",
+  "commit": "7210e3f1cf99197aca91b460e484f68ed467ce3e",
+  "status_short": []
+ },
+ "protocol_script_SHA256_at_ac_only": "a12218d810a4e7a26a77c0dd0cc760188465135a4a3bb3a1789ae668d0745a73",
+ "scripts_SHA256": {
+  "tests/python/analytic_limit_risk_general.py": "241a35bd6e8e68fe9e4a61bc980e83a1d6ce3a0c1003d041c1e57c396b9469a2",
+  "tests/python/analytic_limit_risk_pv_fixed_forecast.py": "275d6e2a65f16dba168beb7059fdad1b3bc5e07d11568fa68224cc7aa79a84ce",
+  "tests/python/limit_probability_pv_fixed_forecast.py": "a5d08e0466551602d4b2f85c75becffc0410efc1f0e25f5407b21be5a9615b4b",
+  "tests/python/plot_analytic_pdfs_pv_fixed_forecast.py": "f7f726075812d9f428df553b3bf0923f67a6ba418e2de30e20d5bac9f5024467",
+  "tests/python/plot_limit_risk_curves_pv_fixed_forecast.py": "3cc05e9138c5da2cd90b1141b905d3a79dbcdf869a955f6ea9f3f7e5e8d692c3",
+  "tests/python/plot_pv_fixed_forecast_pdfs.py": "e45d44609cf387ca1fc9cd55fd48f84d0e41e9f1f68900cf2c22e1f97613054b",
+  "tests/python/plot_pv_fixed_forecast_pdfs_general.py": "21d0df8f5a89014256c54365c3a4530906584369dfdf8c36d6651265d4e3d4c4",
+  "tests/python/run_pv_fixed_forecast.py": "c6db91c036f0e6d49497a3c954ab15e105181bcbcc086184b032613922791775",
+  "tests/python/run_pv_fixed_forecast_case33.py": "1e7113e63f51278f9d39f10c354a320f79be8879bd9943c25699794c8c380a05",
+  "tests/python/write_run_manifest.py": "01c80dda26ce7983d73ffae0102809479995216c86df16c2018d30743c17a779",
+  "tests/python/archived/SHA256SUMS.txt": "c96c9682cab2b84051462d55802b4ab996d98da7d61839da4c5fbd1365d8a196",
+  "tests/python/archived/ac_only.py": "1af7925b1709bb6fbb07525076e0b7c8c63db658f8194c1c921b4b33c2e55546",
+  "tests/python/archived/adapted_routines.py": "a75e56e73e329c94fb8061ed510d0cfca93cfd9f6c1afc55b5877b962700e0cb",
+  "tests/python/archived/cloud_numeric_core.py": "755907c5278f06e811277f36517a76d14b7d0c75b710a690b5a4364b367c8a77",
+  "tests/python/archived/run_cloud_passage_case33.py": "725ae590c9f7154a99379d6e13c7b7c0f5c4b1959bf09ae7f125c7fe882c282b",
+  "tests/python/archived/run_cloud_study.py": "58fbb5ba2e8b33d71f86fb2ca9431e24f4f4c7e95964dba25eb4ba284b607b1b",
+  "tests/python/archived/run_typhoon_comparison_K136.py": "40ce746dbe7657bf2f005141fe202f5491445e4fa72ebfd13cb8d285cc43a521"
+ },
+ "plan_SHA256": "2c50f57bb036e0be6a91e0b8acea12cdf04fd474f1ae69e08a2f09af2611b64d",
+ "case_file_SHA256": {
+  "data/cases/case141_modify.m": "4c518a8292015f3fae0ea96b18dae04c2a8c22277ea3184521216a9db8b85f9b"
+ },
+ "commands": [
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/ac_only.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py ac_only --case case141 --scene strong_weather ",
+   "start_utc": "2026-10-21T16:17:10Z",
+   "end_utc": "2026-10-21T16:19:18Z",
+   "exit_code": 0,
+   "seconds": 128
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/analytic.txt",
+   "command": "python3 tests/python/analytic_limit_risk_general.py --case case141 --scene strong_weather ",
+   "start_utc": "2026-10-21T16:35:10Z",
+   "end_utc": "2026-10-21T16:35:49Z",
+   "exit_code": 0,
+   "seconds": 39
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/analyticwithK12.txt",
+   "command": "python3 tests/python/analytic_limit_risk_general.py --case case141 --scene strong_weather --with-K12",
+   "start_utc": "2026-10-21T16:42:14Z",
+   "end_utc": "2026-10-21T16:43:17Z",
+   "exit_code": 0,
+   "seconds": 63
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene strong_weather ",
+   "start_utc": "2026-10-21T16:35:03Z",
+   "end_utc": "2026-10-21T16:35:10Z",
+   "exit_code": 0,
+   "seconds": 7
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/blockK1.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene strong_weather --K 1",
+   "start_utc": "2026-10-21T16:34:12Z",
+   "end_utc": "2026-10-21T16:35:03Z",
+   "exit_code": 0,
+   "seconds": 51
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/blockK12withK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene strong_weather --K 12 --with-K12",
+   "start_utc": "2026-10-21T16:41:14Z",
+   "end_utc": "2026-10-21T16:42:05Z",
+   "exit_code": 0,
+   "seconds": 51
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/blockK3.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene strong_weather --K 3",
+   "start_utc": "2026-10-21T16:33:21Z",
+   "end_utc": "2026-10-21T16:34:12Z",
+   "exit_code": 0,
+   "seconds": 51
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/blockK6.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene strong_weather --K 6",
+   "start_utc": "2026-10-21T16:32:29Z",
+   "end_utc": "2026-10-21T16:33:21Z",
+   "exit_code": 0,
+   "seconds": 52
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block_fit.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene strong_weather ",
+   "start_utc": "2026-10-21T16:26:34Z",
+   "end_utc": "2026-10-21T16:26:36Z",
+   "exit_code": 0,
+   "seconds": 2
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block_fitK1.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene strong_weather --K 1",
+   "start_utc": "2026-10-21T16:19:49Z",
+   "end_utc": "2026-10-21T16:19:54Z",
+   "exit_code": 0,
+   "seconds": 5
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block_fitK12withK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene strong_weather --K 12 --with-K12",
+   "start_utc": "2026-10-21T16:37:59Z",
+   "end_utc": "2026-10-21T16:38:32Z",
+   "exit_code": 0,
+   "seconds": 33
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block_fitK3.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene strong_weather --K 3",
+   "start_utc": "2026-10-21T16:20:10Z",
+   "end_utc": "2026-10-21T16:20:32Z",
+   "exit_code": 0,
+   "seconds": 22
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block_fitK6.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene strong_weather --K 6",
+   "start_utc": "2026-10-21T16:20:42Z",
+   "end_utc": "2026-10-21T16:21:05Z",
+   "exit_code": 0,
+   "seconds": 23
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block_fitwithK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene strong_weather --with-K12",
+   "start_utc": "2026-10-21T16:38:33Z",
+   "end_utc": "2026-10-21T16:38:35Z",
+   "exit_code": 0,
+   "seconds": 2
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/blockwithK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene strong_weather --with-K12",
+   "start_utc": "2026-10-21T16:42:05Z",
+   "end_utc": "2026-10-21T16:42:14Z",
+   "exit_code": 0,
+   "seconds": 9
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/fit.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene strong_weather ",
+   "start_utc": "2026-10-21T16:26:33Z",
+   "end_utc": "2026-10-21T16:26:34Z",
+   "exit_code": 0,
+   "seconds": 1
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/fitK1.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene strong_weather --K 1",
+   "start_utc": "2026-10-21T16:19:43Z",
+   "end_utc": "2026-10-21T16:19:49Z",
+   "exit_code": 0,
+   "seconds": 6
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/fitK12withK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene strong_weather --K 12 --with-K12",
+   "start_utc": "2026-10-21T16:37:22Z",
+   "end_utc": "2026-10-21T16:37:59Z",
+   "exit_code": 0,
+   "seconds": 37
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/fitK3.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene strong_weather --K 3",
+   "start_utc": "2026-10-21T16:19:43Z",
+   "end_utc": "2026-10-21T16:20:10Z",
+   "exit_code": 0,
+   "seconds": 27
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/fitK6.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene strong_weather --K 6",
+   "start_utc": "2026-10-21T16:19:43Z",
+   "end_utc": "2026-10-21T16:20:42Z",
+   "exit_code": 0,
+   "seconds": 59
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/fitwithK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene strong_weather --with-K12",
+   "start_utc": "2026-10-21T16:38:32Z",
+   "end_utc": "2026-10-21T16:38:33Z",
+   "exit_code": 0,
+   "seconds": 1
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/plotwithK12.txt",
+   "command": "python3 tests/python/plot_pv_fixed_forecast_pdfs_general.py --case case141 --scene strong_weather --with-K12",
+   "start_utc": "2026-10-21T16:43:17Z",
+   "end_utc": "2026-10-21T16:44:06Z",
+   "exit_code": 0,
+   "seconds": 49
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/reference.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference --case case141 --scene strong_weather ",
+   "start_utc": "2026-10-21T16:31:39Z",
+   "end_utc": "2026-10-21T16:32:29Z",
+   "exit_code": 0,
+   "seconds": 50
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/referenceK1.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference --case case141 --scene strong_weather --K 1",
+   "start_utc": "2026-10-21T16:29:54Z",
+   "end_utc": "2026-10-21T16:31:39Z",
+   "exit_code": 0,
+   "seconds": 105
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/referenceK12withK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference --case case141 --scene strong_weather --K 12 --with-K12",
+   "start_utc": "2026-10-21T16:38:35Z",
+   "end_utc": "2026-10-21T16:40:12Z",
+   "exit_code": 0,
+   "seconds": 97
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/referenceK3.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference --case case141 --scene strong_weather --K 3",
+   "start_utc": "2026-10-21T16:28:15Z",
+   "end_utc": "2026-10-21T16:29:54Z",
+   "exit_code": 0,
+   "seconds": 99
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/referenceK6.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference --case case141 --scene strong_weather --K 6",
+   "start_utc": "2026-10-21T16:26:36Z",
+   "end_utc": "2026-10-21T16:28:15Z",
+   "exit_code": 0,
+   "seconds": 99
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/reference_ac.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference_ac --case case141 --scene strong_weather ",
+   "start_utc": "2026-10-21T16:19:43Z",
+   "end_utc": "2026-10-21T16:26:33Z",
+   "exit_code": 0,
+   "seconds": 410
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/referencewithK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference --case case141 --scene strong_weather --with-K12",
+   "start_utc": "2026-10-21T16:40:12Z",
+   "end_utc": "2026-10-21T16:41:14Z",
+   "exit_code": 0,
+   "seconds": 62
+  }
+ ],
+ "total_logged_seconds": 1640,
+ "files": [
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/all_fit_attempts.csv",
+   "bytes": 29264,
+   "SHA256": "c4189fbdba01401e0d64dea5ed6481e4bb1494d5cfc9599a75fc3aea26d7089c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/block_global_repeat_summary.csv",
+   "bytes": 1731378,
+   "SHA256": "db470a2797e379b4e55ccb44d1fd71e56b3915dcc23c44862fbc102b54f52d24",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/block_quantile_repeat_summary.csv",
+   "bytes": 4750547,
+   "SHA256": "80b1103d008e41060d7f064cf4fc781b32c6d04e46aa07110f72e50fd8a15115",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/environment.json",
+   "bytes": 1246,
+   "SHA256": "3dab829d92eb3759cfb8b419558f14708d49e6bf7f2375aba6d510e7997102a6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/global_metrics.csv",
+   "bytes": 5736607,
+   "SHA256": "4ae169c9ee789bbfbd1c74d3526483d868f901b23520d5903820900c8a4c627f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/global_repeat_summary.csv",
+   "bytes": 3459134,
+   "SHA256": "e69a555e83c9fd2c02546427bd8de5abdf100150d2107a12922982d6bd81c2bc",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/ac_only.txt",
+   "bytes": 3972,
+   "SHA256": "c035d53660bfcba0ee4483c74b8b45fc7dc34c08beaf5953581420c0314c7c6e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/analytic.txt",
+   "bytes": 393,
+   "SHA256": "7218231a7605ff77937aae6b93e7f80b9fb62acb5609b31d26142904652bba2e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/analyticwithK12.txt",
+   "bytes": 454,
+   "SHA256": "b063151d2ff747bd1f8c1bd3596fce381b0af019139ca2717be3d5b1dda099a9",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block.txt",
+   "bytes": 1531,
+   "SHA256": "5fa3782afe9afba562fd5d0ff1d585d00644a29f7b2305783ae0fed6731d3ead",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/blockK1.txt",
+   "bytes": 2668,
+   "SHA256": "7160d3cbb943931695d4ced30ab4e80dfc14d45770893a57ad1671c584588726",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/blockK12withK12.txt",
+   "bytes": 3100,
+   "SHA256": "a0a571e6a6f308babf37190df2322831edd3b404480943656f257a17d69436cf",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/blockK3.txt",
+   "bytes": 2660,
+   "SHA256": "4de9794377bc25a19daebe3313004433018705482bd66d8e17d498b16ece6141",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/blockK6.txt",
+   "bytes": 2668,
+   "SHA256": "e25e0fd985deb31a6b8285d1d00458a3c3c0c0f6a818970a85f65f7ac60ffaba",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block_fit.txt",
+   "bytes": 1137,
+   "SHA256": "4d268c148495c8aa1864d0527808548c295db62f313b8f62390355fa8f2221f4",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block_fitK1.txt",
+   "bytes": 1138,
+   "SHA256": "c134b6ac2e23958010f56392c52aff30bdb2590f62762202b7f7bd3d87024cb7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block_fitK12withK12.txt",
+   "bytes": 1520,
+   "SHA256": "c58b7eb8db6066d6795a07cc469a37d210c3e521c24d3898d110a78b8291489f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block_fitK3.txt",
+   "bytes": 1362,
+   "SHA256": "a6b96c7a74e63ed98172c35194ec76e32ce0bb69f09e810b320063dcd58cddfe",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block_fitK6.txt",
+   "bytes": 1416,
+   "SHA256": "b7ab79bcf07e7b3283f04d1b319d81d5cb092c78e407723dc65ec47029d23b8a",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/block_fitwithK12.txt",
+   "bytes": 1560,
+   "SHA256": "90053e62e6ae4e09c1bb7afefa42910f7a8d7ac6fa67f5513fac15a4ecab012b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/blockwithK12.txt",
+   "bytes": 1980,
+   "SHA256": "b176a84ace56ee2ad5865c913a09f862a4d822a304b9c2c4110277ebf6fd7326",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/fit.txt",
+   "bytes": 734,
+   "SHA256": "386dfc542b6902b07f2ef6e65f07c8871b291031d25623150f05bd5649d3d235",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/fitK1.txt",
+   "bytes": 1005,
+   "SHA256": "b2ce77ae02af2081582d8afc4b00bf1d4830ffcf1ac7a5e29a7bce5734846d8d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/fitK12withK12.txt",
+   "bytes": 1578,
+   "SHA256": "b0e69f66d853dd68cd981c3727324fd5e51b95785d13e136c553a86edeb112c4",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/fitK3.txt",
+   "bytes": 1557,
+   "SHA256": "e1fd715707d8e01fa4d1e3eb1846b0108703f26807798e9833ccd3d828b0f12d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/fitK6.txt",
+   "bytes": 1558,
+   "SHA256": "668c9f014cf3663a58ea21ba5228e526906255d042ffa7c36febd86e8e25ab38",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/fitwithK12.txt",
+   "bytes": 885,
+   "SHA256": "91d51cf8db5ae422419dd17cfdf502a9321d1cadf6ef604b99440edbc65523ed",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/plotwithK12.txt",
+   "bytes": 1123,
+   "SHA256": "fe3a0538225ebf4a5f92595f6610c7147170ce177e61eecb54699ff3352b2fa8",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/reference.txt",
+   "bytes": 2645,
+   "SHA256": "4043c5d61cf95c7ddae45490dee2375750f1f7d6bfac6028eba74582b7313541",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/referenceK1.txt",
+   "bytes": 3210,
+   "SHA256": "0ec1deb68670a6bf6220d6773b7d24445e982876ee58e9775b09a14686851a93",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/referenceK12withK12.txt",
+   "bytes": 3245,
+   "SHA256": "202381a3504f31069b8f17a7e11eb44360c0e6509f0c23f704274112d696282a",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/referenceK3.txt",
+   "bytes": 3214,
+   "SHA256": "ef305b970c30cabe8c26deb93b9e5ae80d14ca36683550f41cd378aeed84ab30",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/referenceK6.txt",
+   "bytes": 3215,
+   "SHA256": "06e92a264bcca0ba2fee82913a03cc38da50bab04ac73eaa36265831fba6da8f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/reference_ac.txt",
+   "bytes": 7007,
+   "SHA256": "8aed335e8dbe5005bae1046e5fda35bb39a4398d6cefe0655841f43975ae211c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/referencewithK12.txt",
+   "bytes": 2666,
+   "SHA256": "cddfcdfd20fde7fb6a76c3be050a8b0535a9feadeb28c3ef1a6663aac591b36b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/logs/scene_driver_done.txt",
+   "bytes": 20,
+   "SHA256": "120c509f5821ecd2ba98cf401977da0b36d070b4fccc6ad261abdaf07c5250b1",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/matched_accuracy_K_parameters.csv",
+   "bytes": 4561528,
+   "SHA256": "eadfd26dca2c7bbf613f9b8a1b38a8b2313cc2391a835f5f547817a4de18da01",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/priority_local_advantages.csv",
+   "bytes": 7734,
+   "SHA256": "984b5f1dd853fd380eff6892d7a2a86268999edc6576aee3c0dc9ccb67a0ea14",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/priority_same_K_comparison.csv",
+   "bytes": 121325,
+   "SHA256": "48ec0ba5ceeb58d4d81e6b79f18952ec2de0e98ce2d413cbd23c95cd9d77e370",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/progress.json",
+   "bytes": 468,
+   "SHA256": "87a24c2dac8161fce1a19b84411946c7174235a4a275e99498a46c2b768e3325",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/progress_history.jsonl",
+   "bytes": 50481,
+   "SHA256": "b3ea023fe0773a7429cd9114e4badc3ab72b43531158dc455db444a08cbf0102",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/protocol.json",
+   "bytes": 6714,
+   "SHA256": "d398a2c704a11277a24b6f675dac36ed72e4e2dbb463ad56f677eba8a41bf2ec",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/quantile_metrics.csv",
+   "bytes": 20364394,
+   "SHA256": "32e25498d20e2921c7c531e27e6f40f061869451cd875f783683c742fce8b9eb",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/quantile_repeat_summary.csv",
+   "bytes": 9470895,
+   "SHA256": "abf64295b1d9129178f3b11b811caf2491f57b4fcb38fd45f0b6e8e82677b0d7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/same_K_object_comparison.csv",
+   "bytes": 5729494,
+   "SHA256": "197cf94e83b30a1a478914d501f6bdd8f4e933fa02d1a331067e9298bf02e6ba",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/selected_models.csv",
+   "bytes": 3014,
+   "SHA256": "704e5bef82ff30fe9e365ac1de53c46b0a205c8b28c5828a5c84ba0e47c1521d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/AC_ONLY_LOCK.json",
+   "bytes": 1307,
+   "SHA256": "abf3f7c10faf6a4fb12752888d975852c51009d7be69674d7c6b5db007ea7cee",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/AC_features_train_validation.csv",
+   "bytes": 244805,
+   "SHA256": "8c11069202ec65abeec23e1f7bc4dc0d96a8e3c326894be747eebec7b4788f57",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/all_fit_attempts.csv",
+   "bytes": 29266,
+   "SHA256": "e49611d2c3d71e5922506ad1d5226ec37999ea970f21329606d2292fc6f82327",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/all_fit_attempts_block.csv",
+   "bytes": 7798,
+   "SHA256": "46e416eb973c8a4b765db9962a425129d7479619875f4657fda065ba839f9f25",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/analytic_limit_risk.csv",
+   "bytes": 3976,
+   "SHA256": "e5bf436bb048504e39c84f576ed5422e93606c9ecbcf2d7b32092cbd9437bb79",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/analytic_limit_risk_check.csv",
+   "bytes": 16751,
+   "SHA256": "d7521c423744bd091cb92f50a5e0c01f997a02cfe0a00e3c1a6fd8f5c0b9b165",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/analytic_limit_risk_summary.json",
+   "bytes": 2141,
+   "SHA256": "05ec2cb054d902234ba69229c78756214f6a59e348c46a7c4bfd9bf422cfe726",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/block_effectiveness_listed_over_1p5.csv",
+   "bytes": 182,
+   "SHA256": "55cee08729502b59f19b2d9d2d199d181d1b9af208d85659d165a86f93917d5e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/block_effectiveness_other_objects.csv",
+   "bytes": 45977,
+   "SHA256": "730bd0031b8472328b91ab5ac314e4ed49a27b864e39b38b261a28ff43f88b01",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/block_effectiveness_summary.json",
+   "bytes": 318,
+   "SHA256": "bb68f25c01b622f69c6297c9722d8eb55844ae8b0891f3af21a62f280f240977",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/block_effectiveness_targets.csv",
+   "bytes": 4835,
+   "SHA256": "a6df693dcce1564eb0cdea35fb04ef283b64cf1af9efa75feba7fb35c4d27ad5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/block_effectiveness_withK12_listed_over_1p5.csv",
+   "bytes": 222,
+   "SHA256": "810d47a9f640183ca0ec659f523e0c1076eac663be44fa15081030a9dbe60c86",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/block_effectiveness_withK12_other_objects.csv",
+   "bytes": 61677,
+   "SHA256": "7f41fa4e6883b9ca4189c4f0d4dfdbf3aa19ab91f7ea87c519441446f77d4eab",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/block_effectiveness_withK12_summary.json",
+   "bytes": 348,
+   "SHA256": "0b7179dbda41f6a7ddd0d1f72cdb4b7ed9ef7f057cdc2494b17bfe8ba3514cda",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/block_effectiveness_withK12_targets.csv",
+   "bytes": 6247,
+   "SHA256": "0057df7c1524504f95e24436a3cf699ea1f229f31108855fdf35203568da421f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/block_subspace.npz",
+   "bytes": 233006,
+   "SHA256": "83a5f2505101710784413b5b2ef2ef4ac0645144bcb2df1829ac3ceaf348f21a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/block_subspace_diagnostics.json",
+   "bytes": 1081,
+   "SHA256": "c51c76572f949be9c2743edd4519a6fbfd50359d139f23b22df2b084a0c81d64",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p01_GMM.json",
+   "bytes": 2426,
+   "SHA256": "2f814953968dc35496fd6bb808401ca0fdf7b4c50f65c5c180d101e943888ea6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p01_GMM.npz",
+   "bytes": 2397371,
+   "SHA256": "ad0c93161f57fc7acbb924784cce1dd34fe2ca64630f4b689da5c47a5e305d45",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p01_gmm_warm_df12_BLOCK.json",
+   "bytes": 1217,
+   "SHA256": "a129d423fd2fea7c511c84a6f5c26013afeec5bc8c83ecfba8410a9128d426e7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p01_gmm_warm_df12_BLOCK.npz",
+   "bytes": 2497516,
+   "SHA256": "e7686460070db5034672b6ddec6ce8db790a03fd53cbc575d8248f15881cc3d0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p01_gmm_warm_df12_PX.json",
+   "bytes": 2535,
+   "SHA256": "a660525418844bcd5fff98df6a0441f258261ec02f5c6aef186bea8f89944957",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p01_gmm_warm_df12_PX.npz",
+   "bytes": 2397571,
+   "SHA256": "db9fc5de7d69709192df06d71db398acf92a01eae9f9740720c4f09b1d4782a5",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p01_gmm_warm_df200_BLOCK.json",
+   "bytes": 1216,
+   "SHA256": "885850f945c28aaa609c8b8691b76aa07051b20d44d209a32ee4adb69d03f8ae",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p01_gmm_warm_df200_BLOCK.npz",
+   "bytes": 2497676,
+   "SHA256": "0cfd85c97e8b69fcb8cf7ab83aa4734c51d8999546922900804debc65ecfa2f5",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p01_gmm_warm_df200_PX.json",
+   "bytes": 2538,
+   "SHA256": "3bfede7bda5384d98dbb077b1ff514acc04bbd8cb2a1fd8166521f03ad5b467e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p01_gmm_warm_df200_PX.npz",
+   "bytes": 2397406,
+   "SHA256": "18954d331d44874fe6a99a52d4c040cd536765408e35ed3859d343a3fbe6c481",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p01_initial.npz",
+   "bytes": 2403588,
+   "SHA256": "27cf5abbdf2fa842d5a72cbb46cb1dae34d9389b9d0c82811584eb2493c92b83",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p02_GMM.json",
+   "bytes": 2435,
+   "SHA256": "34060fd02b08537bd8281a5c9b49880ecbad79a222139a2a010efcf2656bc0e7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p02_GMM.npz",
+   "bytes": 2397316,
+   "SHA256": "963b624806c075bf4287b9a1845dfed8a00836a3453b63249942471217c89ff2",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p02_gmm_warm_df12_BLOCK.json",
+   "bytes": 1219,
+   "SHA256": "966ee6a864cdfc5aeb3ca1fc236f1d924638b1d0b2461923e027e81f8412bda6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p02_gmm_warm_df12_BLOCK.npz",
+   "bytes": 2497497,
+   "SHA256": "d102e553c1403cb416b375b38867a685559940f08312d3ba8f4d205a531dea9c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p02_gmm_warm_df12_PX.json",
+   "bytes": 2533,
+   "SHA256": "c8fc8d3b39e1d1df0543d63b4e80d9de626a6ed9ab39844c67b2a8b0f929eb3d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p02_gmm_warm_df12_PX.npz",
+   "bytes": 2397596,
+   "SHA256": "7237aaa67f60e529f25828ea21e6571f48fc043c4e783b9867019d488239cf61",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p02_gmm_warm_df200_BLOCK.json",
+   "bytes": 1220,
+   "SHA256": "cdda2d4f524d0195b1c4657a60855b2fff39d9627839e27d74660f9c6cae76b6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p02_gmm_warm_df200_BLOCK.npz",
+   "bytes": 2497566,
+   "SHA256": "2b912cfc52aaea5cd0fb04d1511bbfbdb3e60ed77d1b9540c534fb43a5a9e9cc",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p02_gmm_warm_df200_PX.json",
+   "bytes": 2531,
+   "SHA256": "cc2960ad172d9c1da67dffad37b4d521487b6ac1e8c83dca72187c929735ba28",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p02_gmm_warm_df200_PX.npz",
+   "bytes": 2397792,
+   "SHA256": "f5e2466a21303c119f95407e7ff36728a3b2385832dc8c64b41154329453a3bb",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K12_p02_initial.npz",
+   "bytes": 2403470,
+   "SHA256": "3fce41d6e62c6742ec78ab959db5254f2251dc32787a372a956c3d10633019c0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K1_p01_GMM.json",
+   "bytes": 875,
+   "SHA256": "2102663f9cec339e3af0cf539746e3a34b3557a6198658cf41f0701fc8d57ff7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K1_p01_GMM.npz",
+   "bytes": 117691,
+   "SHA256": "144966df6622cf9a0f2abbbdba7bd9c152b3d2cd92f9dd89eab1a9033ef47470",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K1_p01_gmm_warm_df12_BLOCK.json",
+   "bytes": 427,
+   "SHA256": "fd88e599de4c5d0dc38f751c0296eb92f450b460354a0a376c854ffb64b2cadb",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K1_p01_gmm_warm_df12_BLOCK.npz",
+   "bytes": 336263,
+   "SHA256": "25486f9acf633ff655001d6a1830daa798fc7ac9724df7505e43133aa6a06724",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K1_p01_gmm_warm_df12_PX.json",
+   "bytes": 875,
+   "SHA256": "aa7d8143fcd2e66140ae686f82335e1b030606c33fcd1851af23cd20dc42655b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K1_p01_gmm_warm_df12_PX.npz",
+   "bytes": 201145,
+   "SHA256": "c785b5f8fff8a87409e4df9e6b0e297403064512a142f2b2940442a7a02c7ea7",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K1_p01_gmm_warm_df200_BLOCK.json",
+   "bytes": 428,
+   "SHA256": "907644fb7239e1d74f283962185021e124dd5cb1d0a08ac128e50e60a32d4dfc",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K1_p01_gmm_warm_df200_BLOCK.npz",
+   "bytes": 336346,
+   "SHA256": "b99d2687ed1d5d44872cd8b361affa90b693246a8c0fd567b9c65dde195d0576",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K1_p01_gmm_warm_df200_PX.json",
+   "bytes": 873,
+   "SHA256": "e8e776ebe7bc64aaccab0103ee1be3e290476a76b77ba19244205b80ff6a53ad",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K1_p01_gmm_warm_df200_PX.npz",
+   "bytes": 201132,
+   "SHA256": "98aad5d417d149ec507b48af7d1622210b94f86b08749449633ee63d937063b3",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K1_p01_initial.npz",
+   "bytes": 117464,
+   "SHA256": "29e7bacf67a6249f56d26a82e496f649616031ac68e8877a85ec37b9657e44a2",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p01_GMM.json",
+   "bytes": 1188,
+   "SHA256": "ccd2c5d732bddbc073a3b9ecd6886dc6902bf8a832739630d011559676ee8584",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p01_GMM.npz",
+   "bytes": 600659,
+   "SHA256": "ac291ab146e166a66650fbac37c6f6c7337f193629602d8d921df90b56f48505",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p01_gmm_warm_df12_BLOCK.json",
+   "bytes": 611,
+   "SHA256": "5b29c14e95ca4bc956bb02d293477d3af94864b4f6442980270891054351dec7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p01_gmm_warm_df12_BLOCK.npz",
+   "bytes": 788400,
+   "SHA256": "d476488b87e5583566d6a1f6a4abcf070c4de6e6b0f61537b33b99fe8a688d70",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p01_gmm_warm_df12_PX.json",
+   "bytes": 1205,
+   "SHA256": "da6741556640e695f3d66150a4c52a59b419db7e6d1e6682181f5d1196386ecc",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p01_gmm_warm_df12_PX.npz",
+   "bytes": 600438,
+   "SHA256": "113c8eac51ca4cc6176c5b79da17a82c3446ca4be1d0c0dc64642b92e140ab78",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p01_gmm_warm_df200_BLOCK.json",
+   "bytes": 612,
+   "SHA256": "d1b97d5f29392003b3895e291581166f948533b5afe4378c1ea02ce8407ba0c3",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p01_gmm_warm_df200_BLOCK.npz",
+   "bytes": 788561,
+   "SHA256": "dfbd626dacb9868b432e26d143151ea37ded10bb6af135c12b6fdab13fd23ce4",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p01_gmm_warm_df200_PX.json",
+   "bytes": 1209,
+   "SHA256": "7c99be00c95d6c49756c50d0617b5cc603c53aba9c660eabe050fc1664cceac1",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p01_gmm_warm_df200_PX.npz",
+   "bytes": 600472,
+   "SHA256": "fefb3a96c0feedee06ac5f5f32efbb79480492d4a9e28b93069ee3056f5901fd",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p01_initial.npz",
+   "bytes": 603764,
+   "SHA256": "c48d4176b5042f19012a18a1aaffeaa293af29898e884eb7d14ad8efdf8b55c7",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p02_GMM.json",
+   "bytes": 1179,
+   "SHA256": "7ee25676898fc6ad5234a9b0df25f59ba8ab8326da1db52bd17769db9325249d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p02_GMM.npz",
+   "bytes": 600596,
+   "SHA256": "2a68cc6c2892ca4613f48bfdd0d842e7c9515e95edad3df53e56a22f4f6c7438",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p02_gmm_warm_df12_BLOCK.json",
+   "bytes": 609,
+   "SHA256": "2db95666ed1bb17d1f62d2347bcf0012e606b6e541d5807e3dc7dd3c9177b0b1",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p02_gmm_warm_df12_BLOCK.npz",
+   "bytes": 788610,
+   "SHA256": "220fc6444ffd203fde40602814a7ad780641d32ee4f2ab47852c7b667d694d32",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p02_gmm_warm_df12_PX.json",
+   "bytes": 1206,
+   "SHA256": "aca814248bde8cb0896bddeb7911620934456ff43762bdbe953b162e718f1526",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p02_gmm_warm_df12_PX.npz",
+   "bytes": 600476,
+   "SHA256": "01dacb8c61070f42582e67fc83ec3d3f340da2bda49ada53367f5c0846beccab",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p02_gmm_warm_df200_BLOCK.json",
+   "bytes": 612,
+   "SHA256": "be56bf3fc51f624a75d30f002fc042834285ce0fa5d7a1e24d07e40bd3a5e5ec",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p02_gmm_warm_df200_BLOCK.npz",
+   "bytes": 788690,
+   "SHA256": "7ffdb2b2591c3a5af6049b4a988c6dbd2668780bdf62326b59101df2c1b1aa53",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p02_gmm_warm_df200_PX.json",
+   "bytes": 1205,
+   "SHA256": "d9d802d56f50be9062f5e4ece962a62a1aa0487ac10c9e4ee742fbd64decc87a",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p02_gmm_warm_df200_PX.npz",
+   "bytes": 600359,
+   "SHA256": "68b1831ea07a60e88a3d903ebad156ddb3d184aa03dbe4243634add1c65ef055",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K3_p02_initial.npz",
+   "bytes": 603631,
+   "SHA256": "f4f15c1f59d3ac915326651ed69f0f5e978371f8465332f84f87cea60a482b74",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p01_GMM.json",
+   "bytes": 1608,
+   "SHA256": "2f964d4ed54518291b4217ba81e4e061bc42d7df924997c6f52df4f66052288b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p01_GMM.npz",
+   "bytes": 1199406,
+   "SHA256": "2f60f54456238cd3e1c309cd2c16b436e07fb5d96decebd6dab141872087b1af",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p01_gmm_warm_df12_BLOCK.json",
+   "bytes": 827,
+   "SHA256": "3834bb42c8cff68b43f14a75ab5991510895f6777cce70bc9a4d7ad65bfa3251",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p01_gmm_warm_df12_BLOCK.npz",
+   "bytes": 1358092,
+   "SHA256": "f1444d54be72495f42c5a56d32056e01e33727f935ba663e8e8926e640beeae1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p01_gmm_warm_df12_PX.json",
+   "bytes": 1656,
+   "SHA256": "016d160d6efe89d11161e15ab35a5ce66172f679a3fdd5d2a0b81821d03851ed",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p01_gmm_warm_df12_PX.npz",
+   "bytes": 1199589,
+   "SHA256": "5e2b272b96f69600b502196922ab892a8e7d669a089cad7f36b606959edc4478",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p01_gmm_warm_df200_BLOCK.json",
+   "bytes": 829,
+   "SHA256": "d66f46d7c4906837e47f6f05e28018ffe38e0f77fb3f0ddf6c56b5ff3c6572b2",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p01_gmm_warm_df200_BLOCK.npz",
+   "bytes": 1358203,
+   "SHA256": "6ef8e93ce952e6808b8f963290fd8517a79dcda7a69a6f7af2862c8900f8667b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p01_gmm_warm_df200_PX.json",
+   "bytes": 1656,
+   "SHA256": "7f83d94fc16e493fab1b4c2d52245d11b34a40359fd24e377201aa584e3b3b6b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p01_gmm_warm_df200_PX.npz",
+   "bytes": 1199529,
+   "SHA256": "adc61ea5f7a7c4eac39af1f37733f3c072146da926c1dcd4ab01ebeab0e4e64e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p01_initial.npz",
+   "bytes": 1204309,
+   "SHA256": "208a2a4d6087b5815be3e87cf0aa095b4b8c371d7048156e642203082c302903",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p02_GMM.json",
+   "bytes": 1601,
+   "SHA256": "41998a91cff836c5d03eb8a0097b91ac130c04229e7ba7ada1ec3e2cdfa6dcb7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p02_GMM.npz",
+   "bytes": 1199789,
+   "SHA256": "f1a3b45ceb8a1ac55fdec7d98038963280afc49fde4b82ec43fd9c20f2f4ba42",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p02_gmm_warm_df12_BLOCK.json",
+   "bytes": 826,
+   "SHA256": "8460c7273fdd0ee4ae4b8436d78c74bb35ddd3eb585a0652f5314e15824de6d3",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p02_gmm_warm_df12_BLOCK.npz",
+   "bytes": 1358280,
+   "SHA256": "dcca59c7719d4b61c9c7d691d858022ec5e57d4754e8f510a31b70c8fcaa31e0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p02_gmm_warm_df12_PX.json",
+   "bytes": 1642,
+   "SHA256": "3936927e7ed010549115776d2288ba5e38dbbbaff6173be9f9546728072bc5a4",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p02_gmm_warm_df12_PX.npz",
+   "bytes": 1199570,
+   "SHA256": "6512aac8a5d5013ef6b10e6df3d22ab443fc970c6776b3e95222a44828630158",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p02_gmm_warm_df200_BLOCK.json",
+   "bytes": 828,
+   "SHA256": "46cc59642679f494db23923c8ca7a1f78a8e5284a1ae8829abcf0835fe41e8c7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p02_gmm_warm_df200_BLOCK.npz",
+   "bytes": 1358174,
+   "SHA256": "8109f76cb303ebc022e98e679585869c1fe416573ea9f3655bb91b931789cae4",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p02_gmm_warm_df200_PX.json",
+   "bytes": 1643,
+   "SHA256": "bc99da9278fb82608b6529000fa7780587d64620a790d657b51cba349dadb5d1",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p02_gmm_warm_df200_PX.npz",
+   "bytes": 1199666,
+   "SHA256": "b8f24afd98e1e9d0674dc765531f1691852e7913141278f0c62fe44a371eb166",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/candidates/K6_p02_initial.npz",
+   "bytes": 1203958,
+   "SHA256": "311905b8d93902dc022818319211c2a9441631275982faeb1500606f6ed4a3d7",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P138_K12_full_lower_upper.png",
+   "bytes": 190885,
+   "SHA256": "520b03d5d9ca70f5c89c3595907c024ca2847bc3b64fbc8db684ffe7fc7101f0",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P138_K1_full_lower_upper.png",
+   "bytes": 212909,
+   "SHA256": "f05e2dbae0f5422bb99049ac8a5c00de30c0fe86468611a1c75d6f3dac3a1ebe",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P138_K3_full_lower_upper.png",
+   "bytes": 209354,
+   "SHA256": "7b3d76cbebfab7551f83311a825ec0ebde8cc39224fe565b7cdc00121aed405b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P138_K6_full_lower_upper.png",
+   "bytes": 206840,
+   "SHA256": "6746c6bfd848255127d9910ce9f534da7763fdb2a05930777601db24a9848c71",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P138_PDF_all_K.png",
+   "bytes": 240450,
+   "SHA256": "8bfa6c39d44d4e3475bd2edcbfeeb19686cafe1b1272743c188758ebe301c30b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P49_K12_full_lower_upper.png",
+   "bytes": 193593,
+   "SHA256": "ac380f7de0812fc95cdec013549cfbcce8dd71f6547debe34682a6cd4f904a5c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P49_K1_full_lower_upper.png",
+   "bytes": 205466,
+   "SHA256": "4931c24b6c0084ebb931c7518997d2ec8fb92245a09d199ac0e0b8ff4636ee4e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P49_K3_full_lower_upper.png",
+   "bytes": 187655,
+   "SHA256": "58893536a883ea5e46d2c258ba79ee7cc33a8cd990470bf1f583c5fe674830ca",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P49_K6_full_lower_upper.png",
+   "bytes": 192321,
+   "SHA256": "ef6ed2b3d225440595e35935b57c27fcf011387199b69dd9c9ffe1ded5af1e71",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P49_PDF_all_K.png",
+   "bytes": 244716,
+   "SHA256": "a889e77b5725b8b88638a5a3cb6680ca60dc26c00a0c89e1d625f64fec804c74",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P51_K12_full_lower_upper.png",
+   "bytes": 198358,
+   "SHA256": "bba10193f94542cef95c44a003088683fbe34a0df44493210c1ef47d9d9ac082",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P51_K1_full_lower_upper.png",
+   "bytes": 210245,
+   "SHA256": "dd8497be1efb6cdf62d9b2c37eb4d7307be14ee4f6596d811a523f9d9cdf7ee7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P51_K3_full_lower_upper.png",
+   "bytes": 192335,
+   "SHA256": "132cb49dedd95dcdf08d410fe41aaf99a1ae23d66253c116e8dce3f7114d1594",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P51_K6_full_lower_upper.png",
+   "bytes": 197110,
+   "SHA256": "60be1444e7a82c95f916cce64727b840bde0811650a79aa01167c6c8f52c1ac6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P51_PDF_all_K.png",
+   "bytes": 241477,
+   "SHA256": "1b49ee8ed616993e1bbbe0ee877632a403e7e4ec53c4cd6990dffbe33e8ee97f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P86_K12_full_lower_upper.png",
+   "bytes": 195694,
+   "SHA256": "a51dd5d216ff12ce2f13d9fa862977660401fdb168f6135142ed971bfa148628",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P86_K1_full_lower_upper.png",
+   "bytes": 208412,
+   "SHA256": "ee13d6c76b769e1834ea7c236ee4c9819e3bd90b5e294a042031beffc9d385f8",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P86_K3_full_lower_upper.png",
+   "bytes": 189128,
+   "SHA256": "0f83e500b8a35b2ae35d3dd7e3bfbea4c42944f196ae5de23ae56144f2481d2e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P86_K6_full_lower_upper.png",
+   "bytes": 193946,
+   "SHA256": "79c919ec9c749ff5827777412729908558726930aab0d0adce0fbb90ddcc6d2c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/P86_PDF_all_K.png",
+   "bytes": 243347,
+   "SHA256": "41105574d9242e10752e8a0828c75048460b8db42d59ee2332970a304ff96777",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V141_K12_full_lower_upper.png",
+   "bytes": 197431,
+   "SHA256": "8625d4eac4ee703db5c5ce1d9d5d45e200eef57e6ac90c870c77a1432e66cb72",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V141_K1_full_lower_upper.png",
+   "bytes": 208781,
+   "SHA256": "b1bbcc30f0b8c951bdf3d825054365982d8a4889f65dc7f634ef4a78389d59a6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V141_K3_full_lower_upper.png",
+   "bytes": 211117,
+   "SHA256": "e117bfad997c348e3c6b7c0dfc0a0ab648879f7ef8a11c323f3965851ccc81a9",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V141_K6_full_lower_upper.png",
+   "bytes": 209008,
+   "SHA256": "e4bc625108e48c95f8931abaebe51f4fa50f3f4cea1ff3ae73fafc5c1a71024c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V141_PDF_all_K.png",
+   "bytes": 255276,
+   "SHA256": "9c20395e7386a06ea845a36bf6e16d5fae9e5d0e3e75fcb78a34df80a136e5da",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V78_K12_full_lower_upper.png",
+   "bytes": 188896,
+   "SHA256": "33ec83b59d032b0057c177bbe6f9587cc6bc854a0f97953bee4d8b9e68fa3f48",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V78_K1_full_lower_upper.png",
+   "bytes": 209739,
+   "SHA256": "128be046021177cb6771d1c12a153ddac19d81d2e701c4c3801832ce61caf07f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V78_K3_full_lower_upper.png",
+   "bytes": 203743,
+   "SHA256": "1d1242c14d271302cf54ca19a095d4534ce618eaf3b3ce87e550c190db72f8c5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V78_K6_full_lower_upper.png",
+   "bytes": 200884,
+   "SHA256": "f31e2eeb8737040535b8ebb62cc1c6154b35290cbc357f14cd0bee1fa59d8091",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V78_PDF_all_K.png",
+   "bytes": 240811,
+   "SHA256": "580eeb6ab75b5ed6681b71be55e51d32563f62fe33f10632054e7b09d6e9e921",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V80_K12_full_lower_upper.png",
+   "bytes": 190278,
+   "SHA256": "f736c3bd291dd9522f52e833584e6c5d96ba3128a53e86b1b638f3cbe6a41a20",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V80_K1_full_lower_upper.png",
+   "bytes": 211036,
+   "SHA256": "536844407a95f4f0c6252b5ecf7978f46add20e6ffa505f1df4169b3180dc726",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V80_K3_full_lower_upper.png",
+   "bytes": 205590,
+   "SHA256": "29071e8d6b383abac58f4cae01d20ca886e96cb73169f34501d860eb311051b1",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V80_K6_full_lower_upper.png",
+   "bytes": 202264,
+   "SHA256": "568e35549aafac381e3952056916e362bebde4289d6351c65f80f607fe1c970f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V80_PDF_all_K.png",
+   "bytes": 239784,
+   "SHA256": "6c2b12adc5037321f7b65979627b1c1291f78458b18fae80644f789ba4920e1f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V87_K12_full_lower_upper.png",
+   "bytes": 194153,
+   "SHA256": "6d956166b2c7c6e4a6a43f9d3a6d1c29238fc144639c540e73a9acf297cf841b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V87_K1_full_lower_upper.png",
+   "bytes": 210802,
+   "SHA256": "a06c1f5cc9d3a232f96a2e3db82e47d71c515d5d3e25a16325a4b35c2be40ea9",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V87_K3_full_lower_upper.png",
+   "bytes": 209438,
+   "SHA256": "e82524ddef07a4bdced1821e35759388ae5071caaa86ef26b266dcfe5973cd0f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V87_K6_full_lower_upper.png",
+   "bytes": 204779,
+   "SHA256": "d18dd1714f6923426a0ba64c3b71832fa92b6a80edf527fde15e7dbef0b861f4",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/V87_PDF_all_K.png",
+   "bytes": 239625,
+   "SHA256": "c81ef6411bb5ff77b56534bd64cf6c3ae7e782bdd77a3b252cfad26a29c3ad73",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/display_range_outside_probability.csv",
+   "bytes": 5374,
+   "SHA256": "eb6e7889a8b2d98096987c392e5baf682411f3caf3f82c6423a004a6cdee8cd1",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/loss_K12_full_lower_upper.png",
+   "bytes": 183267,
+   "SHA256": "51ce6d84b91097166076f4d21613dc0d056009e750ad6eae04c66946c0302329",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/loss_K1_full_lower_upper.png",
+   "bytes": 199540,
+   "SHA256": "812aa5ed5279637a6f054010cf1510e3aeed7351c5f54c7a4f6fb6d1bca38bd0",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/loss_K3_full_lower_upper.png",
+   "bytes": 201100,
+   "SHA256": "0f2aa2db63edfd5e7f2daf46622a72458a381d4eb473d4a7c6fef02a0dcb2815",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/loss_K6_full_lower_upper.png",
+   "bytes": 191695,
+   "SHA256": "73e06b3b7f02bff7c60e549654715db0e8c68c445d03661372388d19022e917b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/loss_PDF_all_K.png",
+   "bytes": 243775,
+   "SHA256": "0fa3ef46dd3fc25a45fbbaa91697b889f9987e7db2d14f4222934cedd5f9619f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/diagnostic_pdfs/regeneration_check.csv",
+   "bytes": 160,
+   "SHA256": "e239807cd8e62a9d90699f0ebb2606cc8ba33c7b9494318f20d7c8ccbda250c8",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/effectiveness_listed_over_1p5.csv",
+   "bytes": 10,
+   "SHA256": "191b0087bab208cd1a01428f46d254dd5762cbf47161793bcbff7424b2626147",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/effectiveness_other_objects.csv",
+   "bytes": 45855,
+   "SHA256": "3035f332ec6b951e98a8bff1b248de156df5e82ef6eddb1f35f39d6fdc0fd41e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/effectiveness_summary.json",
+   "bytes": 317,
+   "SHA256": "bf525ae6166fafea6043559b8c90df7e12ccb80695d2c4621130d0982c6d8b22",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/effectiveness_targets.csv",
+   "bytes": 4723,
+   "SHA256": "ea9aa19c41996cf1c3127fceeba3cb85c8e7dd2e4ecc337e6712db1355111f40",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/effectiveness_withK12_listed_over_1p5.csv",
+   "bytes": 10,
+   "SHA256": "191b0087bab208cd1a01428f46d254dd5762cbf47161793bcbff7424b2626147",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/effectiveness_withK12_other_objects.csv",
+   "bytes": 61500,
+   "SHA256": "728efa4f2578b48f06e8d8541a7e3477c70ba5a85d0d4d364eb30cab47687b32",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/effectiveness_withK12_summary.json",
+   "bytes": 332,
+   "SHA256": "f2b67a7a21df1af6c37844ed15d595dcdfc92e7cc43c2208a8238d22b02176de",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/effectiveness_withK12_targets.csv",
+   "bytes": 6118,
+   "SHA256": "71a77dd781f0fecd8d64f25148bea7e6cb7c3e210b39be0d75988c8033f76b82",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/fitting_inputs.npz",
+   "bytes": 16232145,
+   "SHA256": "9dd970ab55acde03e27df8625719485db7a25e4dd886d5cecdbdcfe8d33b807a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/forecast_operating_point.csv",
+   "bytes": 15553,
+   "SHA256": "d8069dc3c713dff8c46fadd0800c3ee1213e0ca43780974dd810db3a39ce37a5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/limit_risk_events.csv",
+   "bytes": 979,
+   "SHA256": "108d29f022c56d0ebeebbe780e560a2e7fd4028253b7f918afeefd322d318d6e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/prepared.json",
+   "bytes": 302,
+   "SHA256": "62c8578e6535428135e1f5bb47cc36d4f033b9d34fd6a00406b10bcd67e54688",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r0_complete.json",
+   "bytes": 610,
+   "SHA256": "1802e578d03826d7f3d346559fae00bba373a631a433f4ff972455f17dbf1825",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r0_curves.npz",
+   "bytes": 7545550,
+   "SHA256": "93e744ac35e02f843c31e41ce98638a9210864ee946752e4b1aa8d3bc285543c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r0_global.csv",
+   "bytes": 195129,
+   "SHA256": "34da2f0cb4c3f3847d511776a91016c39993983609f8632c04d014a9d341174b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r0_quantiles.csv",
+   "bytes": 704662,
+   "SHA256": "96e388f6afd024787bf79c2563467aceea405e086f357cbc82f785710cdce1b0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r0_saved_outputs.npz",
+   "bytes": 4249891,
+   "SHA256": "3b0fa62f74d99f82bf350c9163427ab6461304a97b218f8b5ffccf897ec3d81b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r1_complete.json",
+   "bytes": 609,
+   "SHA256": "aadde3a1a9ba17e7ce8caa1bb6b3d98778c5f3384ad3393c1f205eb8f4bf0f99",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r1_curves.npz",
+   "bytes": 7544187,
+   "SHA256": "31f6bdfe46c7e4a2a52bdece7aad89b8581c064be78d20080b5aa50ebcf20b31",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r1_global.csv",
+   "bytes": 195162,
+   "SHA256": "1c3fcad0e5ca8b193cff03ce4d2e0d8bb7671d6f535763125880c387961ff896",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r1_quantiles.csv",
+   "bytes": 704691,
+   "SHA256": "1bab243c265651b72e8e2dbe47c83564189ddb055ceda022cef6233a1a6bf55c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r2_complete.json",
+   "bytes": 610,
+   "SHA256": "cbd8223b4a2c096853f7677c849352ddb382dc78b04b5b0caa5e84b7d274213e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r2_curves.npz",
+   "bytes": 7548731,
+   "SHA256": "e0acf61de9f593178e0e77274d02d426b346d5d64bd774c929e0d4fa6c41f947",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r2_global.csv",
+   "bytes": 195197,
+   "SHA256": "9669dfdef1403ba9c6b512f77ade39f98aa97e8d641ce5ccf20ad6c0c8e3356f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r2_quantiles.csv",
+   "bytes": 704523,
+   "SHA256": "b17a1925f37ff63f652cf4f15b897be4d6a1f5ab8bcf4cb16c01aa34738c675e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r3_complete.json",
+   "bytes": 610,
+   "SHA256": "1419bb9022ef320b968f440c12db54a3d280e321260eac61eab4fbd05dea26f1",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r3_curves.npz",
+   "bytes": 7546701,
+   "SHA256": "a05d890177a2304df65e41bb2f538cddff8d4f7f60ce2589949f62dbccea2853",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r3_global.csv",
+   "bytes": 195201,
+   "SHA256": "1e57895d7c7b71289e38de5af07f86ba184e6c7c9e236937706681bc15da1534",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K12_r3_quantiles.csv",
+   "bytes": 704757,
+   "SHA256": "18aec90baba10aa6eab303382b487ac581af86e025ebe3028fef54e5f4829f8a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r0_complete.json",
+   "bytes": 475,
+   "SHA256": "886b2caae2aeeff397d3a87cc2e1cbfe7761de7d758f6bf8f0dea7eda8c8b7bb",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r0_curves.npz",
+   "bytes": 5246068,
+   "SHA256": "17b69b138c30ca3bd1a39355f16c6fb0baa51fe38ef77511ae4efbabb98fa21a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r0_global.csv",
+   "bytes": 189159,
+   "SHA256": "6259f6d0c4e5c9823c254b8b834c2b26525104f8624146adecf2ae3d4476e027",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r0_quantiles.csv",
+   "bytes": 693357,
+   "SHA256": "fa8760ad901e0ec44023351299e0a8df8c92e7678522566659317cea88ca36f6",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r0_saved_outputs.npz",
+   "bytes": 4292855,
+   "SHA256": "c9fce33814f203c06f6bb27c2e1590a641b39ffbfe392adad7461ebf34c7472a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r1_complete.json",
+   "bytes": 472,
+   "SHA256": "3ff4f6cbd8453a31cd9c60a0e53d7802fe0e7de225218029c25eb38ffd659a30",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r1_curves.npz",
+   "bytes": 5245227,
+   "SHA256": "f6682fd2cafa9374c2c5c6b23ec2e180095e504dc28b7dbf87c4476316db8ae1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r1_global.csv",
+   "bytes": 189408,
+   "SHA256": "6752067ef5cdff4f7b2ab1ddd903d0aec6b2a0d505ea87e7e7980a2f8954c33a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r1_quantiles.csv",
+   "bytes": 693175,
+   "SHA256": "279abfae4d2c16f030dbe0d743bb1eeedfab1f0084a88e40e804e2791ad4c53f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r2_complete.json",
+   "bytes": 475,
+   "SHA256": "13c66a153744d0e24d52079dc36fb5cf967266544513505525dfbddd25eb5c94",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r2_curves.npz",
+   "bytes": 5245800,
+   "SHA256": "6bbbf8efd14d858283b727bc62f36308ee515deba436be32e70d2d12edf22787",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r2_global.csv",
+   "bytes": 189250,
+   "SHA256": "fe1a2e01ac26b0c51dd100cd81cc9d88f41af85abeded3cb7daed6c95b318daa",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r2_quantiles.csv",
+   "bytes": 693517,
+   "SHA256": "9d9ee5bc6fcff84b6d36fc81c63ee0f6a5df14ab7b4f2dc6bc4b1709d2682433",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r3_complete.json",
+   "bytes": 473,
+   "SHA256": "b5f6b6c66a51d8aa5ac0ef657126cc6e27b53fbf247506add4d37802b6454b93",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r3_curves.npz",
+   "bytes": 5244133,
+   "SHA256": "c10b73e192bf991518683cb9f34a50adb7bebe4ac7e86b0c81af84d047c870c8",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r3_global.csv",
+   "bytes": 189222,
+   "SHA256": "6200d6ffb2e4f37e791abd20fb5fce2a8c1f857df0b72744232f6df6b21157d7",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K1_r3_quantiles.csv",
+   "bytes": 693167,
+   "SHA256": "f6c51af03177149c2dbda2aed71a2ec9120ea5fcfeea3f35222fea9cde902d23",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r0_complete.json",
+   "bytes": 523,
+   "SHA256": "b465e20aa09878c5e480f5aa70504d48188bee53c35b7c4d0e7038e4d20eee61",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r0_curves.npz",
+   "bytes": 7559670,
+   "SHA256": "aa6c6a051e7e79866f53d3a4d925718dba1c7561b1a92772239c8bd9316a848e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r0_global.csv",
+   "bytes": 193936,
+   "SHA256": "004e9f60e50a0a0a5fa614411b43c5fe4e82954185b464f4fe568e0f0b2d15de",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r0_quantiles.csv",
+   "bytes": 696751,
+   "SHA256": "3f3aea6db7e9d7086053acbad66d09bc58b4c0d90a6b6d27045d0e8914096b16",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r0_saved_outputs.npz",
+   "bytes": 4271990,
+   "SHA256": "3aeceb7747cc5b380099c69b0c49450d4e9038d9a4bd67f1a7fa99ab65910352",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r1_complete.json",
+   "bytes": 523,
+   "SHA256": "ac7b57289a068fdbbfa87707a8cf23175ab2e73849ecdd3d09593174b90b5120",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r1_curves.npz",
+   "bytes": 7559848,
+   "SHA256": "98d46d4069fab590b309b6bc6b8cd822923c93538272b74941c5ea84725c81ee",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r1_global.csv",
+   "bytes": 193934,
+   "SHA256": "3e14136382d8b122eb73cc31104c76e2eea5740cdbeb7297c3954c21a6d3d233",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r1_quantiles.csv",
+   "bytes": 697036,
+   "SHA256": "fc84f89d693c8bc37b7a98cb2e8667bbf66186f90d37e1db3af2fd1d85039fa0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r2_complete.json",
+   "bytes": 523,
+   "SHA256": "ff0fdf9a2e6b8a3acb8660f394c2665a546ff9ba2c3bd4817e00b4135d4cb439",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r2_curves.npz",
+   "bytes": 7562498,
+   "SHA256": "24157221da44a62183216d0db3cfd52191d3a8695540e65b6effadc9aa294a78",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r2_global.csv",
+   "bytes": 193976,
+   "SHA256": "217b84ee0624aa062906c09f6b0eb8a5609b75941cc20667980b9ce04afdb96c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r2_quantiles.csv",
+   "bytes": 696987,
+   "SHA256": "f9cfb864a0cdf928be39c8d1b12cbb1119aa81c5efc9feab7b752c706df6d27d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r3_complete.json",
+   "bytes": 522,
+   "SHA256": "3ba2ef28396c74df328e70b9b944690ed6435e2dcf32a98364b0f8e072608da7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r3_curves.npz",
+   "bytes": 7561593,
+   "SHA256": "1e9fd13bb1510b64964f685ec293927206a83884dec5605de9c6b4959ee7af02",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r3_global.csv",
+   "bytes": 194054,
+   "SHA256": "304f2f1b07bad73c31c55d6118ab2a1e1a560d3558ed0b1709a042c58e41af5f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K3_r3_quantiles.csv",
+   "bytes": 696808,
+   "SHA256": "86fbba10c206fe92a4831b03cbe2be2428d520e639801a070e3fca998d3ecc6b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r0_complete.json",
+   "bytes": 553,
+   "SHA256": "317caf1118fba266548a5fcd7393e75225d25cd79e238a00ea49f71fee6e4431",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r0_curves.npz",
+   "bytes": 7579352,
+   "SHA256": "3addab8761066d4d5e0b4d0d349b3cc4c5a8af33f27039c06fea39eb0b3dfcf4",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r0_global.csv",
+   "bytes": 193549,
+   "SHA256": "aa5ac8f40fc205cba115333ee502d88630c06ae9ff2f9145475aa2cf4f2d4682",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r0_quantiles.csv",
+   "bytes": 693482,
+   "SHA256": "fbcb879f8c3bfd4af687cbe1615ac1a59c37c90c25431e39e7db51b0d650f42d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r0_saved_outputs.npz",
+   "bytes": 4256227,
+   "SHA256": "c04ac2feb1caeb4df1982b71cc6c54f7c476bae567f4a09c22dc273b2391df24",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r1_complete.json",
+   "bytes": 552,
+   "SHA256": "c4ac2932ade1d2547c9ee9024084b59c6cb046498cce21abb0d4ca819793e102",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r1_curves.npz",
+   "bytes": 7585891,
+   "SHA256": "1eacba720fca484b1c2a8313297cbcfb171a1226719233f9ba32b63deb668a26",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r1_global.csv",
+   "bytes": 193553,
+   "SHA256": "1412dac4796f259e74436b46de43d550c1c068ffcd400992e2628c222362ba00",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r1_quantiles.csv",
+   "bytes": 693547,
+   "SHA256": "376052233852cbac9a12f0d6e76e99c244b1040a748a6d9101a6ddb53863d3ea",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r2_complete.json",
+   "bytes": 554,
+   "SHA256": "a8a170c90669386da838db9c6a2f24c35f25e3703e20742acad845c09b83f02f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r2_curves.npz",
+   "bytes": 7582765,
+   "SHA256": "7268cbd2d4d2dae9bbbed3d9eeb55ee2a060b009fa62dbe6e514f8501e914a0f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r2_global.csv",
+   "bytes": 193603,
+   "SHA256": "37ec28572f2c4a3770ad12758470dff6e41e1be29a0990d6c715859d44de542d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r2_quantiles.csv",
+   "bytes": 693430,
+   "SHA256": "43c28f020b74490bdc7360977a75cb95a0082edd73e13a29203ec2c6e67160b4",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r3_complete.json",
+   "bytes": 552,
+   "SHA256": "0c0501c9d3ff9ce583d097986fd665b354611c370895d02890761d4b23225ecf",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r3_curves.npz",
+   "bytes": 7579325,
+   "SHA256": "05b57eb46a943230e8c5fd86b31e8a7080a2c49be552ef594fe835dddcc99363",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r3_global.csv",
+   "bytes": 193534,
+   "SHA256": "68ca5cb3b963d0e320f02057172fa740938781e7a09fb26a1adf55fe70d9406b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/BTMM_K6_r3_quantiles.csv",
+   "bytes": 693455,
+   "SHA256": "f492e8e91d547f1737c929545e1c28af5be0e2e692d9d28a57bd2630bbd4098f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r0_complete.json",
+   "bytes": 592,
+   "SHA256": "2110e00e6dcd9c9fa198d9b15a0584c354ff0741f7836231b532c7c16ac1ac83",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r0_curves.npz",
+   "bytes": 7498911,
+   "SHA256": "c1fc090da08057a89a41fb1bf30f9104bb774b5b75d337fd998678aff81923c9",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r0_global.csv",
+   "bytes": 187627,
+   "SHA256": "b2283c8d10240a15fd1b7801224045ce3ec28bad87f4dd1fee5ab41730241725",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r0_quantiles.csv",
+   "bytes": 647471,
+   "SHA256": "99662cbddcfd99d074c49ab9618f3f387479245601fba1c39711eb4946ce1ec0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r0_saved_outputs.npz",
+   "bytes": 4253510,
+   "SHA256": "1e4528fb2a20669621a537a5193dbdd850e88b01ef64753232a8c946d48302ae",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r1_complete.json",
+   "bytes": 592,
+   "SHA256": "46b18091023fb113f03d36fac01c4471533f4dbe52c96dc16d7e8466e77d260c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r1_curves.npz",
+   "bytes": 7508789,
+   "SHA256": "e2e4a76fdd69b153f9aa929774cda8464a0b8f379c53720bbb17432c10556dee",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r1_global.csv",
+   "bytes": 187610,
+   "SHA256": "febf230c06d5f0e5e76e97e66192acc396d73f9d91d159d9818dfe4b3c0fcfd6",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r1_quantiles.csv",
+   "bytes": 647340,
+   "SHA256": "0affff672f5aee576f1bb59d9bf00c3ca89cbdcab9c9ecc082cf60456e5ce894",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r2_complete.json",
+   "bytes": 592,
+   "SHA256": "922dc721ce408ec4518d2fc015cd6bcf8db91989687a9bd23cf03164cb5ea920",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r2_curves.npz",
+   "bytes": 7502034,
+   "SHA256": "db154b6aaab57fd211e95dd62f5acb4a3bc273bd6abebd7a7b62a8d4b8ef6796",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r2_global.csv",
+   "bytes": 187652,
+   "SHA256": "562b616d37ebed0ed81de66f8c9a941b1fdab5934bc929e2baf4a214961719b2",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r2_quantiles.csv",
+   "bytes": 647433,
+   "SHA256": "99f0a8a27fd596efb8a146afe34ae38c25321f00c1688e1168122d238164c9a0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r3_complete.json",
+   "bytes": 593,
+   "SHA256": "c5bcc1f6bf65ee15f48c37049d61114593bf809179d570482506c79327146dd7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r3_curves.npz",
+   "bytes": 7510274,
+   "SHA256": "73d1a0df5a4c23256e1411dc3140878d319f74af00e52d1c58765d65d271b774",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r3_global.csv",
+   "bytes": 187753,
+   "SHA256": "ca7e4f0c0be322c4f90d0be4636f310f6bad1dec78d1050973be7d4f091db539",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K12_r3_quantiles.csv",
+   "bytes": 647571,
+   "SHA256": "8ed2e64a7818c164fe5508ca5b06bb9835d261403914f83c1a445b2f3b8c0347",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r0_complete.json",
+   "bytes": 456,
+   "SHA256": "ddacca8f15a351ea22fbe5a612da9c2bfc16bed603730c5f65a27634a3244703",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r0_curves.npz",
+   "bytes": 5153827,
+   "SHA256": "4fcd7537c72e9bfbe0e71729ad6718ed4dd1989ec702917233a15453fd0ed243",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r0_global.csv",
+   "bytes": 181867,
+   "SHA256": "88dc511b3107c40f7a7ff7400d672215dda010a49447b3572e5e812e4bc488e0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r0_quantiles.csv",
+   "bytes": 633100,
+   "SHA256": "0c82e30647739908150d6cedb029b9d48fefd22d04d7fbb78bb9ec794c542109",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r0_saved_outputs.npz",
+   "bytes": 4296783,
+   "SHA256": "3edba1236e2c3be8bd76fbf419596262d0de131f513eb7dba1b2f24b190e99a3",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r1_complete.json",
+   "bytes": 455,
+   "SHA256": "c3cd0571914aed689af929010ce5463fae584ddea0798c3f605f9170e9ce4911",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r1_curves.npz",
+   "bytes": 5154196,
+   "SHA256": "64a539732f2c94755f11296a360b5c17a4b4fcdb7fa852330b5de19e3f3e4e82",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r1_global.csv",
+   "bytes": 182077,
+   "SHA256": "7efc54acdd8687135504fae9b28283f3eecd247bb33781cb5e40e776870b84eb",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r1_quantiles.csv",
+   "bytes": 632893,
+   "SHA256": "3d7a3b5996c52b241f4e4a8e18723944295131d5840ea59cba7b144b9da3f924",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r2_complete.json",
+   "bytes": 456,
+   "SHA256": "f0cb4192c347d4f2f9e0ca66167910c82f867c88ea928a064627e6c0edd0a4da",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r2_curves.npz",
+   "bytes": 5154879,
+   "SHA256": "ad5780ed180366f71e49afb8e95a1b1f5e9e5fe138e9cc212313afe624887f58",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r2_global.csv",
+   "bytes": 181962,
+   "SHA256": "e7752a47906bee90482f54873ada014d754e4c4b4589294dd0681d718d7e1d52",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r2_quantiles.csv",
+   "bytes": 633008,
+   "SHA256": "c455a88c740d83a14f7f06bcd5500153cc9cd2992bd23ef1e0885762dcf22f68",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r3_complete.json",
+   "bytes": 456,
+   "SHA256": "1986f79c8db95c3764d891b14f1a93b20c5ed5336c8ab2cfe9c990e0d649fdf3",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r3_curves.npz",
+   "bytes": 5153411,
+   "SHA256": "6d2b5d068c9abc0a03526d4e4ba7ff1b5f6d8cf5833b9071572459bfe593eaa2",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r3_global.csv",
+   "bytes": 181945,
+   "SHA256": "32eb50c72f353e4dbae9acccf86c5db7739af9a9ee8261c1e46d5d8d6cea8e89",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K1_r3_quantiles.csv",
+   "bytes": 633206,
+   "SHA256": "6e18e12e967659caeea08cd9d7fea1297e8e867f293de0eb3b5b6ef3c0ffe230",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r0_complete.json",
+   "bytes": 505,
+   "SHA256": "ccd862364f7a662dfa84ea1ce14bbf0deb0edb5ad315e1e9b7112de56020c6b8",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r0_curves.npz",
+   "bytes": 7431591,
+   "SHA256": "58766070075b894e708647e5f8475bfb90bac6676e2be99d5d2377721ebee5e9",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r0_global.csv",
+   "bytes": 186241,
+   "SHA256": "33c4d5cbfb366bac9a863a19035b2a18e1229572f825900cad93588aeb5fc61e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r0_quantiles.csv",
+   "bytes": 636251,
+   "SHA256": "8ddf8070baf3a48ebb8419cae226527770117f1f2b5180e25d52726091641a9f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r0_saved_outputs.npz",
+   "bytes": 4270444,
+   "SHA256": "2a2d65ce521b60137489c58604a75a77a9ea935897505eea71b946d8ed9574ba",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r1_complete.json",
+   "bytes": 504,
+   "SHA256": "336d578345da2f5b3b56deefe94d0c45345c639ecab6f07abda6f39f7b7fc5d5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r1_curves.npz",
+   "bytes": 7427806,
+   "SHA256": "77957a1fb55a9c136d52222b55179340b97a9b557219ab5125f72a84f0a8d568",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r1_global.csv",
+   "bytes": 186218,
+   "SHA256": "288d8fe54348b5bafc3ed5983f23b1675d59544acb197ba67de4036024bd4c37",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r1_quantiles.csv",
+   "bytes": 636050,
+   "SHA256": "98e6ed025573539f6a13250eb5298ec4afa36cde3e36347290397afcea98a45d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r2_complete.json",
+   "bytes": 505,
+   "SHA256": "be70514bf6ead5cb8b5c43fb21dfab6f17ab237516c2fa802947575cb03392c6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r2_curves.npz",
+   "bytes": 7428309,
+   "SHA256": "1b7b7274bea6e194db21e04919cb796984605783583ba5b0fd204befc786b028",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r2_global.csv",
+   "bytes": 186253,
+   "SHA256": "88c3ff9301ef9127f7d927883497ce32f06bc2a94e91c99abf15323331629b30",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r2_quantiles.csv",
+   "bytes": 636359,
+   "SHA256": "3b8d53674fb847635ef8f104e02376e3a865628682db5dad7044295390edccdd",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r3_complete.json",
+   "bytes": 504,
+   "SHA256": "7bdebe4665388502ace803520ddd64e4c696beca6c53fe9cbb3fd5db51931f38",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r3_curves.npz",
+   "bytes": 7425498,
+   "SHA256": "b5517195dd9a8204240009b30d6f79ac42ddf6dad42d91b364a4a87708dfbc92",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r3_global.csv",
+   "bytes": 186271,
+   "SHA256": "69339e5372612ae03cade8a29700e8c55c46adcdb8037cc1432aa09858e693e1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K3_r3_quantiles.csv",
+   "bytes": 636133,
+   "SHA256": "4cc374d96f70fb5be616d19e67177477f89cbf8b7f2d60762f7ce2cbd254ed88",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r0_complete.json",
+   "bytes": 537,
+   "SHA256": "81a8e2d5aa50484e194a93e4812a349e5c0630431cd1b674ecacdfebe828f958",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r0_curves.npz",
+   "bytes": 7455327,
+   "SHA256": "541cab2a1a115877db8e5129d02a2c1ad15cbcbc3d6b0f4b32c135b24a6cb524",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r0_global.csv",
+   "bytes": 186114,
+   "SHA256": "610994d33d43d4af473a6fb37f7ca9ee0927815e2c3da99eda3a1af8ce6c51bc",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r0_quantiles.csv",
+   "bytes": 636315,
+   "SHA256": "118c1e1f6d9d57c70ca64c4264167df97de966f53dfd774458e882d1b60de413",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r0_saved_outputs.npz",
+   "bytes": 4257620,
+   "SHA256": "ff28342d48b49abdd235a20772d503323ea7aad07fae9b29e08216ddb9868bb0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r1_complete.json",
+   "bytes": 537,
+   "SHA256": "7be6158c62c12a28bd95f542ab19bd523edda350a8f51aea200270e9d23c3fcc",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r1_curves.npz",
+   "bytes": 7451916,
+   "SHA256": "9255d972e90752815f94af3250068b93a3d1a203b98285b4209ef16e0f8ec668",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r1_global.csv",
+   "bytes": 186037,
+   "SHA256": "9f0bad94fd6c6a6b729bc424d3b0827a29a911a65af78e95dfcefce8887e0eee",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r1_quantiles.csv",
+   "bytes": 636308,
+   "SHA256": "571535163334ece9ef4b1bb178817c15457400d55050404206d05a2e4c15aab8",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r2_complete.json",
+   "bytes": 536,
+   "SHA256": "b71d4fee21e91a2bdf7342b4b0407afec66e6fe3d4ff2713365d49cdd64c321d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r2_curves.npz",
+   "bytes": 7455118,
+   "SHA256": "5874320b886e99b55d1e021a5d019f52652de809be05c73af0da1c0f0a429589",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r2_global.csv",
+   "bytes": 186045,
+   "SHA256": "f7a5f940532b9883a61cb488eaa02cd7482c90ba8dc89d8c0efd26fe1e82ea95",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r2_quantiles.csv",
+   "bytes": 636236,
+   "SHA256": "701d8721f15d46d3f2128322af7eba9591c0651d5e680ec4a509b426eac9c555",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r3_complete.json",
+   "bytes": 537,
+   "SHA256": "13dbf4c5d1850a598622e1039a161d2da2e6a057e4d2ccbdcf2290869973d9de",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r3_curves.npz",
+   "bytes": 7457089,
+   "SHA256": "6d826b151cbafd18dd7894077a6e8fa507cbe73a8e73c8bc81242cec4f5129cd",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r3_global.csv",
+   "bytes": 186054,
+   "SHA256": "84256392fd20393da20e950f2f8dfe4b4e59d44236e71db3c2b8b641b6d8d4cb",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/GMM_K6_r3_quantiles.csv",
+   "bytes": 636179,
+   "SHA256": "a66d79a390610fbacfb2207bd76f06380bfd35598daf51d4d684a13ab1e3aa4a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r0_complete.json",
+   "bytes": 605,
+   "SHA256": "64f84c43c7a5d127223392591877a3930aabe7ea1305fd153e53e7ad1882ef1b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r0_curves.npz",
+   "bytes": 7480096,
+   "SHA256": "cb6d5e0c29ff0e815c1c9b92716aaa2f6c2da09eaeb08c9853519ee528184335",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r0_global.csv",
+   "bytes": 193311,
+   "SHA256": "74290e2ee83bb817018d912d0e5eb02cac7fb15cbfba3aa7bd40babd1630a58b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r0_quantiles.csv",
+   "bytes": 691109,
+   "SHA256": "66620536a5cb285e373cba8f33f337b9a24fddea891d6ccf80297f419e4d6be2",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r0_saved_outputs.npz",
+   "bytes": 4252245,
+   "SHA256": "f536488f3df3a4f8d96bfc0c6b7ca70fe745a767c074e871b8f4b7c59a38e3ed",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r1_complete.json",
+   "bytes": 606,
+   "SHA256": "f94b8ed77b39d6f629fc5281212621a94c0a2d5cb56b88fb82ed3b45b4dd2d2c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r1_curves.npz",
+   "bytes": 7480140,
+   "SHA256": "cd66d9d67d66889b913b743be7ea1e9ddf7341ef44159d06b7f06ba48c2630bb",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r1_global.csv",
+   "bytes": 193325,
+   "SHA256": "4f0db90b5bdf1b60d5a57c9e67a0ae5fbceef170096a0aeba8972b145e0c3875",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r1_quantiles.csv",
+   "bytes": 691014,
+   "SHA256": "4f8c158018793f8c86346175aac6d3fdf185f88c1a91089e8a341e13538adfb7",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r2_complete.json",
+   "bytes": 606,
+   "SHA256": "59d5564640b7ed8bd607969545403c1a21ffc35d9fbe1fc43f4136ec3b1dabc6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r2_curves.npz",
+   "bytes": 7486021,
+   "SHA256": "d5b609e4d12274fb8518e7f679067cc87b0fdd3d462fd4a1749b9e983ee4df9d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r2_global.csv",
+   "bytes": 193343,
+   "SHA256": "7a218cd1737b9c8043ff1f1ccf33dda43abf16df52d28fdbf8f97fd37dee97c1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r2_quantiles.csv",
+   "bytes": 691164,
+   "SHA256": "415d948ceaa633f8aa8551ab410a4bc4571a2ebe64270b6043b56c1e4bbda232",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r3_complete.json",
+   "bytes": 606,
+   "SHA256": "ffd25f481a68f110d6aa4fde60bbbdaba4c3444b97d80ee3dede47771b12bb7d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r3_curves.npz",
+   "bytes": 7476553,
+   "SHA256": "eca9cf90050028cb22437b9f8982c7d3583a5363d070fc7ff13624da8c752257",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r3_global.csv",
+   "bytes": 193346,
+   "SHA256": "726b787751760307db242e7ed51ef2195985aaee582c7f02b2ce91c25e5216dd",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K12_r3_quantiles.csv",
+   "bytes": 691211,
+   "SHA256": "2755f6483f8577414803e417c275b95f136dd4320e2976e8a7aceff96df44cd2",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r0_complete.json",
+   "bytes": 471,
+   "SHA256": "319e11e5a54a81078a3d2dd4a0694f21e38f942434256b1354e44235899a15d6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r0_curves.npz",
+   "bytes": 5147205,
+   "SHA256": "51f1943fd5060c6b9c4d0568e3f1ae2526321c87114d5e87c7e7d1b356e60ba3",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r0_global.csv",
+   "bytes": 187207,
+   "SHA256": "3924ba0591a522cc79af40133fe37c324fd19a3d9c54d226fd9f5bb01c9b864b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r0_quantiles.csv",
+   "bytes": 676214,
+   "SHA256": "bb7025703e8ad1342484a798cd4fd07201845a5d5ce1a67a44ff92d1ce651b82",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r0_saved_outputs.npz",
+   "bytes": 4293401,
+   "SHA256": "b12a8b0b4b413e84013f7b32d0c16442521fde71050dffc03006aaf1870d2999",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r1_complete.json",
+   "bytes": 470,
+   "SHA256": "650c97e2317b3175cdd49a31cdaed0172b190ee20bb0ee8f8a23633330dc2308",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r1_curves.npz",
+   "bytes": 5149121,
+   "SHA256": "610620ee32520a098e0799a70dec1660f171092a922cc85717db34d5b9ca881e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r1_global.csv",
+   "bytes": 187088,
+   "SHA256": "53d316a905f5831e119ef4d8ff1cf3f9cd4387371985ff59859190931b4c5191",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r1_quantiles.csv",
+   "bytes": 676166,
+   "SHA256": "4acaed1eeb6975338313ae9457d72502e64520d9ba56bdda65ab4e65b14bac69",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r2_complete.json",
+   "bytes": 471,
+   "SHA256": "8fc3d3a22ecf80450200edd982f76b8c2c5624032f9edc76316f1d0a1d6382f7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r2_curves.npz",
+   "bytes": 5147128,
+   "SHA256": "7f42234c7131566ad39acf8ee37ba55b8b1e68283c9f47fd015fb020b2c681aa",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r2_global.csv",
+   "bytes": 187104,
+   "SHA256": "cc6b9ca88411bbc48890bf6c07fb7d54b8756f770af3e1a0791a56998f5b9c3e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r2_quantiles.csv",
+   "bytes": 676200,
+   "SHA256": "73d8932400e15d5e607788280d280c7b8508c133652200867c9aa54ea8b4d222",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r3_complete.json",
+   "bytes": 469,
+   "SHA256": "15c7e3a29db9f1f16cf7925e927ad623e529875954d2f720d39b96f3a827117c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r3_curves.npz",
+   "bytes": 5148297,
+   "SHA256": "48716cb09b71ee430ac54c06e8d66c78767e5ebc6296ad974a97640a57ca6576",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r3_global.csv",
+   "bytes": 187220,
+   "SHA256": "3c1636d73725fbb813615ea64402521dccf39dbf4d412835b95ecc8758d1df40",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K1_r3_quantiles.csv",
+   "bytes": 676300,
+   "SHA256": "9e9330ee24d995d9abfa008b9e57fa00cba790f75a16d6743eeb4ac6f3749685",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r0_complete.json",
+   "bytes": 516,
+   "SHA256": "4ddc725e4f8f99d1e7071123fef56a776c53da8768504cbd5d238b70acdba79f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r0_curves.npz",
+   "bytes": 7436417,
+   "SHA256": "664de3076c26df94e827623a0a880828b5e0f16cb586301630adb09cd65e4e83",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r0_global.csv",
+   "bytes": 192541,
+   "SHA256": "9a6d469f401921373a8257ff0aac94f38ec97135ae630b68ae1af1a8a483072b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r0_quantiles.csv",
+   "bytes": 683022,
+   "SHA256": "df617734ec05a97c3f8a25e4da235f3264cc4271ae94b1a77b391100c8fe1ded",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r0_saved_outputs.npz",
+   "bytes": 4269637,
+   "SHA256": "900bf7edbd18a5d5ece6dbeab0d0993f986262ad1c1695c6f727fb4b3121de61",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r1_complete.json",
+   "bytes": 517,
+   "SHA256": "d239efeb1bfc82d8138c0e0cccad20fb70f5a4bca6e1e011c9f91857566236f5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r1_curves.npz",
+   "bytes": 7435701,
+   "SHA256": "9a5d8e439e2abacb451615d695494e081d1711ddb1073acde8e427bb69d68711",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r1_global.csv",
+   "bytes": 192499,
+   "SHA256": "dccc004716a193994fc67abc884baadd345ef350b8d53ed52c7723549bd64e5a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r1_quantiles.csv",
+   "bytes": 683161,
+   "SHA256": "48f399e24a93139cdd630fef7d910ed3f3e039192c1f95b8b7f61aa7662ab027",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r2_complete.json",
+   "bytes": 517,
+   "SHA256": "69cc0bf02e7a913617f4cc5fd1494ca1df05e8d5b469c3345308b156a330095d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r2_curves.npz",
+   "bytes": 7437978,
+   "SHA256": "3440616c243d2bd517f658e04888d362a14559d466898a5aa2584c517f8379a4",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r2_global.csv",
+   "bytes": 192445,
+   "SHA256": "1e966fc6e1c3e74ae2c2502bc044a3bd83340d844b85afc9aa835ce698843387",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r2_quantiles.csv",
+   "bytes": 683037,
+   "SHA256": "a54b0ff1b78a63ee111410082c46f182907ea62b055ef7e0c3904c9088aea595",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r3_complete.json",
+   "bytes": 516,
+   "SHA256": "fa98c9c0dbe54df49d51c4a6206b9c36de94cd85cb1cb532374af8e65d8b5d13",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r3_curves.npz",
+   "bytes": 7435091,
+   "SHA256": "b40714211db8369a5481f8dc9fe2ab5e47bbfa8a3752ee7839f0bc4a0bc3267c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r3_global.csv",
+   "bytes": 192443,
+   "SHA256": "c9fde98937e93ec63fae5b86a0dbad87ab4a08eb6ea227ca4b012d8c55e1f7ea",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K3_r3_quantiles.csv",
+   "bytes": 683152,
+   "SHA256": "200917a8433f237ee9ff34024f0f18e635cce59087fc54ddfb83dbbc6560d253",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r0_complete.json",
+   "bytes": 551,
+   "SHA256": "8d991dcd559290d9905ce940d8a4a4ff0490b74c62922ecb61b20a25320b6466",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r0_curves.npz",
+   "bytes": 7457203,
+   "SHA256": "8215b550e2bb76f477b9be724f5fc09ab1a8bddad54ab4d92489a143a87274e8",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r0_global.csv",
+   "bytes": 191866,
+   "SHA256": "29b18010f498ad32a80cfeb3fa3ced1d82d880df0f2fad6b594c6778981d46a1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r0_quantiles.csv",
+   "bytes": 680050,
+   "SHA256": "8a81528f52efe1691accf493ef4cbb13537f4e284743455a66f43417fea42a31",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r0_saved_outputs.npz",
+   "bytes": 4256680,
+   "SHA256": "d3d91f05ef3c5146afc80d4badbb2718054dea679774c9fab1f2f3eca0d03a24",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r1_complete.json",
+   "bytes": 551,
+   "SHA256": "63ac23cb241db5ab85f6d77f887dad1a34a2d1738e20ebd3f49369d7f29d1cd0",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r1_curves.npz",
+   "bytes": 7462223,
+   "SHA256": "42d1eac336c4f243cd3d339ab4c7b5ae75f21be0119d331b59b8e9ce98813005",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r1_global.csv",
+   "bytes": 191887,
+   "SHA256": "6e58dc3be197c35b6a16e364090d07b0679471d5139d5b366f38f9cbafffcf17",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r1_quantiles.csv",
+   "bytes": 680113,
+   "SHA256": "093baefd7e2fc70c2676871294372cd61de67813a75bf8944532a44638534f6a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r2_complete.json",
+   "bytes": 551,
+   "SHA256": "ea77b679cdc72bd7f1c7bf9a93ddfe42723a7922667986553df9fe23184b6bc8",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r2_curves.npz",
+   "bytes": 7454306,
+   "SHA256": "653f3db5ba1f6c430fa28f011be1b46a9e9a228d229d131cee3bd0e3336816d1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r2_global.csv",
+   "bytes": 191967,
+   "SHA256": "4d3ef63099f847242aaeb39dd673192df19a69c2c405afe3ac9d71ec3fff8095",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r2_quantiles.csv",
+   "bytes": 680146,
+   "SHA256": "d735fc8ac663b8f1e90f799a654886b46bf73cdcd7c1d98a4ec342332d60e0b7",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r3_complete.json",
+   "bytes": 551,
+   "SHA256": "b46ba4c11e9ce3c70ed8ab9ac7263588a404a4e072e75a535c1355d947ace895",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r3_curves.npz",
+   "bytes": 7454845,
+   "SHA256": "f8c562bb1e99ce7e3c4f5a7cb40cf3c14bf4a1716a61b1a5a2536e1e33518d75",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r3_global.csv",
+   "bytes": 191984,
+   "SHA256": "b2c32bbcf5077e538e735560983101f5ab8fe64b5c41a7777a558c918e0677e8",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/propagation/TMM_K6_r3_quantiles.csv",
+   "bytes": 680066,
+   "SHA256": "d599fc79755235b774f75c2d99ca27898bb865c01ed179eac880203746d57dfb",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/reference_AC.npz",
+   "bytes": 137902295,
+   "SHA256": "350cfe01d4ff91172cb8b59ba1f794782c3e46660b2335d2db7e0d00fcc9a5ce",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/reference_AC_failures.json",
+   "bytes": 2,
+   "SHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/reference_AC_summary.json",
+   "bytes": 509,
+   "SHA256": "3336378f977fa17668861cde3b80dd4c6729626ca7ad0ca8fcd620c63dcbd20f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/reference_checkpoint_retired.json",
+   "bytes": 339,
+   "SHA256": "fc8fd11e58766a1fb2e4d3f7e4c878aff8cc10a8d13e7b1efef966149aac8f48",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/reference_distribution_data.npz",
+   "bytes": 835475,
+   "SHA256": "4fc67b2f624b86f9390e7682644906f3cafd577e1bbf9be55f511d2783a06f52",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/reference_input_manifest.json",
+   "bytes": 1391,
+   "SHA256": "ec174a672201046f56229034aa3f770ba6b2b9123793afc275d9796acbc22fcc",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/reference_inputs.npz",
+   "bytes": 87582443,
+   "SHA256": "571dd9a3c2cedc3a799ae9a6cae8135e08367fdbe5bd683b85aff3619995fdd3",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/reference_outputs.npz",
+   "bytes": 103606281,
+   "SHA256": "a851ec45c9b89fc54029082df656fd12facc26b3f15728e80fd449bfc1cd6e49",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/selected_models.csv",
+   "bytes": 3017,
+   "SHA256": "5227a60019886a0b05f0df5084cb67fd56a87ea6ba43d1433cea36866a8815a0",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/selected_models_block.csv",
+   "bytes": 1661,
+   "SHA256": "79c283c8d57b4f1d12dd461141e3f04e0d7d57640fd5bc89e1a2ff24fa2b3a0e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/strength_diagnostics.json",
+   "bytes": 1623,
+   "SHA256": "edc18eb55864157439939870aef7ebb585f619a4750481bfb1bc1e4aab21c6c2",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/strength_group_summary.csv",
+   "bytes": 1360,
+   "SHA256": "5b363099c1993584a1528f32f3bf16197905652d8b95a2cc31409d632f35278b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/target_rules.txt",
+   "bytes": 510,
+   "SHA256": "177b09c7492d6b95897953a0fb0b4b4563364904a2058f7ce6817167578e4315",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/targets.csv",
+   "bytes": 809,
+   "SHA256": "f94df2e33c83a4f218df769c60fd071a916ba16b5044b5e7d05c2fd45ace1490",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/training_AC.npz",
+   "bytes": 34476634,
+   "SHA256": "686438df3bcc18fb2957f65a662a008c76d723d5a3866243ce93c80628e3e14f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/training_AC_failures.json",
+   "bytes": 2,
+   "SHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/training_AC_summary.json",
+   "bytes": 504,
+   "SHA256": "4bc61b9aa16660f114033be4f887e8fb8198a7aa5c1c5594761ebf76395a98bb",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/training_checkpoint_retired.json",
+   "bytes": 337,
+   "SHA256": "3d942d3305f90bdccc2906a3e33968762dcfec7a93a1f04cac7b6223d6b33092",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/training_input_manifest.json",
+   "bytes": 1390,
+   "SHA256": "01fb7ce192a337dd0850e5889886953b1e7b7b1c6610232bac620411651c7160",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/training_inputs.npz",
+   "bytes": 21918787,
+   "SHA256": "57d05e879e17484f70ccfd5b430e5f82ee41e84317701293f8363fed59ed53e2",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/validation_AC.npz",
+   "bytes": 17239739,
+   "SHA256": "0c8cfd9619d4c0c044c2e2a598baacec063439a38c5f177ae3bb374cf87dbd8c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/validation_AC_failures.json",
+   "bytes": 2,
+   "SHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/validation_AC_summary.json",
+   "bytes": 507,
+   "SHA256": "7f160f8e8e60273e5419d39be6fc903268739179047eaec362db84e9bc7eb671",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/validation_checkpoint_retired.json",
+   "bytes": 339,
+   "SHA256": "c492c3e8b089c14e8d619c05a36c4df73348ccc88f6f882889f175b7aa3d28e1",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/validation_input_manifest.json",
+   "bytes": 1376,
+   "SHA256": "59b1d4e1ff846572074de1bb0f97f455d7cb835954e4fa45e75a8d7753061045",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/validation_inputs.npz",
+   "bytes": 10968345,
+   "SHA256": "bfb31e83d1ea3441c33f391b783c91b9376d26f54501bd0d243059c3dac1a44e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_strong_weather/strong_weather/voltage_covariance_spectrum.json",
+   "bytes": 13515,
+   "SHA256": "ad719eaeaace1607bbe2141b553ae11a5c732ec3752a927b97e004f5072a5793",
+   "kept_out_of_git": false
+  }
+ ],
+ "note": "Main run (ac_only, fit, block_fit, reference_ac, reference, block and analytic for K = 1, 3, 6) used tests/python/run_pv_fixed_forecast.py of commit 5af3a95 (SHA256 a12218d8..., recorded in protocol.json). The K = 12 supplement (logs *withK12*), the diagnostic figures and this manifest used commit 7210e3f; that change only writes the K = 12 judgment to *_withK12 files and restricts the GMM/TMM summary to GMM_/TMM_ files. Per-repeat tables under propagation/, global_metrics.csv, quantile_metrics.csv and all .npz arrays are kept out of Git; their SHA256 are listed here. Program check (1500/600/1000 scenarios, K = 1, 3) ran in /tmp and was deleted."
+}

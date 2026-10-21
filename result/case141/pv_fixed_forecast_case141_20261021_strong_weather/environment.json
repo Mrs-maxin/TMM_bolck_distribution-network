@@ -1,0 +1,38 @@
+{
+  "location": "OpenAI hosted conversation workspace shell",
+  "platform": "Linux-6.12.94+-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "hostname": "cursor",
+  "cwd": "/home/ubuntu/tmmblock",
+  "cpu_count": 4,
+  "matlab_on_path": null,
+  "octave_on_path": null,
+  "blas": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/ubuntu/.local/lib/python3.12/site-packages/scipy.libs/libscipy_openblas-5f890258.so",
+      "version": "0.3.31.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/home/ubuntu/.local/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "user_mac_used": false,
+  "github_actions_used": false,
+  "cloud_provider_physical_ownership": "not independently observable from shell",
+  "timestamp_utc": "2026-10-21T16:17:10Z"
+}

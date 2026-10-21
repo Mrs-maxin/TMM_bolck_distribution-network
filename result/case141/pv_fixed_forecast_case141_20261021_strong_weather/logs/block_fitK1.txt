@@ -1,0 +1,8 @@
+COMMAND python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene strong_weather --K 1
+START 2026-10-21T16:19:49Z
+{"UTC": "2026-10-21T16:19:51Z", "PID": 4288, "stage": "block_subspace", "elapsed_seconds": 0.9530485309999221, "scene": "strong_weather", "rank": 8, "u_kurtosis": [3.29, 2.79, 3.97, 3.33, 3.19, 2.39, 2.21, 2.16]}
+{"UTC": "2026-10-21T16:19:52Z", "PID": 4288, "stage": "fitting", "elapsed_seconds": 1.298221730000023, "scene": "strong_weather", "K": 1, "family": "BTMM", "partition": 1, "initial_df": 12}
+{"UTC": "2026-10-21T16:19:53Z", "PID": 4288, "stage": "fitting", "elapsed_seconds": 2.1117506549999234, "scene": "strong_weather", "K": 1, "family": "BTMM", "partition": 1, "initial_df": 200}
+{"UTC": "2026-10-21T16:19:54Z", "PID": 4288, "stage": "selected", "elapsed_seconds": 3.5058183310000004, "scene": "strong_weather", "K": 1, "family": "BTMM", "candidate": "K1_p01_gmm_warm_df12_BLOCK", "df": "[4.1]"}
+{"UTC": "2026-10-21T16:19:54Z", "PID": 4288, "stage": "BLOCK_FIT_COMPLETE", "elapsed_seconds": 3.5060925049999696, "scene": "strong_weather", "K": 1}
+END 2026-10-21T16:19:54Z EXIT 0 SECONDS 5

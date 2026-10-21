@@ -250,8 +250,13 @@ def apply_mode(smoke, with_k12=False):
         CONFIG.update({k: v for k, v in SMOKE.items()})
         CONFIG['splits'] = SMOKE_SPLITS.get(CASE, CONFIG['splits'])
     SPLITS, KS, N = CONFIG['splits'], CONFIG['K_order'], CONFIG['propagation_points']
+    global JUDGE_SUFFIX
+    JUDGE_SUFFIX = '_withK12' if with_k12 else ''
+    # Block TMM files share the propagation folder; the GMM/TMM summary reads GMM_* and TMM_* only.
     archived_functions(SOURCE/'adapted_routines.py', {'fits', 'evaluate', 'summarize'}, globals(),
-                       replace={'evaluate': [('2026101928', str(CONFIG['propagation_seed_base']))]})
+                       replace={'evaluate': [('2026101928', str(CONFIG['propagation_seed_base']))],
+                                'summarize': [("O.glob('*/propagation/*_global.csv')", "O.glob('*/propagation/[GT]*_global.csv')"),
+                                              ("O.glob('*/propagation/*_quantiles.csv')", "O.glob('*/propagation/[GT]*_quantiles.csv')")]})
 
 
 def load_multiplier(scene):
@@ -726,7 +731,7 @@ def phase_reference(scene, only_k=None):
     for k in ([only_k] if only_k else KS):
         evaluate(scene, k)
     if not only_k:
-        summarize(); judge(scene, targets)
+        summarize(); judge(scene, targets, prefix='effectiveness'+JUDGE_SUFFIX)
 
 
 # Block TMM (plan section 12): PV-driven voltage directions u share one random strength
@@ -938,7 +943,7 @@ def phase_block(scene, only_k=None):
     gb.to_csv(O/'block_global_repeat_summary.csv', index=False); qb.to_csv(O/'block_quantile_repeat_summary.csv', index=False)
     gs = pd.concat([pd.read_csv(O/'global_repeat_summary.csv'), gb], ignore_index=True)
     qs = pd.concat([pd.read_csv(O/'quantile_repeat_summary.csv'), qb], ignore_index=True)
-    judge(scene, targets, challenger=BLOCK_FAMILY, gs=gs, qs=qs, prefix='block_effectiveness')
+    judge(scene, targets, challenger=BLOCK_FAMILY, gs=gs, qs=qs, prefix='block_effectiveness'+JUDGE_SUFFIX)
 
 
 def main():

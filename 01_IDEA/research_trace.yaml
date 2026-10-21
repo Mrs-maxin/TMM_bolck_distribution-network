@@ -1,0 +1,134 @@
+# Lightweight research trace for route evolution.
+# This file is a compact map of decisions, experiments, archived routes, and open questions that affect the paper line.
+
+schema_version: research_template_lite_trace_v1
+
+guide:
+  purpose: "记录研究路线如何从初始问题演化到当前主线，并保留有价值的分支和归档路径。"
+  provenance_values:
+    - user
+    - ai-suggested
+    - ai-executed
+    - user-revised
+  provenance_rule: "ai-executed 仅用于已经实际执行并登记结果或 run manifest 的节点；未执行、open 或仍含占位字段的模板节点使用 ai-suggested 或 user。"
+  node_types:
+    - question
+    - decision
+    - experiment
+    - fork_exploration
+    - retained_idea
+    - archived_route
+    - open_question
+  fork_exploration_required_fields:
+    - base_node
+    - hypothesis
+    - git_branch
+    - changed_files
+    - input_difference
+    - compared_with
+    - result_directory
+    - run_manifest
+    - observed_difference
+    - decision
+
+tree:
+  - id: N01
+    type: question
+    title: "待填：核心科学问题"
+    provenance: user
+    status: open
+    description: "在什么工程场景下，现有方法存在关键不足，而本文方法可以给出更可靠、更可解释或更高效的结果？"
+    affects:
+      claims:
+        - C1
+      files:
+        - "01_IDEA/story.md"
+        - "01_IDEA/claims.md"
+    children:
+      - id: N02
+        type: decision
+        title: "待填：选择最小可验证问题"
+        provenance: user
+        status: open
+        choice: "先聚焦到一个能由 case33bw / case141 支撑的研究问题。"
+        alternatives:
+          - "直接写成完整大框架"
+          - "先按目标工程对象和证据路线做工程实现"
+        evidence: []
+        lesson: "待填：该选择如何帮助论文结论获得证据支撑。"
+      - id: N03
+        type: experiment
+        title: "待填：case33bw 主算例"
+        provenance: ai-suggested
+        status: open
+        verifies:
+          - C1
+        evidence:
+          - E01
+        result: "待填：运行后登记关键结果和原始输出路径。"
+      - id: N04
+        type: experiment
+        title: "待填：case141 扩展算例"
+        provenance: ai-suggested
+        status: open
+        verifies:
+          - C2
+        evidence:
+          - E02
+        result: "待填：运行后登记扩展性、规模和关键指标。"
+      - id: N08
+        type: fork_exploration
+        title: "待填：分叉探索路线"
+        provenance: ai-suggested
+        status: open
+        base_node: N02
+        hypothesis: "待填：该分叉想验证的建模、求解、参数或对比路线假设。"
+        trigger: "待填：该分叉要验证的新增对象、场景或指标，以及需要单独记录的证据路线。"
+        git_branch: "【Git 信息待补充】"
+        compared_with:
+          node: N02
+          branch: "【Git 信息待补充】"
+          run_manifest: "result/<case>/run_manifest.json"
+        changed_files:
+          - "待填：关键代码、配置、数据或文档文件"
+        input_difference: "待填：相对主线改变了哪些数据、参数、随机种子、solver 或实验条件。"
+        expected_signal: "待填：若假设成立，应在哪些指标、图或物理现象中出现差异。"
+        result_directory: "result/<case>/"
+        run_manifest: "result/<case>/run_manifest.json"
+        observed_difference: "待填：与主线相比的实际差异，需引用结果文件、图表或 manifest。"
+        decision: "待判断：merge_to_main / retain_as_alternative / archive / rerun_required"
+        retained_lesson: "待填：无论是否合并，该分叉对当前研究路线留下的启示。"
+        next_action: "待填：合并、补实验、归档或继续比较。"
+      - id: N05
+        type: retained_idea
+        title: "待填：从早期方案保留下来的思路"
+        provenance: user-revised
+        status: open
+        original_context: "待填：该思路最初来自哪个问题或方案。"
+        retained_reason: "待填：它为什么仍然服务于当前主线。"
+        related_files: []
+      - id: N06
+        type: archived_route
+        title: "待填：已归档的方案"
+        provenance: user-revised
+        status: archived
+        original_hypothesis: "待填：原先认为可行的建模、求解、近似或对比路线。"
+        attempt: "待填：尝试方式、分支、commit 或结果目录。"
+        observed_issue: "待填：推导、实现或实验中暴露的问题。"
+        archived_reason: "待填：暂时不进入当前主线的原因。"
+        retained_lesson: "待填：该路线留下的启示。"
+      - id: N07
+        type: open_question
+        title: "待填：尚未验证的问题"
+        provenance: user
+        status: open
+        question: "待填：需要通过推导、代码或实验继续确认的问题。"
+        next_step: "待填：下一步行动。"
+
+repository_setup_20261021:
+  source_project: wuhanichina/AQPPF_TMM
+  reason: user_requested_new_repository_for_block_TMM_and_cloud_141_bus_study
+  template: wuhanichina/project-template-lite
+  prefix: BTMM
+  current_workflow: tests/python_validation_code_MATLAB_port_pending
+  next: [case141_cloud_study_plan_section_16, two_cloud_region_multi_block_TMM_section_15C]

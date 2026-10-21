@@ -1,0 +1,14 @@
+{
+  "scene": "common_strength",
+  "targets": 6,
+  "targets_passed": 0,
+  "other_comparable_fraction_by_K": {
+    "1": 0.8777777777777778,
+    "3": 0.9666666666666667,
+    "5": 1.0,
+    "6": 1.0,
+    "12": 1.0
+  },
+  "other_objects_over_1p5_KS": 3,
+  "criteria": "plan section 8.1, fixed before model errors"
+}

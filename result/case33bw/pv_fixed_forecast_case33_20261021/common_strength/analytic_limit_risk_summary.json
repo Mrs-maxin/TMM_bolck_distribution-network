@@ -1,0 +1,6 @@
+{
+ "quadratic_reconstruction_max_error": 2.1049828546892968e-13,
+ "strength_nodes": 40,
+ "max_abs_difference_analytic_vs_numerical": 0.0010669065363457658,
+ "max_tail_cf": 2.2187245401314192e-29
+}

@@ -15,10 +15,14 @@ from numpy.polynomial.legendre import leggauss
 REPO = Path(__file__).resolve().parents[2]
 spec = importlib.util.spec_from_file_location('run', REPO/'tests/python/run_pv_fixed_forecast_case33.py')
 run = importlib.util.module_from_spec(spec); sys.dont_write_bytecode = True; spec.loader.exec_module(run)
-O = REPO/'result/case33bw/pv_fixed_forecast_case33_20261021'; SCENE = 'common_strength'; D = O/SCENE
+import os
+O = Path(os.environ.get('PV_RISK_DIR', REPO/'result/case33bw/pv_fixed_forecast_case33_20261021'))
+SCENE = os.environ.get('PV_RISK_SCENE', 'common_strength'); D = O/SCENE
 KS = [1, 3, 6, 12]; STRENGTH_NODES = 40
 fit = np.load(D/'fitting_inputs.npz'); center, T = fit['center'], fit['basis']*fit['scale']
-selected = pd.concat([pd.read_csv(D/'selected_models.csv'), pd.read_csv(D/'selected_models_block.csv')], ignore_index=True)
+selected = pd.concat([pd.read_csv(D/f) for f in ['selected_models.csv', 'selected_models_block.csv', 'selected_models_multiblock.csv']
+                      if (D/f).exists()], ignore_index=True)
+STRENGTH_NODES_2D = 16
 
 # Quantity j: 0..31 squared voltage magnitude of buses 2..33; 32..63 sending-end P of branches 1..32 (MW);
 # 64 total active power loss (MW).
@@ -62,6 +66,8 @@ def strength_nodes(nu):
 def component_terms(model, family, q):
     """Weighted (m0, lambda, beta) of every component-strength node for quantity q."""
     terms = []
+    if family == 'MBTMM':
+        return multiblock_terms(model, q)
     for k, pi in enumerate(model['weights']):
         if family == 'BTMM':
             Q1, Q2 = model['Q1'], model['Q2']; m, a, G = model['means'][k], model['intercept'][k], model['coefficient'][k]
@@ -76,6 +82,34 @@ def component_terms(model, family, q):
             lam, U = np.linalg.eigh(L.T@At[q]@L); beta = U.T@(L.T@lin)
             terms.append((pi*w, m0, lam, beta))
     return terms
+
+
+def multiblock_terms(model, q):
+    """Two independent strengths: tensor generalized Gauss-Laguerre over (s1, s2), derivation.md (B19)."""
+    terms = []; Q = np.c_[model['Q1'], model['Q2'], model['Qw']]
+    for k, pi in enumerate(model['weights']):
+        S1, S2, F, G, Om = model['scatter1'][k], model['scatter2'][k], model['coupling'][k], model['coefficient'][k], model['residual'][k]
+        mu1 = model['means1'][k]; mu2 = model['means2'][k]+F@mu1; muu = np.r_[mu1, mu2]
+        mu = Q@np.r_[muu, model['intercept'][k]+G@muu]
+        lin = 2*At[q]@mu+bt[q]; m0 = mu@At[q]@mu+bt[q]@mu+ct[q]
+        n1, w1 = strength_nodes_n(model['df1'][k], STRENGTH_NODES_2D); n2, w2 = strength_nodes_n(model['df2'][k], STRENGTH_NODES_2D)
+        for s1, a1 in zip(n1, w1):
+            for s2, a2 in zip(n2, w2):
+                C11 = s1*S1; C21 = s1*F@S1; C22 = s1*F@S1@F.T+s2*S2
+                Cuu = np.block([[C11, C21.T], [C21, C22]]); Cwu = G@Cuu
+                cov = Q@np.block([[Cuu, Cwu.T], [Cwu, G@Cuu@G.T+Om]])@Q.T
+                vals, vecs = np.linalg.eigh(cov); L = vecs*np.sqrt(np.clip(vals, 0, None))
+                lam, U = np.linalg.eigh(L.T@At[q]@L); terms.append((pi*a1*a2, m0, lam, U.T@(L.T@lin)))
+    return terms
+
+
+def strength_nodes_n(nu, count):
+    global STRENGTH_NODES
+    saved = STRENGTH_NODES; STRENGTH_NODES = count
+    try:
+        return strength_nodes(nu)
+    finally:
+        STRENGTH_NODES = saved
 
 
 def cdf_at(terms, thresholds):

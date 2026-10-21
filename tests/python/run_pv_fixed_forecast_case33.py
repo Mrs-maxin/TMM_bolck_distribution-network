@@ -10,6 +10,7 @@ Phases (run in order; each checks the files locked by the previous one):
   fit        joint 64-D voltage GMM/TMM candidates and validation-likelihood selection
   reference  reference AC, propagation, all-object errors and the section 8.1 judgment
   block      block TMM of plan section 12 on the same inputs, targets and reference
+  multiblock two-block TMM for two independent cloud areas (plan section 15 C)
 """
 import os
 for key in ['OPENBLAS_NUM_THREADS', 'OMP_NUM_THREADS', 'MKL_NUM_THREADS']:
@@ -53,7 +54,8 @@ CONFIG = dict(
     clear_sky_fraction=(.85-.025*(12.375-12.5)**2)*(1-.0037*(28-25)),
     error_rms_fraction=0.10,
     strength_log_sd={'common_strength': 0.383, 'gaussian_control': 0.0, 'strong_weather': 0.489,
-                     'strong_weather_nominal_load': 0.489},
+                     'strong_weather_nominal_load': 0.489, 'two_cloud_regions': 0.383},
+    cloud_regions={'two_cloud_regions': [[18, 17, 16, 15, 14, 13], [33, 22]]},
     scene_load_multiplier={'strong_weather_nominal_load': 1.0},
     scene_stop_resample_fraction={'strong_weather': 0.01, 'strong_weather_nominal_load': 0.01},
     wvm_A_mps=4.0,
@@ -84,7 +86,7 @@ CONFIG = dict(
     comparable_factor=1.2,
     listed_factor=1.5,
 )
-SCENES = ['common_strength', 'gaussian_control', 'strong_weather', 'strong_weather_nominal_load']
+SCENES = ['common_strength', 'gaussian_control', 'strong_weather', 'strong_weather_nominal_load', 'two_cloud_regions']
 SMOKE = dict(splits={'training': 600, 'validation': 300, 'reference': 600},
              K_order=[1, 3], propagation_points=4096, sameK_set=[1, 3], sameK_required=1,
              stop_resample_fraction=1.0, stop_above_clear_sky_fraction=1.0)
@@ -168,17 +170,26 @@ def load_multiplier(scene):
     return CONFIG['scene_load_multiplier'].get(scene, CONFIG['load_multiplier'])
 
 
-def site_correlation():
+def site_region_index(scene):
+    groups = CONFIG['cloud_regions'].get(scene)
+    if groups is None:
+        return np.zeros(len(SITES), int)
+    return np.array([next(g for g, members in enumerate(groups) if b in members) for b in SITES])
+
+
+def site_correlation(scene=None):
     xy = np.array([CONFIG['site_xy_km'][str(b)] for b in SITES])
     distance_m = 1000*np.linalg.norm(xy[:, None]-xy[None], axis=2)
-    return np.exp(-distance_m/(CONFIG['wvm_A_mps']*CONFIG['timescale_s']))
+    corr = np.exp(-distance_m/(CONFIG['wvm_A_mps']*CONFIG['timescale_s']))
+    region = site_region_index(scene)
+    return np.where(region[:, None] == region[None], corr, 0.)
 
 
 def save_protocol(scene):
     path = O/'protocol.json'
     record = dict(CONFIG, scene=scene, plan_SHA256=sha(PLAN), script_SHA256=sha(Path(__file__)),
                   archived_source_SHA256={p.name: sha(p) for p in sorted(SOURCE.glob('*.py'))},
-                  feature_source_SHA256=sha(FEATURE_SOURCE), site_correlation=site_correlation(),
+                  feature_source_SHA256=sha(FEATURE_SOURCE), site_correlation=site_correlation(scene),
                   identity='synthetic engineering inputs constrained by literature statistics; zero measured events')
     if path.exists():
         old = json.loads(path.read_text())
@@ -201,17 +212,19 @@ def generate(scene, split):
     n = SPLITS[split]; seed = CONFIG['seeds'][split]
     rng = np.random.Generator(np.random.MT19937(seed))
     sigma = CONFIG['strength_log_sd'][scene]
-    lower = np.linalg.cholesky(site_correlation())
+    lower = np.linalg.cholesky(site_correlation(scene)); region = site_region_index(scene); groups = region.max()+1
     forecast, rms = CONFIG['forecast_fraction'], CONFIG['error_rms_fraction']
     kept_s, kept_p, rejected_s = [], [], []
     while sum(len(a) for a in kept_s) < n:
         m = n-sum(len(a) for a in kept_s)+64
-        strength = np.exp(rng.normal(-sigma**2, sigma, m)) if sigma > 0 else np.ones(m)
+        strength = np.exp(rng.normal(-sigma**2, sigma, (m, groups))) if sigma > 0 else np.ones((m, groups))
         z = rng.standard_normal((m, len(SITES)))
-        p = forecast+rms*strength[:, None]*(z@lower.T)
+        p = forecast+rms*strength[:, region]*(z@lower.T)
         valid = np.all((p >= 0) & (p <= 1), axis=1)
         kept_s.append(strength[valid]); kept_p.append(p[valid]); rejected_s.append(strength[~valid])
     strength = np.concatenate(kept_s)[:n]; pv_pu = np.concatenate(kept_p)[:n]
+    if groups == 1:
+        strength = strength[:, 0]
     rejected = np.concatenate(rejected_s)
     load_rng = np.random.Generator(np.random.MT19937(seed+CONFIG['load_stream_offset']))
     rho_g, rho_a, rho_n = CONFIG['load_PQ_correlation']
@@ -236,7 +249,7 @@ def generate(scene, split):
     above_clear = float(np.mean(np.any(pv_pu > CONFIG['clear_sky_fraction'], axis=1)))
     manifest = dict(scene=scene, split=split, events=n, seed=seed, measured_events=0,
         resampled_events=len(rejected), resample_fraction=resample_fraction,
-        resampled_strength_quantiles=np.quantile(rejected, [.5, .9, .99]).tolist() if len(rejected) else [],
+        resampled_strength_quantiles=np.quantile(rejected, [.5, .9, .99], axis=0).tolist() if len(rejected) else [],
         above_clear_sky_event_fraction=above_clear,
         station_deviation_rms=np.sqrt(np.mean(deviation**2, axis=0)).tolist(),
         station_deviation_excess_kurtosis=kurtosis(deviation, axis=0).tolist(),
@@ -339,6 +352,9 @@ def select_targets(scene, x):
 
 
 def strength_diagnostics(scene, x, strength, voltage_state):
+    if strength.ndim == 2:
+        # Two weather processes: group by the first (six-station) cloud area.
+        strength = strength[:, 0]
     if np.ptp(strength) == 0:
         site_v = [int(np.flatnonzero([(o['output'] == 'V') and o['node'] == b for o in OBJECTS])[0]) for b in SITES]
         write_json(O/scene/'strength_diagnostics.json', dict(note='constant event strength; strength-group diagnostics not applicable',
@@ -578,6 +594,8 @@ def pv_voltage_subspace(scene):
     Q1 = q1[:, :rank]; Q2 = np.linalg.svd(np.eye(64)-Q1@Q1.T)[0][:, :64-rank]
     assert np.allclose(Q1.T@Q2, 0, atol=1e-10) and np.allclose(np.c_[Q1, Q2].T@np.c_[Q1, Q2], np.eye(64), atol=1e-10)
     x = fit_in['x']; s_train = np.load(d/'training_inputs.npz')['strength']
+    if s_train.ndim == 2:
+        s_train = s_train[:, 0]
     U, W = x@Q1, x@Q2
     corr = lambda a: [float(np.corrcoef(c**2, s_train**2)[0, 1]) for c in a.T]
     diagnostics = dict(rank=rank, sensitivity_singular_values=s.tolist(),
@@ -714,7 +732,10 @@ def propagate_block(model, n, seed):
 
 
 def propagate_any(model, n, seed):
-    if 'block' in getattr(model, 'files', model):
+    keys = getattr(model, 'files', model)
+    if 'multiblock' in keys:
+        return propagate_multiblock(model, n, seed)
+    if 'block' in keys:
         return propagate_block(model, n, seed)
     return propagate(model, n, seed, 'sobol', randomizer='MT19937')
 
@@ -749,10 +770,199 @@ def phase_block(scene):
     judge(scene, targets, challenger=BLOCK_FAMILY, gs=gs, qs=qs, prefix='block_effectiveness')
 
 
+# Multi-block TMM (derivation.md section G): each independent weather process drives its own
+# group of voltage directions with its own fluctuation strength; remaining directions Gaussian.
+MULTI_FAMILY = 'MBTMM'
+
+
+def multiblock_subspace(scene):
+    d = O/scene
+    if (d/'multiblock_subspace.npz').exists():
+        with np.load(d/'multiblock_subspace.npz') as a:
+            return [a[f'Q{g}'] for g in range(int(a['groups']))], a['Qw']
+    from cloud_numeric_core import rect_jacobian
+    load_p = load_multiplier(scene)*BUS[1:, 2]; load_q = load_multiplier(scene)*BUS[1:, 3]
+    pbus = np.zeros(32); pbus[SITES-2] = CAP*CONFIG['forecast_fraction']
+    v, _ = polar_ac(np.r_[(pbus-load_p)/BASE, -load_q/BASE], Y, tolerance=1e-11)
+    inverse = np.linalg.inv(rect_jacobian(v, Y)); fit_in = np.load(d/'fitting_inputs.npz')
+    region = site_region_index(scene); taken = np.zeros((64, 0)); groups = []
+    for g in range(region.max()+1):
+        h = (fit_in['basis'].T@inverse[:, SITES[region == g]-2])/fit_in['scale'][:, None]
+        h = h-taken@(taken.T@h)
+        q, s, _ = np.linalg.svd(h, full_matrices=False); q = q[:, :int(np.sum(s > s[0]*1e-10))]
+        groups.append(q); taken = np.c_[taken, q]
+    Qw = np.linalg.svd(np.eye(64)-taken@taken.T)[0][:, :64-taken.shape[1]]
+    full = np.c_[taken, Qw]; assert np.allclose(full.T@full, np.eye(64), atol=1e-10)
+    x = fit_in['x']; s_train = np.load(d/'training_inputs.npz')['strength']
+    diag = dict(groups=len(groups), ranks=[q.shape[1] for q in groups],
+                group_excess_kurtosis=[kurtosis(x@q, axis=0).tolist() for q in groups],
+                w_excess_kurtosis_median=float(np.median(kurtosis(x@Qw, axis=0))))
+    if s_train.ndim == 2:
+        diag['group_square_strength_correlation'] = [[[float(np.corrcoef(c**2, s_train[:, j]**2)[0, 1]) for j in range(s_train.shape[1])]
+                                                       for c in (x@q).T] for q in groups]
+    save_npz(d/'multiblock_subspace.npz', groups=np.array(len(groups)), Qw=Qw, **{f'Q{g}': q for g, q in enumerate(groups)})
+    write_json(d/'multiblock_subspace_diagnostics.json', diag)
+    event('multiblock_subspace', scene=scene, ranks=diag['ranks'])
+    return groups, Qw
+
+
+def multiblock_log_terms(U1, U2, W, model):
+    from scipy.special import gammaln
+    from scipy.linalg import solve_triangular
+    n = len(U1); r1, r2, dw = U1.shape[1], U2.shape[1], W.shape[1]; k = len(model['weights'])
+    logs, d1, d2 = np.empty((n, k)), np.empty((n, k)), np.empty((n, k))
+    def tlog(dist, nu, r, L):
+        return gammaln((nu+r)/2)-gammaln(nu/2)-r/2*np.log(nu*np.pi)-(nu+r)/2*np.log1p(dist/nu)-np.log(L.diagonal()).sum()
+    for j in range(k):
+        L1 = cholesky(model['scatter1'][j], lower=True)
+        z1 = solve_triangular(L1, (U1-model['means1'][j]).T, lower=True).T; a1 = np.einsum('ij,ij->i', z1, z1)
+        L2 = cholesky(model['scatter2'][j], lower=True)
+        e2 = U2-model['means2'][j]-U1@model['coupling'][j].T
+        z2 = solve_triangular(L2, e2.T, lower=True).T; a2 = np.einsum('ij,ij->i', z2, z2)
+        LO = cholesky(model['residual'][j], lower=True)
+        e = solve_triangular(LO, (W-model['intercept'][j]-np.c_[U1, U2]@model['coefficient'][j].T).T, lower=True).T
+        glog = -.5*(dw*np.log(2*np.pi)+np.einsum('ij,ij->i', e, e))-np.log(LO.diagonal()).sum()
+        logs[:, j] = np.log(model['weights'][j])+tlog(a1, model['df1'][j], r1, L1)+tlog(a2, model['df2'][j], r2, L2)+glog
+        d1[:, j], d2[:, j] = a1, a2
+    return logs, d1, d2
+
+
+def multiblock_density(U1, U2, W, model):
+    from scipy.special import logsumexp
+    logs, d1, d2 = multiblock_log_terms(U1, U2, W, model)
+    density = logsumexp(logs, axis=1)
+    return density, np.exp(logs-density[:, None]), d1, d2
+
+
+def multiblock_from_gmm(gmm, Q1, Q2, Qw, nu):
+    k = len(gmm['weights']); out = {key: [] for key in ['means1', 'scatter1', 'means2', 'coupling', 'scatter2',
+                                                       'intercept', 'coefficient', 'residual']}
+    U = np.c_[Q1, Q2]; r1 = Q1.shape[1]
+    for j in range(k):
+        mu, cov = gmm['means'][j], gmm['scatter'][j]
+        s11, s21, s22 = Q1.T@cov@Q1, Q2.T@cov@Q1, Q2.T@cov@Q2
+        f = np.linalg.solve(s11, s21.T).T
+        out['means1'].append(mu@Q1); out['scatter1'].append(floor_matrix(s11*(nu-2)/nu, FLOOR*(nu-2)/nu)[0])
+        out['coupling'].append(f); out['means2'].append(mu@Q2-f@(mu@Q1))
+        out['scatter2'].append(floor_matrix((s22-f@s11@f.T)*(nu-2)/nu, FLOOR*(nu-2)/nu)[0])
+        suu, swu, sww = U.T@cov@U, Qw.T@cov@U, Qw.T@cov@Qw
+        c = np.linalg.solve(suu, swu.T).T
+        out['coefficient'].append(c); out['intercept'].append(mu@Qw-c@(mu@U)); out['residual'].append(floor_matrix(sww-c@suu@c.T)[0])
+    model = {key: np.array(v) for key, v in out.items()}
+    model.update(weights=np.array(gmm['weights'], float), df1=np.full(k, float(nu)), df2=np.full(k, float(nu)))
+    return model
+
+
+def fit_multiblock(U1, U2, W, initial, maximum=300, tolerance=1e-6):
+    from scipy.special import digamma
+    from scipy.optimize import brentq
+    start = time.perf_counter(); model = {key: np.array(v, copy=True) for key, v in initial.items()}
+    n = len(U1); r1, r2 = U1.shape[1], U2.shape[1]; X1 = np.c_[np.ones(n), U1]; X = np.c_[np.ones(n), U1, U2]
+    density, resp, d1, d2 = multiblock_density(U1, U2, W, model); history = [density.mean()]; status = 'maximum_iterations'
+    def df_root(nu, r, dist, g, count):
+        tau = (nu+r)/(nu+dist); stat = g@(digamma((nu+r)/2)-np.log((nu+dist)/2)-tau)/count
+        score = lambda v: np.log(v/2)-digamma(v/2)+1+stat
+        return 4.1 if score(4.1) <= 0 else 1e5 if score(1e5) >= 0 else brentq(score, 4.1, 1e5, xtol=1e-8)
+    for iteration in range(1, maximum+1):
+        count = resp.sum(0)
+        if count.min() <= W.shape[1]+r1+r2+2:
+            status = 'collapsed_component'; break
+        new = {key: v.copy() for key, v in model.items()}; new['weights'] = count/n
+        for j in range(len(count)):
+            g = resp[:, j]
+            nu1 = model['df1'][j]; t1 = (nu1+r1)/(nu1+d1[:, j]); w1 = g*t1
+            new['means1'][j] = (w1@U1)/w1.sum(); res = U1-new['means1'][j]
+            new['scatter1'][j] = floor_matrix((res.T@(res*w1[:, None]))/count[j], FLOOR*(nu1-2)/nu1)[0]
+            new['df1'][j] = df_root(nu1, r1, d1[:, j], g, count[j])
+            nu2 = model['df2'][j]; t2 = (nu2+r2)/(nu2+d2[:, j]); w2 = g*t2
+            b = np.linalg.solve(X1.T@(X1*w2[:, None]), X1.T@(U2*w2[:, None]))
+            new['means2'][j], new['coupling'][j] = b[0], b[1:].T; e2 = U2-X1@b
+            new['scatter2'][j] = floor_matrix((e2.T@(e2*w2[:, None]))/count[j], FLOOR*(nu2-2)/nu2)[0]
+            new['df2'][j] = df_root(nu2, r2, d2[:, j], g, count[j])
+            b = np.linalg.solve(X.T@(X*g[:, None]), X.T@(W*g[:, None]))
+            new['intercept'][j], new['coefficient'][j] = b[0], b[1:].T; e = W-X@b
+            new['residual'][j] = floor_matrix((e.T@(e*g[:, None]))/count[j])[0]
+        density, new_resp, nd1, nd2 = multiblock_density(U1, U2, W, new); value = density.mean(); gain = value-history[-1]
+        if gain < -1e-8:
+            status = 'rejected_decreasing_update'; break
+        model, resp, d1, d2 = new, new_resp, nd1, nd2; history.append(value)
+        if abs(gain) < tolerance*max(1., abs(history[-2])):
+            status = 'converged'; break
+    return model, dict(status=status, iterations=iteration, train_ll=history[-1], history=np.array(history),
+                       df1=model['df1'], df2=model['df2'], weights=model['weights'], seconds=time.perf_counter()-start)
+
+
+def propagate_multiblock(model, n, seed):
+    from scipy.stats import qmc
+    from scipy.special import ndtri, gammaincinv
+    weights = model['weights']; r1 = model['means1'].shape[1]; r2 = model['means2'].shape[1]; dw = model['intercept'].shape[1]
+    desired = n*weights; counts = np.maximum(1, np.floor(desired).astype(int))
+    while counts.sum() < n:
+        counts[np.argmax(desired-counts)] += 1
+    while counts.sum() > n:
+        ids = np.flatnonzero(counts > 1); counts[ids[np.argmin((desired-counts)[ids])]] -= 1
+    samples, w = [], []
+    for j, nj in enumerate(counts):
+        sampler = qmc.Sobol(r1+r2+dw+2, scramble=True, seed=np.random.Generator(np.random.MT19937(seed+1009*j)))
+        uni = np.clip(sampler.random_base2(int(np.ceil(np.log2(nj))))[:nj], np.finfo(float).eps, 1-np.finfo(float).eps)
+        t1 = 2*gammaincinv(model['df1'][j]/2, uni[:, -2])/model['df1'][j]; t2 = 2*gammaincinv(model['df2'][j]/2, uni[:, -1])/model['df2'][j]
+        U1 = model['means1'][j]+(ndtri(uni[:, :r1])@cholesky(model['scatter1'][j], lower=True).T)/np.sqrt(t1[:, None])
+        U2 = model['means2'][j]+U1@model['coupling'][j].T+(ndtri(uni[:, r1:r1+r2])@cholesky(model['scatter2'][j], lower=True).T)/np.sqrt(t2[:, None])
+        Wv = model['intercept'][j]+np.c_[U1, U2]@model['coefficient'][j].T+ndtri(uni[:, r1+r2:r1+r2+dw])@cholesky(model['residual'][j], lower=True).T
+        samples.append(U1@model['Q1'].T+U2@model['Q2'].T+Wv@model['Qw'].T); w.append(np.full(nj, weights[j]/nj))
+    return np.concatenate(samples), np.concatenate(w)
+
+
+def phase_multiblock(scene):
+    targets = check_lock(scene); d = O/scene; c = d/'candidates'
+    groups, Qw = multiblock_subspace(scene); assert len(groups) == 2, 'two weather processes are required'
+    Q1, Q2 = groups; fit_in = np.load(d/'fitting_inputs.npz')
+    split = lambda z: (z@Q1, z@Q2, z@Qw)
+    (U1, U2, W), (V1, V2, Vw) = split(fit_in['x']), split(fit_in['validation'])
+    selected, attempts = [], []
+    for k in KS:
+        rows = []
+        for p in range(1 if k == 1 else 2):
+            gmm = np.load(c/f'K{k}_p{p+1:02d}_GMM.npz')
+            for nu in [12, 200]:
+                stem = c/f'K{k}_p{p+1:02d}_gmm_warm_df{nu}_MULTIBLOCK'
+                if not stem.with_suffix('.json').exists():
+                    event('fitting', scene=scene, K=k, family=MULTI_FAMILY, partition=p+1, initial_df=nu)
+                    model, audit = fit_multiblock(U1, U2, W, multiblock_from_gmm(gmm, Q1, Q2, Qw, nu))
+                    model.update(Q1=Q1, Q2=Q2, Qw=Qw, multiblock=np.array(True))
+                    save_npz(stem.with_suffix('.npz'), **model, history=audit['history']); audit.pop('history')
+                    audit.update(scene=scene, K=k, family=MULTI_FAMILY, partition=p+1, initial_df=nu,
+                                 validation_ll=float(multiblock_density(V1, V2, Vw, model)[0].mean()), model_sha256=sha(stem.with_suffix('.npz')))
+                    write_json(stem.with_suffix('.json'), audit)
+                row = json.loads(stem.with_suffix('.json').read_text()); row['candidate'] = stem.name; rows.append(row)
+        conv = [r for r in rows if r['status'] == 'converged']; best = max(conv or rows, key=lambda r: r['validation_ll'])
+        r1, r2, dw = Q1.shape[1], Q2.shape[1], Qw.shape[1]
+        params = (k-1)+k*(r1+r1*(r1+1)//2+1+r2+r2*r1+r2*(r2+1)//2+1+dw+dw*(r1+r2)+dw*(dw+1)//2)
+        selected.append(dict(scene=scene, K=k, family=MULTI_FAMILY, candidate=best['candidate'], validation_ll=best['validation_ll'],
+                             train_ll=best['train_ll'], status=best['status'], iterations=best['iterations'], dimension=64,
+                             parameter_count=params, df=json.dumps([best['df1'], best['df2']]), weights=json.dumps(best['weights']),
+                             model_SHA256=best['model_sha256']))
+        attempts += rows; event('selected', scene=scene, K=k, family=MULTI_FAMILY, df1=best['df1'], df2=best['df2'])
+    csv(d/'selected_models_multiblock.csv', selected); csv(d/'all_fit_attempts_multiblock.csv', attempts)
+    archived_functions(SOURCE/'adapted_routines.py', {'evaluate'}, globals(), replace={'evaluate': [
+        ('2026101928', str(CONFIG['propagation_seed_base'])), ('def evaluate(scene,k):', 'def evaluate_multiblock(scene,k):'),
+        ("'selected_models.csv'", "'selected_models_multiblock.csv'"),
+        ("propagate(m,N,seed,'sobol',randomizer='MT19937')", 'propagate_any(m,N,seed)')]})
+    for k in KS:
+        evaluate_multiblock(scene, k)
+    frames = [pd.read_csv(p) for p in sorted((d/'propagation').glob(f'{MULTI_FAMILY}_*_global.csv'))]
+    qframes = [pd.read_csv(p) for p in sorted((d/'propagation').glob(f'{MULTI_FAMILY}_*_quantiles.csv'))]
+    gb = repeat_summary(pd.concat(frames), SUMMARY_GLOBAL, SUMMARY_KEYS); qb = repeat_summary(pd.concat(qframes), SUMMARY_QUANTILE, SUMMARY_KEYS+['q'])
+    gb.to_csv(O/'multiblock_global_repeat_summary.csv', index=False); qb.to_csv(O/'multiblock_quantile_repeat_summary.csv', index=False)
+    gs = pd.concat([pd.read_csv(O/'global_repeat_summary.csv'), gb], ignore_index=True)
+    qs = pd.concat([pd.read_csv(O/'quantile_repeat_summary.csv'), qb], ignore_index=True)
+    judge(scene, targets, challenger=MULTI_FAMILY, gs=gs, qs=qs, prefix='multiblock_effectiveness')
+
+
 def main():
     global O
     parser = argparse.ArgumentParser()
-    parser.add_argument('phase', choices=['ac_only', 'fit', 'reference', 'block'])
+    parser.add_argument('phase', choices=['ac_only', 'fit', 'reference', 'block', 'multiblock'])
     parser.add_argument('--scene', choices=SCENES, default='common_strength')
     parser.add_argument('--out', default=str(REPO/'result/case33bw/pv_fixed_forecast_case33_20261021'))
     parser.add_argument('--smoke', action='store_true', help='tiny counts to test the code path only')
@@ -774,7 +984,8 @@ def main():
         {'ac_only': lambda: phase_ac_only(args.scene, args.smoke),
          'fit': lambda: phase_fit(args.scene, args.K),
          'reference': lambda: phase_reference(args.scene),
-         'block': lambda: phase_block(args.scene)}[args.phase]()
+         'block': lambda: phase_block(args.scene),
+         'multiblock': lambda: phase_multiblock(args.scene)}[args.phase]()
     except Exception:
         write_json(O/f'failure_{args.phase}_{os.getpid()}.json',
                    dict(error=traceback.format_exc(), UTC=time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())))

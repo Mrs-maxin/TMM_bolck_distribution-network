@@ -10,6 +10,9 @@ result/**
 !result/*/figures/README.md
 # Cloud case141 run: keep tables, figures, manifests and logs; large arrays stay local or in releases.
 !result/case141/**
+!result/case33bw/**
+result/case33bw/**/*.npz
+result/case33bw/**/*.npy
 result/case141/**/*.npz
 result/case141/**/*.npy
 02_PAPER/config/author-profile.yaml

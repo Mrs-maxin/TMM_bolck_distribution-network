@@ -156,7 +156,39 @@ $$
 
 节点电压幅值平方、线路有功和无功及网损均为$\mathbf x$的二次型，因此给定强度后可沿用高斯电压二次型的条件特征函数，再对$S_k$作一维Gauss–Laguerre求积。与标准TMM不同，式(B16)的协方差不与$s$成比例，条件二次型核矩阵的特征分解须在每个求积强度节点分别计算。当前数值比较采用分量分层随机化Sobol抽样，按式(B4)—(B5)生成电压后由原交流功率关系计算电气量。
 
-### G. 本算例数值
+### G. 多块TMM：多个独立天气过程
+
+当光伏站分属$G$个相互独立的天气过程（如相距较远的云区）时，同一分量内应有$G$个独立的波动强度。记第$g$个天气过程驱动的注入集合为$\mathcal W_g$，灵敏度为$\mathbf H_g=\mathbf J_0^{-1}\mathbf L_{\mathcal W_g}$。依次正交化得到各组方向：
+
+$$
+\mathbf Q_1=\mathrm{orth}(\mathbf W\mathbf H_1),\qquad
+\mathbf Q_g=\mathrm{orth}\!\Big(\big(\mathbf I-\textstyle\sum_{l<g}\mathbf Q_l\mathbf Q_l^\top\big)\mathbf W\mathbf H_g\Big),\quad g\ge2,
+\tag{B17}
+$$
+
+$\mathbf Q_w$为其余方向。记$\mathbf u_g=\mathbf Q_g^\top\boldsymbol\xi$，$r_g$为其维数。以$G=2$为例，第$k$个分量写为
+
+$$
+\mathbf u_1\sim t_{\nu_{1k}}(\mathbf m_{1k},\boldsymbol\Sigma_{1k}),\qquad
+\mathbf u_2\mid\mathbf u_1\sim t_{\nu_{2k}}(\mathbf m_{2k}+\mathbf F_k\mathbf u_1,\ \boldsymbol\Sigma_{2k}),\qquad
+\mathbf w\mid\mathbf u_1,\mathbf u_2\sim\mathcal N\!\big(\mathbf a_k+\mathbf G_k[\mathbf u_1^\top,\mathbf u_2^\top]^\top,\ \boldsymbol\Omega_k\big),
+\tag{B18}
+$$
+
+其中$\mathbf u_2\mid\mathbf u_1$的多元t分布按其自身的强度$S_{2k}\sim\mathrm{Inv\text{-}Gamma}(\nu_{2k}/2,\nu_{2k}/2)$生成，与$\mathbf u_1$的强度$S_{1k}$相互独立；$\mathbf F_k$表示两组电压变化之间由网络和负荷形成的线性联系。$G=1$时退化为式(B4)—(B5)。
+
+参数估计中，$\mathbf u_1$按式(B13)、(B15)更新；$\mathbf u_2$为带强度权重$\tau^{(2)}_{ik}=(\nu_{2k}+r_2)/(\nu_{2k}+\delta^{(2)}_{ik})$的加权最小二乘，$\delta^{(2)}_{ik}$为其残差马氏距离平方，自由度按式(B15)将$r$、$\delta$换为$r_2$、$\delta^{(2)}$求根；$\mathbf w$按式(B14)对$[\mathbf u_1,\mathbf u_2]$回归。给定$S_{1k}=s_1$、$S_{2k}=s_2$，$(\mathbf u_1,\mathbf u_2,\mathbf w)$为高斯分布，
+
+$$
+\mathrm{Cov}(\mathbf u_1)=s_1\boldsymbol\Sigma_{1k},\quad
+\mathrm{Cov}(\mathbf u_2)=s_1\mathbf F_k\boldsymbol\Sigma_{1k}\mathbf F_k^\top+s_2\boldsymbol\Sigma_{2k},\quad
+\mathrm{Cov}(\mathbf u_2,\mathbf u_1)=s_1\mathbf F_k\boldsymbol\Sigma_{1k},
+\tag{B19}
+$$
+
+$\mathbf w$的协方差为$\mathbf G_k\mathrm{Cov}([\mathbf u_1;\mathbf u_2])\mathbf G_k^\top+\boldsymbol\Omega_k$。电气量的条件特征函数沿用高斯二次型闭式，对$(s_1,s_2)$作二维广义Gauss–Laguerre张量积求积。状态：推导完成，代码与算例见方案第15节C。
+
+### H. 本算例数值
 
 IEEE 33节点，$d=64$，$n_w=8$，由式(B9)得$r=8$。$\mathbf u$方向承担训练电压98.8%的方差，各坐标超额峰度1.4—2.0，幅值平方与事件强度平方的相关系数约0.4；$\mathbf w$方向超额峰度中位数0.09，相关系数中位数0.075。所选模型自由度4.9—9.7，标准TMM为30—200。
 

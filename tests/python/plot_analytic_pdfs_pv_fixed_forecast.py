@@ -6,7 +6,7 @@ solutions of every source-load scenario. Both use the same Gaussian smoothing wi
 curve as a kernel estimate, the model curve by multiplying its characteristic function by
 exp(-h^2 t^2 / 2), which is the exact density of the same smoothing. Not formal paper figures.
 """
-import importlib.util, sys, json
+import importlib.util, sys, json, os
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -23,6 +23,9 @@ risk = importlib.util.module_from_spec(spec); spec.loader.exec_module(risk)
 D = risk.D; OUT = D/'diagnostic_analytic_pdfs'; OUT.mkdir(exist_ok=True); CACHE = OUT/'cache'; CACHE.mkdir(exist_ok=True)
 KS = [1, 3, 6, 12]
 FAMILIES = [('GMM', '--', 'tab:blue', 'GMM'), ('TMM', '-', 'tab:red', 'TMM'), ('BTMM', '-.', 'tab:green', 'Block TMM')]
+if (D/'selected_models_multiblock.csv').exists():
+    FAMILIES.append(('MBTMM', ':', 'tab:purple', 'Two-block TMM'))
+KS = [int(k) for k in os.environ.get('PV_PDF_K', '1,3,6,12').split(',')]
 # (file name, quantity index, axis label, tail of interest, value transform from quantity to displayed unit)
 OBJECTS = [('V18', 16, 'Node 18 voltage magnitude (p.u.)', 'upper: overvoltage'),
            ('V29', 27, 'Node 29 voltage magnitude (p.u.)', 'lower: undervoltage'),
@@ -33,6 +36,17 @@ OBJECTS = [('V18', 16, 'Node 18 voltage magnitude (p.u.)', 'upper: overvoltage')
            ('P19', 32+18, 'Branch 19 sending-end active power (MW)', 'upper: reverse flow to import'),
            ('P31', 32+30, 'Branch 31 sending-end active power (MW)', 'upper: reverse flow to import'),
            ('loss', 64, 'System active power loss (MW)', 'both')]
+if os.environ.get('PV_PDF_OBJECTS_FROM_TARGETS'):
+    impacts = {'undervoltage_side': 'lower: undervoltage', 'overvoltage_side': 'upper: overvoltage',
+               'reverse_flow_increase': 'lower: larger reverse flow', 'reversal_reverse_to_import': 'upper: reverse flow to import',
+               'reversal_import_to_reverse': 'lower: import to reverse flow'}
+    OBJECTS = []
+    for _, t in pd.read_csv(D/'targets.csv').iterrows():
+        if t.output == 'V':
+            OBJECTS.append((f'V{t.node}', int(t.node)-2, f'Node {t.node} voltage magnitude (p.u.)', impacts.get(t.operating_impact, t.side)))
+        else:
+            OBJECTS.append((f'P{t.branch}', 32+int(t.branch)-1, f'Branch {t.branch} sending-end active power (MW)', impacts.get(t.operating_impact, t.side)))
+    OBJECTS.append(('loss', 64, 'System active power loss (MW)', 'both'))
 ref_q = risk.ac_quantities(np.load(D/'reference_AC.npz')['voltage'])
 
 

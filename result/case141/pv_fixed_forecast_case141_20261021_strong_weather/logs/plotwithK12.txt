@@ -1,0 +1,68 @@
+COMMAND python3 tests/python/plot_pv_fixed_forecast_pdfs_general.py --case case141 --scene strong_weather --with-K12
+START 2026-10-21T16:43:17Z
+{
+ "figures": 45,
+ "regeneration": [
+  {
+   "K": 1,
+   "family": "GMM",
+   "max_difference_to_saved": 0.0
+  },
+  {
+   "K": 1,
+   "family": "TMM",
+   "max_difference_to_saved": 0.0
+  },
+  {
+   "K": 1,
+   "family": "BTMM",
+   "max_difference_to_saved": 0.0
+  },
+  {
+   "K": 3,
+   "family": "GMM",
+   "max_difference_to_saved": 0.0
+  },
+  {
+   "K": 3,
+   "family": "TMM",
+   "max_difference_to_saved": 0.0
+  },
+  {
+   "K": 3,
+   "family": "BTMM",
+   "max_difference_to_saved": 0.0
+  },
+  {
+   "K": 6,
+   "family": "GMM",
+   "max_difference_to_saved": 0.0
+  },
+  {
+   "K": 6,
+   "family": "TMM",
+   "max_difference_to_saved": 0.0
+  },
+  {
+   "K": 6,
+   "family": "BTMM",
+   "max_difference_to_saved": 0.0
+  },
+  {
+   "K": 12,
+   "family": "GMM",
+   "max_difference_to_saved": 0.0
+  },
+  {
+   "K": 12,
+   "family": "TMM",
+   "max_difference_to_saved": 0.0
+  },
+  {
+   "K": 12,
+   "family": "BTMM",
+   "max_difference_to_saved": 0.0
+  }
+ ]
+}
+END 2026-10-21T16:44:06Z EXIT 0 SECONDS 49

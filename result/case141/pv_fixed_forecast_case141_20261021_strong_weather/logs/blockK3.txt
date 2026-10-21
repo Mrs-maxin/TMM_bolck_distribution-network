@@ -1,0 +1,15 @@
+COMMAND python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene strong_weather --K 3
+START 2026-10-21T16:33:21Z
+{"UTC": "2026-10-21T16:33:22Z", "PID": 5076, "stage": "selected", "elapsed_seconds": 0.524225787999967, "scene": "strong_weather", "K": 1, "family": "BTMM", "candidate": "K1_p01_gmm_warm_df12_BLOCK", "df": "[4.1]"}
+{"UTC": "2026-10-21T16:33:22Z", "PID": 5076, "stage": "selected", "elapsed_seconds": 0.6918852720000359, "scene": "strong_weather", "K": 3, "family": "BTMM", "candidate": "K3_p01_gmm_warm_df200_BLOCK", "df": "[4.735535530844333, 5.7762178175430785, 5.1885153862050295]"}
+{"UTC": "2026-10-21T16:33:23Z", "PID": 5076, "stage": "selected", "elapsed_seconds": 0.8549613360000876, "scene": "strong_weather", "K": 6, "family": "BTMM", "candidate": "K6_p01_gmm_warm_df12_BLOCK", "df": "[4.394450405583554, 5.03806168877489, 4.328284370835055, 4.253414069920605, 5.199497760474678, 4.862585508098426]"}
+{"UTC": "2026-10-21T16:33:23Z", "PID": 5076, "stage": "BLOCK_FIT_COMPLETE", "elapsed_seconds": 0.8583899770001153, "scene": "strong_weather", "K": "all"}
+{"UTC": "2026-10-21T16:33:23Z", "PID": 5076, "stage": "propagating", "elapsed_seconds": 1.4280757720000565, "scene": "strong_weather", "K": 3, "family": "BTMM", "replicate": 0, "seed": 2026305114}
+{"UTC": "2026-10-21T16:33:36Z", "PID": 5076, "stage": "propagation_complete", "elapsed_seconds": 14.258874996000031, "scene": "strong_weather", "K": 3, "family": "BTMM", "replicate": 0}
+{"UTC": "2026-10-21T16:33:36Z", "PID": 5076, "stage": "propagating", "elapsed_seconds": 14.25915249400009, "scene": "strong_weather", "K": 3, "family": "BTMM", "replicate": 1, "seed": 2026305115}
+{"UTC": "2026-10-21T16:33:48Z", "PID": 5076, "stage": "propagation_complete", "elapsed_seconds": 26.44796985400012, "scene": "strong_weather", "K": 3, "family": "BTMM", "replicate": 1}
+{"UTC": "2026-10-21T16:33:48Z", "PID": 5076, "stage": "propagating", "elapsed_seconds": 26.448241338000116, "scene": "strong_weather", "K": 3, "family": "BTMM", "replicate": 2, "seed": 2026305116}
+{"UTC": "2026-10-21T16:34:00Z", "PID": 5076, "stage": "propagation_complete", "elapsed_seconds": 38.684453394, "scene": "strong_weather", "K": 3, "family": "BTMM", "replicate": 2}
+{"UTC": "2026-10-21T16:34:00Z", "PID": 5076, "stage": "propagating", "elapsed_seconds": 38.68468561899999, "scene": "strong_weather", "K": 3, "family": "BTMM", "replicate": 3, "seed": 2026305117}
+{"UTC": "2026-10-21T16:34:12Z", "PID": 5076, "stage": "propagation_complete", "elapsed_seconds": 50.65846865200001, "scene": "strong_weather", "K": 3, "family": "BTMM", "replicate": 3}
+END 2026-10-21T16:34:12Z EXIT 0 SECONDS 51

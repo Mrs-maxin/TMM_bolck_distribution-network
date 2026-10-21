@@ -1,0 +1,8 @@
+COMMAND python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene strong_weather --with-K12
+START 2026-10-21T16:38:32Z
+{"UTC": "2026-10-21T16:38:33Z", "PID": 5535, "stage": "selected", "elapsed_seconds": 0.2834208210001634, "scene": "strong_weather", "K": 1}
+{"UTC": "2026-10-21T16:38:33Z", "PID": 5535, "stage": "selected", "elapsed_seconds": 0.3817446560001372, "scene": "strong_weather", "K": 3}
+{"UTC": "2026-10-21T16:38:33Z", "PID": 5535, "stage": "selected", "elapsed_seconds": 0.4823183430003155, "scene": "strong_weather", "K": 6}
+{"UTC": "2026-10-21T16:38:33Z", "PID": 5535, "stage": "selected", "elapsed_seconds": 0.5844285260000106, "scene": "strong_weather", "K": 12}
+{"UTC": "2026-10-21T16:38:33Z", "PID": 5535, "stage": "FIT_COMPLETE", "elapsed_seconds": 0.5846359460001622, "scene": "strong_weather", "K": "all"}
+END 2026-10-21T16:38:33Z EXIT 0 SECONDS 1

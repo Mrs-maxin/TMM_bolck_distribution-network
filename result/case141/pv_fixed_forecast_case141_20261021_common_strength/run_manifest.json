@@ -1,0 +1,2824 @@
+{
+ "entry": "tests/python/run_pv_fixed_forecast.py",
+ "case": "case141",
+ "scene": "common_strength",
+ "plan_section": "16, 16.1, 11, 12, 14 and 8.1",
+ "written_utc": "2026-10-21T16:45:32Z",
+ "git": {
+  "branch": "cloud/case141-20261021",
+  "commit": "7210e3f1cf99197aca91b460e484f68ed467ce3e",
+  "status_short": []
+ },
+ "protocol_script_SHA256_at_ac_only": "a12218d810a4e7a26a77c0dd0cc760188465135a4a3bb3a1789ae668d0745a73",
+ "scripts_SHA256": {
+  "tests/python/analytic_limit_risk_general.py": "241a35bd6e8e68fe9e4a61bc980e83a1d6ce3a0c1003d041c1e57c396b9469a2",
+  "tests/python/analytic_limit_risk_pv_fixed_forecast.py": "275d6e2a65f16dba168beb7059fdad1b3bc5e07d11568fa68224cc7aa79a84ce",
+  "tests/python/limit_probability_pv_fixed_forecast.py": "a5d08e0466551602d4b2f85c75becffc0410efc1f0e25f5407b21be5a9615b4b",
+  "tests/python/plot_analytic_pdfs_pv_fixed_forecast.py": "f7f726075812d9f428df553b3bf0923f67a6ba418e2de30e20d5bac9f5024467",
+  "tests/python/plot_limit_risk_curves_pv_fixed_forecast.py": "3cc05e9138c5da2cd90b1141b905d3a79dbcdf869a955f6ea9f3f7e5e8d692c3",
+  "tests/python/plot_pv_fixed_forecast_pdfs.py": "e45d44609cf387ca1fc9cd55fd48f84d0e41e9f1f68900cf2c22e1f97613054b",
+  "tests/python/plot_pv_fixed_forecast_pdfs_general.py": "21d0df8f5a89014256c54365c3a4530906584369dfdf8c36d6651265d4e3d4c4",
+  "tests/python/run_pv_fixed_forecast.py": "c6db91c036f0e6d49497a3c954ab15e105181bcbcc086184b032613922791775",
+  "tests/python/run_pv_fixed_forecast_case33.py": "1e7113e63f51278f9d39f10c354a320f79be8879bd9943c25699794c8c380a05",
+  "tests/python/write_run_manifest.py": "01c80dda26ce7983d73ffae0102809479995216c86df16c2018d30743c17a779",
+  "tests/python/archived/SHA256SUMS.txt": "c96c9682cab2b84051462d55802b4ab996d98da7d61839da4c5fbd1365d8a196",
+  "tests/python/archived/ac_only.py": "1af7925b1709bb6fbb07525076e0b7c8c63db658f8194c1c921b4b33c2e55546",
+  "tests/python/archived/adapted_routines.py": "a75e56e73e329c94fb8061ed510d0cfca93cfd9f6c1afc55b5877b962700e0cb",
+  "tests/python/archived/cloud_numeric_core.py": "755907c5278f06e811277f36517a76d14b7d0c75b710a690b5a4364b367c8a77",
+  "tests/python/archived/run_cloud_passage_case33.py": "725ae590c9f7154a99379d6e13c7b7c0f5c4b1959bf09ae7f125c7fe882c282b",
+  "tests/python/archived/run_cloud_study.py": "58fbb5ba2e8b33d71f86fb2ca9431e24f4f4c7e95964dba25eb4ba284b607b1b",
+  "tests/python/archived/run_typhoon_comparison_K136.py": "40ce746dbe7657bf2f005141fe202f5491445e4fa72ebfd13cb8d285cc43a521"
+ },
+ "plan_SHA256": "2c50f57bb036e0be6a91e0b8acea12cdf04fd474f1ae69e08a2f09af2611b64d",
+ "case_file_SHA256": {
+  "data/cases/case141_modify.m": "4c518a8292015f3fae0ea96b18dae04c2a8c22277ea3184521216a9db8b85f9b"
+ },
+ "commands": [
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/ac_only.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py ac_only --case case141 --scene common_strength ",
+   "start_utc": "2026-10-21T16:17:10Z",
+   "end_utc": "2026-10-21T16:19:18Z",
+   "exit_code": 0,
+   "seconds": 128
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/analytic.txt",
+   "command": "python3 tests/python/analytic_limit_risk_general.py --case case141 --scene common_strength ",
+   "start_utc": "2026-10-21T16:35:10Z",
+   "end_utc": "2026-10-21T16:35:47Z",
+   "exit_code": 0,
+   "seconds": 37
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/analyticwithK12.txt",
+   "command": "python3 tests/python/analytic_limit_risk_general.py --case case141 --scene common_strength --with-K12",
+   "start_utc": "2026-10-21T16:42:14Z",
+   "end_utc": "2026-10-21T16:43:13Z",
+   "exit_code": 0,
+   "seconds": 59
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene common_strength ",
+   "start_utc": "2026-10-21T16:35:03Z",
+   "end_utc": "2026-10-21T16:35:10Z",
+   "exit_code": 0,
+   "seconds": 7
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/blockK1.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene common_strength --K 1",
+   "start_utc": "2026-10-21T16:34:12Z",
+   "end_utc": "2026-10-21T16:35:03Z",
+   "exit_code": 0,
+   "seconds": 51
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/blockK12withK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene common_strength --K 12 --with-K12",
+   "start_utc": "2026-10-21T16:41:14Z",
+   "end_utc": "2026-10-21T16:42:05Z",
+   "exit_code": 0,
+   "seconds": 51
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/blockK3.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene common_strength --K 3",
+   "start_utc": "2026-10-21T16:33:21Z",
+   "end_utc": "2026-10-21T16:34:12Z",
+   "exit_code": 0,
+   "seconds": 51
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/blockK6.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene common_strength --K 6",
+   "start_utc": "2026-10-21T16:32:29Z",
+   "end_utc": "2026-10-21T16:33:21Z",
+   "exit_code": 0,
+   "seconds": 52
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block_fit.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene common_strength ",
+   "start_utc": "2026-10-21T16:26:36Z",
+   "end_utc": "2026-10-21T16:26:38Z",
+   "exit_code": 0,
+   "seconds": 2
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block_fitK1.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene common_strength --K 1",
+   "start_utc": "2026-10-21T16:19:49Z",
+   "end_utc": "2026-10-21T16:19:54Z",
+   "exit_code": 0,
+   "seconds": 5
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block_fitK12withK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene common_strength --K 12 --with-K12",
+   "start_utc": "2026-10-21T16:37:56Z",
+   "end_utc": "2026-10-21T16:38:35Z",
+   "exit_code": 0,
+   "seconds": 39
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block_fitK3.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene common_strength --K 3",
+   "start_utc": "2026-10-21T16:20:13Z",
+   "end_utc": "2026-10-21T16:20:37Z",
+   "exit_code": 0,
+   "seconds": 24
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block_fitK6.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene common_strength --K 6",
+   "start_utc": "2026-10-21T16:20:41Z",
+   "end_utc": "2026-10-21T16:21:04Z",
+   "exit_code": 0,
+   "seconds": 23
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block_fitwithK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene common_strength --with-K12",
+   "start_utc": "2026-10-21T16:38:36Z",
+   "end_utc": "2026-10-21T16:38:38Z",
+   "exit_code": 0,
+   "seconds": 2
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/blockwithK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene common_strength --with-K12",
+   "start_utc": "2026-10-21T16:42:05Z",
+   "end_utc": "2026-10-21T16:42:14Z",
+   "exit_code": 0,
+   "seconds": 9
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/fit.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene common_strength ",
+   "start_utc": "2026-10-21T16:26:35Z",
+   "end_utc": "2026-10-21T16:26:36Z",
+   "exit_code": 0,
+   "seconds": 1
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/fitK1.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene common_strength --K 1",
+   "start_utc": "2026-10-21T16:19:43Z",
+   "end_utc": "2026-10-21T16:19:49Z",
+   "exit_code": 0,
+   "seconds": 6
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/fitK12withK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene common_strength --K 12 --with-K12",
+   "start_utc": "2026-10-21T16:37:22Z",
+   "end_utc": "2026-10-21T16:37:56Z",
+   "exit_code": 0,
+   "seconds": 34
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/fitK3.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene common_strength --K 3",
+   "start_utc": "2026-10-21T16:19:43Z",
+   "end_utc": "2026-10-21T16:20:13Z",
+   "exit_code": 0,
+   "seconds": 30
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/fitK6.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene common_strength --K 6",
+   "start_utc": "2026-10-21T16:19:43Z",
+   "end_utc": "2026-10-21T16:20:41Z",
+   "exit_code": 0,
+   "seconds": 58
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/fitwithK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene common_strength --with-K12",
+   "start_utc": "2026-10-21T16:38:35Z",
+   "end_utc": "2026-10-21T16:38:36Z",
+   "exit_code": 0,
+   "seconds": 1
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/plotwithK12.txt",
+   "command": "python3 tests/python/plot_pv_fixed_forecast_pdfs_general.py --case case141 --scene common_strength --with-K12",
+   "start_utc": "2026-10-21T16:43:13Z",
+   "end_utc": "2026-10-21T16:43:59Z",
+   "exit_code": 0,
+   "seconds": 46
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/reference.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference --case case141 --scene common_strength ",
+   "start_utc": "2026-10-21T16:31:39Z",
+   "end_utc": "2026-10-21T16:32:29Z",
+   "exit_code": 0,
+   "seconds": 50
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/referenceK1.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference --case case141 --scene common_strength --K 1",
+   "start_utc": "2026-10-21T16:29:55Z",
+   "end_utc": "2026-10-21T16:31:39Z",
+   "exit_code": 0,
+   "seconds": 104
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/referenceK12withK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference --case case141 --scene common_strength --K 12 --with-K12",
+   "start_utc": "2026-10-21T16:38:38Z",
+   "end_utc": "2026-10-21T16:40:12Z",
+   "exit_code": 0,
+   "seconds": 94
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/referenceK3.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference --case case141 --scene common_strength --K 3",
+   "start_utc": "2026-10-21T16:28:16Z",
+   "end_utc": "2026-10-21T16:29:55Z",
+   "exit_code": 0,
+   "seconds": 99
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/referenceK6.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference --case case141 --scene common_strength --K 6",
+   "start_utc": "2026-10-21T16:26:38Z",
+   "end_utc": "2026-10-21T16:28:16Z",
+   "exit_code": 0,
+   "seconds": 98
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/reference_ac.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference_ac --case case141 --scene common_strength ",
+   "start_utc": "2026-10-21T16:19:43Z",
+   "end_utc": "2026-10-21T16:26:35Z",
+   "exit_code": 0,
+   "seconds": 412
+  },
+  {
+   "log": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/referencewithK12.txt",
+   "command": "python3 tests/python/run_pv_fixed_forecast.py reference --case case141 --scene common_strength --with-K12",
+   "start_utc": "2026-10-21T16:40:12Z",
+   "end_utc": "2026-10-21T16:41:14Z",
+   "exit_code": 0,
+   "seconds": 62
+  }
+ ],
+ "total_logged_seconds": 1635,
+ "files": [
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/all_fit_attempts.csv",
+   "bytes": 29434,
+   "SHA256": "41f532bb11ab04802dd760467caac465f68b5b145c708ceb4bf14943013563a9",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/block_global_repeat_summary.csv",
+   "bytes": 1734901,
+   "SHA256": "f97a49c7940a2234430a808e505584d0d8a57cfbbc5665e995038b81f2d63da1",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/block_quantile_repeat_summary.csv",
+   "bytes": 4774501,
+   "SHA256": "f22ac10586e82cbde83d2efac0c6d4f26f450ceff50904b8548e9b6966ff4895",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/AC_ONLY_LOCK.json",
+   "bytes": 1317,
+   "SHA256": "eb5b5466baad1e71f1fa0e18be5d5e73fbcd6ff41cd0f8c778b5df965e64db00",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/AC_features_train_validation.csv",
+   "bytes": 245056,
+   "SHA256": "925cc13a34d911f4b804c81dc1db4b4d89f6a181358600b82fa823d5f3ebafa6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/all_fit_attempts.csv",
+   "bytes": 29437,
+   "SHA256": "dd85ee59e6c13f90b58046c9dc03bd5c594f41898e0c46249eba95a45a434e01",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/all_fit_attempts_block.csv",
+   "bytes": 7972,
+   "SHA256": "f069e643a687ba0aa7f1e9c7dc1fce70265f8c007460d62dc3ff082f6229810d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/analytic_limit_risk.csv",
+   "bytes": 3389,
+   "SHA256": "4b1aa5fe065dc0b03fdb1a89fd24c03f179c58306d5d73965922a1a14c67f92b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/analytic_limit_risk_check.csv",
+   "bytes": 14358,
+   "SHA256": "04b284fd8835105e2b762d1482e8a7bbdb75d5dbd123daa13f248bdf63708eca",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/analytic_limit_risk_summary.json",
+   "bytes": 2041,
+   "SHA256": "8b99120919bb8f2c4c731b8bea2a9110996cead2db600e2b5efade65f18224d9",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/block_effectiveness_listed_over_1p5.csv",
+   "bytes": 10,
+   "SHA256": "191b0087bab208cd1a01428f46d254dd5762cbf47161793bcbff7424b2626147",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/block_effectiveness_other_objects.csv",
+   "bytes": 45880,
+   "SHA256": "937aec32c53417d4d24eb260a383dc7bcacb8bafc0ebda0467129f735ddbbc94",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/block_effectiveness_summary.json",
+   "bytes": 319,
+   "SHA256": "d77744248cf581818c0277ae15a9eae40e94b38982d49061d68a1240dcec29c4",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/block_effectiveness_targets.csv",
+   "bytes": 4826,
+   "SHA256": "927484475ca021a2c47a64c2ad95875de2c66251df4c061eba985ab4e39d7119",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/block_effectiveness_withK12_listed_over_1p5.csv",
+   "bytes": 10,
+   "SHA256": "191b0087bab208cd1a01428f46d254dd5762cbf47161793bcbff7424b2626147",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/block_effectiveness_withK12_other_objects.csv",
+   "bytes": 61569,
+   "SHA256": "fa74631c4c750995403e9c72102ab5464a8255f6cdeed5eb36722308658e52ee",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/block_effectiveness_withK12_summary.json",
+   "bytes": 349,
+   "SHA256": "4943b696da69246388012cf622aa484a0015d4ecd4626416098e399e312da749",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/block_effectiveness_withK12_targets.csv",
+   "bytes": 6245,
+   "SHA256": "968745754e31fbe168f6d67f496b291ed72700b9943b64ed5e6b72559db8413b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/block_subspace.npz",
+   "bytes": 233048,
+   "SHA256": "b3793c603b89560fef2467884cf1162824e0110ba3630d820aea9ee128753031",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/block_subspace_diagnostics.json",
+   "bytes": 1078,
+   "SHA256": "a8e0d61150d345ab4ac2557711d6051dfa08888dc014756d5fe9dbbcf4ec0320",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p01_GMM.json",
+   "bytes": 2424,
+   "SHA256": "a0ab4cadce461c8fb0ef301d0518afc654a5941cbc8a2d11a2ddbbc53e1e2f1d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p01_GMM.npz",
+   "bytes": 2397219,
+   "SHA256": "56339e80238f2dffd5ee16307c77863e74adf9b2c2eae258a8dce21185fb8b5c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p01_gmm_warm_df12_BLOCK.json",
+   "bytes": 1252,
+   "SHA256": "9035c9b469dd0ad3008882d11b18268e10efd4380d6d535775911dc8bfdd90ed",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p01_gmm_warm_df12_BLOCK.npz",
+   "bytes": 2497435,
+   "SHA256": "ff741e703f2b8815c5af48f953040005ec50858c03d72ecc96558a347f24ca02",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p01_gmm_warm_df12_PX.json",
+   "bytes": 2524,
+   "SHA256": "39d5b7530d896277ed00651b70c3cea168bce4b8a862e5d5e27f7c9b16efca74",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p01_gmm_warm_df12_PX.npz",
+   "bytes": 2397464,
+   "SHA256": "24d3502dc54eabbd12b05ebbb94c71091f4bf5187459919756925e71e4e4c0a2",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p01_gmm_warm_df200_BLOCK.json",
+   "bytes": 1254,
+   "SHA256": "c8032e69e61a493663a3da9e4936e58f6c62c7dce32718dca0e80ab616ab802d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p01_gmm_warm_df200_BLOCK.npz",
+   "bytes": 2497652,
+   "SHA256": "dd47a44d8ac296443a15d192022212d9e7576fbabe7c4898f9360274ef758a68",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p01_gmm_warm_df200_PX.json",
+   "bytes": 2534,
+   "SHA256": "d70eddf6ff54916dcb8334aaeeaa8194eda5c831acdb678dbe3edf10cb40f2af",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p01_gmm_warm_df200_PX.npz",
+   "bytes": 2397717,
+   "SHA256": "b79f2f5d4fa0ef15d2c8f664fa64f1d1b87dca667b1bc0552304058f3f258965",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p01_initial.npz",
+   "bytes": 2403493,
+   "SHA256": "cbea7d337d9cb9670a76a9127e275625aec4b905f91437ee0a1bb1d5d1f642f4",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p02_GMM.json",
+   "bytes": 2429,
+   "SHA256": "2f7978fadf35a75dc3868fa896b201af77d7b1efad11db32b95e8ba214da2b0c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p02_GMM.npz",
+   "bytes": 2397247,
+   "SHA256": "f2055fe437c696eb2e78914551c457516396f774e7383495b67e98a1049eb078",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p02_gmm_warm_df12_BLOCK.json",
+   "bytes": 1246,
+   "SHA256": "77d1b341d15ae311471b7dcffec798d1a0e947a1d91af10add5e41ebb518f6d5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p02_gmm_warm_df12_BLOCK.npz",
+   "bytes": 2497167,
+   "SHA256": "1aa363b62f75e9e4c933cccfa8bcce364904e4388de84a2ff343219fcdb35634",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p02_gmm_warm_df12_PX.json",
+   "bytes": 2536,
+   "SHA256": "bbbd4d67eb943c69eec405d6d9c5ab33eb8a41fbf2fac8559a3028b089da941a",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p02_gmm_warm_df12_PX.npz",
+   "bytes": 2397356,
+   "SHA256": "820005aaaf3a496c5d56f8da312949b2a8ebe6cc0e166867637304ebd710e50a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p02_gmm_warm_df200_BLOCK.json",
+   "bytes": 1249,
+   "SHA256": "d46ae309ca2bb51ce6f8156fe333f782313cafe83e102780e0434b239a180a62",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p02_gmm_warm_df200_BLOCK.npz",
+   "bytes": 2497589,
+   "SHA256": "3d44ee123666bfa21aaefb8f48520fdb1c8dc0f5fe302ae445c9405bffce28f3",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p02_gmm_warm_df200_PX.json",
+   "bytes": 2528,
+   "SHA256": "198bf1a751772c03ca73bf11344afe13fa350f7571b64332cd118dc7eafd9e22",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p02_gmm_warm_df200_PX.npz",
+   "bytes": 2397257,
+   "SHA256": "1197084dffa94576d20c9406837d42d1834a40183c63a309707f0accacba0326",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K12_p02_initial.npz",
+   "bytes": 2403412,
+   "SHA256": "f08edac2380e0770a7ca59899d66f13ea727b1d5d19028f2f6e59264b16e2ee2",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K1_p01_GMM.json",
+   "bytes": 875,
+   "SHA256": "ee6ebd57c2b32d146387ec45ff197b775997a82a8a9d432365045ab17f3d1424",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K1_p01_GMM.npz",
+   "bytes": 117577,
+   "SHA256": "71bc6f4ab9902781459bf25b5ef690a360500f5db0905d04d7fb2bb596f9ed7b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K1_p01_gmm_warm_df12_BLOCK.json",
+   "bytes": 443,
+   "SHA256": "658c2ea64ddc2e797a6d20bfd78fdd09a41f318cdde0b79c2fc5328fec587f4b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K1_p01_gmm_warm_df12_BLOCK.npz",
+   "bytes": 336455,
+   "SHA256": "5e20d3ede6978d22127fd0d5d07eb75345dddbcc27694f3583234db0cd46473a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K1_p01_gmm_warm_df12_PX.json",
+   "bytes": 876,
+   "SHA256": "9d870798c41f9c95b258f9878f8bbd40404f12e590730a75708d6f777e5cb8c5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K1_p01_gmm_warm_df12_PX.npz",
+   "bytes": 201139,
+   "SHA256": "509e0a3a1bf9e31cc275b37cdc5221bb32055e1ed05357fb0c613a1e727cfc8b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K1_p01_gmm_warm_df200_BLOCK.json",
+   "bytes": 444,
+   "SHA256": "344dcbf55228ae692b0df682f0b8e85125bb434544ddbaa6e1ce399f5ebd4394",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K1_p01_gmm_warm_df200_BLOCK.npz",
+   "bytes": 336580,
+   "SHA256": "bc6b98cb1af2372acbc1308f6c34f13a356e0023a787c95d69341d3e50cbcd75",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K1_p01_gmm_warm_df200_PX.json",
+   "bytes": 877,
+   "SHA256": "841d0034f853081e2ad54498a73520caab3d0cc0c7133c5e7317b120dbc8a3f6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K1_p01_gmm_warm_df200_PX.npz",
+   "bytes": 201081,
+   "SHA256": "99e1d551452577950d8f55600055058a09cd27b4e8fb834b1efc98138c4fa50b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K1_p01_initial.npz",
+   "bytes": 117611,
+   "SHA256": "ad8b703ffc06c1ad409189c9b0a912cc4f18fed18aa921f6d6285bbd76b706d0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p01_GMM.json",
+   "bytes": 1185,
+   "SHA256": "038ffb8f62a4244f4520cbcb8ac93f88219f2e5fa8fba7ef8f1554ede86c285c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p01_GMM.npz",
+   "bytes": 600775,
+   "SHA256": "7f806d77aad2bda9f6274d6c5325bbd5c6d536b9f3bf8b578020030973c5339f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p01_gmm_warm_df12_BLOCK.json",
+   "bytes": 613,
+   "SHA256": "6f65b0512f6248c397966947b513a2bbe872e75a26778bbf4b0c0323a239ef79",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p01_gmm_warm_df12_BLOCK.npz",
+   "bytes": 788459,
+   "SHA256": "1b9c9b049bd94499188e20d168b1e3d6e9274e9542f61fda086aa6c69d34a9eb",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p01_gmm_warm_df12_PX.json",
+   "bytes": 1204,
+   "SHA256": "ca185ba30700cd79944f922d65e6289d7f9be387a7fadfbe1414d16d593cfc6d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p01_gmm_warm_df12_PX.npz",
+   "bytes": 600531,
+   "SHA256": "bf12db79a4675328482e237bd8afbe61d05fb8e7db3560fb5c4886bf96393832",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p01_gmm_warm_df200_BLOCK.json",
+   "bytes": 612,
+   "SHA256": "97623099a93eb36942f986f3d3486177bce26de3b15bd7498cc4e60bc56f01f9",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p01_gmm_warm_df200_BLOCK.npz",
+   "bytes": 788682,
+   "SHA256": "f1d921441bcc5d5f493ba01629508224b4d832900035a2896d8997429b6e2cda",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p01_gmm_warm_df200_PX.json",
+   "bytes": 1209,
+   "SHA256": "fe561ca8884ad7339f94046ad7754055134c01ed303936f2f70d997714b31206",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p01_gmm_warm_df200_PX.npz",
+   "bytes": 600635,
+   "SHA256": "dba41bc3f6fca0dc77dd00dda2c8cb63470d15b9bccc7786af136a0e56a0f0fa",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p01_initial.npz",
+   "bytes": 603638,
+   "SHA256": "ce38ba71a8b508cfd141f0e494a9cad7e970da3fc1b50aa40551eb539eba43c5",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p02_GMM.json",
+   "bytes": 1186,
+   "SHA256": "c1651bba9fdfaba52609c1b27e92dd35a8180276e630c6526033946a0b3e5d4f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p02_GMM.npz",
+   "bytes": 600533,
+   "SHA256": "c77435140a545c171d5193ef85f89438395e0327f5b3b15a18b895bc4c1c4b91",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p02_gmm_warm_df12_BLOCK.json",
+   "bytes": 613,
+   "SHA256": "a49a36044cd2071eeb13bc55e51985c80aed2637e00fb0d57fb822f68d3d89ff",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p02_gmm_warm_df12_BLOCK.npz",
+   "bytes": 788522,
+   "SHA256": "ee87824588cdb04711cc8ef8205565fbb7bee07d0ae09dbcc2c8b9f60395e84f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p02_gmm_warm_df12_PX.json",
+   "bytes": 1204,
+   "SHA256": "cdc7b46bcfc975e8abe6e38bc97aac4c4d0f7ee15c6ca88bf9e4c8f787a5fe80",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p02_gmm_warm_df12_PX.npz",
+   "bytes": 600522,
+   "SHA256": "4dd5f18e16efebe2e3754fd048d8e5581342525d2dce235844720288a7ed423a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p02_gmm_warm_df200_BLOCK.json",
+   "bytes": 613,
+   "SHA256": "80dca30629434f330bea1362a01f05b406a37d7bd696bbebca79d7d8ced1fe83",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p02_gmm_warm_df200_BLOCK.npz",
+   "bytes": 788919,
+   "SHA256": "4f15a77f84ada843ad9f7b5c02c19bd3af0434a8e1379be4f6e8cbf2fbe24002",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p02_gmm_warm_df200_PX.json",
+   "bytes": 1206,
+   "SHA256": "02935476477b21a9dbae170f6f5d96ca27f6bc6b25005ef333db976c9f7f9211",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p02_gmm_warm_df200_PX.npz",
+   "bytes": 600602,
+   "SHA256": "52f98c7a1190ddb8290122a58c3519469eff9acfe7fde365269e49fb853ed757",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K3_p02_initial.npz",
+   "bytes": 603623,
+   "SHA256": "b1ebe4467505d1370a36ceeea65fe2ea3aff51e4bcf11cac069b51636c4dbfb6",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p01_GMM.json",
+   "bytes": 1603,
+   "SHA256": "f8a89008481632bfb18c9c40b1377a2142255c8dededc48faa962b9d9c50b897",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p01_GMM.npz",
+   "bytes": 1199740,
+   "SHA256": "1a2a620c134bedd30cb5de004e49a5e0e67aefa5ed984a277fc2c4a273f2b632",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p01_gmm_warm_df12_BLOCK.json",
+   "bytes": 829,
+   "SHA256": "5d43004636cece794c56bb3d2de9f4bc705b8ed64592331645b4bea2214dba08",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p01_gmm_warm_df12_BLOCK.npz",
+   "bytes": 1358003,
+   "SHA256": "38ac69fafcb50437b7ac7fc29477fad87d56094367015567764c797adb543b37",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p01_gmm_warm_df12_PX.json",
+   "bytes": 1657,
+   "SHA256": "67b7253b72a5048aa50fc474b743d88582beec02b846f100c38030f689bd4470",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p01_gmm_warm_df12_PX.npz",
+   "bytes": 1199547,
+   "SHA256": "53923ebed8c640612de3338dbc718862aee53e0c726ed46f3ec000cda6e243f6",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p01_gmm_warm_df200_BLOCK.json",
+   "bytes": 830,
+   "SHA256": "283339c3e6d473c32b6654092d6ae73d8dc683dde708a6205b9203ce49a3202e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p01_gmm_warm_df200_BLOCK.npz",
+   "bytes": 1358400,
+   "SHA256": "d85fc30ff342fd3cece8c18f7ceeab02aac574116c0006ab692afc3cda2a4b69",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p01_gmm_warm_df200_PX.json",
+   "bytes": 1660,
+   "SHA256": "b4d3795fc877eb64713dd69501d242eb8881c9f27c9dd25d1581649b39e7cb20",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p01_gmm_warm_df200_PX.npz",
+   "bytes": 1199430,
+   "SHA256": "2da7f23672ff6c1adf1c845f43e37238d261d6fe7ed74e4a1f9a65577b46521e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p01_initial.npz",
+   "bytes": 1204278,
+   "SHA256": "3ab7453c720834928682d6417d8d49d5630e09c2b9ea5784db51c61c2f2cf562",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p02_GMM.json",
+   "bytes": 1605,
+   "SHA256": "5adc447b6eedbdb966ee4e47a30733dc08c6434e2edd2385c2d2ee0d178fe872",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p02_GMM.npz",
+   "bytes": 1199841,
+   "SHA256": "1c331bcfa2689e93ebb0d69738b7996e5a862cea345174aa2383d9b9790ad2d9",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p02_gmm_warm_df12_BLOCK.json",
+   "bytes": 826,
+   "SHA256": "62279200b5a3b94b5973e5080f8115c96d4403dbc1eb8880a3a43b52e368bdcf",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p02_gmm_warm_df12_BLOCK.npz",
+   "bytes": 1358185,
+   "SHA256": "aede7568723c50e84963b7cd97870a42d0bc70fd59e9fdac150f61dc23b48d68",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p02_gmm_warm_df12_PX.json",
+   "bytes": 1644,
+   "SHA256": "0eec464e163ce4a07c026bb13484ccdbd2a25363d349187c5978ef4aaa6d8efb",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p02_gmm_warm_df12_PX.npz",
+   "bytes": 1199521,
+   "SHA256": "893f60da5d2cd527f4366e9bd9fad7a52a1f73aa082ab275f864d325a87e566c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p02_gmm_warm_df200_BLOCK.json",
+   "bytes": 831,
+   "SHA256": "75d9ada569c69eeafc77b4b4649718d48cc7ee40959cd7ca28ce6430a28fee05",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p02_gmm_warm_df200_BLOCK.npz",
+   "bytes": 1358436,
+   "SHA256": "d1a36e5edf39ea53a97012b4d7363b1b1d5ae87d5272ff0f4ce17510cb6e5caa",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p02_gmm_warm_df200_PX.json",
+   "bytes": 1650,
+   "SHA256": "2abd5489f28750d4965a98c059fe751f5d703c5b812558c96afc0043af917a35",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p02_gmm_warm_df200_PX.npz",
+   "bytes": 1199615,
+   "SHA256": "2afea4d28a74c957104379eb0f00fdd2465ab0b95fdb4e350c10ad90235b126d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/candidates/K6_p02_initial.npz",
+   "bytes": 1204228,
+   "SHA256": "0b4eb18274081d4a73cec2a07b085a34cc9c6f8d1dcc63150e3fd0f7117aef64",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P138_K12_full_lower_upper.png",
+   "bytes": 185522,
+   "SHA256": "b33523dc25deaafc24df6ef8ca6ce7130b72a9cea2744fee67e89d1c648ab140",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P138_K1_full_lower_upper.png",
+   "bytes": 205306,
+   "SHA256": "ab2eba83eed5b665e96573630fd1d28d6acfe6e8f5ad98e006ab021a31c28986",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P138_K3_full_lower_upper.png",
+   "bytes": 202196,
+   "SHA256": "a793dcb0400bb5aac7b68dbef940c851b8a51bb27d4af20d5cffae1004b02c2e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P138_K6_full_lower_upper.png",
+   "bytes": 199803,
+   "SHA256": "2075aa5fcd3342d1c3c92f701dd6117be25ebc486913ca29913236f0befba9e1",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P138_PDF_all_K.png",
+   "bytes": 231514,
+   "SHA256": "1b524f5af5b6f88b3411d1dc1418ec5da6c3a9157364d2a3efe9b1067d68a935",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P49_K12_full_lower_upper.png",
+   "bytes": 191372,
+   "SHA256": "7e9e047835709f0151a24da928faaf7e21a41ff2744d741061a30fda74ec02de",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P49_K1_full_lower_upper.png",
+   "bytes": 202563,
+   "SHA256": "9426938759d6272344d1d47ff094660192ec63a03c9d4c78a2baf481ecfccb73",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P49_K3_full_lower_upper.png",
+   "bytes": 192362,
+   "SHA256": "ba18b28ea5ea92976abf967f05afc33dbc02b6cbc8000f9d57b5623357e49b1f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P49_K6_full_lower_upper.png",
+   "bytes": 192938,
+   "SHA256": "372961820e8e4221c04ee4cdccf836394f6dd51523d40f3a53ac05c50b708d18",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P49_PDF_all_K.png",
+   "bytes": 239512,
+   "SHA256": "524f3d06d0945d040a6cbe37316ba529605f185684eef2a1f8b3c42196b2236e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P6_K12_full_lower_upper.png",
+   "bytes": 191980,
+   "SHA256": "1e47f370ccaf170bd2d9be7da8ef3e673104dc9cdba9c0f2252607447a60dc8b",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P6_K1_full_lower_upper.png",
+   "bytes": 202062,
+   "SHA256": "042d4c1a3ea216ef4251fd4b46bd3eda5806c5568a1367d017b67c44e476f6a6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P6_K3_full_lower_upper.png",
+   "bytes": 205239,
+   "SHA256": "7efde82dd9f5bc495f9fb719c9644b771f9e89de00e631200588882cadf7fdcc",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P6_K6_full_lower_upper.png",
+   "bytes": 204063,
+   "SHA256": "26a21317daabd2f20a1909151019e910b5690c4a2c1b8c3d0ea3ca509595bf62",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P6_PDF_all_K.png",
+   "bytes": 242238,
+   "SHA256": "b96d9dedb7250ff0fb21e910b58010b0fed11f8ce382a3f04d1662359c2f1b71",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P73_K12_full_lower_upper.png",
+   "bytes": 186916,
+   "SHA256": "ffe3051b6083c8d10e2fd5273f88a66fa4683afb7e166f113b61832b2a757928",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P73_K1_full_lower_upper.png",
+   "bytes": 202974,
+   "SHA256": "dd89eb1f83b1428a73773f865015725cb138a8fd2589227bb9b9c5947dcd5a45",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P73_K3_full_lower_upper.png",
+   "bytes": 203214,
+   "SHA256": "290a6af364070ba28caf148b0e4977a0587981ad7dd614540c562f51c979da24",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P73_K6_full_lower_upper.png",
+   "bytes": 199675,
+   "SHA256": "1e214507ae1923444fe21b9272885a0e5ff8d882effcb1bcd962fe5bbf9e5657",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/P73_PDF_all_K.png",
+   "bytes": 233678,
+   "SHA256": "5930f507cabf0dd97c91a310181d617586f19eb4d2ba35cebc7f9bb2bf0fe0bc",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V141_K12_full_lower_upper.png",
+   "bytes": 196428,
+   "SHA256": "cec39db0619e24580d6de0bca303517aa0b4baf8a6832fd7d87eb3006b4b9069",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V141_K1_full_lower_upper.png",
+   "bytes": 202534,
+   "SHA256": "b3aea1d35ad46bcbc36ff35852848348ce44d5deb79cd051b045af0c434fe261",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V141_K3_full_lower_upper.png",
+   "bytes": 208334,
+   "SHA256": "361a4d983c9c6839aaa04d9d98c4c61f512cfb8c74703b6a18fd4f70c3bba6ee",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V141_K6_full_lower_upper.png",
+   "bytes": 208498,
+   "SHA256": "5c9efcd9518601e31b282b965cc4486e269a4eb9e13d05ab346a4e7d8d2a3cb5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V141_PDF_all_K.png",
+   "bytes": 240512,
+   "SHA256": "1d38dc966e8a2dfd8eb21e41a462879cbbee88c1c870015732ecf855dfc832a9",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V80_K12_full_lower_upper.png",
+   "bytes": 182952,
+   "SHA256": "8ca967771c62c7206e42695f433d68937d3b38907ec389dab50de47b7d35e751",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V80_K1_full_lower_upper.png",
+   "bytes": 204483,
+   "SHA256": "467f6ef22753305d94392a08fdbd33cd9c840a5e0b775d41858a9a4849f45794",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V80_K3_full_lower_upper.png",
+   "bytes": 201442,
+   "SHA256": "18893122a88123c2499d1724996b073d3c5064512f43741169437a574fc64173",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V80_K6_full_lower_upper.png",
+   "bytes": 196276,
+   "SHA256": "b48aed9dac1e05535f230acef3af192deccae773b5885737605647ff9195df4e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V80_PDF_all_K.png",
+   "bytes": 234873,
+   "SHA256": "c875296d0f864afd17208f638c33e6e172c4cff31a4518551ecc777299159db6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V87_K12_full_lower_upper.png",
+   "bytes": 183622,
+   "SHA256": "2fbdc43b11cde914e65926714f98907edf966c57ddf272cd4f6a22acb1e48abb",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V87_K1_full_lower_upper.png",
+   "bytes": 201119,
+   "SHA256": "45ffbdac0d64cbcfe72e21b1903750ed1b3e1eebced942ad764885b61dd794ed",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V87_K3_full_lower_upper.png",
+   "bytes": 199695,
+   "SHA256": "91ce90417c13135af8eb2394941631a6a9ebe00ab8a996e32ffabbba9164b02d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V87_K6_full_lower_upper.png",
+   "bytes": 196118,
+   "SHA256": "82ab50dd8fe3c4b4cb5c40a6476339dad34bced42cd98db841587df7d8ad1c57",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/V87_PDF_all_K.png",
+   "bytes": 229190,
+   "SHA256": "ab7e3433cc1fd35f3bd87f7893176ac9173b3f52591522ead3cdc4f80312c7c5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/display_range_outside_probability.csv",
+   "bytes": 4568,
+   "SHA256": "fba8af7a4e1a051c5dbf96f7218726a950e78ffb6027894c6663a0e71c3a22b5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/loss_K12_full_lower_upper.png",
+   "bytes": 180824,
+   "SHA256": "e33e33755b67433e1d942327d05c8656f617bd7b3b671fd15e32bdca4350b70e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/loss_K1_full_lower_upper.png",
+   "bytes": 194126,
+   "SHA256": "6484f2a1a9e1b9e091ca867cd7879023294488709ef9290bca73618cf09dc421",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/loss_K3_full_lower_upper.png",
+   "bytes": 195298,
+   "SHA256": "79007db6cbd128da3cb5e47c1b7eb84ffbb43ed59225db6105c3847e3aebe632",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/loss_K6_full_lower_upper.png",
+   "bytes": 188293,
+   "SHA256": "c09cb9557f756e7231ec6d03bb662c51154fddcd0daf197aa2e8e1236ea37718",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/loss_PDF_all_K.png",
+   "bytes": 233636,
+   "SHA256": "404c56f4cd68ca40de987a5180427b67fcc8ca86f50909ce30ab078913bd50be",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/diagnostic_pdfs/regeneration_check.csv",
+   "bytes": 160,
+   "SHA256": "e239807cd8e62a9d90699f0ebb2606cc8ba33c7b9494318f20d7c8ccbda250c8",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/effectiveness_listed_over_1p5.csv",
+   "bytes": 10,
+   "SHA256": "191b0087bab208cd1a01428f46d254dd5762cbf47161793bcbff7424b2626147",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/effectiveness_other_objects.csv",
+   "bytes": 45857,
+   "SHA256": "13f29c3e3a92d1e9ce5f7500dc41b3208d6bb7abc8ebf7634d2f09b2b73febed",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/effectiveness_summary.json",
+   "bytes": 318,
+   "SHA256": "a4cdc53cd38ce33a6dd7e3957c873dbecc1cf9005fcccab7c24b618802c3d83e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/effectiveness_targets.csv",
+   "bytes": 4727,
+   "SHA256": "d9b657a970b0e177b628a800789b0f1b53bf7e039f351cf0a611179e5e8208da",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/effectiveness_withK12_listed_over_1p5.csv",
+   "bytes": 10,
+   "SHA256": "191b0087bab208cd1a01428f46d254dd5762cbf47161793bcbff7424b2626147",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/effectiveness_withK12_other_objects.csv",
+   "bytes": 61493,
+   "SHA256": "833324721f0c1fd435b6fb594b450b3a4b4a1a31f01f0044b1cfce5436aeeeb0",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/effectiveness_withK12_summary.json",
+   "bytes": 333,
+   "SHA256": "106f390d06f5a3d3fa89f64b74ac4e418971154316bdf4e609d7cf48adea5efd",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/effectiveness_withK12_targets.csv",
+   "bytes": 6124,
+   "SHA256": "257a95a3758a2469f75503095ec9eb53b043fd56aad137bdbfee23f4535f5205",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/fitting_inputs.npz",
+   "bytes": 16232456,
+   "SHA256": "5177effd3b967450853e636ab79a4e10c15c4b63f09a015a29ad82c8ede61e8e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/forecast_operating_point.csv",
+   "bytes": 15553,
+   "SHA256": "d8069dc3c713dff8c46fadd0800c3ee1213e0ca43780974dd810db3a39ce37a5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/limit_risk_events.csv",
+   "bytes": 888,
+   "SHA256": "0d11d460be3d3ffd135e541557f3513eb81f64d379ec2c9c4bb99344e4b19fe2",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/prepared.json",
+   "bytes": 302,
+   "SHA256": "15d3e079eaac00b8e296d7437a125d7e24a65d9a2fc9cee0f1d7e5d24d256b49",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r0_complete.json",
+   "bytes": 610,
+   "SHA256": "1b6c0f2cbe6c7dc9836805418105fb338b3026887073a9960479574ba9188eb4",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r0_curves.npz",
+   "bytes": 7505198,
+   "SHA256": "2ac3f135517c9ab7d509082c4adf2e192372277fd51ad915315ff38df3f39f41",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r0_global.csv",
+   "bytes": 195730,
+   "SHA256": "8dbefc651a5e63911fa8e7f22894a46a9c6e50cc006efab15826ce798b84cbcb",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r0_quantiles.csv",
+   "bytes": 708034,
+   "SHA256": "10acd18cdaa34a6edb72c0943e0c3954dc1b53f4ebac3b88a832a9ee6eccb5e7",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r0_saved_outputs.npz",
+   "bytes": 3799050,
+   "SHA256": "5799e647232c90c7155730a4a28abc26e42fec01a6772222e824ba7a67cafd04",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r1_complete.json",
+   "bytes": 611,
+   "SHA256": "57c51b4c740a5d2467a34a79b39b7b63fbb26c587d409643bd5ae7e66514fd8d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r1_curves.npz",
+   "bytes": 7513119,
+   "SHA256": "fb36d85909ef6e23aed7295d5ee47c438c206e4c760126bc2777d2632a4b680d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r1_global.csv",
+   "bytes": 195637,
+   "SHA256": "614b18eda125e04ea764f976e1f945b2996d7cd4f42c8ecd4129c19ebcadc1f0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r1_quantiles.csv",
+   "bytes": 708169,
+   "SHA256": "bc831afce66c612d6ca51cab1b7289b0a6a1fe69c49e9e7fc2f6835bf51c0504",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r2_complete.json",
+   "bytes": 611,
+   "SHA256": "3aa93088546da9a8cbbe0a5534379feb45bc4e142daa94893e749140353231d5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r2_curves.npz",
+   "bytes": 7512526,
+   "SHA256": "d2e3b654b81754aa3554db4d7a9d19881f0e1b94ed88e4aee1af182347486388",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r2_global.csv",
+   "bytes": 195692,
+   "SHA256": "1ec8f0763b388b75bee8e94898a51338892bcf4980e2de64e0b7069cd05a6988",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r2_quantiles.csv",
+   "bytes": 708271,
+   "SHA256": "8a8418c15b1fc9ac6e87d3f981f9e638ec0867910bc12f73e6695abbe99817cd",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r3_complete.json",
+   "bytes": 611,
+   "SHA256": "98a4e4f0f1279ed7d3cec5fa9107b0495b2a62b858097dd3e12ff478edf079ce",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r3_curves.npz",
+   "bytes": 7515716,
+   "SHA256": "ccc7f28a778c29cb03120ef6c365aa317482cf8c8e68ea70d9c8783b48e375fd",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r3_global.csv",
+   "bytes": 195687,
+   "SHA256": "91e791fc24aa142c988ed81e0ff15aafbdbc27dcd2b2962acb807495f9f59243",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K12_r3_quantiles.csv",
+   "bytes": 708226,
+   "SHA256": "e42b10d819f6d5b21edb55fd6ffd0ad05da35696e7824d6f09ac7454878be00f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r0_complete.json",
+   "bytes": 475,
+   "SHA256": "8b184b2b4430da46deb9af81a88908b9d8b185bf332e93f7b5dac6fa2b995131",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r0_curves.npz",
+   "bytes": 5242574,
+   "SHA256": "4e4c0c1795f09c91642dcee638ec27a1e3506f4bc360aa000078bda177e52869",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r0_global.csv",
+   "bytes": 189953,
+   "SHA256": "6448b11f8ae0ab83bd5114ba267c87bae261c1e09ee991b53976347796cbeeaf",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r0_quantiles.csv",
+   "bytes": 697101,
+   "SHA256": "1d7b605136fb0caa1243f7c953090589a17866ca3f26dd5bac3dd0c56feac397",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r0_saved_outputs.npz",
+   "bytes": 3847104,
+   "SHA256": "d6d7831d75d9ad94852fba3f69abf49d209abd48194c5ceb434fb685ee55293b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r1_complete.json",
+   "bytes": 475,
+   "SHA256": "ef5522f7f3beeb29640f3928ed1e889daae8a69d10781207c2f1dfe0c68b117f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r1_curves.npz",
+   "bytes": 5242503,
+   "SHA256": "f880acc0b8da3143abedba71b277d8e3477c759e30333308fcbe96b7fb58f7bb",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r1_global.csv",
+   "bytes": 190057,
+   "SHA256": "b0eca2197d2d3dcc2988f7caafdaf9ca994be5b04c5ca440ed7d524530f22ef8",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r1_quantiles.csv",
+   "bytes": 697392,
+   "SHA256": "c7973a998ba40bcc957b4635fac5ab28109e214d9f1d93528a543a31325ff476",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r2_complete.json",
+   "bytes": 475,
+   "SHA256": "019565ecee242b3f5845b6a104330dcd6629354787afcf5f7ff8c93d5098b760",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r2_curves.npz",
+   "bytes": 5244370,
+   "SHA256": "4d0ff8cb640aefeed70a502ef5187587c1533fd49cb2752d4d1c3454e695cd27",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r2_global.csv",
+   "bytes": 190007,
+   "SHA256": "f8ace398c9b9d06b708c8481fb31946289ec8408e411f3b9e23fa95cb88cc01d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r2_quantiles.csv",
+   "bytes": 697640,
+   "SHA256": "93283972ba37b6bfb9d018d4f17bf174d0605cfcb84517267ea56192dfad644f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r3_complete.json",
+   "bytes": 474,
+   "SHA256": "203cd2339f31929924929cc3d06862c671fd784585f88d01e3da879b4d8d6ec8",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r3_curves.npz",
+   "bytes": 5243839,
+   "SHA256": "426aadb47a9ab9490ddac8f4cd4fcd3087f0a1a6bd6a0d9dd8e4beb92959fce1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r3_global.csv",
+   "bytes": 190127,
+   "SHA256": "6e24d259609eef921e1e4e1f0733e8ff48c19970ef89a69be712de0d6b395028",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K1_r3_quantiles.csv",
+   "bytes": 697003,
+   "SHA256": "ead5480e4bcbd99344140376c490bf8de609f198b2d14ba908af8c6c4450ecb7",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r0_complete.json",
+   "bytes": 510,
+   "SHA256": "f8ecc4ad685b216bc57eed418bf676d51468982ae1626bb178d022ff4c526f70",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r0_curves.npz",
+   "bytes": 7499328,
+   "SHA256": "c96439ea1afede0571ba03773e30c72205c47ffdd14c13b2b4e80b8fd73d2de1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r0_global.csv",
+   "bytes": 194295,
+   "SHA256": "d20846ad65d226b9be085813ff9b75cc5cd69760b16e450fb913ce8b7e8b37b9",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r0_quantiles.csv",
+   "bytes": 700111,
+   "SHA256": "5d5c0709fa46745b911d433f898a99e372edad2d6d2b8e944c1a035ab2309bf4",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r0_saved_outputs.npz",
+   "bytes": 3820593,
+   "SHA256": "091e13d4054286e5734f4ec46ff128c80846bdbaeea1fc0b7041f754a6d9373f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r1_complete.json",
+   "bytes": 509,
+   "SHA256": "e00cb2e42df55fb81d5ee89981dc0bba80c604b38ae5337ae033f59b726a0569",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r1_curves.npz",
+   "bytes": 7502573,
+   "SHA256": "22c096cbd5526d8a37eb36409c32726a3c93482822dd3a9f0b16188c362f22c1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r1_global.csv",
+   "bytes": 194117,
+   "SHA256": "f635c94e3561078023e3b31f935f3f01a376e80250bfa99dc283e1bd620e3cda",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r1_quantiles.csv",
+   "bytes": 700208,
+   "SHA256": "aefc6377045f3f05c1bd6f1e05db36c0cf60fdd90669a1502d7ce6db031a9a9e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r2_complete.json",
+   "bytes": 510,
+   "SHA256": "5e6efcd96f4c30823ff6f6e031c0b6b49afe5666d25cb39b2635647ed9c74388",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r2_curves.npz",
+   "bytes": 7505834,
+   "SHA256": "45673d7c4f078585ff30eda3c3047472142c73d3d4b380454c57e995f46bfb25",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r2_global.csv",
+   "bytes": 194192,
+   "SHA256": "db92dd48516370daebc7a4523721131816af9e386805c3a34422d2f5921d4af2",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r2_quantiles.csv",
+   "bytes": 700209,
+   "SHA256": "311e6eca49241794921082d34470d51e6f8842ac85dbcca5cc76409d8bc23e37",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r3_complete.json",
+   "bytes": 508,
+   "SHA256": "c307232a2609402a8d1f73e4c8e79c41ac838186e2441de22f7c3d666ad614d9",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r3_curves.npz",
+   "bytes": 7502796,
+   "SHA256": "0c2ba6338d543fa388c45a759a47362fb00d9d074aeb72f4d423b3f0dcfabed6",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r3_global.csv",
+   "bytes": 194258,
+   "SHA256": "f30d40ec0e01139cc99ca1527f1907e29a5da7a42357ac542962b4e9cd977cb4",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K3_r3_quantiles.csv",
+   "bytes": 700107,
+   "SHA256": "e33f9bb4b5fed54841dcd7d23141350a74ee3bf28778570b6aef979b8f2ee959",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r0_complete.json",
+   "bytes": 557,
+   "SHA256": "9344080557c9579151d440a1f81be4acc4a31f7a8123af69bc432fc4080b7b5c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r0_curves.npz",
+   "bytes": 7526513,
+   "SHA256": "e4b1f70723087965b3ef6c432af534c663ae4cea2d9016f2c5a51ccf5967a532",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r0_global.csv",
+   "bytes": 194502,
+   "SHA256": "0351d5a17e8cc87acdcf4fd0d4fcf12edc59c9602b995f1a771630f77e03afdb",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r0_quantiles.csv",
+   "bytes": 700394,
+   "SHA256": "1032383452b316fda7c12f8d77bf00867a1a91b9e3647c8d6a1a5177b9d6df3b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r0_saved_outputs.npz",
+   "bytes": 3805565,
+   "SHA256": "c78825f50053488eadc3453fa97f5c0bff921e9b4eb1787caebd491b4d054e26",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r1_complete.json",
+   "bytes": 556,
+   "SHA256": "110dcdb151767bb4c804ec0830fe8fd41084173bb837dc2b004e6309937e0b5f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r1_curves.npz",
+   "bytes": 7519210,
+   "SHA256": "856dd1cc553a49af44d8ed0d61d4381509f67cecd8ef9bc05a19fd9dd6fde625",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r1_global.csv",
+   "bytes": 194503,
+   "SHA256": "512c1de67e846681433e45c08fc9964e6e4c8a422d078198d1982993f0521ec0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r1_quantiles.csv",
+   "bytes": 700359,
+   "SHA256": "3c7c8a1bbf966da444cd4651a06f45d534604dd56d4de89c7b44cc575da4c557",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r2_complete.json",
+   "bytes": 556,
+   "SHA256": "d21f03f17c295c48751132a928ee0410bceae1b8daa80e5dbc41cb3ddc181ba4",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r2_curves.npz",
+   "bytes": 7518981,
+   "SHA256": "770e5f5f8cef6e0b52fcdeeb43159c72e9d7367d5c006dc60f9f0522d1cff29d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r2_global.csv",
+   "bytes": 194522,
+   "SHA256": "572476a32459843d26f165f606f1aa7ed88689d8b268021e79e5c89ad7bc43bf",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r2_quantiles.csv",
+   "bytes": 700307,
+   "SHA256": "79b5372c35706ce2ef32f89159053734db3b4350cba14bbe1b6268c13b88b364",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r3_complete.json",
+   "bytes": 554,
+   "SHA256": "b5c1b12212397f9008ba7d0380b4b6b26f6482e3c57a3a6652572828d7cd7e00",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r3_curves.npz",
+   "bytes": 7521976,
+   "SHA256": "4c996090bbedcd29fbec077d9cc84a4565c3131aa8ca178df9c1990be7923af8",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r3_global.csv",
+   "bytes": 194530,
+   "SHA256": "609342140aff5bb4f0dc64eb330803f5a335bcf1324cca0e723ddb5825000a01",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/BTMM_K6_r3_quantiles.csv",
+   "bytes": 700384,
+   "SHA256": "2b3fb24542e15219d64cacf4d77a3e5c512bfbb37db3caa4aa588faa28991fb7",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r0_complete.json",
+   "bytes": 593,
+   "SHA256": "60ff2d8bf754eae1dc988bdb970092a6574aa12d3c8518b193b0d26db82c27b2",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r0_curves.npz",
+   "bytes": 7494659,
+   "SHA256": "af39301ab93123d5ba46acc8144bd9f3405049d6652cc9ea804c86446a944a78",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r0_global.csv",
+   "bytes": 188167,
+   "SHA256": "57bd86a5d4812d990a2cf0592b6a10502079ab79db218af99414af11624e9e89",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r0_quantiles.csv",
+   "bytes": 650725,
+   "SHA256": "494e91c4d795cd4fc3102a8021119c88e34ad81ccdcf6549c46f089f0203da1e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r0_saved_outputs.npz",
+   "bytes": 3801294,
+   "SHA256": "f5ee4b1bf725ddd2e4c6fc58a78ded1007aa6240ca9250e3306d313ca124477a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r1_complete.json",
+   "bytes": 593,
+   "SHA256": "38d7520858bba6581d34887939d9b343c97acbc6b2dd9b3232c8d6905859655d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r1_curves.npz",
+   "bytes": 7490596,
+   "SHA256": "97fb97e3167b04ad4e929d19fbdd9ff5e61cb8c5d84a6cc75e29e7ddee02427d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r1_global.csv",
+   "bytes": 188187,
+   "SHA256": "421039ae12a1007f932e76e2360cc52a37c1f53ac959a63d6b6ef78a6b58a696",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r1_quantiles.csv",
+   "bytes": 650877,
+   "SHA256": "dc9309529c22a60c06f296acd8885b74a25d304ffe57cbf087f495b3cf2a4cdc",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r2_complete.json",
+   "bytes": 594,
+   "SHA256": "a69253451acb7f6ad29df6ba6f9030323f1b78fd9a883456d75cb6b51ab142da",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r2_curves.npz",
+   "bytes": 7493314,
+   "SHA256": "ab50a0d85f874d30f44a094208a561e40b0c3673be0d6ebb711897f455053229",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r2_global.csv",
+   "bytes": 188232,
+   "SHA256": "b57defdc4f2e97d91d629075a9ca781590809480c3a96bebacefb1da9a6c2acc",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r2_quantiles.csv",
+   "bytes": 650922,
+   "SHA256": "842c2286c86ee2cb159f973eb0592a0aee73b36308e758e40137ec19ce16f529",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r3_complete.json",
+   "bytes": 594,
+   "SHA256": "58eb1b405ed4a175f97300e5508e70f588cfaaac4445043418df5e6d59539e2f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r3_curves.npz",
+   "bytes": 7497459,
+   "SHA256": "f17e7abd153273cefb32c8cd9b684f0b84ef5177626a9e1ebe4ea30657678b58",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r3_global.csv",
+   "bytes": 188181,
+   "SHA256": "5e83d40c9e834c70c62f946970ceb0512a3b83fc206aee9fe2f5695296dc616a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K12_r3_quantiles.csv",
+   "bytes": 650787,
+   "SHA256": "f4f9a6f9a2064996a0a5e41ee2bcbd7e2a85a4074996854551fd16997edda18f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r0_complete.json",
+   "bytes": 451,
+   "SHA256": "5f2c1afb471725b40945eaaeacf75798e34ffe8f41d301002a539a421b6bc078",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r0_curves.npz",
+   "bytes": 5155936,
+   "SHA256": "632622b4485b516b6df0e46ffafa2ce832b379245c5351201821e7dc97356f5c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r0_global.csv",
+   "bytes": 182672,
+   "SHA256": "62f62246684709b55fdc134701f249d5ab3a7ccc63ca28d349fdcbf2599030a9",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r0_quantiles.csv",
+   "bytes": 636964,
+   "SHA256": "98ca5071ef6d018b7947b4f7b2597ec65b0fb3b442cbca0c09b5b1e1ee585ee9",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r0_saved_outputs.npz",
+   "bytes": 3848069,
+   "SHA256": "38f31f28c5f3e27d9d0b02febaaf4d890d41b06f92c11b759eaf2cd294ca30b9",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r1_complete.json",
+   "bytes": 457,
+   "SHA256": "b83eed53dc306b36d3cbf70e8356cd59d2bb8ae9060e59a00e81749c1e2bfdf3",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r1_curves.npz",
+   "bytes": 5157241,
+   "SHA256": "958a77b1bb7f9a332813e0143b72fa83866b7a660a7ac81d81f6ac52dae52dc8",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r1_global.csv",
+   "bytes": 182743,
+   "SHA256": "98b78b9abb1a88278f32cefe50c2c3d4736340c2b7e83b283b736ffceae151a8",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r1_quantiles.csv",
+   "bytes": 636831,
+   "SHA256": "bc8a14c7c704436018ac2960efa8cf2275645a42999dd0467a66017e76096235",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r2_complete.json",
+   "bytes": 457,
+   "SHA256": "f1311c162e8b99af4bdac726e68adbe4231e9dd42fd62ec109449c90cf057483",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r2_curves.npz",
+   "bytes": 5157692,
+   "SHA256": "ff305b5a31fa3620e06d4dcf88184bc41cbca2aac379cada5bf5a6abc644c172",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r2_global.csv",
+   "bytes": 182666,
+   "SHA256": "1d37c0e3dbb804d6c192b3d1bae4b5c9c20665e90ca88005b71204ee8d011401",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r2_quantiles.csv",
+   "bytes": 636815,
+   "SHA256": "8ffb6b60097195dde00251045d9efdabc6ea3446f5305472b057d112a67cf65e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r3_complete.json",
+   "bytes": 458,
+   "SHA256": "90d4b082a398afbc80cd17daf3d38685b7532a4ca1188b23a9ca385e7172d1de",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r3_curves.npz",
+   "bytes": 5155660,
+   "SHA256": "71e0004b82df574e827eca1e80250500ee8fef86aed46ed1febff01bd7ff4e8f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r3_global.csv",
+   "bytes": 182591,
+   "SHA256": "40f8b725f6bad310264cef7f66f04a8805776d4bafd4e947760ece44f62081c4",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K1_r3_quantiles.csv",
+   "bytes": 636954,
+   "SHA256": "9a8dfb6f63b67d39b01def825a4b61974814ee46d3f63ae279d4142d4c332fda",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r0_complete.json",
+   "bytes": 506,
+   "SHA256": "122df1914191e6eeb82e6760022c2794153f3ec8090d54fdcd83f30e36e12fec",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r0_curves.npz",
+   "bytes": 7371183,
+   "SHA256": "20be548477ec7a75a5e3afb7b3fbbcce31146298ff1a47f98f5bd0332ba17ad0",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r0_global.csv",
+   "bytes": 186760,
+   "SHA256": "ddfe12873f9ef70d03fc5560fcaf3572582e5e22c8537b9f822b4ff8fc3fb41c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r0_quantiles.csv",
+   "bytes": 639467,
+   "SHA256": "9a2c8d60d154517f4bf88ce5501437490d42bf81f6da3d2f8d09f0b0e95be7a1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r0_saved_outputs.npz",
+   "bytes": 3819946,
+   "SHA256": "106f0cc1f02165887f553de9f76da710473d110587560121a5d540b52f635f79",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r1_complete.json",
+   "bytes": 505,
+   "SHA256": "e514a0d51a2f2f4be4968a57fbc0c83f904f4cc48fcc557025b4316b6ec29bcc",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r1_curves.npz",
+   "bytes": 7370450,
+   "SHA256": "108181bfb22a800e8b898cd599ef5e5960568f33bec5a7e7832ffcc6159bf349",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r1_global.csv",
+   "bytes": 186800,
+   "SHA256": "e3f86764603b02b5b9ea9eefb6e7ea1107c69c6efb41ebb55e45b4662769f6bd",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r1_quantiles.csv",
+   "bytes": 639440,
+   "SHA256": "ef4692adcc7fd6866200dab0598e7768628988798cfd434c48048e8ac5bc642d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r2_complete.json",
+   "bytes": 506,
+   "SHA256": "46b4ceb7c346c22256a9c572c40fb8e4f68066bfa1267d9f5a8be5b11d5d50de",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r2_curves.npz",
+   "bytes": 7374631,
+   "SHA256": "208e5191235fa3e1d07a3bd48349ccd214c713b841d24a0cc5e9413ebf4c779e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r2_global.csv",
+   "bytes": 186822,
+   "SHA256": "870362e60997a6cfeec845b9b104a4c16fafbe284d9ad2b05c28155d1dbd17d2",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r2_quantiles.csv",
+   "bytes": 639379,
+   "SHA256": "950961f0305a32b4cce1b0870c0144320e24d75bb52cc25e9862d0a85f96ea13",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r3_complete.json",
+   "bytes": 505,
+   "SHA256": "e1eac45fbac6a20aad656324f789da2142ae6652acf1e5152f6956bc742cd046",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r3_curves.npz",
+   "bytes": 7371628,
+   "SHA256": "ecbe20207a84bef205fad77c769e99339b8476f370ddd304c67e7748c50a2047",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r3_global.csv",
+   "bytes": 186843,
+   "SHA256": "0bd5b3abfa58e17ce65b129d3ac411632e7523c82f54f8f51f4c769f8b7a8256",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K3_r3_quantiles.csv",
+   "bytes": 639503,
+   "SHA256": "df07f9d2e614a830ea571ce6e7ba9baf56eceb296fcaf91e40154aff5fb2545e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r0_complete.json",
+   "bytes": 537,
+   "SHA256": "ecb65c8f865dc97b411e0d4ec9cb57d8c4caca64cab1b088d0d5f96b1fa1b0d7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r0_curves.npz",
+   "bytes": 7437881,
+   "SHA256": "f9f40be0ac7267e0229b06669a7a5b5b9ba6e0c00288654407c960ce209d520f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r0_global.csv",
+   "bytes": 186779,
+   "SHA256": "8d598292557262286b325e6d35700f61b9826ecb7d3907145f0530ba3e1b8116",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r0_quantiles.csv",
+   "bytes": 639690,
+   "SHA256": "29f8a3c90683a7447fc8d9395b02b02b7f4b3c9b8606390c5846bfb9b0bffbc9",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r0_saved_outputs.npz",
+   "bytes": 3807132,
+   "SHA256": "e9c14ac643f28e75e49d7f24d005574c56ea9ada96bd4a9edc72a5a30f5ce37f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r1_complete.json",
+   "bytes": 537,
+   "SHA256": "dddf4f468145ae28ecbf639fb97056b17c9016be66f22ea1df8c78d5e2b0dcfa",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r1_curves.npz",
+   "bytes": 7436372,
+   "SHA256": "432607913f7f2018c6462d64ddbbfb0af3e21a4298c9ce950fa1f81805aa869d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r1_global.csv",
+   "bytes": 186634,
+   "SHA256": "1f52cdda700a95b905194b9d2da8c4f7c838eb7c40e3b73d12bb93fb5b9f1645",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r1_quantiles.csv",
+   "bytes": 639632,
+   "SHA256": "e8f97ec4f788ad87c7ce7936314534bd972e44ba2109961cc0d455a9a5896a67",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r2_complete.json",
+   "bytes": 538,
+   "SHA256": "63fdc4e4b54468439af5d6b94af1a466a08fd6496d79a1fec7ad907c00c90729",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r2_curves.npz",
+   "bytes": 7438242,
+   "SHA256": "c24521a722ecfd773a6716128afb56651ef5e21a51f8e98e49c60e1292065137",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r2_global.csv",
+   "bytes": 186787,
+   "SHA256": "6e10b79d89f7232212e6124a081f3519e0224921f19768571aa9b5ac3a0a65ca",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r2_quantiles.csv",
+   "bytes": 639696,
+   "SHA256": "c10efbba9608a549eb48842f63a0eab15451afb346610bcd4ab35ad42a829ddd",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r3_complete.json",
+   "bytes": 539,
+   "SHA256": "03045227cb7b1f60903670b5425a0ec93b4f49b991bee6f41b2a2833d9c93707",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r3_curves.npz",
+   "bytes": 7437811,
+   "SHA256": "5c07bbefb1d7e73bafe8df5c728d12c65f326f08fad41dc4c51b0d0153eff4ca",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r3_global.csv",
+   "bytes": 186663,
+   "SHA256": "90f52993c957bcbdd92d87d3004e3ce968ce54c3fbe2f70272ecdca1b71c6c6b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/GMM_K6_r3_quantiles.csv",
+   "bytes": 639640,
+   "SHA256": "1d111eb099d48bc5a894da9da3a1fab76cf714ed9822bdad9504263f1808c8f1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r0_complete.json",
+   "bytes": 608,
+   "SHA256": "bde05605ed77509546710b2c1607dbb4ca46ee50acbfde30f9f6d1e207492826",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r0_curves.npz",
+   "bytes": 7454118,
+   "SHA256": "79e3bb30582a1e485fd1c3c3f86998a3c576f62c10e9cfaf4cf7e287297f5bb1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r0_global.csv",
+   "bytes": 193956,
+   "SHA256": "fb0620b4b123f7b7fb8dbc29aca8bbd5ccaa427d45ac06afc38b9c4f120b3f77",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r0_quantiles.csv",
+   "bytes": 697964,
+   "SHA256": "fc6e91786c43c3978b365ff28f2dd33c6002915ba9bc83e912b0eb48c07acb7e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r0_saved_outputs.npz",
+   "bytes": 3800335,
+   "SHA256": "b7ae3a73e09e9c97d3ac8213db860909ba0412daabd61a724515992b5f7abea3",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r1_complete.json",
+   "bytes": 608,
+   "SHA256": "4703758d13096ddcf06d6ef8867b9b8765f96ecc19cf00b33ed6539c1d97b0ff",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r1_curves.npz",
+   "bytes": 7454735,
+   "SHA256": "3a2595abb3dced25ee6b4d93099eee10eafbc8e4cf0e8eaa8221a01a0971d9cc",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r1_global.csv",
+   "bytes": 193953,
+   "SHA256": "ebfc0946fa207068f6e783a01ebef4686d673dca5af1f4e6ee1f37affe277f2b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r1_quantiles.csv",
+   "bytes": 698066,
+   "SHA256": "a29d949859fe0ef18784fc50325782980066f0240c387c12e5a6ff15d349582c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r2_complete.json",
+   "bytes": 608,
+   "SHA256": "7018b55d4262e4740128546bf90c2497c44e7e73f03651ce40e7146f26ed2058",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r2_curves.npz",
+   "bytes": 7462131,
+   "SHA256": "8b10715390067409656847d7bc99c2d779ee9934f3884248226246b63390bd31",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r2_global.csv",
+   "bytes": 194124,
+   "SHA256": "6ba4e87fded5b6ac1bc6364a0f8e3801ff2af0c273557fff7e49402caab8b732",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r2_quantiles.csv",
+   "bytes": 698059,
+   "SHA256": "cf13a121a40c6a6a38cae34c8cc41047c6abdb7f87c912e294a22f8dc83cf695",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r3_complete.json",
+   "bytes": 608,
+   "SHA256": "42e38ec814fc1dc41eebc7422da220d7fc37ca84b664144f8a14a0114c1afbd6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r3_curves.npz",
+   "bytes": 7463084,
+   "SHA256": "e0b1479c2b186c97bf21d8000e916d28bec7138401c9f82788c2bedfe92fecd1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r3_global.csv",
+   "bytes": 194101,
+   "SHA256": "a15f1ef60c0aa4455c466cde64be11d77847c067d36836414c46bbe576b2225f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K12_r3_quantiles.csv",
+   "bytes": 697758,
+   "SHA256": "4ff08c0f3d42232dd007c0ba90b895cfe212767c738262b38971dde6a7d72562",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r0_complete.json",
+   "bytes": 465,
+   "SHA256": "04a223a27604331519901467d9b13afae9947572e97ec3bf0eb31bc19c381dba",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r0_curves.npz",
+   "bytes": 5151647,
+   "SHA256": "7b0836f9ce8a0d97a52585df4fe8fd3d96d3a692c5f52b88a3ddda6f71b7bf6e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r0_global.csv",
+   "bytes": 187711,
+   "SHA256": "2af446ec910852130911a031477d4a398f0c802967384150a6d0564c8ba5234e",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r0_quantiles.csv",
+   "bytes": 679792,
+   "SHA256": "de6bbda8551be0f199b24ff985513aac52f88e4b3a9ac764c728bb9b0f89054a",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r0_saved_outputs.npz",
+   "bytes": 3846334,
+   "SHA256": "d04d60440741809e99ce921cbdba33382b944c2e5d41186fddb07cbdf076840f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r1_complete.json",
+   "bytes": 469,
+   "SHA256": "6fa54bdb93047078a0bfd51d5bcef1b746d8031c163b1dd854dc2b4016e11d59",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r1_curves.npz",
+   "bytes": 5151490,
+   "SHA256": "d2a736e5a1cccf11ecb0a199f995b16420e024643ccff7f3ba91a6a15b48f9fa",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r1_global.csv",
+   "bytes": 187731,
+   "SHA256": "933496cfb8a5b26d18f9b409d6192b4f97ce5d22cb45ff3728d7fe6319c2c114",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r1_quantiles.csv",
+   "bytes": 680091,
+   "SHA256": "c6e55b2412eebc689f93bf60caea482b3eaa56985be1f1198e355a238c235f44",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r2_complete.json",
+   "bytes": 471,
+   "SHA256": "d1ae26a15abb59b98a3abf9e6040b84ca064859cd3760ac310f39018ae0529cd",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r2_curves.npz",
+   "bytes": 5151555,
+   "SHA256": "e887fcf3bbd0b432a1e463955a7f7169b96a8d17b28a53a3ed19e74aada97052",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r2_global.csv",
+   "bytes": 187805,
+   "SHA256": "5e206c4c115d37adb6d6a449b85c5df67b526dbada176da0ad62d12c91a225de",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r2_quantiles.csv",
+   "bytes": 679902,
+   "SHA256": "7bba24dd479283473750e958f2e6e9766f94102323732c766647042b8acdc589",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r3_complete.json",
+   "bytes": 471,
+   "SHA256": "b05e3879123b8dd75d742ccc26877c247c5eb7be76d19336253eedb23b17e247",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r3_curves.npz",
+   "bytes": 5154239,
+   "SHA256": "3d458a8968e78c0ddb98d9aa406d3ff6797ab97318d25962a779b129e5d0e585",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r3_global.csv",
+   "bytes": 187781,
+   "SHA256": "5fbcfc2b2d804b2c34a7aa85b6959e3eabbfd72b6207fba1f86550f1e05b7f51",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K1_r3_quantiles.csv",
+   "bytes": 680004,
+   "SHA256": "84614ec5594c4f374482f07975badf68b5421e2c7fe8bbbbfaf53f2f400b2cb6",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r0_complete.json",
+   "bytes": 519,
+   "SHA256": "98af6cce75ab57542e60f922c726d7f0c4f2c463fb455ad27409c19823321964",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r0_curves.npz",
+   "bytes": 7416575,
+   "SHA256": "39ae84b152dd3fa645b65a9a2e3a8278c822785cae2d1b1d99daa6cccefec406",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r0_global.csv",
+   "bytes": 192590,
+   "SHA256": "36ee80cdd4b3cc29662750410fba45878231a9407f1fe36b2c873f68dddeac6b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r0_quantiles.csv",
+   "bytes": 686254,
+   "SHA256": "a1b869f340ff80cd2e0e9bcd3d60c1eb002eb811cdee25c0ba41a6a9c87bafd5",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r0_saved_outputs.npz",
+   "bytes": 3819321,
+   "SHA256": "fad2767c23ff317a4224e11cb0c312e20d0659cd5793612b1b81b2d125924a22",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r1_complete.json",
+   "bytes": 519,
+   "SHA256": "61a4c7b69a768535e7b725e1abd8ee219608d85d068e60a23179dab1315f9b5e",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r1_curves.npz",
+   "bytes": 7417076,
+   "SHA256": "72bcf83f7748b4dd1e1feb31a431f692953be9872750f056671ee44fd97236a8",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r1_global.csv",
+   "bytes": 192583,
+   "SHA256": "1a787d276ff7aa02350827333778601860f32aa242dcd99e7dd5d10e8c2b5c21",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r1_quantiles.csv",
+   "bytes": 686137,
+   "SHA256": "46ee6a2f8d238a0fd67d6cd646fe97a8ca2ab74833ba5bceefdd285c37cd0e0d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r2_complete.json",
+   "bytes": 519,
+   "SHA256": "665e5dbea623bb76df1baa09ae6c91945129f4ce7e324796afcfc33966da0232",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r2_curves.npz",
+   "bytes": 7413864,
+   "SHA256": "8709144525a6bd71642fb17c7734755891a82e62b803e89b588f62a2d9901bbf",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r2_global.csv",
+   "bytes": 192497,
+   "SHA256": "c2beb477cebd309ebdf865a00e6878dc96a893a836d93e7e7eaf1e6ed31b1f70",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r2_quantiles.csv",
+   "bytes": 686363,
+   "SHA256": "bbf902221d37d70f0f70731d64f5527e5cf4d50e08734825fbcaf0c2bcdcca0b",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r3_complete.json",
+   "bytes": 520,
+   "SHA256": "4e10a267b25ed0661d8cf3b5632d00bc52c120fa56f4c4d03b48535a0e408519",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r3_curves.npz",
+   "bytes": 7416591,
+   "SHA256": "9818de7a2d94e9221c876e8e2eec346f8e3f286e00bd8465305dfe2cb5f2986d",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r3_global.csv",
+   "bytes": 192528,
+   "SHA256": "4b0a5598664f69e06ea6884e3c552d4a45767dd2ede6dc484fcca52a92f4982f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K3_r3_quantiles.csv",
+   "bytes": 686279,
+   "SHA256": "6b5e84afbcf7c1514afc696d6b2bf7220cee0681ffaa92816a99712a991c2ae1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r0_complete.json",
+   "bytes": 552,
+   "SHA256": "5ea73aebcda2a930e1407a87893b44625ca4556ae4072e74f3c0ba3deb6439cf",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r0_curves.npz",
+   "bytes": 7436037,
+   "SHA256": "c90f336f772d33cd8bb17b267412ca59bcb6da17427a85dc052ba059e595ddf3",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r0_global.csv",
+   "bytes": 192172,
+   "SHA256": "66b7beb2b96232967d179fdd4a0be35ec205df3d41b258e7bde48ccb95f8cc3c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r0_quantiles.csv",
+   "bytes": 683391,
+   "SHA256": "f3af27eefa9cf43dfb44109c721aefc2c1f74e79caacc9dbdd440e136e4196bc",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r0_saved_outputs.npz",
+   "bytes": 3806330,
+   "SHA256": "610d5052299bb59c0694e8a217bd3ad511b9b0e17aab3b3d687540eac1151363",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r1_complete.json",
+   "bytes": 552,
+   "SHA256": "99e09bc1282bc3de67d4198eb6aae5c4a70d308d40b8328611dc9d5bbba89fe6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r1_curves.npz",
+   "bytes": 7440802,
+   "SHA256": "7c8c5c703d6574c140ca3f0b3d215a1cbb9f11823608394ab36c9d54e4fb5a10",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r1_global.csv",
+   "bytes": 192198,
+   "SHA256": "e6329362047f5acd9122eb4f8898d415e735531da7859988ca3351a278f7b7d1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r1_quantiles.csv",
+   "bytes": 683454,
+   "SHA256": "481a6b791fd6bbd9854472707a8d92cee3a0b1f4c5558727f49853d08bab5360",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r2_complete.json",
+   "bytes": 553,
+   "SHA256": "77b5dd2eff9d7c72e44cfec02579148fa72093b7f9db7529096025e07aa92eb4",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r2_curves.npz",
+   "bytes": 7436490,
+   "SHA256": "9bf8b2c8bf3583b271d2acf6aedc0cc8a63431b1f244e9145d5c9b4ddaf25d8c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r2_global.csv",
+   "bytes": 192207,
+   "SHA256": "57ee68d7efd2c971e2d9790a840427895d9dedf56135367dab2d14a88ec663dc",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r2_quantiles.csv",
+   "bytes": 683420,
+   "SHA256": "219b694dc7643a5703bbac865b60ba326d7ff691741271502c5b4450fdac48e4",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r3_complete.json",
+   "bytes": 552,
+   "SHA256": "e9b489c99ea34fadc8ec6c77678424c8d7416c010da9231f8d618b483c8b3f98",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r3_curves.npz",
+   "bytes": 7433813,
+   "SHA256": "6210cb8098abc2a410ef7b3589d49eed7085526aca0974522ed622e796602052",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r3_global.csv",
+   "bytes": 192157,
+   "SHA256": "ddb0796575a431487a85093a781b0d7d2948dd5bb981bef022d87df56389856f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/propagation/TMM_K6_r3_quantiles.csv",
+   "bytes": 683486,
+   "SHA256": "2218b8d4f1105959ea5b11c73d6ac464bda8ee3ce6db65ee86d9b06326e961c9",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/reference_AC.npz",
+   "bytes": 137901676,
+   "SHA256": "03b41e4f248281b7056512eb9a6548f70091fc03daf628a889276476ee45c546",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/reference_AC_failures.json",
+   "bytes": 2,
+   "SHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/reference_AC_summary.json",
+   "bytes": 510,
+   "SHA256": "65ec8ee1ae6667b90b7d49e008f6da94502fbdd4ae494c66a303dc4ddf038831",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/reference_checkpoint_retired.json",
+   "bytes": 341,
+   "SHA256": "19087df841d943a0f95b8e21b9bd0031a2d4acc24a0f91f17e028fa41d3b7e19",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/reference_distribution_data.npz",
+   "bytes": 834134,
+   "SHA256": "b58a6ac27eba4c3521ca7d548ba97ddc70d0881537f6bce8c93d596a8ac90e5c",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/reference_input_manifest.json",
+   "bytes": 1398,
+   "SHA256": "28041dda23dbd128aba84b83e291c732ad216d0406e3be8ec504b9338a77d4c3",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/reference_inputs.npz",
+   "bytes": 87587903,
+   "SHA256": "28952570f18f36a7fe4c2e050e2a54fc8252f034b1c2becca88e43c03b2a79a4",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/reference_outputs.npz",
+   "bytes": 103602194,
+   "SHA256": "e62dd05d90f0139a8992b47d8016be00fc3f9bc0fc4dbafc929add82209d18e1",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/selected_models.csv",
+   "bytes": 3023,
+   "SHA256": "0a3165358f6ef5422d46277e3e12deec008ecb84394da267e468c22a17f0101a",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/selected_models_block.csv",
+   "bytes": 1713,
+   "SHA256": "b8526ef30c422cb9ef736fd3a8ea636eec672f33e9fc88ffac02b24784b81c08",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/strength_diagnostics.json",
+   "bytes": 1627,
+   "SHA256": "939d7475b895b019f1451bc2a7bcb6937c3c2bdafd97154b54e7ed5e5eeaf89c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/strength_group_summary.csv",
+   "bytes": 1351,
+   "SHA256": "c0e6295d8d9f78b04f5ddee80b3e71394c5a545eafe259403f1af1b393fa51ab",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/target_rules.txt",
+   "bytes": 510,
+   "SHA256": "177b09c7492d6b95897953a0fb0b4b4563364904a2058f7ce6817167578e4315",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/targets.csv",
+   "bytes": 802,
+   "SHA256": "c61aeb990043fc00c2cdf8aebe511049f04e773743f907da9e34665459fbf6db",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/training_AC.npz",
+   "bytes": 34476345,
+   "SHA256": "d6876f1f8eed48db87b698c66277927540f5a47af0fa1767720b8866b9c998ec",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/training_AC_failures.json",
+   "bytes": 2,
+   "SHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/training_AC_summary.json",
+   "bytes": 504,
+   "SHA256": "c15e14a75d93159ec20cc7cb7fd2b48674a08f702b12ba295c6577c5043b37a7",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/training_checkpoint_retired.json",
+   "bytes": 339,
+   "SHA256": "2bee255cca6941f4c4871c8276ca72bb6d28cdcffe06c363f293e9ae2b511646",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/training_input_manifest.json",
+   "bytes": 1389,
+   "SHA256": "e68450b218fb8d489b761b79e88d23e902ae3be70b4e9a0880520db1790d36f0",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/training_inputs.npz",
+   "bytes": 21920348,
+   "SHA256": "b328db63eda90226f8b4d6cec2791e4c4fc110dd65bb03a258423a00e18561d9",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/validation_AC.npz",
+   "bytes": 17239915,
+   "SHA256": "bb5a6e24b76a456660e1c6bc28ae9b499698122afb3508fa2332ff12bb3fbbba",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/validation_AC_failures.json",
+   "bytes": 2,
+   "SHA256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/validation_AC_summary.json",
+   "bytes": 508,
+   "SHA256": "d4d8f315ba6b23a1dde7bb5e8c5805ec73c0a2bf9ad6017a86efb08dde06ab9c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/validation_checkpoint_retired.json",
+   "bytes": 341,
+   "SHA256": "3c0ab3a0515680c2b071a77f4ceda305491bb506be83c3c12e8392adb3494bcd",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/validation_input_manifest.json",
+   "bytes": 1381,
+   "SHA256": "65fb104aeba5135c71dc85dff18f59f405d059929adc50e8d6648056e5f726cc",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/validation_inputs.npz",
+   "bytes": 10968979,
+   "SHA256": "efde9c1e8b83ce14840c5c8751d916d3635de4bd175f9e6058eec967fa12cd0f",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/common_strength/voltage_covariance_spectrum.json",
+   "bytes": 13490,
+   "SHA256": "7707274286639ef360f540acb7fc4d8dde0acf24726fb045a798a462c70a62e5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/environment.json",
+   "bytes": 1246,
+   "SHA256": "3dab829d92eb3759cfb8b419558f14708d49e6bf7f2375aba6d510e7997102a6",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/global_metrics.csv",
+   "bytes": 5751624,
+   "SHA256": "94ec16c27721ce484e3e5b3ad6bdfecba41bb65f662aecbb7835816132826e86",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/global_repeat_summary.csv",
+   "bytes": 3462612,
+   "SHA256": "05c8922ebd7a69fd611eee4498860544a5070c4f051943f397a1e106f4412f09",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/ac_only.txt",
+   "bytes": 3989,
+   "SHA256": "4c7728c26b009f6104a689aa691ceceec5322272619d142b84df4e649d9e99b1",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/analytic.txt",
+   "bytes": 394,
+   "SHA256": "3c1cea01805041c7f257218fa19e417923ef9dcab7215053fb407e86c57ef042",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/analyticwithK12.txt",
+   "bytes": 454,
+   "SHA256": "f73c77c8c9656e189d721b456549391d30d69394a574e2687781c6db68492e01",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block.txt",
+   "bytes": 1550,
+   "SHA256": "0a6a95b94a9954a888b1fcb3aa8060961abc8470caf076c014c08e377a0236c8",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/blockK1.txt",
+   "bytes": 2698,
+   "SHA256": "439b92de6fdafb05603fc54b312c7846215d810de485c5b11d55882b6959e8bd",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/blockK12withK12.txt",
+   "bytes": 3161,
+   "SHA256": "be6966add45c97f4ad72465729615c27479470d3e789ce516cae56e6524b5bd4",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/blockK3.txt",
+   "bytes": 2694,
+   "SHA256": "f577a8f14298c743477591664d6eef528c742c47fbc6153676e8b1ce72d20374",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/blockK6.txt",
+   "bytes": 2697,
+   "SHA256": "aa7e53463c059deda3adff9080c9fa5736d69acd1fac9c211cada8bc8d4b5dcb",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block_fit.txt",
+   "bytes": 1157,
+   "SHA256": "81963a15586911e5a1f0e3c8f99d9d19d65390549fa3d59cae82586a4b692683",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block_fitK1.txt",
+   "bytes": 1156,
+   "SHA256": "cdf56edd2490f097cbe713dd422b61bae219302f548c14cb3e2f5d0f23b5ba7d",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block_fitK12withK12.txt",
+   "bytes": 1560,
+   "SHA256": "64ceedfb9964daa89a31f6938b451633ea989ea9264eefa8aa9db97f86f4000f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block_fitK3.txt",
+   "bytes": 1369,
+   "SHA256": "60b7b9cfff5c165472f75d03a9991c0bb3373770d4375b0fc29aebddfaa9e240",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block_fitK6.txt",
+   "bytes": 1426,
+   "SHA256": "c3abf45d3617a672e3b1cb0b8906ae0cf0ad5989a11df05e6230b22471f2116f",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/block_fitwithK12.txt",
+   "bytes": 1613,
+   "SHA256": "1ef5f2a886eb6fd76a1a7f2bdb123093345041f0c04466cf7019330e4a1fb524",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/blockwithK12.txt",
+   "bytes": 2034,
+   "SHA256": "20b3a8f9fe7cb4b27151a81ddcd00d0e3f7d77968b166474d15af4ad8203fdc8",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/fit.txt",
+   "bytes": 738,
+   "SHA256": "118e4cb8eb6df1fdc2bba5ea88baeb5369aa41fea09093e62c8a0f0dd97405e2",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/fitK1.txt",
+   "bytes": 1009,
+   "SHA256": "a4f82e2c082b853a0905f2b7b9f4614d7b35146e73550d0a5af51d44952fe763",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/fitK12withK12.txt",
+   "bytes": 1580,
+   "SHA256": "c5e42eb5018632b2bca15af479c5690bede4a3183625852406111e0cfbbfdce3",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/fitK3.txt",
+   "bytes": 1567,
+   "SHA256": "ce1c36a2181473ca17780770ff964003c1fc997a16aeffff540ff6278c5e7e11",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/fitK6.txt",
+   "bytes": 1566,
+   "SHA256": "bee26946e4ec271c67c09363d37c3bc448bf0e4e9ccf5336779e3826c93b7ea5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/fitwithK12.txt",
+   "bytes": 891,
+   "SHA256": "db1e9703eb3cbcc100bb09690dcacefdedc4ce08b81e1385add4d82018edcd88",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/plotwithK12.txt",
+   "bytes": 1124,
+   "SHA256": "e7c815df51c023f122eafe0442c90ea6de1f0f1eb1fde664d25e8bd4372b7241",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/reference.txt",
+   "bytes": 3024,
+   "SHA256": "b95c7d7a81342454da8de33e5f56ca8da92a9b44a1162babfc57f456613562d5",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/referenceK1.txt",
+   "bytes": 3232,
+   "SHA256": "279e04de5c10584c3541d95acddd664c8e2d11d399a635e3ea399efe516e3861",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/referenceK12withK12.txt",
+   "bytes": 3261,
+   "SHA256": "faa50e2bc5c4cf4925dc98d420212ef2007fb0438a6a0fbb0bbc030229b95075",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/referenceK3.txt",
+   "bytes": 3235,
+   "SHA256": "6d31d442c3275b4a2dcb4d14a88c74f0a0812b7eeeaff82982bc02de8e45cc63",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/referenceK6.txt",
+   "bytes": 3231,
+   "SHA256": "4cd0e7ae68b95ae426804b60e8f528c6ac71afe732879459f5596a84ae8b45b2",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/reference_ac.txt",
+   "bytes": 7014,
+   "SHA256": "9e0709b3b9298cd6807dda467c5fd4f2b276f2417c3fd4f907c587f5edd09c36",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/referencewithK12.txt",
+   "bytes": 3045,
+   "SHA256": "e4cc72201d8230b3443417abb3b2e3196c96bc65a07269b559047f12fc668925",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/logs/scene_driver_done.txt",
+   "bytes": 20,
+   "SHA256": "120c509f5821ecd2ba98cf401977da0b36d070b4fccc6ad261abdaf07c5250b1",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/matched_accuracy_K_parameters.csv",
+   "bytes": 4604915,
+   "SHA256": "5a960155ae43d69116a98542ea555e1462f40d1709291a21a775a57b9a41d60a",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/priority_local_advantages.csv",
+   "bytes": 8226,
+   "SHA256": "3c523b4fe2f6c744207f372cbee7bd61bde9eb12dba31519eb32d078f29c4771",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/priority_same_K_comparison.csv",
+   "bytes": 108061,
+   "SHA256": "3dbc5bef7dd6b87444b31484fe689d05e6b5299633598fb34aad06b3c3046f13",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/progress.json",
+   "bytes": 469,
+   "SHA256": "28aa119439853a5a17b0b56adf89d41984adf5252748e0fa4ca7bb1d531ba83c",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/progress_history.jsonl",
+   "bytes": 50967,
+   "SHA256": "bf75c67d990cfcd61b830003124977016508c6b90eeb460aa94eab1022083928",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/protocol.json",
+   "bytes": 6715,
+   "SHA256": "ea6df32c64be38bdbf7a89ac6e6d044d934f1ca2f47e3ae4ae7dac04c876c210",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/quantile_metrics.csv",
+   "bytes": 20491131,
+   "SHA256": "c0320c34250f2a1dafd3b5b6dde14bef6b4db4f78074b02d67e21c76ee3f84c5",
+   "kept_out_of_git": true
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/quantile_repeat_summary.csv",
+   "bytes": 9500370,
+   "SHA256": "daa823eba1748140fd03e0d172ad474b6e675c26e428d6db7126a7b83cd12234",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/same_K_object_comparison.csv",
+   "bytes": 5749010,
+   "SHA256": "0307c0676990c022b2b87039d0c0e1873551da2c0895e09813422f87753f9362",
+   "kept_out_of_git": false
+  },
+  {
+   "path": "result/case141/pv_fixed_forecast_case141_20261021_common_strength/selected_models.csv",
+   "bytes": 3019,
+   "SHA256": "945848e98a609500d16842cb1084ab3b26f676199651766f41d6e9ff646546d1",
+   "kept_out_of_git": false
+  }
+ ],
+ "note": "Main run (ac_only, fit, block_fit, reference_ac, reference, block and analytic for K = 1, 3, 6) used tests/python/run_pv_fixed_forecast.py of commit 5af3a95 (SHA256 a12218d8..., recorded in protocol.json). The K = 12 supplement (logs *withK12*), the diagnostic figures and this manifest used commit 7210e3f; that change only writes the K = 12 judgment to *_withK12 files and restricts the GMM/TMM summary to GMM_/TMM_ files. Per-repeat tables under propagation/, global_metrics.csv, quantile_metrics.csv and all .npz arrays are kept out of Git; their SHA256 are listed here. Program check (1500/600/1000 scenarios, K = 1, 3) ran in /tmp and was deleted."
+}

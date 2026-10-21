@@ -1,0 +1,19 @@
+{
+  "scene": "strong_weather",
+  "K": 1,
+  "family": "GMM",
+  "replicate": 3,
+  "seed": 2026303117,
+  "candidate": "K1_p01_GMM",
+  "model_SHA256": "144966df6622cf9a0f2abbbdba7bd9c152b3d2cd92f9dd89eab1a9033ef47470",
+  "component_counts": [
+    65536
+  ],
+  "weights_sum": 1.0,
+  "ESS": 65536.0,
+  "propagation_seconds": 2.5033887839999807,
+  "processing_seconds": 9.91210144999991,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

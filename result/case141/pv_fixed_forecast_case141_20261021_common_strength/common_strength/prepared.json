@@ -1,0 +1,9 @@
+{
+  "dimension": 168,
+  "voltage_state_dimension": 280,
+  "rank": 168,
+  "zero_injection_constraints_removed": 112,
+  "no_truncation_of_source_load_variation": true,
+  "singular_min": 7.783666749951886e-07,
+  "fitting_inputs_SHA256": "5177effd3b967450853e636ab79a4e10c15c4b63f09a015a29ad82c8ede61e8e"
+}

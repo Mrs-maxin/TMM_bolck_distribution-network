@@ -1,0 +1,7 @@
+COMMAND python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene common_strength 
+START 2026-10-21T16:26:36Z
+{"UTC": "2026-10-21T16:26:38Z", "PID": 4746, "stage": "selected", "elapsed_seconds": 0.36305471200012107, "scene": "common_strength", "K": 1, "family": "BTMM", "candidate": "K1_p01_gmm_warm_df12_BLOCK", "df": "[5.146813956578073]"}
+{"UTC": "2026-10-21T16:26:38Z", "PID": 4746, "stage": "selected", "elapsed_seconds": 0.5306197290001364, "scene": "common_strength", "K": 3, "family": "BTMM", "candidate": "K3_p01_gmm_warm_df200_BLOCK", "df": "[5.883912048225242, 7.676645166259121, 6.566646353656449]"}
+{"UTC": "2026-10-21T16:26:38Z", "PID": 4746, "stage": "selected", "elapsed_seconds": 0.696293360000027, "scene": "common_strength", "K": 6, "family": "BTMM", "candidate": "K6_p01_gmm_warm_df200_BLOCK", "df": "[5.7013199402084265, 8.529392067532035, 6.143817997083008, 5.780558654199833, 6.576378808185033, 7.116766785167721]"}
+{"UTC": "2026-10-21T16:26:38Z", "PID": 4746, "stage": "BLOCK_FIT_COMPLETE", "elapsed_seconds": 0.6998752750000676, "scene": "common_strength", "K": "all"}
+END 2026-10-21T16:26:38Z EXIT 0 SECONDS 2

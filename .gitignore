@@ -43,3 +43,7 @@ tmp/
 02_PAPER/latex/*.toc
 02_PAPER/latex/*.synctex.gz
 02_PAPER/latex/main.pdf
+# case141: per-repeat distribution tables and their concatenations are reproducible; SHA256 kept in run_manifest.json.
+result/case141/**/propagation/*.csv
+result/case141/*/global_metrics.csv
+result/case141/*/quantile_metrics.csv

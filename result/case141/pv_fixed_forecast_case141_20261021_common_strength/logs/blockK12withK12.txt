@@ -1,0 +1,16 @@
+COMMAND python3 tests/python/run_pv_fixed_forecast.py block --case case141 --scene common_strength --K 12 --with-K12
+START 2026-10-21T16:41:14Z
+{"UTC": "2026-10-21T16:41:16Z", "PID": 5733, "stage": "selected", "elapsed_seconds": 0.5056556290001026, "scene": "common_strength", "K": 1, "family": "BTMM", "candidate": "K1_p01_gmm_warm_df12_BLOCK", "df": "[5.146813956578073]"}
+{"UTC": "2026-10-21T16:41:16Z", "PID": 5733, "stage": "selected", "elapsed_seconds": 0.6673837039998034, "scene": "common_strength", "K": 3, "family": "BTMM", "candidate": "K3_p01_gmm_warm_df200_BLOCK", "df": "[5.883912048225242, 7.676645166259121, 6.566646353656449]"}
+{"UTC": "2026-10-21T16:41:16Z", "PID": 5733, "stage": "selected", "elapsed_seconds": 0.8273270459999367, "scene": "common_strength", "K": 6, "family": "BTMM", "candidate": "K6_p01_gmm_warm_df200_BLOCK", "df": "[5.7013199402084265, 8.529392067532035, 6.143817997083008, 5.780558654199833, 6.576378808185033, 7.116766785167721]"}
+{"UTC": "2026-10-21T16:41:16Z", "PID": 5733, "stage": "selected", "elapsed_seconds": 0.9876671779998105, "scene": "common_strength", "K": 12, "family": "BTMM", "candidate": "K12_p01_gmm_warm_df12_BLOCK", "df": "[6.9827302435456176, 7.991597711165049, 8.561422910054146, 6.874281916849592, 6.016305705160099, 6.917072662191143, 6.044938287177324, 5.980141729784114, 6.255822725622537, 6.8314645298690415, 8.630053850587108, 7.7124635157165695]"}
+{"UTC": "2026-10-21T16:41:16Z", "PID": 5733, "stage": "BLOCK_FIT_COMPLETE", "elapsed_seconds": 0.990995772000133, "scene": "common_strength", "K": "all"}
+{"UTC": "2026-10-21T16:41:17Z", "PID": 5733, "stage": "propagating", "elapsed_seconds": 1.5804523570000129, "scene": "common_strength", "K": 12, "family": "BTMM", "replicate": 0, "seed": 2026114114}
+{"UTC": "2026-10-21T16:41:29Z", "PID": 5733, "stage": "propagation_complete", "elapsed_seconds": 13.813448219999827, "scene": "common_strength", "K": 12, "family": "BTMM", "replicate": 0}
+{"UTC": "2026-10-21T16:41:29Z", "PID": 5733, "stage": "propagating", "elapsed_seconds": 13.813705327000207, "scene": "common_strength", "K": 12, "family": "BTMM", "replicate": 1, "seed": 2026114115}
+{"UTC": "2026-10-21T16:41:41Z", "PID": 5733, "stage": "propagation_complete", "elapsed_seconds": 25.823090354000215, "scene": "common_strength", "K": 12, "family": "BTMM", "replicate": 1}
+{"UTC": "2026-10-21T16:41:41Z", "PID": 5733, "stage": "propagating", "elapsed_seconds": 25.823350824000045, "scene": "common_strength", "K": 12, "family": "BTMM", "replicate": 2, "seed": 2026114116}
+{"UTC": "2026-10-21T16:41:53Z", "PID": 5733, "stage": "propagation_complete", "elapsed_seconds": 37.61958238899979, "scene": "common_strength", "K": 12, "family": "BTMM", "replicate": 2}
+{"UTC": "2026-10-21T16:41:53Z", "PID": 5733, "stage": "propagating", "elapsed_seconds": 37.619835545000115, "scene": "common_strength", "K": 12, "family": "BTMM", "replicate": 3, "seed": 2026114117}
+{"UTC": "2026-10-21T16:42:05Z", "PID": 5733, "stage": "propagation_complete", "elapsed_seconds": 49.39468073599983, "scene": "common_strength", "K": 12, "family": "BTMM", "replicate": 3}
+END 2026-10-21T16:42:05Z EXIT 0 SECONDS 51

@@ -4,6 +4,12 @@
 
 33节点结果的证据编号E-PV-FIXED-FORECAST-20261021、E-PV-BLOCK-TMM-20261021、E-PV-BLOCK-CHECK-20261021、E-PV-ANALYTIC-RISK-20261021均保存在原项目 `wuhanichina/AQPPF_TMM` 的 `result/validation/` 下，含运行清单。本仓库新结果另行登记。
 
+## 2026-10-21 本仓库证据
+
+| 证据编号 | 生成入口 | 原始结果文件 | 关键数值 | 状态 |
+| --- | --- | --- | --- | --- |
+| E-PV-CASE141-20261021 | `tests/python/run_pv_fixed_forecast.py --case case141`；`tests/python/analytic_limit_risk_general.py` | `result/case141/pv_fixed_forecast_case141_20261021_common_strength/`、`..._strong_weather/`（含`run_manifest.json`、`*_effectiveness_*`、`analytic_limit_risk.csv`） | 第8.1节判定：分块TMM 4/6、5/6，标准TMM 1/6、0/6；单分量越限概率平均绝对误差分块TMM为GMM的0.23—0.31倍 | supported（141节点两种碎云情形）；结果说明见`case141_results_20261021.md` |
+
 
 本文件记录可验证研究结论与原始结果之间的对应关系。它回答一个问题：每个结论编号由哪个入口、哪份结果、哪组指标支撑。
 

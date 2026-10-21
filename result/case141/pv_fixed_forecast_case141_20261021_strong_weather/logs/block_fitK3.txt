@@ -1,0 +1,9 @@
+COMMAND python3 tests/python/run_pv_fixed_forecast.py block_fit --case case141 --scene strong_weather --K 3
+START 2026-10-21T16:20:10Z
+{"UTC": "2026-10-21T16:20:12Z", "PID": 4339, "stage": "fitting", "elapsed_seconds": 0.49517667700001766, "scene": "strong_weather", "K": 3, "family": "BTMM", "partition": 1, "initial_df": 12}
+{"UTC": "2026-10-21T16:20:15Z", "PID": 4339, "stage": "fitting", "elapsed_seconds": 4.014450619999934, "scene": "strong_weather", "K": 3, "family": "BTMM", "partition": 1, "initial_df": 200}
+{"UTC": "2026-10-21T16:20:20Z", "PID": 4339, "stage": "fitting", "elapsed_seconds": 8.829848526999967, "scene": "strong_weather", "K": 3, "family": "BTMM", "partition": 2, "initial_df": 12}
+{"UTC": "2026-10-21T16:20:23Z", "PID": 4339, "stage": "fitting", "elapsed_seconds": 12.117245267000044, "scene": "strong_weather", "K": 3, "family": "BTMM", "partition": 2, "initial_df": 200}
+{"UTC": "2026-10-21T16:20:32Z", "PID": 4339, "stage": "selected", "elapsed_seconds": 20.33738326699995, "scene": "strong_weather", "K": 3, "family": "BTMM", "candidate": "K3_p01_gmm_warm_df200_BLOCK", "df": "[4.735535530844333, 5.7762178175430785, 5.1885153862050295]"}
+{"UTC": "2026-10-21T16:20:32Z", "PID": 4339, "stage": "BLOCK_FIT_COMPLETE", "elapsed_seconds": 20.33764280499986, "scene": "strong_weather", "K": 3}
+END 2026-10-21T16:20:32Z EXIT 0 SECONDS 22

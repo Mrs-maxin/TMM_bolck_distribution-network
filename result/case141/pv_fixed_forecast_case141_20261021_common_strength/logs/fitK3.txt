@@ -1,0 +1,11 @@
+COMMAND python3 tests/python/run_pv_fixed_forecast.py fit --case case141 --scene common_strength --K 3
+START 2026-10-21T16:19:43Z
+{"UTC": "2026-10-21T16:19:48Z", "PID": 4229, "stage": "fitting", "elapsed_seconds": 3.162930481000103, "scene": "common_strength", "K": 3, "family": "GMM", "partition": 1}
+{"UTC": "2026-10-21T16:19:57Z", "PID": 4229, "stage": "fitting", "elapsed_seconds": 12.963659550000102, "scene": "common_strength", "K": 3, "family": "TMM", "partition": 1, "initial_df": 12}
+{"UTC": "2026-10-21T16:20:01Z", "PID": 4229, "stage": "fitting", "elapsed_seconds": 16.262642300999914, "scene": "common_strength", "K": 3, "family": "TMM", "partition": 1, "initial_df": 200}
+{"UTC": "2026-10-21T16:20:04Z", "PID": 4229, "stage": "fitting", "elapsed_seconds": 19.38770045299998, "scene": "common_strength", "K": 3, "family": "GMM", "partition": 2}
+{"UTC": "2026-10-21T16:20:08Z", "PID": 4229, "stage": "fitting", "elapsed_seconds": 23.709273006000103, "scene": "common_strength", "K": 3, "family": "TMM", "partition": 2, "initial_df": 12}
+{"UTC": "2026-10-21T16:20:11Z", "PID": 4229, "stage": "fitting", "elapsed_seconds": 26.21728412199991, "scene": "common_strength", "K": 3, "family": "TMM", "partition": 2, "initial_df": 200}
+{"UTC": "2026-10-21T16:20:13Z", "PID": 4229, "stage": "selected", "elapsed_seconds": 28.678575846000058, "scene": "common_strength", "K": 3}
+{"UTC": "2026-10-21T16:20:13Z", "PID": 4229, "stage": "FIT_COMPLETE", "elapsed_seconds": 28.67886051200003, "scene": "common_strength", "K": 3}
+END 2026-10-21T16:20:13Z EXIT 0 SECONDS 30

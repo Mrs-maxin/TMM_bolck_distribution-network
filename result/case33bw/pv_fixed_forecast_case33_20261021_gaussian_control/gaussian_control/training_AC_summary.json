@@ -1,0 +1,15 @@
+{
+  "scene": "gaussian_control",
+  "split": "training",
+  "snapshots": 8192,
+  "processes": 8192,
+  "failures": 0,
+  "max_iterations": 4,
+  "max_residual_pu": 1.1038565894683217e-13,
+  "max_balance_MW": 1.4476475573843572e-12,
+  "min_voltage_pu": 0.948228954384825,
+  "max_voltage_pu": 1.0890071956724883,
+  "seconds": 17.567444416999933,
+  "input_SHA256": "9355d948086430f7512bd2f2227d30149fe0fe07e592a195c8c1971fa4e809da",
+  "AC_SHA256": "25be79fb81753785716346d12a31327777839fcb7a0a70c2c0c6b175fb92a7ec"
+}

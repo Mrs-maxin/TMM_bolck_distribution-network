@@ -1,0 +1,17 @@
+{
+  "stage": "targets_fixed_before_fits",
+  "smoke": false,
+  "UTC": "2026-10-21T13:52:37Z",
+  "sha256": {
+    "protocol.json": "85a9166c5cf7b8303b0d684a7b1ad9a657e6db1c299364472639f2d12f570cf4",
+    "gaussian_control/targets.csv": "d09c46cc852120499631be95ac4dda6b6cc3ecad72331a988edeeaaa2e476266",
+    "gaussian_control/target_rules.txt": "177b09c7492d6b95897953a0fb0b4b4563364904a2058f7ce6817167578e4315",
+    "gaussian_control/AC_features_train_validation.csv": "0a555e0e64374b4c36c5eba050a8061a0d4c3ea05ce9dfade2a445e8e3a51e1b",
+    "gaussian_control/strength_diagnostics.json": "19eacde4804c4c61d0c6420cda03433679cbe2ed56781aab66e0e9e600e4bc18",
+    "gaussian_control/training_inputs.npz": "9355d948086430f7512bd2f2227d30149fe0fe07e592a195c8c1971fa4e809da",
+    "gaussian_control/validation_inputs.npz": "1f4c4242e4a67aa5a70aeec540d27e6882630025a54111ae633d7934c225a041",
+    "gaussian_control/reference_inputs.npz": "01b96d53619bdefc54de5287486200f6e53ef4e8e156136e88c48ea5ce1cab17",
+    "gaussian_control/training_AC.npz": "25be79fb81753785716346d12a31327777839fcb7a0a70c2c0c6b175fb92a7ec",
+    "gaussian_control/validation_AC.npz": "dc0c562ad4091bd2e77839d35eb1f936a09da01cba673cf5d3fbad03a1b6e9e3"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "UTC": "2026-10-21T14:11:35Z",
+  "PID": 97126,
+  "stage": "JUDGMENT_COMPLETE",
+  "elapsed_seconds": 324.9599051670084,
+  "scene": "gaussian_control",
+  "challenger": "BTMM",
+  "targets": 6,
+  "targets_passed": 0,
+  "other_comparable_fraction_by_K": {
+    "1": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "12": 1.0
+  },
+  "other_objects_over_1p5_KS": 0,
+  "criteria": "plan section 8.1, fixed before model errors"
+}

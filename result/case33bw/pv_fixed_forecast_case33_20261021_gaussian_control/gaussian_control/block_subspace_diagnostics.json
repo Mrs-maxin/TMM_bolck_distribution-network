@@ -1,0 +1,38 @@
+{
+  "rank": 8,
+  "sensitivity_singular_values": [
+    719.3764385681152,
+    640.7326112070748,
+    531.6236869197734,
+    379.4772329258699,
+    262.16115900212856,
+    222.79601091580813,
+    186.46089427325748,
+    72.62369550818919
+  ],
+  "u_excess_kurtosis": [
+    -0.009914983799026889,
+    0.003686165440064837,
+    -0.039501904713156843,
+    0.010926076119884165,
+    -0.03420771232470532,
+    -0.12811512731195052,
+    -0.09889770558224242,
+    -0.07552337872854853
+  ],
+  "w_excess_kurtosis_median": 0.027600004188829352,
+  "w_excess_kurtosis_max": 1.1287028330639792,
+  "u_square_strength_correlation": [
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN,
+    NaN
+  ],
+  "w_square_strength_correlation_median": NaN,
+  "training_variance_share_u": 0.9934594381648009,
+  "rule": "PV active-power sensitivity at the forecast operating point, fixed before any model error"
+}

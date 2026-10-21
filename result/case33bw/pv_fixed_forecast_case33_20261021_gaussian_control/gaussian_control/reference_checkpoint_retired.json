@@ -1,0 +1,6 @@
+{
+  "path": "result/validation/pv_fixed_forecast_case33_20261021_gaussian_control/gaussian_control/reference_AC_checkpoint.npz",
+  "bytes": 32253456,
+  "SHA256": "c100cfe06f70acd7a5372ae32c0a2dc1619eb2fe3469fdebcb6a1cdce53292a0",
+  "retained_AC_SHA256": "b5f2ba33ac7803074f64dbd300e1ae53a92eb7463acaca6adf06765380c9e88f"
+}

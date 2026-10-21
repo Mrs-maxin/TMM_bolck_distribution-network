@@ -1,0 +1,15 @@
+{
+  "scene": "strong_weather",
+  "challenger": "BTMM",
+  "targets": 7,
+  "targets_passed": 3,
+  "other_comparable_fraction_by_K": {
+    "1": 0.9550561797752809,
+    "3": 0.797752808988764,
+    "5": 0.38202247191011235,
+    "6": 0.4943820224719101,
+    "12": 0.9438202247191011
+  },
+  "other_objects_over_1p5_KS": 13,
+  "criteria": "plan section 8.1, fixed before model errors"
+}

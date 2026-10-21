@@ -1,0 +1,17 @@
+{
+  "stage": "targets_fixed_before_fits",
+  "smoke": false,
+  "UTC": "2026-10-21T15:53:18Z",
+  "sha256": {
+    "protocol.json": "2f5e649feb50cfc27b3deeb18f61145a60a68ad29e5b5f0147e8acb3228b89a3",
+    "strong_weather/targets.csv": "bf78e613030c4915d21fd921bff448443b5fcffe5de0c9b1eddc9b0a17bc45c0",
+    "strong_weather/target_rules.txt": "177b09c7492d6b95897953a0fb0b4b4563364904a2058f7ce6817167578e4315",
+    "strong_weather/AC_features_train_validation.csv": "79690776ec989852aee91438cecbbc07d464f6f8d2fa0f40d9cc68e9e58c1cd5",
+    "strong_weather/strength_diagnostics.json": "72defd77e40eacc508e9eef02b8a0dfd5e4349b965ef345be9b4ca95418ea407",
+    "strong_weather/training_inputs.npz": "94b8b13ee27be9baf0c7453d8f585d50e34e09f09e5fa557faef90323646d531",
+    "strong_weather/validation_inputs.npz": "7ee7877ecc9d240cfe01d062199a20a8991c8ddaa2f8fb28f37306a38a6001cf",
+    "strong_weather/reference_inputs.npz": "2635d32dd73ea121f3ed75e6525ad8d239d350bfb2ed38f2d524a81fc351462b",
+    "strong_weather/training_AC.npz": "57b7426765a5758595eb758cb504bb5c863c0c9a4a75f3e5d1a412e34f391edf",
+    "strong_weather/validation_AC.npz": "5e2526516f7bfa8ec8f591f482874f85b4e7e999a9a6be8b6c61fd8570ea9d8b"
+  }
+}

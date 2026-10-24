@@ -1,0 +1,63 @@
+{
+ "scene": "shared_background",
+ "split": {
+  "scene": "shared_background",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.018,
+  "groups": [
+   [
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P22",
+    "P33"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.111
+  ],
+  "r_first_order": 8,
+  "voltage_share_first_order": 0.9895068339033222,
+  "leak_directions": 1,
+  "leak_shares": [
+   0.0037
+  ],
+  "amplified_voltage_share": 0.993165153275416,
+  "remaining_kurtosis_max_before": 5.7935415660161205,
+  "remaining_kurtosis_max_after": 1.489355375144311,
+  "remaining_kurtosis_median_after": 0.10235809314996391
+ },
+ "group_dims": [
+  9
+ ],
+ "targets": [
+  [
+   6,
+   "lower"
+  ],
+  [
+   5,
+   "lower"
+  ],
+  [
+   8,
+   "lower"
+  ],
+  [
+   9,
+   "lower"
+  ],
+  [
+   7,
+   "lower"
+  ],
+  [
+   10,
+   "lower"
+  ]
+ ],
+ "seconds": 357.5911336250001
+}

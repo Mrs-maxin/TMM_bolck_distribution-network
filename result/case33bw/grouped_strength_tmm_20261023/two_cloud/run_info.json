@@ -1,0 +1,68 @@
+{
+ "scene": "two_cloud",
+ "split": {
+  "scene": "two_cloud",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.019,
+  "groups": [
+   [
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18"
+   ],
+   [
+    "P22",
+    "P33"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.032,
+   0.101
+  ],
+  "r_first_order": 8,
+  "voltage_share_first_order": 0.9822824504811593,
+  "leak_directions": 2,
+  "leak_shares": [
+   0.0069,
+   0.001
+  ],
+  "amplified_voltage_share": 0.990169949648492,
+  "remaining_kurtosis_max_before": 8.722781011868294,
+  "remaining_kurtosis_max_after": 1.005238260858948,
+  "remaining_kurtosis_median_after": 0.07690360787223338
+ },
+ "group_dims": [
+  8,
+  2
+ ],
+ "targets": [
+  [
+   29,
+   "lower"
+  ],
+  [
+   28,
+   "lower"
+  ],
+  [
+   62,
+   "lower"
+  ],
+  [
+   44,
+   "lower"
+  ],
+  [
+   51,
+   "upper"
+  ],
+  [
+   34,
+   "upper"
+  ]
+ ],
+ "seconds": 112.9186317499998
+}

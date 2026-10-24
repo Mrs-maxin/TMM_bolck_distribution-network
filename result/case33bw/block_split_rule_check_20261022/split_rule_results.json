@@ -1,0 +1,227 @@
+[
+ {
+  "scene": "common_strength",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.047,
+  "groups": [
+   [
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P22",
+    "P33"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.062
+  ],
+  "r_first_order": 8,
+  "voltage_share_first_order": 0.9870914114749965,
+  "leak_directions": 3,
+  "leak_shares": [
+   0.0043,
+   0.0012,
+   0.0011
+  ],
+  "amplified_voltage_share": 0.9935993176811554,
+  "remaining_kurtosis_max_before": 5.3106077364752355,
+  "remaining_kurtosis_max_after": 0.7174465213384034,
+  "remaining_kurtosis_median_after": 0.02234687967175919
+ },
+ {
+  "scene": "gaussian_control",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.039,
+  "groups": [
+   [
+    "P12",
+    "Q33"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.039
+  ],
+  "r_first_order": 2,
+  "voltage_share_first_order": 1.7752425666870363e-06,
+  "leak_directions": 1,
+  "leak_shares": [
+   0.0394
+  ],
+  "amplified_voltage_share": 0.039374357560150494,
+  "remaining_kurtosis_max_before": 2.347699322690435,
+  "remaining_kurtosis_max_after": 0.5791765327637495,
+  "remaining_kurtosis_median_after": 0.008690293732919852
+ },
+ {
+  "scene": "strong_weather",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.042,
+  "groups": [
+   [
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P22",
+    "P33"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.094
+  ],
+  "r_first_order": 8,
+  "voltage_share_first_order": 0.9832994349522851,
+  "leak_directions": 3,
+  "leak_shares": [
+   0.0069,
+   0.0028,
+   0.0013
+  ],
+  "amplified_voltage_share": 0.9942246048076296,
+  "remaining_kurtosis_max_before": 12.86530223626505,
+  "remaining_kurtosis_max_after": 1.2284830388331764,
+  "remaining_kurtosis_median_after": 0.0550442242704694
+ },
+ {
+  "scene": "strong_weather_nominal_load",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.044,
+  "groups": [
+   [
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P22",
+    "P33"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.094
+  ],
+  "r_first_order": 8,
+  "voltage_share_first_order": 0.9824078149134043,
+  "leak_directions": 3,
+  "leak_shares": [
+   0.0084,
+   0.0023,
+   0.0013
+  ],
+  "amplified_voltage_share": 0.9943587035087297,
+  "remaining_kurtosis_max_before": 12.865357257190007,
+  "remaining_kurtosis_max_after": 2.8246638578186403,
+  "remaining_kurtosis_median_after": 0.04086152106017327
+ },
+ {
+  "scene": "two_cloud_regions",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.045,
+  "groups": [
+   [
+    "P13",
+    "P14",
+    "P15",
+    "P17",
+    "P18"
+   ],
+   [
+    "P22",
+    "P33"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.039,
+   0.086
+  ],
+  "r_first_order": 7,
+  "voltage_share_first_order": 0.13093768794705388,
+  "leak_directions": 5,
+  "leak_shares": [
+   0.0343,
+   0.0154,
+   0.0095,
+   0.0584,
+   0.7252
+  ],
+  "amplified_voltage_share": 0.973766245018598,
+  "remaining_kurtosis_max_before": 3.787759626931236,
+  "remaining_kurtosis_max_after": 0.6054724221605148,
+  "remaining_kurtosis_median_after": 0.02917986419494656
+ },
+ {
+  "scene": "nrel_ha4_40_60",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.044,
+  "groups": [
+   [
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P22",
+    "P33"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.257
+  ],
+  "r_first_order": 8,
+  "voltage_share_first_order": 0.962526054984956,
+  "leak_directions": 4,
+  "leak_shares": [
+   0.01,
+   0.0137,
+   0.0036,
+   0.0048
+  ],
+  "amplified_voltage_share": 0.994752664063406,
+  "remaining_kurtosis_max_before": 25.120971370732928,
+  "remaining_kurtosis_max_after": 2.1480254866786277,
+  "remaining_kurtosis_median_after": 0.047650950734367425
+ },
+ {
+  "scene": "weather_driven_loads_constructed",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.049,
+  "groups": [
+   [
+    "P7",
+    "P8",
+    "P24",
+    "P25",
+    "P29",
+    "P30",
+    "P31",
+    "P32",
+    "Q7",
+    "Q8",
+    "Q24",
+    "Q25",
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.059
+  ],
+  "r_first_order": 16,
+  "voltage_share_first_order": 0.7865221819450612,
+  "leak_directions": 0,
+  "leak_shares": [],
+  "amplified_voltage_share": 0.7865221819450612,
+  "remaining_kurtosis_max_before": 0.16375321445604785,
+  "remaining_kurtosis_max_after": 0.16375321445604785,
+  "remaining_kurtosis_median_after": 0.007471011026123353
+ }
+]

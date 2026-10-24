@@ -1,0 +1,85 @@
+{
+ "rule": "largest 0.1%-tail extension over std in the MC result, V and P only, before model errors",
+ "targets": [
+  {
+   "object_index": 5,
+   "output": "V",
+   "node": 7,
+   "branch": 0,
+   "unit": "p.u.",
+   "priority": false,
+   "side": "lower",
+   "extension": 5.294259322472717
+  },
+  {
+   "object_index": 6,
+   "output": "V",
+   "node": 8,
+   "branch": 0,
+   "unit": "p.u.",
+   "priority": false,
+   "side": "lower",
+   "extension": 5.2723367390751665
+  },
+  {
+   "object_index": 8,
+   "output": "V",
+   "node": 10,
+   "branch": 0,
+   "unit": "p.u.",
+   "priority": false,
+   "side": "lower",
+   "extension": 5.263034669826891
+  },
+  {
+   "object_index": 7,
+   "output": "V",
+   "node": 9,
+   "branch": 0,
+   "unit": "p.u.",
+   "priority": false,
+   "side": "lower",
+   "extension": 5.26298950481232
+  },
+  {
+   "object_index": 9,
+   "output": "V",
+   "node": 11,
+   "branch": 0,
+   "unit": "p.u.",
+   "priority": false,
+   "side": "lower",
+   "extension": 5.262903042940573
+  },
+  {
+   "object_index": 4,
+   "output": "V",
+   "node": 6,
+   "branch": 0,
+   "unit": "p.u.",
+   "priority": false,
+   "side": "lower",
+   "extension": 5.257831742652603
+  },
+  {
+   "object_index": 10,
+   "output": "V",
+   "node": 12,
+   "branch": 0,
+   "unit": "p.u.",
+   "priority": false,
+   "side": "lower",
+   "extension": 5.256151553252941
+  },
+  {
+   "object_index": 24,
+   "output": "V",
+   "node": 26,
+   "branch": 0,
+   "unit": "p.u.",
+   "priority": false,
+   "side": "lower",
+   "extension": 5.251423937906524
+  }
+ ]
+}

@@ -1,0 +1,170 @@
+[
+ {
+  "scene": "A_weather_driven_loads",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.021,
+  "groups": [
+   [
+    "P7",
+    "P8",
+    "P24",
+    "P25",
+    "P29",
+    "P30",
+    "P31",
+    "P32",
+    "Q7",
+    "Q8",
+    "Q24",
+    "Q25",
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.066
+  ],
+  "r_first_order": 16,
+  "voltage_share_first_order": 0.5074166566223153,
+  "leak_directions": 0,
+  "leak_shares": [],
+  "amplified_voltage_share": 0.5074166566223153,
+  "remaining_kurtosis_max_before": 0.1314059989118701,
+  "remaining_kurtosis_max_after": 0.1314059989118701,
+  "remaining_kurtosis_median_after": 0.0018076498718724299,
+  "expected": "P,Q of buses 7,8,24,25,29,30,31,32 in one group"
+ },
+ {
+  "scene": "B_pv_and_loads_same_weather",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.017,
+  "groups": [
+   [
+    "P7",
+    "P8",
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P22",
+    "P24",
+    "P25",
+    "P29",
+    "P30",
+    "P31",
+    "P32",
+    "P33",
+    "Q7",
+    "Q8",
+    "Q24",
+    "Q25",
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.08
+  ],
+  "r_first_order": 24,
+  "voltage_share_first_order": 0.9862045363148091,
+  "leak_directions": 1,
+  "leak_shares": [
+   0.0084
+  ],
+  "amplified_voltage_share": 0.9945844684106434,
+  "remaining_kurtosis_max_before": 26.08811810233732,
+  "remaining_kurtosis_max_after": 2.511272603002543,
+  "remaining_kurtosis_median_after": 0.1466889396051414,
+  "expected": "8 PV P and the 8 loads P,Q in one group"
+ },
+ {
+  "scene": "C_pv_and_loads_two_weathers",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.017,
+  "groups": [
+   [
+    "P7",
+    "P8",
+    "P24",
+    "P25",
+    "P29",
+    "P30",
+    "P31",
+    "P32",
+    "Q7",
+    "Q8",
+    "Q24",
+    "Q25",
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32"
+   ],
+   [
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P22",
+    "P33"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.071,
+   0.08
+  ],
+  "r_first_order": 24,
+  "voltage_share_first_order": 0.9947806788694352,
+  "leak_directions": 1,
+  "leak_shares": [
+   0.0012
+  ],
+  "amplified_voltage_share": 0.9959948385701691,
+  "remaining_kurtosis_max_before": 3.322893070702997,
+  "remaining_kurtosis_max_after": 1.5169522761207883,
+  "remaining_kurtosis_median_after": 0.1490156611976272,
+  "expected": "8 PV P one group; 8 loads P,Q another group"
+ },
+ {
+  "scene": "D_large_ordinary_gaussian",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.019,
+  "groups": [],
+  "group_median_coamplification": [],
+  "r_first_order": 0,
+  "voltage_share_first_order": 0.0,
+  "leak_directions": 0,
+  "leak_shares": [],
+  "amplified_voltage_share": 0.0,
+  "remaining_kurtosis_max_before": 5.989544312062209,
+  "remaining_kurtosis_max_after": 5.989544312062209,
+  "remaining_kurtosis_median_after": 0.050534152948972455,
+  "expected": "no group (GMM)"
+ },
+ {
+  "scene": "E_AQGMM_frozen_input",
+  "scenarios": 8000,
+  "coamplification_threshold": 0.003,
+  "groups": [],
+  "group_median_coamplification": [],
+  "r_first_order": 0,
+  "voltage_share_first_order": 0.0,
+  "leak_directions": 0,
+  "leak_shares": [],
+  "amplified_voltage_share": 0.0,
+  "remaining_kurtosis_max_before": 17.558374930075516,
+  "remaining_kurtosis_max_after": 17.558374930075516,
+  "remaining_kurtosis_median_after": 2.4557682042516533,
+  "expected": "unknown; injections recovered from stored voltages",
+  "load_factor_recovery_max_error": 3.4559022310531873e-12,
+  "scenarios_for_groups": 20000
+ }
+]

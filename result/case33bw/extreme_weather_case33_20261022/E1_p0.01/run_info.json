@@ -1,0 +1,54 @@
+{
+ "scene": "E1",
+ "p": 0.01,
+ "storm_factor": 69.02613883140666,
+ "storm_target_rms": 0.36385543114858787,
+ "realized_storm_share": 0.009869,
+ "split": {
+  "scene": "E1_p0.01",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.019,
+  "groups": [
+   [
+    "P13",
+    "P14",
+    "P15",
+    "P16",
+    "P17",
+    "P18",
+    "P22",
+    "P33"
+   ]
+  ],
+  "group_median_coamplification": [
+   0.322
+  ],
+  "r_first_order": 8,
+  "voltage_share_first_order": 0.9378534352422553,
+  "leak_directions": 4,
+  "leak_shares": [
+   0.0464,
+   0.0025,
+   0.0016,
+   0.0048
+  ],
+  "amplified_voltage_share": 0.9932600395259239,
+  "remaining_kurtosis_max_before": 36.70546036306624,
+  "remaining_kurtosis_max_after": 1.07706041628696,
+  "remaining_kurtosis_median_after": 0.06765440280474033
+ },
+ "splits": {
+  "training": 8192,
+  "validation": 4096,
+  "mc": 1000000
+ },
+ "draws": 262144,
+ "seed": 2026102311,
+ "load_rise": null,
+ "MC_voltage_excess_kurtosis": [
+  -1.818120002746582,
+  2.5423502922058105
+ ],
+ "seconds": 502.05466929199974,
+ "script_SHA256": "b3e6f7d98ef6fafaa5d260ea080a90c4ff6f065ee2d60e8b0f4ce97cce076259"
+}

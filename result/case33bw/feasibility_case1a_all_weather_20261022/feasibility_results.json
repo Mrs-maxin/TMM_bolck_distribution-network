@@ -1,0 +1,170 @@
+{
+ "settings": {
+  "LOAD_SD": 0.05,
+  "LOAD_CORR": 0.8,
+  "LOAD_INDEPENDENT": 0.005,
+  "splits": {
+   "training": 8192,
+   "validation": 4096,
+   "reference": 32768
+  },
+  "draws": 65536,
+  "tail_levels": "0.1%-5% both sides, mean |model CDF - level| at MC quantiles"
+ },
+ "voltage_excess_kurtosis_range": [
+  2.7151772107052814,
+  5.723404804781181
+ ],
+ "rows": [
+  {
+   "K": 1,
+   "family": "GMM",
+   "validation_ll": -91.83893316905204,
+   "df": [],
+   "voltage_ks_median": 0.08995819091796875,
+   "voltage_ks_max": 0.0942230224609375,
+   "lower_tail_err_median": 0.006557003173828126,
+   "upper_tail_err_median": 0.004725821533203125,
+   "lower_tail_err_max": 0.006911511230468751,
+   "upper_tail_err_max": 0.005836313476562501,
+   "lower_tail_signed_median": -0.004314849853515625,
+   "upper_tail_signed_median": 0.00012591552734374874,
+   "beyond_MC_q001_median": 0.0,
+   "beyond_MC_q999_median": 1.52587890625e-05
+  },
+  {
+   "K": 1,
+   "family": "TMM",
+   "validation_ll": -82.97220340888333,
+   "df": [
+    4.2
+   ],
+   "voltage_ks_median": 0.0185394287109375,
+   "voltage_ks_max": 0.020263671875,
+   "lower_tail_err_median": 0.010871093750000001,
+   "upper_tail_err_median": 0.006183756103515625,
+   "lower_tail_err_max": 0.011651733398437503,
+   "upper_tail_err_max": 0.007108056640625,
+   "lower_tail_signed_median": -0.010871093750000001,
+   "upper_tail_signed_median": -0.00611065673828125,
+   "beyond_MC_q001_median": 0.00048065185546875,
+   "beyond_MC_q999_median": 0.00154876708984375
+  },
+  {
+   "K": 3,
+   "family": "GMM",
+   "validation_ll": -79.93982807252448,
+   "df": [],
+   "voltage_ks_median": 0.018463134765625,
+   "voltage_ks_max": 0.0241241455078125,
+   "lower_tail_err_median": 0.003272430419921875,
+   "upper_tail_err_median": 0.0016581530761718751,
+   "lower_tail_err_max": 0.0047854052734375,
+   "upper_tail_err_max": 0.0029920776367187507,
+   "lower_tail_signed_median": 0.003272430419921875,
+   "upper_tail_signed_median": 0.00037341308593749883,
+   "beyond_MC_q001_median": 0.00118255615234375,
+   "beyond_MC_q999_median": 0.0023040771484375
+  },
+  {
+   "K": 3,
+   "family": "TMM",
+   "validation_ll": -78.71886214945283,
+   "df": [
+    8.2,
+    14.3,
+    6.9
+   ],
+   "voltage_ks_median": 0.01274871826171875,
+   "voltage_ks_max": 0.0197296142578125,
+   "lower_tail_err_median": 0.003908157958984375,
+   "upper_tail_err_median": 0.005924652099609375,
+   "lower_tail_err_max": 0.004877819824218751,
+   "upper_tail_err_max": 0.0088465576171875,
+   "lower_tail_signed_median": -0.0029224853515625003,
+   "upper_tail_signed_median": -0.005924652099609375,
+   "beyond_MC_q001_median": 0.0002288818359375,
+   "beyond_MC_q999_median": 0.00026702880859375
+  },
+  {
+   "K": 6,
+   "family": "GMM",
+   "validation_ll": -78.33502089186354,
+   "df": [],
+   "voltage_ks_median": 0.0123138427734375,
+   "voltage_ks_max": 0.0164947509765625,
+   "lower_tail_err_median": 0.0034036999511718744,
+   "upper_tail_err_median": 0.0010355957031249997,
+   "lower_tail_err_max": 0.00474904541015625,
+   "upper_tail_err_max": 0.002038833007812501,
+   "lower_tail_signed_median": 0.003393585205078125,
+   "upper_tail_signed_median": 0.00021563720703124878,
+   "beyond_MC_q001_median": 0.0008697509765625,
+   "beyond_MC_q999_median": 0.00070953369140625
+  },
+  {
+   "K": 6,
+   "family": "TMM",
+   "validation_ll": -77.56226701333978,
+   "df": [
+    10.9,
+    19.5,
+    27.4,
+    30.4,
+    14.9,
+    8.3
+   ],
+   "voltage_ks_median": 0.0130615234375,
+   "voltage_ks_max": 0.021575927734375,
+   "lower_tail_err_median": 0.0064836669921875,
+   "upper_tail_err_median": 0.000751248779296875,
+   "lower_tail_err_max": 0.0070288427734375,
+   "upper_tail_err_max": 0.002500258789062501,
+   "lower_tail_signed_median": 0.00632403564453125,
+   "upper_tail_signed_median": -0.0003141479492187512,
+   "beyond_MC_q001_median": 0.0003662109375,
+   "beyond_MC_q999_median": 0.0008392333984375
+  },
+  {
+   "K": 8,
+   "family": "GMM",
+   "validation_ll": -78.25653139717431,
+   "df": [],
+   "voltage_ks_median": 0.01630401611328125,
+   "voltage_ks_max": 0.0238037109375,
+   "lower_tail_err_median": 0.002349841308593749,
+   "upper_tail_err_median": 0.0033052478027343754,
+   "lower_tail_err_max": 0.004507019042968749,
+   "upper_tail_err_max": 0.004886745605468751,
+   "lower_tail_signed_median": 0.0021029968261718737,
+   "upper_tail_signed_median": -0.0030697326660156254,
+   "beyond_MC_q001_median": 0.00142669677734375,
+   "beyond_MC_q999_median": 0.0026397705078125
+  },
+  {
+   "K": 8,
+   "family": "TMM",
+   "validation_ll": -77.50137065221043,
+   "df": [
+    9.4,
+    14.5,
+    26.3,
+    31.5,
+    32.7,
+    26.0,
+    19.9,
+    9.4
+   ],
+   "voltage_ks_median": 0.01561737060546875,
+   "voltage_ks_max": 0.016876220703125,
+   "lower_tail_err_median": 0.004836523437499999,
+   "upper_tail_err_median": 0.0014302172851562494,
+   "lower_tail_err_max": 0.005203955078124999,
+   "upper_tail_err_max": 0.0034597192382812515,
+   "lower_tail_signed_median": 0.004769927978515625,
+   "upper_tail_signed_median": -0.0010421447753906261,
+   "beyond_MC_q001_median": 0.00060272216796875,
+   "beyond_MC_q999_median": 0.00054168701171875
+  }
+ ]
+}

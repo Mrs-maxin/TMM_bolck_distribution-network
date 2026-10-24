@@ -1,0 +1,30 @@
+{
+  "scene": "common_strength",
+  "K": 12,
+  "family": "SGMM",
+  "replicate": 1,
+  "seed": 2026114115,
+  "candidate": "K12_p01_SGMM",
+  "model_SHA256": "76a8c3ea8496936481ddec11653420cf69e76364bc5abc59ac61a7bff83f902e",
+  "component_counts": [
+    1048,
+    4078,
+    8050,
+    4766,
+    3568,
+    12153,
+    6051,
+    10832,
+    5333,
+    6418,
+    2340,
+    899
+  ],
+  "weights_sum": 0.9999999999999989,
+  "ESS": 65535.9997103262,
+  "propagation_seconds": 0.5002641250030138,
+  "processing_seconds": 7.364779459006968,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

@@ -1,0 +1,27 @@
+{
+  "plan": "01_IDEA/pv_shared_residual_protocol_20261021.md",
+  "plan_SHA256": "661bc35f14fb2bc8ccfc6673c10f63acf4efb1e2b3fe27b708a7ceeae72036ea",
+  "script_SHA256": "55ed9a44ffc21c172b3c58992c3bd9a3310b62516fdb537db7e840aaa88d5ef5",
+  "shared_module_SHA256": "d9005c0ab9835d451b7c4710155cb6abba51e2ed50501806efc5de3a983bef7a",
+  "runner_SHA256": "06ef37fb05afb1d5497a7cacfafc14714169697f6f7e8ee548cc9eb3ec03e2d0",
+  "K_order": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    12
+  ],
+  "limit_events": [
+    "V29 < 0.960",
+    "V31 < 0.955",
+    "V31 < 0.950",
+    "any node < 0.950",
+    "V18 > 1.070",
+    "V18 > 1.080",
+    "V18 > 1.090",
+    "nodes 13-18 all > 1.070"
+  ],
+  "fixed_targets": "/Users/maxin/Library/CloudStorage/OneDrive-个人/4-PHD/[3]博三/[1]ACPPF_TMM/result/validation/pv_fixed_forecast_case33_20261021/common_strength/targets.csv"
+}

@@ -1,0 +1,17 @@
+{
+  "training": {
+    "SHA256": "5bef9198fb115b1cf8e55a1efc19d6cfa9bd93dc394e4336032a905a099cd3c8",
+    "main_SHA256": "5bef9198fb115b1cf8e55a1efc19d6cfa9bd93dc394e4336032a905a099cd3c8",
+    "identical": true
+  },
+  "validation": {
+    "SHA256": "669a7eff149b73853f2afa5599f26efe15f6858326005b03a030a350d9603095",
+    "main_SHA256": "669a7eff149b73853f2afa5599f26efe15f6858326005b03a030a350d9603095",
+    "identical": true
+  },
+  "reference": {
+    "SHA256": "5feab52e8a064640bc4845dfc1c53321538ef4a7348e8bc39787ec865d38f9ce",
+    "main_SHA256": "5feab52e8a064640bc4845dfc1c53321538ef4a7348e8bc39787ec865d38f9ce",
+    "identical": true
+  }
+}

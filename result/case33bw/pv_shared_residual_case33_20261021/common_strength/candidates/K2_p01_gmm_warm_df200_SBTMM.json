@@ -1,0 +1,25 @@
+{
+  "status": "converged",
+  "iterations": 32,
+  "train_ll": -88.1468575212501,
+  "df": [
+    4.609513406104915,
+    5.4404615676856345
+  ],
+  "weights": [
+    0.6485471758764422,
+    0.35145282412355916
+  ],
+  "effective_counts": [
+    5305.742570686479,
+    2886.2574293135276
+  ],
+  "seconds": 0.8115952079970157,
+  "scene": "common_strength",
+  "K": 2,
+  "family": "SBTMM",
+  "partition": 1,
+  "initial_df": 200,
+  "validation_ll": -88.47666978889293,
+  "model_sha256": "ca6a91c06454ad0d2e2816ad8ccf892afe641817517eb75ff503325bb003e7d0"
+}

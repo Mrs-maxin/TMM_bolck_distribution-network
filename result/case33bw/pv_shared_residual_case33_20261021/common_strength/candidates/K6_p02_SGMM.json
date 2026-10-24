@@ -1,0 +1,37 @@
+{
+  "status": "collapsed_component",
+  "iterations": 2,
+  "train_ll": -86.59970609782512,
+  "df": [
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity
+  ],
+  "weights": [
+    0.005683462716597623,
+    0.14315137093354602,
+    0.3545584414712362,
+    0.29497422420211783,
+    0.18641751540882245,
+    0.015214985267679643
+  ],
+  "effective_counts": [
+    18.727668797264215,
+    1043.7692977525683,
+    3064.285081039563,
+    2561.6732942700123,
+    1359.7407572021684,
+    143.8039009384116
+  ],
+  "seconds": 0.0847140839905478,
+  "scene": "common_strength",
+  "K": 6,
+  "family": "SGMM",
+  "partition": 2,
+  "initial_df": null,
+  "validation_ll": -87.10061702705676,
+  "model_sha256": "17d149aaba87fbebe3b469231c70d6b4792321d31f9eb6601922e871eab72581"
+}

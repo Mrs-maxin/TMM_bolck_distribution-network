@@ -1,0 +1,19 @@
+{
+  "scene": "common_strength",
+  "K": 1,
+  "family": "SBTMM",
+  "replicate": 1,
+  "seed": 2026103115,
+  "candidate": "K1_p01_gmm_warm_df12_SBTMM",
+  "model_SHA256": "c20716efb4bf1cd640771164975b12668aae7e98d280675037e7c5c8403b1ebc",
+  "component_counts": [
+    65536
+  ],
+  "weights_sum": 1.0,
+  "ESS": 65536.0,
+  "propagation_seconds": 0.39568120799958706,
+  "processing_seconds": 7.025846499993349,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

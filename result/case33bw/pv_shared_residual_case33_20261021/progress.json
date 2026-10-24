@@ -1,0 +1,34 @@
+{
+  "UTC": "2026-10-21T19:24:19Z",
+  "PID": 31720,
+  "stage": "COMPARE_COMPLETE",
+  "elapsed_seconds": 2.7417539169982774,
+  "scene": "common_strength",
+  "best_K_by_validation": {
+    "BTMM": 6,
+    "GMM": 6,
+    "SBTMM": 8,
+    "SGMM": 12,
+    "TMM": 6
+  },
+  "best_validation_ll": {
+    "BTMM": -86.04617066089381,
+    "GMM": -86.36100252262008,
+    "SBTMM": -85.63622500982527,
+    "SGMM": -85.83236784105193,
+    "TMM": -86.26599141930471
+  },
+  "prediction_1_shared_raises_validation": {
+    "SBTMM_over_BTMM": true,
+    "SGMM_over_GMM": true,
+    "best_K_not_smaller": {
+      "SBTMM_vs_BTMM": true,
+      "SGMM_vs_GMM": true
+    }
+  },
+  "prediction_2": {
+    "targets_tail_SBTMM_better_than_GMM": "5/6",
+    "limit_events_SBTMM_closer_than_GMM": "6/8"
+  },
+  "criteria": "pv_shared_residual_protocol section 4, fixed before the shared-residual fits"
+}

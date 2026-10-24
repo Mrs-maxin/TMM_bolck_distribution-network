@@ -1,0 +1,21 @@
+{
+  "scene": "common_strength",
+  "K": 3,
+  "family": "TMM",
+  "replicate": 0,
+  "seed": 2026105114,
+  "candidate": "K3_p02_gmm_warm_df200_PX",
+  "model_SHA256": "b7f01dc2710b117634228ad4206585f76d12c8c0453e4e6eb2bf661b2b750634",
+  "component_counts": [
+    14283,
+    38257,
+    12996
+  ],
+  "weights_sum": 0.9999999999999981,
+  "ESS": 65535.99998668075,
+  "propagation_seconds": 0.9977657080016797,
+  "processing_seconds": 7.114902625005925,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

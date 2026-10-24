@@ -1,0 +1,86 @@
+{
+ "status": "completed",
+ "entry": "tests/run_pv_shared_residual_case33.py",
+ "entry_SHA256": "55ed9a44ffc21c172b3c58992c3bd9a3310b62516fdb537db7e840aaa88d5ef5",
+ "shared_module": "tests/shared_residual_mixture.py",
+ "shared_module_SHA256": "d9005c0ab9835d451b7c4710155cb6abba51e2ed50501806efc5de3a983bef7a",
+ "imported_runner": "tests/run_pv_fixed_forecast_case33.py",
+ "imported_runner_SHA256": "06ef37fb05afb1d5497a7cacfafc14714169697f6f7e8ee548cc9eb3ec03e2d0",
+ "commands": [
+  "python3 tests/run_pv_shared_residual_case33.py ac_only",
+  "python3 tests/run_pv_shared_residual_case33.py fit --K k (k=1,2,3,4,6,8,12, parallel) then fit",
+  "python3 tests/run_pv_shared_residual_case33.py reference",
+  "python3 tests/run_pv_shared_residual_case33.py block",
+  "python3 tests/run_pv_shared_residual_case33.py shared",
+  "python3 tests/run_pv_shared_residual_case33.py limits",
+  "python3 tests/run_pv_shared_residual_case33.py compare"
+ ],
+ "execution": "local macOS Python, user-authorized 2026-10-21; PV runner imported unchanged",
+ "plan": "01_IDEA/pv_shared_residual_protocol_20261021.md",
+ "plan_SHA256": "661bc35f14fb2bc8ccfc6673c10f63acf4efb1e2b3fe27b708a7ceeae72036ea",
+ "derivation": "01_IDEA/derivation.md (B20)-(B22)",
+ "git_commit": "4e5856338fe89444df71b4c84af94372e8b1c7d3",
+ "git_entry_uncommitted": true,
+ "scene": "common_strength",
+ "inputs_identical_to_PV_main_run": true,
+ "targets_source": "result/validation/pv_fixed_forecast_case33_20261021/common_strength/targets.csv",
+ "AC_counts": {
+  "training": 8192,
+  "validation": 4096,
+  "reference": 32768
+ },
+ "AC_failures": 0,
+ "fit_candidates": 104,
+ "fit_converged": 101,
+ "non_converged": [
+  [
+   "SGMM",
+   6,
+   "collapsed_component"
+  ],
+  [
+   "SBTMM",
+   6,
+   "collapsed_component"
+  ],
+  [
+   "SBTMM",
+   6,
+   "collapsed_component"
+  ]
+ ],
+ "families": [
+  "GMM",
+  "TMM",
+  "BTMM",
+  "SBTMM",
+  "SGMM"
+ ],
+ "propagations": 140,
+ "propagation_points": 65536,
+ "figures": "none",
+ "sha256": {
+  "protocol.json": "c28d8c8aa9a6d18df77f3a040587bb0d9747ecbb68b9635940e4ffc474a208ad",
+  "shared_protocol.json": "d01b0081b2cf0de4b95a41598a6c77195969d0a975dfa39b4ec4c3c852ceef14",
+  "inputs_match_main.json": "90cbdfb937ed4b353af8e6e7504d27e1833e1f988e4645429d4ce47304c3bfb5",
+  "environment.json": "8dfb87c5475dd214edf34cb3d0cdcde8d841b543adda163beb06fbe37e041958",
+  "global_repeat_summary.csv": "7e9f06baaf372fa20346cb57ece8b55898572a3bffa5db5b0d0349fbbde177f4",
+  "block_global_repeat_summary.csv": "9defda4b8a3162b7167f23065d749e147be851df3f459317979c6cd2c2e2528c",
+  "shared_global_repeat_summary.csv": "6701fa309b76b2fcdb20d7f5314b8c37e5023b419a22593a2877f51b433811cd",
+  "shared_quantile_repeat_summary.csv": "fa9a21774b8235bccfcf7c3be8ee8d6ad04fe50f2f0b6f11548c78a285aa4b67",
+  "common_strength/AC_ONLY_LOCK.json": "b692cce312f4e20eafdda7b6890709dde216ee453b7916bd23755338c0bd4d24",
+  "common_strength/targets.csv": "d09c46cc852120499631be95ac4dda6b6cc3ecad72331a988edeeaaa2e476266",
+  "common_strength/selected_models.csv": "e22be6c2f3d6dfdda9204a446562692576c5e572567835902b8364cb245e91d3",
+  "common_strength/selected_models_block.csv": "f65bbfe49c7a2cf2e75eddc9df3b7e62509f7a387d0e225969a732011897b005",
+  "common_strength/selected_models_shared.csv": "9e122a0b22f84b9b16a7fcfc26f5e41b90ae07d86f374e59e7316c5bef9fa9cf",
+  "common_strength/all_fit_attempts_shared.csv": "f1f14a1de1846d1d04b808112fd6c9559c26ea4281d18cea2874ace336ce22e8",
+  "common_strength/block_subspace_diagnostics.json": "bfc5a8aa97c79d33ac7cc3cd39be57d9dd291289c9666074b3d99616822a17d3",
+  "common_strength/limit_probabilities.csv": "06a7b9eb10e7cafda96a437b2978cc27d7891c94cf5cb010dfdbd4f0405b0fe0",
+  "common_strength/compare_likelihood_curve.csv": "cfc4b7f4939d65e047712915823b4399f93d493a613e2f7045e3fb1eb990ff5d",
+  "common_strength/compare_targets_at_best_K.csv": "74c62c467220a11174671bfafb597fec441c735fdeb63979ad8bd3e88a65f457",
+  "common_strength/compare_limits_at_best_K.csv": "d13d5045b6a6345291978cc4e5bbdcb0f9dc094f7d1cc3c8bb469bf496d1789e",
+  "common_strength/compare_summary.json": "34806e32997a2aff9b599ede55c8148655b0d6628e7f1b4a184dcbe080d333ef",
+  "common_strength/reference_AC.npz": "9a59b5cbd637d495ace9610c4c86a9900fb45f6c145b291e62abff510e8abb74",
+  "common_strength/fitting_inputs.npz": "45dc4fbe1a01599347c19946e3959385962d35713be587662f51edfe09de0e38"
+ }
+}

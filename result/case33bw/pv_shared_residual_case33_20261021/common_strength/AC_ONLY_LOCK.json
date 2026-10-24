@@ -1,0 +1,17 @@
+{
+  "stage": "targets_fixed_before_fits",
+  "smoke": false,
+  "UTC": "2026-10-21T18:57:27Z",
+  "sha256": {
+    "protocol.json": "c28d8c8aa9a6d18df77f3a040587bb0d9747ecbb68b9635940e4ffc474a208ad",
+    "common_strength/targets.csv": "d09c46cc852120499631be95ac4dda6b6cc3ecad72331a988edeeaaa2e476266",
+    "common_strength/target_rules.txt": "177b09c7492d6b95897953a0fb0b4b4563364904a2058f7ce6817167578e4315",
+    "common_strength/AC_features_train_validation.csv": "c91e91a0b0a39f0c0d06cb16d086e32829039953841902ffc4baa92d4df29dd2",
+    "common_strength/strength_diagnostics.json": "f5f8405660725437b017426006d89283fe26b7370a2b7ec2f58a4e8d86767fbf",
+    "common_strength/training_inputs.npz": "5bef9198fb115b1cf8e55a1efc19d6cfa9bd93dc394e4336032a905a099cd3c8",
+    "common_strength/validation_inputs.npz": "669a7eff149b73853f2afa5599f26efe15f6858326005b03a030a350d9603095",
+    "common_strength/reference_inputs.npz": "5feab52e8a064640bc4845dfc1c53321538ef4a7348e8bc39787ec865d38f9ce",
+    "common_strength/training_AC.npz": "9aca09d4ebdc007b40c14f1d642f8429f23e158537b18277133ef7aedf6745f5",
+    "common_strength/validation_AC.npz": "87ee56a2fc144c13f194cb9136ec685f08f522ee0cc6ab7220e528a97899239a"
+  }
+}

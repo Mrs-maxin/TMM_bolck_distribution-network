@@ -34,96 +34,324 @@ guide:
 tree:
   - id: N01
     type: question
-    title: "待填：核心科学问题"
+    title: "配电网交流概率潮流中，TMM能否以更少分量比GMM更准确地计算节点电压、支路功率和网损的尾部"
     provenance: user
     status: open
-    description: "在什么工程场景下，现有方法存在关键不足，而本文方法可以给出更可靠、更可解释或更高效的结果？"
-    affects:
-      claims:
-        - C1
-      files:
-        - "01_IDEA/story.md"
-        - "01_IDEA/claims.md"
+    affects: {claims: [C1, C2], files: ["01_IDEA/claims.md", "02_PAPER/manuscript/method_zh.md"]}
     children:
       - id: N02
-        type: decision
-        title: "待填：选择最小可验证问题"
-        provenance: user
-        status: open
-        choice: "先聚焦到一个能由 case33bw / case141 支撑的研究问题。"
-        alternatives:
-          - "直接写成完整大框架"
-          - "先按目标工程对象和证据路线做工程实现"
-        evidence: []
-        lesson: "待填：该选择如何帮助论文结论获得证据支撑。"
+        type: experiment
+        title: "标准TMM在只有光伏受天气放大的33节点算例中自由度30—200，退化为接近GMM"
+        provenance: ai-executed
+        status: done
+        evidence: [E-PV-FIXED-FORECAST-20261021, E-STD-TMM-DILUTION-20261024]
+        result: "原因由method_zh.md式(12)说明：负荷小波动方向稀释峰度"
       - id: N03
-        type: experiment
-        title: "待填：case33bw 主算例"
-        provenance: ai-suggested
-        status: open
-        verifies:
-          - C1
-        evidence:
-          - E01
-        result: "待填：运行后登记关键结果和原始输出路径。"
-      - id: N04
-        type: experiment
-        title: "待填：case141 扩展算例"
-        provenance: ai-suggested
-        status: open
-        verifies:
-          - C2
-        evidence:
-          - E02
-        result: "待填：运行后登记扩展性、规模和关键指标。"
-      - id: N08
-        type: fork_exploration
-        title: "待填：分叉探索路线"
-        provenance: ai-suggested
-        status: open
-        base_node: N02
-        hypothesis: "待填：该分叉想验证的建模、求解、参数或对比路线假设。"
-        trigger: "待填：该分叉要验证的新增对象、场景或指标，以及需要单独记录的证据路线。"
-        git_branch: "【Git 信息待补充】"
-        compared_with:
-          node: N02
-          branch: "【Git 信息待补充】"
-          run_manifest: "result/<case>/run_manifest.json"
-        changed_files:
-          - "待填：关键代码、配置、数据或文档文件"
-        input_difference: "待填：相对主线改变了哪些数据、参数、随机种子、solver 或实验条件。"
-        expected_signal: "待填：若假设成立，应在哪些指标、图或物理现象中出现差异。"
-        result_directory: "result/<case>/"
-        run_manifest: "result/<case>/run_manifest.json"
-        observed_difference: "待填：与主线相比的实际差异，需引用结果文件、图表或 manifest。"
-        decision: "待判断：merge_to_main / retain_as_alternative / archive / rerun_required"
-        retained_lesson: "待填：无论是否合并，该分叉对当前研究路线留下的启示。"
-        next_action: "待填：合并、补实验、归档或继续比较。"
-      - id: N05
-        type: retained_idea
-        title: "待填：从早期方案保留下来的思路"
+        type: decision
+        title: "波动强度只作用于由潮流雅可比确定的光伏驱动电压方向（分块TMM，2026-10-21）"
         provenance: user-revised
-        status: open
-        original_context: "待填：该思路最初来自哪个问题或方案。"
-        retained_reason: "待填：它为什么仍然服务于当前主线。"
-        related_files: []
+        status: superseded_by_N07
+        evidence: [E-PV-BLOCK-TMM-20261021, E-PV-BLOCK-CHECK-20261021]
+      - id: N04
+        type: decision
+        title: "分块规则改为由注入共同放大判别天气驱动注入并检出潮流二次响应方向（2026-10-22）"
+        provenance: ai-executed
+        status: adopted
+        evidence: [E-SPLIT-RULE-20261022, E-CASE1-NEWSPLIT-20261022]
+      - id: N05
+        type: decision
+        title: "TMM参数由最大似然改为在AQGMM分量归属上按矩确定（2026-10-22）"
+        provenance: ai-executed
+        status: adopted
+        evidence: [E-MOMENT-TMM-20261022]
+        lesson: "最大似然降低大偏差场景权重，低估光伏驱动方向方差，K=1尾部比GMM更窄"
       - id: N06
         type: archived_route
-        title: "待填：已归档的方案"
-        provenance: user-revised
+        title: "增加拟合场景改善深尾"
+        provenance: ai-executed
         status: archived
-        original_hypothesis: "待填：原先认为可行的建模、求解、近似或对比路线。"
-        attempt: "待填：尝试方式、分支、commit 或结果目录。"
-        observed_issue: "待填：推导、实现或实验中暴露的问题。"
-        archived_reason: "待填：暂时不进入当前主线的原因。"
-        retained_lesson: "待填：该路线留下的启示。"
+        observed_issue: "8192增至65536个拟合场景无系统改善；用户确认场景数通常不能增加"
+        evidence: [E-EXTREME-WEATHER-20261022]
       - id: N07
-        type: open_question
-        title: "待填：尚未验证的问题"
+        type: decision
+        title: "分组t混合：天气过程一阶方向成组、二次响应方向单独成组，强度同步并按出力限值截断（2026-10-23）"
+        provenance: user-revised
+        status: adopted
+        evidence: [E-GROUPED-TMM-20261023, E-GROUPED-REC-20261023]
+        literature: "grouped t / grouped normal variance mixture（Daul等2003；Demarta与McNeil 2005；Hintz等2020）"
+      - id: N08
+        type: archived_route
+        title: "各分量共用其余方向残差协方差"
+        provenance: ai-executed
+        status: archived
+        observed_issue: "似然升高，但电压尾部与不共用版本相当，不进入正文方法"
+        evidence: [E-PV-SHARED-20261021, E-CASE1-NEWSPLIT-20261022]
+      - id: N09
+        type: decision
+        title: "研究主线锁定为同K尾部更准和少分量达到相近精度；拟合用电压改由快速映射计算；论文方法只保留AQGMM、标准TMM、分组t（2026-10-24）"
         provenance: user
+        status: adopted
+        evidence: [E-FASTMAP-20261024]
+      - id: N10
+        type: retained_idea
+        title: "多尺度t（AQPPF_TMM主分支方法，各方向独立强度）"
+        provenance: user
+        status: pending_final_comparison
+        retained_reason: "效果与分组t相近；用户要求最终效果差则不放入"
+      - id: N11
+        type: open_question
+        title: "AQGMM尾段误差随K不单调，少分量论点需同口径K曲线"
+        provenance: ai-suggested
         status: open
-        question: "待填：需要通过推导、代码或实验继续确认的问题。"
-        next_step: "待填：下一步行动。"
+        next_step: "MC方法10⁶场景；AQGMM K=1—16、TMM K=1—8同一评价口径；最终表图换3组拟合场景"
+      - id: N12
+        type: open_question
+        title: "支路P16、P17等由光伏出力停在零或上限决定的支路功率尾部AQGMM更准"
+        provenance: ai-suggested
+        status: open
+        next_step: "区分方法原因（单个对称强度不能表示出力边界处的集中概率）与算例原因（出力限值设定），再决定修改对象"
+      - id: N13
+        type: open_question
+        title: "分组t的电气量解析计算（method_zh.md式(23)）"
+        provenance: ai-suggested
+        status: open
+        next_step: "实现Gauss–Legendre强度积分与Gil-Pelaez反演，并与模型抽样核对"
+
+# 以下为2026-10-21自原项目移入的记录，内容不变，路径已换为本仓库路径。
+complete_TMM_paper_method_20261021:
+  status: author_confirmed
+  manuscript_method_name: 本文TMM
+  manuscript_method_scope: complete_joint_voltage_TMM_and_AC_electrical_distribution_calculation
+  internal_implementation_identity: BTMM_in_existing_code_and_result_records
+  physical_definition: power_flow_sensitivity_determines_weather_affected_voltage_directions_with_correlated_load_variations
+  manuscript_comparison: GMM_primary_earlier_versions_optional_supplementary
+  theory_structure: 02_PAPER/theory_structure_zh.md
+  model_derivation: 01_IDEA/derivation.md_B1_to_B16
+  result_attribution: keep_original_model_identities_no_historical_result_relabeling
+  prior_statistics: cite_existing_t_Gaussian_mixture_and_probability_properties
+  abstract_and_introduction: full_revision_deferred_per_current_writing_scope
+  code_and_scientific_results: unchanged
+
+GMM_predecessor_and_PtoV_provenance_20261021:
+  status: author_confirmed_compression_and_source_checked
+  writing_assumption: full_GMM_method_treated_as_published_predecessor
+  theory_structure: 02_PAPER/theory_structure_zh.md
+  learning_note: 01_IDEA/injection_to_voltage_learning_20261021.md
+  direct_source_repository: wuhanichina/PFIGMM
+  imported_ref: 3734fa5141e05e541ab0703c6e44ccdfc5856d80
+  predecessor_manuscript_title: 解析交流概率潮流中的电压联合分布估计
+  manuscript_section: '3.2'
+  derivation_sections: [4, 8]
+  kernel_identity: exact_text_match_after_project_namespace_substitution
+  local_kernel_SHA256: ee94a66807233adb580421aed686f29538c26044a930f30c29ff6ced34671b74
+  MATLAB_path: quadratic_local_prediction_fixed_Jacobian_refinement_adaptive_anchors_and_full_AC_fallback
+  current_fixed_forecast_PV_path: per_sample_polar_Newton_archived_functions
+  external_learning_sources: MATPOWER_TN2_TN4_dSbus_dV_and_newtonpf
+  external_complete_kernel_paper_attribution: not_identified_in_checked_sources
+  published_bibliography: replace_with_author_final_publication_record_not_inferred_from_repository_draft
+  new_numerical_research: none
+
+theory_body_structure_20261021:
+  status: structure_and_existing_formula_map_saved_pending_author_review
+  reason: author_requested_theory_first_after_unsatisfactory_background_and_literature_review
+  artifact: 02_PAPER/theory_structure_zh.md
+  chapter_1: joint_voltage_TMM_model_and_parameter_estimation
+  chapter_2: AC_quadratics_moments_local_CDF_total_loss_and_numerical_integration
+  model: standard_multivariate_TMM_scalar_df_per_component
+  innovation_center: TMM_electrical_tail_computation_benefits_unchanged
+  analytical_support: local_conditional_t_probability_with_numerical_remainder
+  total_loss: global_joint_voltage_distribution_not_independent_line_marginal_assembly
+  numerical_result_path: existing_weather_direct_component_weighted_Sobol
+  appendix_scope: standard_density_constants_PX_ECM_updates_and_quadratic_root_classification
+  abstract_and_introduction: unchanged_this_turn_deferred
+  new_formulas_or_research_numerics: none_existing_relations_reorganized
+
+wind_fixed_forecast_minimal_20261021:
+  status: completed_locally_preregistered_feasibility_not_met_mechanism_identified_K1_advantage
+  evidence: E-WIND-FIXED-MIN-20261021
+  protocol: 01_IDEA/wind_fixed_forecast_minimal_protocol_20261021.md
+  results: 01_IDEA/wind_fixed_forecast_minimal_results_20261021.md
+  entry: tests/python/run_wind_fixed_forecast_case33.py
+  run_manifests: result/case33bw/wind_fixed_forecast_case33_20261021{,_gaussian_control,_state_mixture}/run_manifest.json
+  execution: local_python_user_authorized_20261021_imports_PV_fixed_forecast_runner
+  driver: user_adopted_block_TMM_as_formal_method_and_requested_minimal_feasibility_and_applicability_test
+  design: three_inputs_same_mean_covariance_scale_mixture_vs_Gaussian_vs_three_state_location_mixture
+  sites: [18, 25, 33]
+  forecast_fraction: 0.5
+  load_multiplier: 0.8
+  block_rank: 3
+  realized_excess_kurtosis: {common_strength: [1.53, 1.64], state_mixture: [2.34, 2.40]}
+  targets_passed: {common_strength: {BTMM: 0, TMM: 0}, gaussian_control: {BTMM: 0, TMM: 0}, state_mixture: {BTMM: 0, TMM: 0}}
+  selected_df_K3: {common_strength: [5.3, 11.4], gaussian_control: [20.8, 34.5], state_mixture: [200]}
+  K1_observation: BTMM_KS_about_half_of_GMM_limit_probabilities_near_reference_GMM_under_44_to_58_pct
+  K_ge_3_observation: mixed_reverse_flow_events_BTMM_closer_undervoltage_GMM_closer
+  diagnosed_cause_candidates: [quadratic_AC_dependence_of_remaining_directions_on_weather_block_in_whitened_coordinates, low_dimensional_scale_mixture_approximated_by_few_GMM_components, K6_overfitting_validation_LL_below_K3]
+  user_challenge: larger_K_should_fit_better_result_must_be_checked
+  pipeline_checks: {training_LL_monotone_in_K: true, propagation_moments_match_model: true, reference_set_LL_K6_below_K3: true}
+  training_size_check:
+    evidence: E-WIND-TRAINSIZE-20261021
+    run_manifest: result/case33bw/wind_fixed_forecast_case33_20261021_train32768/run_manifest.json
+    training_events: 32768
+    held_out_inputs_identical_to_main: true
+    reference_LL_best_K: {train8192: 3, train32768: 6}
+    K12_min_component_effective_samples: 550
+    tail_error_K3_to_K6_decreases: {GMM: 6_of_6, BTMM: 6_of_6}
+    BTMM_df_K6: [9.7, 12.2]
+    targets_passed: {BTMM: [P24_upper], TMM: [P24_upper]}
+    conclusion: non_monotone_K_in_main_run_caused_by_insufficient_training_samples_for_64D_full_covariance
+    BTMM_advantage_scope: small_K_K1_and_partly_K3_methods_converge_at_K6
+  user_decision_20261021: sample_count_is_fixed_by_available_data_improve_fitting_method_not_input_samples
+  shared_residual_check:
+    evidence: E-WIND-SHARED-20261021
+    derivation: 01_IDEA/derivation.md_B20_to_B22
+    run_manifests: result/case33bw/wind_fixed_forecast_case33_20261021_shared{,_state_mixture}/run_manifest.json
+    training_events: 8192
+    K_list: [1, 2, 3, 4, 6, 8, 12]
+    best_K_by_validation: {common_strength: {GMM: 4, BTMM: 4, SGMM: 8, SBTMM: 8}, state_mixture: {GMM: 4, BTMM: 4, SGMM: 6, SBTMM: 6}}
+    best_reference_LL_common_strength: {GMM: -89.599, SBTMM: -89.044, GMM_with_32768_training: -88.991}
+    parameters_at_best_K: {GMM_K4: 8579, SBTMM_K8: 3930}
+    SBTMM_bestK_vs_GMM_bestK: {KS_better: 6_of_6, limit_events_closer: 4_of_5, tail_better: 4_of_6}
+    attribution: improvement_mostly_from_shared_structure_SGMM_K8_close_to_SBTMM_K8
+    t_component_contribution: clear_at_K1_limit_mean_rel_error_7_vs_29_pct_mixed_at_K_ge_2
+    state_mixture: SBTMM_equals_SGMM_df_about_200_structure_improves_over_GMM
+    open_issue: joint_whitened_likelihood_K_selection_not_aligned_with_individual_electrical_tail_accuracy
+  pv_shared_residual_check:
+    evidence: E-PV-SHARED-20261021
+    user_choice: retest_shared_structure_in_PV_with_8_weather_driven_directions
+    protocol: 01_IDEA/pv_shared_residual_protocol_20261021.md
+    results: 01_IDEA/pv_shared_residual_results_20261021.md
+    entry: tests/python/run_pv_shared_residual_case33.py
+    shared_module: tests/python/shared_residual_mixture.py
+    run_manifest: result/case33bw/pv_shared_residual_case33_20261021/run_manifest.json
+    PV_files_modified: none
+    inputs_identical_to_PV_main: true
+    best_K_by_validation: {GMM: 6, BTMM: 6, SGMM: 12, SBTMM: 8}
+    best_validation_LL: {GMM: -86.361, BTMM: -86.046, SGMM: -85.832, SBTMM: -85.636}
+    SBTMM_bestK_vs_GMM_bestK: {tail_better: 5_of_6, limit_events_closer: 6_of_8}
+    prediction_3_t_independent_at_best_K: not_met_tail_1_of_6_limit_6_of_8
+    same_K_SBTMM_minus_SGMM_reference_LL_K_ge_3: [0.15, 0.36]
+    t_component_contribution: fewer_components_K3_tail_6_of_6_Gaussian_catches_up_at_K12
+    deep_limit_events_reference_counts: [7, 46]
+  open_question: PV_fixed_forecast_runs_used_8192_training_with_K_up_to_12_same_overfitting_may_affect_PV_multi_component_results_unverified
+  not_done: [training_repeat, PDF_figures, formal_MATLAB_figures]
+
+pv_fixed_forecast_common_scale_20261021:
+  status: completed_locally_targets_not_passed_root_cause_shared_scale_across_voltage_directions
+  evidence: E-PV-FIXED-FORECAST-20261021
+  results: 01_IDEA/pv_fixed_forecast_results_20261021.md
+  run_manifest: result/case33bw/pv_fixed_forecast_case33_20261021/run_manifest.json
+  execution: local_python_user_authorized_20261021
+  observed: {targets: 6, passed: 0, tail_band_0p5_5pct_TMM_smaller_K3_to_K12: 0.25_to_0.35, q005_TMM_worse: true, others_comparable_K_ge_5: 1.0}
+  root_cause: 7_PV_driven_voltage_directions_scale_with_event_strength_57_load_noise_directions_Gaussian_shared_t_scale_gives_df_30_to_200
+  component_count_root_cause_20261021:
+    question: why_TMM_improves_with_K_and_block_TMM_worsens_at_K3
+    finding: joint_whitened_likelihood_dominated_by_56_weak_voltage_directions
+    numbers: {weak_direction_std_pu: 1.3e-4, PV_direction_std_pu: 1.8e-3, weak_share_of_validation_loglik: 0.88, BTMM_PV_block_loglik_K1_K3_K6: [-10.83, -10.87, -10.86], GMM_K1_K3_gain_PV_vs_weak: [0.21, 1.65], weak_mean_square_weak_vs_strong_cloud: [0.93, 1.12]}
+    consequence: components_model_weak_direction_structure_and_split_PV_strength_into_discrete_classes
+    proposed_fix: components_act_on_PV_directions_only_shared_conditional_Gaussian_for_weak_directions_and_K_by_PV_block_likelihood
+    status: diagnosed_shared_residual_tested_in_other_conversation_K_by_PV_block_tested_here
+    K_by_PV_block:
+      evidence: E-PV-K-BY-PV-BLOCK-20261021
+      plan: 01_IDEA/pv_component_count_by_pv_block_20261021.md
+      result: BTMM_tail_error_at_best_tested_K_in_5_of_6_scenes_MBTMM_also_in_C
+      exception: single_strength_BTMM_in_two_cloud_region_scene_misspecified
+      cost: K1_choice_can_raise_whole_distribution_error
+      combined_with_shared_residual: PV_block_loglik_flat_over_K_rule_picks_K1_deep_limit_relative_error_185pct_vs_24pct_at_K8
+      revised_decision: not_a_general_K_rule_use_shared_residual_with_joint_likelihood_K
+  case141_cloud_20261021:
+    status: results_in_repository_main_7f4effc_via_temporary_relay_branch_deleted
+    branch: cloud/case141-20261021
+    last_commit: 19336e8425b93cad4845a2600dc6b979aae19eea
+    cloud_agent: bc-8649203c-174e-485c-bb3f-4600ea1c1359
+    reported_result: {base: {TMM: 1/6, BTMM: 4/6}, stronger_weather: {TMM: 0/6, BTMM: 5/6}}
+    reported_deviation: zero_injection_buses_give_168_free_voltage_dimensions_plan_16_1_registered_before_computing
+    next: independent_source_load_scenarios_and_constant_weather_case_for_case141
+  next_decision_taken: block_TMM_user_confirmed_20261021
+  block_TMM:
+    evidence: E-PV-BLOCK-TMM-20261021
+    plan_section: 12
+    subspace: PV_active_power_sensitivity_at_forecast_point_rank_8_fixed_before_errors
+    u_variance_share: 0.988
+    selected_df_range: [4.9, 9.7]
+    targets_passed: [P19_upper_reverse_to_import, P31_upper_reverse_to_import]
+    targets_K1_only: [V29_lower, V31_lower, P13_lower]
+    targets_no_K: [P12_lower]
+    others_comparable_fraction: [0.94, 0.99]
+    post_hoc_observation: K1_tail_band_below_GMM_K12_on_four_unpassed_targets_not_preregistered
+    open_question: far_tail_shortens_for_K_ge_3_cause_unverified_user_declined_dedicated_test
+  block_TMM_check:
+    evidence: E-PV-BLOCK-CHECK-20261021
+    plan_section: 13
+    replicate_seeds: [2026102121, 2026102122]
+    replicate_passed: {BTMM: [P19, P31, V29, V31], TMM: [V31]}
+    replicate_own_rule_targets_differ: neighbouring_objects_V30_V32_P3_P6_P21_P32
+    gaussian_control_passed: {BTMM: [], TMM: []}
+    gaussian_control_BTMM_df: [60, 200]
+    attribution: advantage_requires_event_strength_variation
+    limit_probability_descriptive: E-PV-LIMIT-PROB-20261021_post_hoc_not_preregistered
+  previous_status: plan_registered_observation_calibration_and_numerics_not_started
+  protocol: 01_IDEA/pv_fixed_forecast_common_scale_plan_20261021.md
+  driver: supervisor_feedback_fixed_operating_state_with_uncertain_common_weather_scale
+  scope: one_PV_case_first_no_wind_no_capacity_or_shadow_depth_scan
+  original_evidence: result/case33bw/pv_three_scenes_local_20261020/README.md
+  K12_existing_selection_diagnosis: preserved_not_reassigned_to_scenario_mixing
+  sites: [18, 17, 16, 15, 14, 13, 33, 22]
+  PV_total_MW: 4.64375
+  forecast_power_fraction: 0.65
+  forecast_issue: noon_1200
+  target_time: noon_1215
+  horizon_minutes: 15
+  target_averaging_minutes: 1
+  load_base_multiplier: 0.8
+  load_P_Q_nominal_relative_SD: 0.01
+  PV_Q_MVAr: 0
+  input_model: observation_calibrated_continuous_common_scale_correlated_power_errors
+  direct_t_or_inverse_Gamma_input: false
+  intensity_amplitude_weights_spatial_parameters: pending_observation_calibration
+  conditioning_information: issued_forecast_and_observed_weather_no_future_error_selection
+  unit_and_split: independent_cloud_event_grouped_by_weather_day_when_needed
+  planned_synthetic_event_counts: [8192, 4096, 32768]
+  planned_total_AC: 45056
+  initial_AC_before_fitting: 12288
+  K: [1, 3, 5, 6, 12]
+  mixture_dimension: 64
+  propagation_per_model: 65536
+  propagation_repeats: 4
+  figure_repeat: 0
+  primary_outputs: [voltageMagnitude, linePfrom, lineQfrom, loss]
+  full_CDF_development_tolerance: 0.01
+  selected_tail_CDF_development_tolerance: 0.005
+  fewer_components_claim: same_output_full_distribution_and_selected_tail_if_both_met
+  calibration_route_selected_by_user_20261021: literature_constrained_parameters_observation_check_later
+  literature_route_overrides: [forecast_power_fraction_0.65_to_0.50, target_1min_to_15min_interval_1215_1230, observation_calibration_prerequisite]
+  literature_route_reason: 0.65_leaves_under_2_sigma_to_clear_sky_0.84_about_5pct_events_above_clear_sky
+  error_RMS_fraction_of_rating: 0.10
+  event_strength: lognormal_log_sd_0.383_mean_square_1_single_site_excess_kurtosis_2.4
+  spatial_correlation: WVM_exp_minus_d_over_A_900s_A_4mps
+  site_geometry_km: {13: [0, 0], 14: [0.4, 0], 15: [0.8, 0], 16: [1.2, 0], 17: [1.6, 0], 18: [2.0, 0], 33: [1.0, 2.0], 22: [-1.5, 1.5]}
+  bound_handling: whole_event_resampling_stop_if_over_0.5pct_or_above_clear_sky_over_2pct
+  literature_sources: [NB_T_32011_2013, Zhang_Hodge_2013_NREL, Gao_2016_Energies_en9070523, Perez_2012_Solar_Energy, Lave_Kleissl_2013_Solar_Energy]
+  entry: tests/python/run_pv_fixed_forecast_case33.py
+  entry_phases: [ac_only_targets_locked, fit, reference_and_judgment]
+  reused_archived_routines: [ac, fits, evaluate, summarize, distribution_metrics, save_fit, feature, network, voltage]
+  smoke_test: code_path_only_outputs_deleted_not_interpreted
+  input_bound_check_400k_events_no_AC:
+    forecast_0.55_rms_0.10: {resample: 0.0037, above_clear_sky: 0.025, decision: would_stop_input_stage}
+    forecast_0.50_rms_0.10: {resample: 0.0032, above_clear_sky: 0.013}
+    forecast_0.55_rms_0.08: {resample: 0.0008, above_clear_sky: 0.009}
+  user_decision_before_any_AC: forecast_fraction_0.50_error_rms_0.10
+  effectiveness_scope: heavier_tail_and_operating_impact_targets_better_others_comparable
+  effectiveness_scope_confirmed_by: user_20261021
+  target_selection_data: training_and_validation_AC_only_before_any_model_error
+  target_tail_rule: q005_or_q995_median_distance_over_1.15x_normal_unimodal_endpoint_mass_below_1pct
+  target_voltage_impact: q005_le_0.96_or_q995_ge_1.04_pu_with_project_0.95_1.05_research_limits
+  target_line_impact: PV_collection_path_reverse_flow_increase_or_reversal_RATE_A_5.5MVA_not_used
+  target_advantage_rule: same_K_tail_CDF_and_quantile_beyond_repeat_range_in_two_of_K1_3_5_6_with_KS_within_1.2x_or_fewer_components
+  other_objects_comparable_rule: KS_and_W1_within_1.2x_GMM_or_within_repeat_range_list_over_1.5x
+  next_action: data_provenance_prediction_error_definition_and_event_scale_calibration_only
+  execution: future_OpenAI_cloud_only_no_dispatch_this_turn
+  evidence_state: unverified_research_hypothesis
+
 
 repository_setup_20261021:
   source_project: wuhanichina/AQPPF_TMM

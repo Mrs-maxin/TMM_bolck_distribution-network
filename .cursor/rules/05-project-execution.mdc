@@ -6,6 +6,11 @@ alwaysApply: true
 
 - The current numerical workflow is the Python validation code in `tests/python/`, authorized by the user on 2026-10-21 for local and cloud execution. `tests/python/archived/` holds the original photovoltaic-case routines byte-identical; do not edit them, call them through the workflow scripts.
 - The 141-bus study follows section 16 of `01_IDEA/pv_fixed_forecast_common_scale_plan_20261021.md` and runs in the cloud. Cases above 500 buses remain deferred.
+- Since 2026-10-24 this repository is the working directory of the paper. The research goal is fixed: at equal component count TMM computes voltage, branch-power and loss tails more accurately than GMM, and fewer TMM components reach the accuracy of more GMM components. Fitting choices and TMM forms serve this goal; when it fails, diagnose whether the cause is the method or the case setup before changing either.
+- The paper keeps three voltage-distribution models: AQGMM, standard TMM and the grouped t mixture defined in `02_PAPER/manuscript/method_zh.md`. Do not change the voltage-to-branch-power quadratic forms.
+- Fitting voltages are computed by the fast power-to-voltage mapping (`tests/map_injections_fast_case33.m`, `+BTMM_core/+inverse/`, MATLAB with MATPOWER). The MC method uses 10^6 scenarios by default and serves only as the exact reference. Comparisons use the same K for GMM and TMM; the effect of K is shown separately.
+- Inputs are forecast scenarios built from the NREL records in `data/nrel_sind/`. Comparison methods follow the original papers in `03_REFERENCE/`.
+- Do not modify, branch on or push to `wuhanichina/AQPPF_TMM`; push only to `Mrs-maxin/TMM_bolck_distribution-network`.
 - Register every new scenario, model, threshold, or judgment rule in `01_IDEA/` before computing. Keep unfavourable results; do not change injection-power settings in response to model errors.
 - Limit-violation risk is computed analytically from the voltage distribution model (characteristic function, strength integration, Gil–Pelaez inversion). The exact AC result for comparison is the violation frequency over AC power-flow solutions of every source-load scenario.
 - Formal paper figures are exported later through the MATLAB `save_figure` path; Python figures are diagnostic.

@@ -1,50 +1,22 @@
 # Symbols
 
-本文统一符号表。新增公式、变量或指标前先检索本文件，避免同一符号被重复赋义。修改已有符号含义时，应同步更新 `derivation.md`、`BTMM_note.md`、`BTMM_changelog.md`、相关代码变量名说明和论文草稿。
+论文符号以`02_PAPER/manuscript/method_zh.md`附录C为准。本表补充代码变量对应关系；新增或修改符号时同步更新`method_zh.md`、`derivation.md`、`BTMM_note.md`和`BTMM_changelog.md`。
 
-## 使用规则
-
-1. 主要数学符号都应登记含义、类型、维度或单位，以及对应代码变量。
-2. 同一符号在 `story.md`、`claims.md`、`derivation.md`、`BTMM_note.md` 和论文草稿中保持一致。
-3. 代码变量名不需要完全等于数学符号，但必须能从本表追溯。
-4. 暂不确定的含义、单位或维度直接标注 `【待补充】`、`【尚未验证】` 或 `【代码待核查】`。
-
-## 集合与索引
-
-| 符号 | 含义 | 类型 | 维度/范围 | 代码变量 | 备注 |
-| --- | --- | --- | --- | --- | --- |
-| $\mathcal{N}$ | 节点、对象或样本集合 | 集合 | 【待补充】 | `nodes` | 按项目实际对象替换 |
-| $\mathcal{E}$ | 边、约束或交互关系集合 | 集合 | 【待补充】 | `edges` | 按项目实际对象替换 |
-| $i,j$ | 索引 | 整数 | 【待补充】 | `i`, `j` | 【待补充】 |
-| $t$ | 时间、阶段或样本序号 | 整数/实数 | 【待补充】 | `t` | 不涉及时可删除 |
-
-## 参数
-
-| 符号 | 含义 | 类型 | 单位 | 代码变量 | 证据状态 |
-| --- | --- | --- | --- | --- | --- |
-| $\theta$ | 模型参数或校准参数 | 参数 | 【待补充】 | `theta` | 尚未验证 |
-| $\alpha$ | 权重、惩罚或置信水平 | 参数 | 【待补充】 | `alpha` | 尚未验证 |
-
-## 变量
-
-| 符号 | 含义 | 类型 | 维度/单位 | 代码变量 | 备注 |
-| --- | --- | --- | --- | --- | --- |
-| $x$ | 核心状态、决策或估计对象 | 【待补充】 | 【待补充】 | `x` | 【待补充】 |
-| $u$ | 控制变量或输入变量 | 【待补充】 | 【待补充】 | `u` | 【待补充】 |
-| $\xi$ | 不确定变量 | 随机变量 | 【待补充】 | `xi` | 【待补充】 |
-| $z$ | 辅助变量 | 【待补充】 | 【待补充】 | `z` | 不需要时可删除 |
-
-## 函数与指标
-
-| 符号 | 含义 | 输入/输出 | 代码变量或函数 | 证据状态 |
-| --- | --- | --- | --- | --- |
-| $f(x,\theta)$ | 目标函数、评价函数或核心映射 | 【待补充】 | `objective` / `metric` | 尚未验证 |
-| $g_i(x,\theta)$ | 不等式约束或安全阈值 | 【待补充】 | `constraint` | 尚未验证 |
-| $h_j(x,\theta)$ | 等式约束或物理平衡方程 | 【待补充】 | `balance` | 尚未验证 |
-
-## 缩写
-
-| 缩写 | 全称 | 中文或项目内含义 | 首次出现位置 |
+| 符号 | 含义 | 维度/单位 | 代码变量（`tests/python/`） |
 | --- | --- | --- | --- |
-| BTMM | 【待补充】 | 项目简称 | `README.md` |
-| SOTA | State of the Art | 最接近或最强对比方法 | `+BTMM_sota/` |
+| $\mathbf p$ | 非平衡节点净注入有功、无功 | $d$，p.u. | `target`（$P_2\ldots P_{33}$，$Q_2\ldots Q_{33}$） |
+| $\mathbf x$ | 非平衡节点电压实部、虚部 | $d=2(n-1)$，p.u. | `states`；快速映射输出`state`（全节点，`fast_voltage_map.fast_map`返回复电压） |
+| $\bar{\mathbf x}$, $\mathbf E$, $\mathbf D$ | 电压均值、协方差特征向量、各方向标准差 | | `center`, `basis`, `scale` |
+| $\boldsymbol\xi$ | 按各方向标准差归一化的电压坐标 | $d$ | `x`（估计参数用）、`xv`（选择分量数用） |
+| $\mathbf J_a$, $\mathbf J_0$ | 锚点、平均注入处潮流雅可比 | $d\times d$ | MATLAB `anchor.jacobianPolar`；Python `rect_jacobian(v0, Y)` |
+| $q$ | 节点电压幅值、支路功率、网损 | p.u.、MW、MVAr | `base.outputs(...)`，对象表`base.OBJECTS` |
+| $K$, $\pi_k$, $\gamma_{ik}$ | 分量数、权重、AQGMM分量归属概率 | | `k`, `weight`, `resp` |
+| $\nu_k$, $b_k$ | 标准TMM自由度、多元峰度比 | | `df`；`nu_from_kurtosis` |
+| $c_{ij}$, $c^*$ | 注入共同放大量及阈值 | | `coamplification`；`null` |
+| $\mathcal W_g$ | 第$g$个天气过程放大的注入 | | `split(...)['groups']` |
+| $\mathbf Q_u$, $\mathbf Q_w$ | 天气驱动方向、其余方向 | $d\times r$，$d\times(d-r)$ | `Q1`, `Q2` |
+| $r_g$, $g(j)$ | 组维数、方向所属组 | | `group_cols`；`gid` |
+| $s_{\max,g}$ | 第$g$组强度上限 | | `strength_cap(...)`，`s_max` |
+| $U$, $S_g$, $\nu_{g,k}$, $b_{g,k}$ | 天气形势强弱、组强度、组自由度、组峰度比 | | `uniform`；`TruncatedStrength.draw`；`nu`；`m` |
+| $\tilde{\boldsymbol\Sigma}_k$ | 散布矩阵（按$\mathrm E[\sqrt{S_gS_h}]$折算） | $r\times r$ | `scatter`；`mean_pair` |
+| $\mathbf a_k$, $\mathbf G_k$, $\boldsymbol\Omega_k$ | 其余方向截距、回归系数、残差协方差 | | `intercept`, `coefficient`, `residual` |

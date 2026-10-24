@@ -6,13 +6,18 @@
 
 ```text
 01_IDEA/
+├── research_status.md    # 当前现状：主线、已完成测试、两个论点的状态、算例场景、下一步（先读）
 ├── story.md              # 项目研究目的基线、最小可辨识研究对象、工程痛点、科学问题和文章主线
 ├── claims.md             # 可验证研究结论、证据编号、判据和当前状态
-├── derivation.md         # 数学模型、假设、推导和代码对应关系
-├── symbols.md            # 全文统一符号表和代码变量映射
-├── evidence_map.md       # 结论编号、入口脚本、run manifest、结果文件和证据状态索引
-├── figure_plan.md        # 算例图故事：工程问题、方法作用、直接对比、工程效果和导出审计字段
-└── research_trace.yaml   # 关键决策、分叉探索、保留思路、归档路线和未解决问题
+├── derivation.md         # 当前方法摘要（正式公式见02_PAPER/manuscript/method_zh.md）与来源推导
+├── symbols.md            # 符号与代码变量映射
+├── evidence_map.md       # 证据编号、入口脚本、结果文件和关键数值
+├── figure_plan.md        # 算例图故事和拟定图序
+├── research_trace.yaml   # 关键决策、归档路线和未解决问题
+├── injection_to_voltage_learning_20261021.md  # 快速映射（注入到电压）的前作来源与代码说明
+├── plans/                # 算例方案、比较方法复现说明、各测试方案（按日期）
+├── results/              # 各测试的结果记录（按日期，证据原文）
+└── archive/              # 已被替代的推导与符号
 ```
 
 ## 维护顺序

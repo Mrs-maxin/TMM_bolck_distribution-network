@@ -47,3 +47,6 @@ tmp/
 result/case141/**/propagation/*.csv
 result/case141/*/global_metrics.csv
 result/case141/*/quantile_metrics.csv
+
+# Publisher PDFs stay local; the repository is public.
+03_REFERENCE/*.pdf

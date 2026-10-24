@@ -1,0 +1,27 @@
+{
+  "rank": 3,
+  "sensitivity_singular_values": [
+    228.28523615666919,
+    227.7195110163363,
+    63.27858484400791
+  ],
+  "u_excess_kurtosis": [
+    1.7995130760642954,
+    2.542534081018564,
+    1.4900610116624975
+  ],
+  "w_excess_kurtosis_median": 0.013108961413893727,
+  "w_excess_kurtosis_max": 1.6093430902945656,
+  "u_square_strength_correlation": [
+    0.41935941977440777,
+    0.39129967319788855,
+    0.4342253220357992
+  ],
+  "u_square_state_correlation": [
+    null,
+    null,
+    null
+  ],
+  "training_variance_share_u": 0.9889806508219948,
+  "rule": "wind P with power-factor Q sensitivity at the forecast operating point, fixed before any model error"
+}

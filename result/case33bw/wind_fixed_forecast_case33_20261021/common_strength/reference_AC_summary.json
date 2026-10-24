@@ -1,0 +1,15 @@
+{
+  "scene": "common_strength",
+  "split": "reference",
+  "snapshots": 32768,
+  "processes": 32768,
+  "failures": 0,
+  "max_iterations": 4,
+  "max_residual_pu": 1.3711254354120683e-13,
+  "max_balance_MW": 1.5284717935770686e-12,
+  "min_voltage_pu": 0.9343394958882052,
+  "max_voltage_pu": 1.0010040221507337,
+  "seconds": 276.51822324999375,
+  "input_SHA256": "efe0dd3a0feef9a549d65beec7a5992b341b59f07e56b562c273e1fa73540041",
+  "AC_SHA256": "49c0680b64ca3b19a8711601cb990e86e8d8ec62121ba28c279366801b5a7bc3"
+}

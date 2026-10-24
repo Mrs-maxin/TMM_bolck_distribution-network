@@ -1,0 +1,19 @@
+{
+  "scene": "common_strength",
+  "K": 1,
+  "family": "GMM",
+  "replicate": 3,
+  "seed": 2026103137,
+  "candidate": "K1_p01_GMM",
+  "model_SHA256": "dc24f731e45bbd76c1b0d83ce3f42f3c3c54213f607240c3a00c6a574790b2d9",
+  "component_counts": [
+    65536
+  ],
+  "weights_sum": 1.0,
+  "ESS": 65536.0,
+  "propagation_seconds": 0.8658489170047687,
+  "processing_seconds": 9.82828845900076,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

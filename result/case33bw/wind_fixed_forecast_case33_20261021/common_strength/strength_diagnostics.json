@@ -1,0 +1,42 @@
+{
+  "site_voltage_nodes": [
+    18,
+    25,
+    33
+  ],
+  "max_group_mean_shift_over_within_std": {
+    "18": 0.014428172587368478,
+    "25": 0.012036857457795268,
+    "33": 0.009755948214946058
+  },
+  "strong_over_weak_std_ratio": {
+    "18": 2.3034250063818473,
+    "25": 2.271628101790697,
+    "33": 2.2546562566566974
+  },
+  "leading_voltage_direction_cosine_weak_strong": 0.9999647959589155,
+  "joint_large_deviation": {
+    "all_site_voltages_below_q0.01": {
+      "AC": 0.004964192708333333,
+      "Gaussian_same_mean_cov": 0.001623
+    },
+    "all_site_voltages_above_q0.99": {
+      "AC": 0.005045572916666667,
+      "Gaussian_same_mean_cov": 0.001735
+    },
+    "all_site_voltages_below_q0.05": {
+      "AC": 0.031087239583333332,
+      "Gaussian_same_mean_cov": 0.029821
+    },
+    "all_site_voltages_above_q0.95": {
+      "AC": 0.0302734375,
+      "Gaussian_same_mean_cov": 0.028422
+    }
+  },
+  "site_voltage_excess_kurtosis": {
+    "18": 1.4862299491668773,
+    "25": 1.5167208816335433,
+    "33": 1.4907087740339628
+  },
+  "note": "diagnostics only; no automatic gate besides target existence"
+}

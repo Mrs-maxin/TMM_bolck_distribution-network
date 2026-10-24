@@ -1,0 +1,6 @@
+{
+  "path": "result/validation/wind_fixed_forecast_case33_20261021/common_strength/reference_AC_checkpoint.npz",
+  "bytes": 32238798,
+  "SHA256": "52218e69cdb2f3e1b924242d09b68e2bec864620e5f6aef1c86a0d675bc77517",
+  "retained_AC_SHA256": "49c0680b64ca3b19a8711601cb990e86e8d8ec62121ba28c279366801b5a7bc3"
+}

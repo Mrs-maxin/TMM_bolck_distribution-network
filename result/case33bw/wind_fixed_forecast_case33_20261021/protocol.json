@@ -1,0 +1,140 @@
+{
+  "version": "wind-fixed-forecast-minimal-v1",
+  "plan_section": "4 and 5",
+  "sites": [
+    18,
+    25,
+    33
+  ],
+  "site_capacity_MW": 0.9906666666666667,
+  "forecast_fraction": 0.5,
+  "error_rms_fraction": 0.1,
+  "strength_log_sd": {
+    "common_strength": 0.383,
+    "gaussian_control": 0.0,
+    "state_mixture": 0.0
+  },
+  "cloud_regions": {
+    "two_cloud_regions": [
+      [
+        18,
+        17,
+        16,
+        15,
+        14,
+        13
+      ],
+      [
+        33,
+        22
+      ]
+    ]
+  },
+  "load_multiplier": 0.8,
+  "load_relative_sd": 0.01,
+  "load_P_weights": [
+    3,
+    8,
+    15
+  ],
+  "load_Q_weights": [
+    4,
+    10,
+    20
+  ],
+  "load_PQ_correlation": [
+    0.35,
+    0.35,
+    0.25
+  ],
+  "splits": {
+    "training": 8192,
+    "validation": 4096,
+    "reference": 32768
+  },
+  "seeds": {
+    "training": 2026102131,
+    "validation": 2026102132,
+    "reference": 2026102133
+  },
+  "load_stream_offset": 700001,
+  "stop_resample_fraction": 0.005,
+  "K_order": [
+    1,
+    3,
+    6
+  ],
+  "propagation_points": 65536,
+  "propagation_seed_base": 2026102134,
+  "target_tail_factor": 1.15,
+  "target_voltage_lower_pu": 0.96,
+  "target_voltage_upper_pu": 1.04,
+  "target_reverse_increase": 0.2,
+  "targets_per_output_side": 2,
+  "sameK_set": [
+    1,
+    3,
+    6
+  ],
+  "sameK_required": 2,
+  "ks_body_factor": 1.2,
+  "full_cdf_level": 0.01,
+  "tail_cdf_level": 0.005,
+  "comparable_factor": 1.2,
+  "listed_factor": 1.5,
+  "power_factor_absorbing": 0.98,
+  "site_correlation": [
+    [
+      1.0,
+      0.8,
+      0.8
+    ],
+    [
+      0.8,
+      1.0,
+      0.8
+    ],
+    [
+      0.8,
+      0.8,
+      1.0
+    ]
+  ],
+  "state_mixture": {
+    "probabilities": [
+      0.05,
+      0.9,
+      0.05
+    ],
+    "states": [
+      -1,
+      0,
+      1
+    ],
+    "shift": 0.241979,
+    "within_sd": 0.064379,
+    "within_correlation": 0.51745
+  },
+  "scene_load_multiplier": {},
+  "scene_stop_resample_fraction": {},
+  "limit_events": [
+    "any node V < 0.950",
+    "any node V < 0.955",
+    "P17 < -0.60 MW",
+    "P32 < -0.65 MW",
+    "P24 > +0.10 MW"
+  ],
+  "scene": "common_strength",
+  "plan_SHA256": "33dc0c8ecc1956e976dbbbd1d47cb2a095f1bc9734263c6baaf40c8ba639972d",
+  "script_SHA256": "083ae4b39867a019497263544987c571400da925728a24f7c3c54d2d1611f17a",
+  "runner": "tests/run_pv_fixed_forecast_case33.py",
+  "runner_SHA256": "06ef37fb05afb1d5497a7cacfafc14714169697f6f7e8ee548cc9eb3ec03e2d0",
+  "archived_source_SHA256": {
+    "adapted_routines.py": "a75e56e73e329c94fb8061ed510d0cfca93cfd9f6c1afc55b5877b962700e0cb",
+    "cloud_numeric_core.py": "755907c5278f06e811277f36517a76d14b7d0c75b710a690b5a4364b367c8a77",
+    "run_cloud_passage_case33.py": "725ae590c9f7154a99379d6e13c7b7c0f5c4b1959bf09ae7f125c7fe882c282b",
+    "run_cloud_study.py": "58fbb5ba2e8b33d71f86fb2ca9431e24f4f4c7e95964dba25eb4ba284b607b1b",
+    "run_typhoon_comparison_K136.py": "40ce746dbe7657bf2f005141fe202f5491445e4fa72ebfd13cb8d285cc43a521"
+  },
+  "identity": "synthetic wind forecast-error inputs; zero measured events"
+}

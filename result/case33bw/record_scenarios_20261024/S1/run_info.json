@@ -1,0 +1,72 @@
+{
+ "scene": "S1",
+ "perturbation": 0.05,
+ "forecast": 0.5,
+ "sites": [
+  "39.75_-104.95_2006_DPV_30MW",
+  "39.75_-104.85_2006_DPV_24MW",
+  "39.75_-105.05_2006_DPV_30MW",
+  "39.85_-104.95_2006_DPV_15MW",
+  "39.65_-104.95_2006_DPV_12MW",
+  "39.85_-105.05_2006_DPV_16MW",
+  "39.65_-105.05_2006_DPV_30MW",
+  "39.75_-104.75_2006_DPV_26MW"
+ ],
+ "normal_intervals": 4000,
+ "seeds": {
+  "estimation": 2026102411,
+  "selection": 2026102412,
+  "mc": 2026102413
+ },
+ "mapping": {
+  "estimation": {
+   "scenarios": 8192,
+   "anchors": 1,
+   "accepted": 8192,
+   "ac_fallback": 0,
+   "map_seconds": 1.3262645416666667,
+   "fallback_seconds": 0.0,
+   "max_power_residual_pu": 9.999592015530467e-09
+  },
+  "selection": {
+   "scenarios": 4096,
+   "anchors": 1,
+   "accepted": 4096,
+   "ac_fallback": 0,
+   "map_seconds": 1.16466275,
+   "fallback_seconds": 0.0,
+   "max_power_residual_pu": 9.97216615533647e-09
+  }
+ },
+ "seconds": {
+  "mc_ac": 159.46930420800345,
+  "total": 202.2333093749985
+ },
+ "mc_outputs": "cache/record_scenarios_20261024/S1_mc_outputs.npy",
+ "extreme_share_mc": 0.0,
+ "plausibility": {
+  "records": {
+   "rms": 0.13277407803577498,
+   "kurt_median": 1.3443496784677142,
+   "corr": 0.3546206559447439,
+   "sq_corr": 0.27597604685916677,
+   "share_half_big": 0.02475,
+   "spread_ratio": 5.740934519803119,
+   "q001": -0.37275464610042736,
+   "q999": 0.27620459668803476
+  },
+  "scenarios": {
+   "rms": 0.13289780910278098,
+   "kurt_median": 1.3374532694020878,
+   "corr": 0.354451483350389,
+   "sq_corr": 0.27658348460570403,
+   "share_half_big": 0.0247,
+   "spread_ratio": 5.654745841382388,
+   "q001": -0.37911430800530793,
+   "q999": 0.27695860549063966
+  }
+ },
+ "MC_voltage_minimum_pu": 0.9416627883911133,
+ "MC_voltage_maximum_pu": 1.0886024236679077,
+ "script_SHA256": "ddc7f3afb87d41e5b7f12981cec75b04ea19dd7ded0cd4c77b49ba79735d2a7f"
+}

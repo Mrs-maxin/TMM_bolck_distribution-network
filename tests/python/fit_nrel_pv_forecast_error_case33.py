@@ -16,7 +16,7 @@ from scipy import optimize, special, stats
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT/'data'/'nrel_sind'/'co'
-OUT = ROOT/'result'/'validation'/'nrel_pv_input_case33_20261022'
+OUT = ROOT/'result'/'case33bw'/'nrel_pv_input_case33_20261022'
 CENTRE = (39.75, -104.95)
 N_SITES = 8
 BAND = tuple(float(v) for v in os.environ.get('NREL_BAND', '0.4,0.6').split(','))

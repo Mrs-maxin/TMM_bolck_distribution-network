@@ -6,6 +6,7 @@
 
 | 证据编号 | 支撑结论 | 生成入口 | 结果文件 | 关键数值 | 状态 |
 | --- | --- | --- | --- | --- | --- |
+| E-RECORD-SCENARIOS-20261024 | 算例输入与精确结果 | `tests/python/generate_record_scenarios_case33.py`（S1、S2E1、S2E2、S3）；检查`tests/python/check_record_resampling_case33.py` | `result/case33bw/record_scenarios_20261024/<运行条件>/run_info.json`、`run_all.log`；MC方法97个电气量`cache/record_scenarios_20261024/<运行条件>_mc_outputs.npy`（本地） | 光伏偏差取自记录时段，场景与记录的单站峰度、站间偏差平方相关、同时大偏差概率、8站平均偏差0.1%与99.9%分位相差约2%以内；估计参数与选择分量数场景快速映射均1个锚点、无逐场景回退；MC方法10⁶场景逐场景交流潮流159—226 s。节点电压高于1.07 p.u.的估计概率：S1 0.57%、S2E1 1.16%、S2E2 1.14%、S3 0.65%；低于0.93 p.u.只在S2E2出现（8.2×10⁻⁵）。节点电压超额峰度S1为−1.92至2.13，S2E2支路有功最大30.0 | supported |
 | E-FASTMAP-20261024 | C5 | `tests/python/fast_voltage_map.py`调用`tests/map_injections_fast_case33.m`（`+BTMM_core/+inverse/map_samples_with_atlas.m`） | `cache/fast_map/voltage_*.json`（映射记录，可重算） | 算例1、两片云区各8192+4096个场景：1个锚点，全部场景功率残差<1e-8 p.u.，无逐场景回退，每批2—4 s；与逐场景交流潮流电压最大差2.7e-8 p.u.，拟合坐标最大差5.9e-4（归一化单位） | supported |
 | E-STD-TMM-DILUTION-20261024 | C3 | 推导 | `02_PAPER/manuscript/method_zh.md`式(12) | $b-1=r(r+2)(b_u-1)/[d(d+2)]$；33节点$d=64$、$r=8$系数0.019 | supported（理论推导） |
 | E-NREL-INPUT-20261022 | 算例输入 | `tests/python/fit_nrel_pv_forecast_error_case33.py` | `result/case33bw/nrel_pv_input_case33_20261022/fit_HA4_0.4_0.6.json`；数据`data/nrel_sind/co/` | Denver 8个分布式光伏站，HA4预测，40%—60%预测出力段4000个时段；共同强度对数正态对数标准差1.192；2026-10-24由`data/`重算，172个数值与原结果一致 | supported |

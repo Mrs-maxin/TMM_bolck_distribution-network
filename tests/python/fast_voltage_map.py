@@ -21,7 +21,7 @@ def fast_map(target):
     key = hashlib.sha256(target.tobytes()).hexdigest()[:16]
     CACHE.mkdir(parents=True, exist_ok=True)
     out = CACHE/f'voltage_{key}.mat'; info = CACHE/f'voltage_{key}.json'
-    if not out.exists():
+    if not (out.exists() and info.exists()):
         src = CACHE/f'injection_{key}.mat'
         sio.savemat(src, dict(P=np.c_[np.zeros(len(target)), target[:, :32]], Q=np.c_[np.zeros(len(target)), target[:, 32:]]))
         env = dict(os.environ, MATPOWER_ROOT=MATPOWER, FAST_MAP_IN=str(src), FAST_MAP_OUT=str(out))

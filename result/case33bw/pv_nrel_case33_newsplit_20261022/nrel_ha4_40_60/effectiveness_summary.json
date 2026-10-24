@@ -1,0 +1,17 @@
+{
+  "scene": "nrel_ha4_40_60",
+  "challenger": "TMM",
+  "targets": 8,
+  "targets_passed": 2,
+  "other_comparable_fraction_by_K": {
+    "1": 0.875,
+    "2": 0.9772727272727273,
+    "3": 0.9204545454545454,
+    "4": 0.9431818181818182,
+    "6": 0.9772727272727273,
+    "8": 0.9772727272727273,
+    "12": 1.0
+  },
+  "other_objects_over_1p5_KS": 5,
+  "criteria": "plan section 8.1, fixed before model errors"
+}

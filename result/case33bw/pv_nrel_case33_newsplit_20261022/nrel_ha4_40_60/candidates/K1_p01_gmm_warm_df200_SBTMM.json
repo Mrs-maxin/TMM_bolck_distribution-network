@@ -1,0 +1,22 @@
+{
+  "status": "converged",
+  "iterations": 20,
+  "train_ll": -87.29284755096819,
+  "df": [
+    4.1
+  ],
+  "weights": [
+    1.0
+  ],
+  "effective_counts": [
+    8192.0
+  ],
+  "seconds": 0.22260591600024782,
+  "scene": "nrel_ha4_40_60",
+  "K": 1,
+  "family": "SBTMM",
+  "partition": 1,
+  "initial_df": 200,
+  "validation_ll": -87.72617684523917,
+  "model_sha256": "fd36bbe6dd183b68217fd301625134b713fb58c1c85dd196a46383518275c952"
+}

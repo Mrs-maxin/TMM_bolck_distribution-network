@@ -1,0 +1,21 @@
+{
+  "scene": "nrel_ha4_40_60",
+  "K": 3,
+  "family": "TMM",
+  "replicate": 1,
+  "seed": 2026605215,
+  "candidate": "K3_p01_gmm_warm_df12_PX",
+  "model_SHA256": "e40411d7d1f7db4eaa6f5d9844eaccff5eb7053a62d78a1ea8ab30308a222916",
+  "component_counts": [
+    11357,
+    40867,
+    13312
+  ],
+  "weights_sum": 1.0000000000000002,
+  "ESS": 65535.99999351578,
+  "propagation_seconds": 0.6225014170004215,
+  "processing_seconds": 8.61010216700015,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

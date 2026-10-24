@@ -1,0 +1,28 @@
+{
+  "status": "converged",
+  "iterations": 17,
+  "train_ll": -84.83391345707051,
+  "df": [
+    Infinity,
+    Infinity,
+    Infinity
+  ],
+  "weights": [
+    0.11956596552290386,
+    0.6988391315252358,
+    0.1815949029518617
+  ],
+  "effective_counts": [
+    976.6255006002782,
+    5726.732896338244,
+    1488.6416030614623
+  ],
+  "seconds": 0.7150722080004925,
+  "scene": "nrel_ha4_40_60",
+  "K": 3,
+  "family": "SGMM",
+  "partition": 1,
+  "initial_df": null,
+  "validation_ll": -85.62329939455765,
+  "model_sha256": "1b04dfca1308bf7ea7e5d27e14ed10dc3ab5960ce0dc22d2372eb808305b7d67"
+}

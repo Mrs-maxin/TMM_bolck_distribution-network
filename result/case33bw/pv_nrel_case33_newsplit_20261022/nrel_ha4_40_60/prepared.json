@@ -1,0 +1,7 @@
+{
+  "dimension": 64,
+  "rank": 64,
+  "no_truncation": true,
+  "singular_min": 7.307169090293749e-06,
+  "fitting_inputs_SHA256": "7338ff9f92acb2076ce7c0b46740f4f1b5c275512063f88ae4283ca0725c2f03"
+}

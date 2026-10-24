@@ -1,0 +1,36 @@
+{
+  "scene": "nrel_ha4_40_60",
+  "scenarios": 8192,
+  "coamplification_threshold": 0.021,
+  "groups": [
+    [
+      "P13",
+      "P14",
+      "P15",
+      "P16",
+      "P17",
+      "P18",
+      "P22",
+      "P33"
+    ]
+  ],
+  "group_median_coamplification": [
+    0.269
+  ],
+  "r_first_order": 8,
+  "voltage_share_first_order": 0.962526054984956,
+  "leak_directions": 4,
+  "leak_shares": [
+    0.01,
+    0.0137,
+    0.0036,
+    0.0048
+  ],
+  "amplified_voltage_share": 0.994752664063406,
+  "remaining_kurtosis_max_before": 25.120971370732928,
+  "remaining_kurtosis_max_after": 2.1480254866786277,
+  "remaining_kurtosis_median_after": 0.047650950734367425,
+  "rule": "derivation.md section J",
+  "injection_scenarios_for_groups": 45056,
+  "script": "apply_block_split_rule_case33.py"
+}

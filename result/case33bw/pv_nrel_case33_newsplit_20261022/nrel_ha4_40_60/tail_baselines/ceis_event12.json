@@ -1,0 +1,33 @@
+{
+  "event": "P17 > 0.0125",
+  "probability": 0.009653030406652,
+  "coefficient_of_variation": 0.014706133795216946,
+  "AC_load_flows": 24000,
+  "seconds": 66.53688550000061,
+  "history": [
+    {
+      "iteration": 0,
+      "elite_level": -0.12487654285899684
+    },
+    {
+      "iteration": 1,
+      "elite_level": 0.0125
+    }
+  ],
+  "shift_norm": 2.7350346533830043,
+  "shift_largest": {
+    "1": -1.9134732543028814,
+    "0": -1.8681508390553878,
+    "44": -0.14490637756516864,
+    "64": -0.1420262627043438,
+    "49": -0.13781438886354772
+  },
+  "settings": {
+    "per_iteration": 2000,
+    "elite": 0.1,
+    "max_iterations": 12,
+    "final": 20000,
+    "seed": 2026102231
+  },
+  "script_SHA256": "19844a5296ada7a58264db74e5f0621486cab28969cb0c3e21a72d8009bc2666"
+}

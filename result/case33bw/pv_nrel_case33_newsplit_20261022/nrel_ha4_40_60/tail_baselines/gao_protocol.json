@@ -1,0 +1,16 @@
+{
+  "best_K_by_validation": 2,
+  "K": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    12
+  ],
+  "input_dimension": 64,
+  "substitution": "EM on the same 8192 input scenarios replaces KDE + density-preserving hierarchical EM",
+  "linearization": "central difference at every component input mean, h=1e-5 p.u.",
+  "script_SHA256": "3ab6119c9f30d7375c972bd21f7d77c2b5eabfad6aa8d85e71371c3e3aadb8c5"
+}

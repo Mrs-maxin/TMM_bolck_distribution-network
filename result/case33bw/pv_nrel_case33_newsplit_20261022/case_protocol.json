@@ -1,0 +1,29 @@
+{
+ "plan": "01_IDEA/case_study_plan_20261022.md",
+ "plan_SHA256": "6551fbcc9fb4a19dfb0aedc9928a6c836954c13660781c3c47c851c1c6d963b6",
+ "script_SHA256": "8e4fbcda7454fdcfd215a7eb72661c3e6dbdaac580cb567a5e6a39287a95e9b1",
+ "runner_SHA256": "06ef37fb05afb1d5497a7cacfafc14714169697f6f7e8ee548cc9eb3ec03e2d0",
+ "shared_module_SHA256": "d9005c0ab9835d451b7c4710155cb6abba51e2ed50501806efc5de3a983bef7a",
+ "input_law": "result/validation/nrel_pv_input_case33_20261022/fit_HA4_0.4_0.6.json",
+ "input_law_SHA256": "0eb655638c80bf79828e48a4368bbaa774328e516e10f8ce7e4abd12d4ffca99",
+ "input_fit_script_SHA256": "9af79d8093cb661abd90307e0eb97ab8ecbda196a9c24922302aacee42cced7b",
+ "seeds": {
+  "training": 2026102211,
+  "validation": 2026102212,
+  "reference": 2026102213
+ },
+ "propagation_seed_base": 2026102214,
+ "K_order": [
+  1,
+  2,
+  3,
+  4,
+  6,
+  8,
+  12
+ ],
+ "limit_rule": "per target object and side, AC thresholds at training+validation exceedance [0.01, 0.001], rounded outward to 0.0025 p.u. or 0.0025 MW; locked after ac_only and before any fit",
+ "script_SHA256_v1": "c8c5a528a43e0bfa2dac881e219c21c26e8bb38529d15b2a9d1c2a732aa7c345",
+ "limit_rule_revision_v2": "outward rounding is replaced by inward rounding when it leaves less than half the intended AC exceedance (branch reverse flow bounded by the clear-sky PV output); revised before any model error was read; v1 kept as limit_events_locked_v1.json",
+ "limit_rule_revision_UTC": "2026-10-22T13:18:03Z"
+}

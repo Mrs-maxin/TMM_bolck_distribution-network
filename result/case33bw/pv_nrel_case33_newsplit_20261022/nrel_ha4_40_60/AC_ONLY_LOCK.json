@@ -1,0 +1,17 @@
+{
+  "stage": "targets_fixed_before_fits",
+  "smoke": false,
+  "UTC": "2026-10-22T13:04:35Z",
+  "sha256": {
+    "protocol.json": "7b44ec7b12f4aab3477f068f31923b661000f233cd58ddc0665db2d0edf2423a",
+    "nrel_ha4_40_60/targets.csv": "1a750a819665abcf7a1ad80424b42fcd7ef74e36ef1ae030d4839efdcbe93399",
+    "nrel_ha4_40_60/target_rules.txt": "177b09c7492d6b95897953a0fb0b4b4563364904a2058f7ce6817167578e4315",
+    "nrel_ha4_40_60/AC_features_train_validation.csv": "486cb382cdd9b877340ba4dda14a6021603422165d891298835113263da3acc1",
+    "nrel_ha4_40_60/strength_diagnostics.json": "094a22157bc82da9db90f1c5aa3058f4d5d4f475a8a511e368ee7f230780a8d3",
+    "nrel_ha4_40_60/training_inputs.npz": "a349ec24c7c76a31ebb197a41e1aa5fd2d30b3f6a4d67ae2774873e6d8426775",
+    "nrel_ha4_40_60/validation_inputs.npz": "a0ac24ecaf6692206742440e94510014d03acea27553f85f7d89506977c4e53b",
+    "nrel_ha4_40_60/reference_inputs.npz": "20e53f301be61891c05ff694bed33c1ae7463c38ede6de64032eb5b36dc3b78d",
+    "nrel_ha4_40_60/training_AC.npz": "9e356696e2e16079c2b7553d1ef70cd6aa4eaee5ae281375c8edfdeee94a6a38",
+    "nrel_ha4_40_60/validation_AC.npz": "9eb3a6e27dbb8b3cbd396d4226517ab09926d1f760f89d18e041a4d40f43ef9c"
+  }
+}

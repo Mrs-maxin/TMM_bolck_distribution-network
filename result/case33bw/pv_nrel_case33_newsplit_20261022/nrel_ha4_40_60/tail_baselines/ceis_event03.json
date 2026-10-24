@@ -1,0 +1,37 @@
+{
+  "event": "V33 < 0.9425",
+  "probability": 0.0012368048003941023,
+  "coefficient_of_variation": 0.02109279833175223,
+  "AC_load_flows": 26000,
+  "seconds": 85.22378191700045,
+  "history": [
+    {
+      "iteration": 0,
+      "elite_level": 0.9633864113060843
+    },
+    {
+      "iteration": 1,
+      "elite_level": 0.943082219625819
+    },
+    {
+      "iteration": 2,
+      "elite_level": 0.9425
+    }
+  ],
+  "shift_norm": 3.2931438087470024,
+  "shift_largest": {
+    "0": -2.1792525681985873,
+    "1": -1.6305016344572805,
+    "3": -0.9977466310095642,
+    "2": -0.8444231076748308,
+    "7": -0.7568895141313922
+  },
+  "settings": {
+    "per_iteration": 2000,
+    "elite": 0.1,
+    "max_iterations": 12,
+    "final": 20000,
+    "seed": 2026102231
+  },
+  "script_SHA256": "3ab6119c9f30d7375c972bd21f7d77c2b5eabfad6aa8d85e71371c3e3aadb8c5"
+}

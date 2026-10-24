@@ -1,7 +1,8 @@
 {
  "scene": "S2E1",
  "perturbation": 0.05,
- "forecast": 0.5,
+ "forecast": 0.7,
+ "site_capacity_MW": 0.4146205357142857,
  "sites": [
   "39.75_-104.95_2006_DPV_30MW",
   "39.75_-104.85_2006_DPV_24MW",
@@ -12,7 +13,7 @@
   "39.65_-105.05_2006_DPV_30MW",
   "39.75_-104.75_2006_DPV_26MW"
  ],
- "normal_intervals": 4000,
+ "normal_intervals": 3408,
  "seeds": {
   "estimation": 2026102431,
   "selection": 2026102432,
@@ -24,72 +25,72 @@
    "anchors": 1,
    "accepted": 8192,
    "ac_fallback": 0,
-   "map_seconds": 1.7641948333333333,
+   "map_seconds": 1.2577940416666666,
    "fallback_seconds": 0.0,
-   "max_power_residual_pu": 9.974916554637142e-09
+   "max_power_residual_pu": 9.915546380495632e-09
   },
   "selection": {
    "scenarios": 4096,
    "anchors": 1,
    "accepted": 4096,
    "ac_fallback": 0,
-   "map_seconds": 1.0840972083333333,
+   "map_seconds": 1.0447857083333334,
    "fallback_seconds": 0.0,
-   "max_power_residual_pu": 9.914447179903974e-09
+   "max_power_residual_pu": 9.933587263519228e-09
   }
  },
  "seconds": {
-  "mc_ac": 172.61093612499826,
-  "total": 209.35799129199586
+  "mc_ac": 146.10493204100203,
+  "total": 196.72735320799984
  },
- "extreme_intervals": 82,
- "extreme_band_intervals": 8152,
+ "extreme_intervals": 56,
+ "extreme_band_intervals": 5576,
  "extreme_probability": 0.05,
  "mc_outputs": "cache/record_scenarios_20261024/S2E1_mc_outputs.npy",
  "extreme_share_mc": 0.049844,
  "plausibility": {
   "records": {
-   "rms": 0.13277407803577498,
-   "kurt_median": 1.3443496784677142,
-   "corr": 0.3546206559447439,
-   "sq_corr": 0.27597604685916677,
-   "share_half_big": 0.02475,
-   "spread_ratio": 5.740934519803119,
-   "q001": -0.37275464610042736,
-   "q999": 0.27620459668803476
+   "rms": 0.10030108339640333,
+   "kurt_median": 5.139943466599991,
+   "corr": 0.36343687231695176,
+   "sq_corr": 0.32454177017167424,
+   "share_half_big": 0.031396713615023476,
+   "spread_ratio": 5.088930183926299,
+   "q001": -0.40255305288461535,
+   "q999": 0.13983289262820484
   },
   "scenarios": {
-   "rms": 0.13291167897184675,
-   "kurt_median": 1.3411685442213024,
-   "corr": 0.3544857939625479,
-   "sq_corr": 0.27647695369389386,
-   "share_half_big": 0.024700154500945107,
-   "spread_ratio": 5.641368458949007,
-   "q001": -0.3791367708118981,
-   "q999": 0.2764319005979549
+   "rms": 0.10044039831192902,
+   "kurt_median": 5.119453552779819,
+   "corr": 0.363575308327517,
+   "sq_corr": 0.3244623574850218,
+   "share_half_big": 0.031565342954209624,
+   "spread_ratio": 5.06095743993033,
+   "q001": -0.4058839321638224,
+   "q999": 0.14110424804370375
   },
   "extreme_records": {
-   "rms": 0.28668767324320826,
-   "kurt_median": -0.4237196771767451,
-   "corr": 0.5692820671196519,
-   "sq_corr": 0.4585646713557771,
+   "rms": 0.19113565640925628,
+   "kurt_median": -0.7255510176088478,
+   "corr": -0.0005263569880826968,
+   "sq_corr": 0.0926438699301838,
    "share_half_big": 0.0,
-   "spread_ratio": 2.8723108374950788,
-   "q001": -0.4234293229166667,
-   "q999": 0.33351952724358974
+   "spread_ratio": 2.2608323870411735,
+   "q001": -0.4356334334935897,
+   "q999": -0.15109874465811962
   },
   "extreme_scenarios": {
-   "rms": 0.28613277970774403,
-   "kurt_median": -0.40034131510294046,
-   "corr": 0.5698143481055453,
-   "sq_corr": 0.461047744777221,
+   "rms": 0.19135167442272083,
+   "kurt_median": -0.7200427214995369,
+   "corr": 0.0003039534488608292,
+   "sq_corr": 0.09374566369048201,
    "share_half_big": 0.0,
-   "spread_ratio": 2.900698440748421,
-   "q001": -0.43960513578434657,
-   "q999": 0.3407164735180885
+   "spread_ratio": 2.28874523686526,
+   "q001": -0.4412568157066198,
+   "q999": -0.1451638105743692
   }
  },
- "MC_voltage_minimum_pu": 0.9367170929908752,
- "MC_voltage_maximum_pu": 1.0948923826217651,
- "script_SHA256": "ddc7f3afb87d41e5b7f12981cec75b04ea19dd7ded0cd4c77b49ba79735d2a7f"
+ "MC_voltage_minimum_pu": 0.9476760029792786,
+ "MC_voltage_maximum_pu": 1.0545696020126343,
+ "script_SHA256": "9e40273d2acb026bd2e91335422fa5f72774a3e395c372cfb2bfd7ac205987e6"
 }

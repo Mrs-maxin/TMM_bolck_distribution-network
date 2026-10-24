@@ -2,12 +2,13 @@
 
 Each scenario takes the 8-site forecast-error vector of one recorded 15-min interval, adds 0.05 * L eps
 (L L^T = covariance of the interval pool), adds it to the 50% forecast and clips to [0, observed max output].
+Each site has 0.5805 x 50/70 = 0.4146 MW, so the 70% forecast equals the former 50% forecast in MW.
 Loads follow the case33 three-level rule (network, region, bus, about 1%) at 0.8 x base load.
-  S1    Denver 8 sites, forecast 40%-60% (4000 intervals)
-  S2E1  S1 intervals; with probability 5% an interval from the 1% largest-error intervals of forecast 30%-70%
+  S1    Denver 8 sites, forecast 60%-80%, scenarios at 70% forecast
+  S2E1  S1 intervals; with probability 5% an interval from the 1% largest-error intervals of forecast 50%-90%
   S2E2  S2E1 plus, in extreme intervals, a load rise of all buses (mean +5%, sd 5% x interval RMS / median
         extreme RMS, bus correlation 0.8, P and Q together)
-  S3    Denver 6 sites + Colorado Springs 2 sites, forecast 40%-60% (4180 intervals)
+  S3    Denver 6 sites + Colorado Springs 2 sites, forecast 60%-80%
 Estimation (8192) and selection (4096) scenarios: voltages by the fast mapping. MC method: 10^6 scenarios,
 AC power flow for every scenario, 97 electrical quantities saved.
 Usage: python generate_record_scenarios_case33.py S1|S2E1|S2E2|S3
@@ -39,20 +40,22 @@ SPLITS = dict(estimation=8192, selection=4096, mc=1_000_000)
 if SMOKE:
     SPLITS = dict(estimation=600, selection=300, mc=4000)
 SEEDS = dict(S1=2026102411, S3=2026102421, S2E1=2026102431, S2E2=2026102441)
-H, FORECAST, P_EXTREME, EXTREME_SHARE = 0.05, 0.5, 0.05, 0.01
+H, FORECAST, P_EXTREME, EXTREME_SHARE = 0.05, 0.7, 0.05, 0.01
+BAND, EXTREME_BAND = (0.6, 0.8), (0.5, 0.9)
+CAPACITY = base.CAP*0.5/0.7
 LOAD_MEAN, LOAD_SD, LOAD_CORR = 0.05, 0.05, 0.8
 WORKERS = 8
 
 
 def pools():
     if SCENE == 'S3':
-        sites, act, fc = two.load_records()
+        two.BAND = BAND; sites, act, fc = two.load_records()
     else:
-        one.BAND = (0.4, 0.6); sites, act, fc = one.load_records()
+        one.BAND = BAND; sites, act, fc = one.load_records()
     normal = dict(e=act-fc, upper=act.max(0), sites=[s['key'] for s in sites])
     if not SCENE.startswith('S2'):
         return normal, None
-    one.BAND = (0.3, 0.7); s2, act2, fc2 = one.load_records(); assert [s['key'] for s in s2] == normal['sites']
+    one.BAND = EXTREME_BAND; s2, act2, fc2 = one.load_records(); assert [s['key'] for s in s2] == normal['sites']
     e2 = act2-fc2; rms = np.sqrt((e2**2).mean(1)); keep = rms >= np.quantile(rms, 1-EXTREME_SHARE)
     return normal, dict(e=e2[keep], upper=act2.max(0), rms=rms[keep], band_intervals=len(e2))
 
@@ -87,7 +90,7 @@ def scenarios(n, seed, normal, extreme):
         ratio = extreme['rms'][record[i1]]/np.median(extreme['rms'])
         rise = LOAD_MEAN+LOAD_SD*ratio[:, None]*zl; fp[i1] += rise; fq[i1] += rise
     lp = 0.8*base.BUS[None, 1:, 2]*fp; lq = 0.8*base.BUS[None, 1:, 3]*fq
-    pb = np.zeros((n, 32)); pb[:, base.SITES-2] = base.CAP*pv
+    pb = np.zeros((n, 32)); pb[:, base.SITES-2] = CAPACITY*pv
     return np.c_[(pb-lp)/base.BASE, -lq/base.BASE], pv, extreme_mask, record
 
 
@@ -98,7 +101,7 @@ def solve_chunk(target):
 def main():
     t0 = time.perf_counter(); OUT.mkdir(parents=True, exist_ok=True); CACHE.mkdir(parents=True, exist_ok=True)
     assert base.CONFIG['load_multiplier'] == 0.8
-    normal, extreme = pools(); info = dict(scene=SCENE, perturbation=H, forecast=FORECAST, sites=normal['sites'],
+    normal, extreme = pools(); info = dict(scene=SCENE, perturbation=H, forecast=FORECAST, site_capacity_MW=CAPACITY, sites=normal['sites'],
                                            normal_intervals=len(normal['e']), seeds={}, mapping={}, seconds={})
     if extreme is not None:
         info.update(extreme_intervals=len(extreme['e']), extreme_band_intervals=extreme['band_intervals'], extreme_probability=P_EXTREME)

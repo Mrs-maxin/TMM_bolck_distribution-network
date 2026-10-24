@@ -1,7 +1,8 @@
 {
  "scene": "S2E2",
  "perturbation": 0.05,
- "forecast": 0.5,
+ "forecast": 0.7,
+ "site_capacity_MW": 0.4146205357142857,
  "sites": [
   "39.75_-104.95_2006_DPV_30MW",
   "39.75_-104.85_2006_DPV_24MW",
@@ -12,7 +13,7 @@
   "39.65_-105.05_2006_DPV_30MW",
   "39.75_-104.75_2006_DPV_26MW"
  ],
- "normal_intervals": 4000,
+ "normal_intervals": 3408,
  "seeds": {
   "estimation": 2026102441,
   "selection": 2026102442,
@@ -24,72 +25,72 @@
    "anchors": 1,
    "accepted": 8192,
    "ac_fallback": 0,
-   "map_seconds": 1.7196999166666667,
+   "map_seconds": 1.2579167916666667,
    "fallback_seconds": 0.0,
-   "max_power_residual_pu": 9.983690374415488e-09
+   "max_power_residual_pu": 9.97909199024205e-09
   },
   "selection": {
    "scenarios": 4096,
    "anchors": 1,
    "accepted": 4096,
    "ac_fallback": 0,
-   "map_seconds": 1.7548435,
+   "map_seconds": 1.0470405,
    "fallback_seconds": 0.0,
-   "max_power_residual_pu": 9.90037737381988e-09
+   "max_power_residual_pu": 9.98974576324474e-09
   }
  },
  "seconds": {
-  "mc_ac": 190.44215508300113,
-  "total": 220.01727179199952
+  "mc_ac": 186.89143170799798,
+  "total": 236.9182623750021
  },
- "extreme_intervals": 82,
- "extreme_band_intervals": 8152,
+ "extreme_intervals": 56,
+ "extreme_band_intervals": 5576,
  "extreme_probability": 0.05,
  "mc_outputs": "cache/record_scenarios_20261024/S2E2_mc_outputs.npy",
  "extreme_share_mc": 0.049817,
  "plausibility": {
   "records": {
-   "rms": 0.13277407803577498,
-   "kurt_median": 1.3443496784677142,
-   "corr": 0.3546206559447439,
-   "sq_corr": 0.27597604685916677,
-   "share_half_big": 0.02475,
-   "spread_ratio": 5.740934519803119,
-   "q001": -0.37275464610042736,
-   "q999": 0.27620459668803476
+   "rms": 0.10030108339640333,
+   "kurt_median": 5.139943466599991,
+   "corr": 0.36343687231695176,
+   "sq_corr": 0.32454177017167424,
+   "share_half_big": 0.031396713615023476,
+   "spread_ratio": 5.088930183926299,
+   "q001": -0.40255305288461535,
+   "q999": 0.13983289262820484
   },
   "scenarios": {
-   "rms": 0.1329621945269009,
-   "kurt_median": 1.3374178099544998,
-   "corr": 0.35444430591036025,
-   "sq_corr": 0.2758635605267801,
-   "share_half_big": 0.024460551283279116,
-   "spread_ratio": 5.65170881823558,
-   "q001": -0.3770574396737595,
-   "q999": 0.2778930287839039
+   "rms": 0.1006086852231773,
+   "kurt_median": 5.070770737792921,
+   "corr": 0.36280335324430474,
+   "sq_corr": 0.32421241903755016,
+   "share_half_big": 0.03149288084505827,
+   "spread_ratio": 5.059794204598515,
+   "q001": -0.4047353630196229,
+   "q999": 0.14165710917410165
   },
   "extreme_records": {
-   "rms": 0.28668767324320826,
-   "kurt_median": -0.4237196771767451,
-   "corr": 0.5692820671196519,
-   "sq_corr": 0.4585646713557771,
+   "rms": 0.19113565640925628,
+   "kurt_median": -0.7255510176088478,
+   "corr": -0.0005263569880826968,
+   "sq_corr": 0.0926438699301838,
    "share_half_big": 0.0,
-   "spread_ratio": 2.8723108374950788,
-   "q001": -0.4234293229166667,
-   "q999": 0.33351952724358974
+   "spread_ratio": 2.2608323870411735,
+   "q001": -0.4356334334935897,
+   "q999": -0.15109874465811962
   },
   "extreme_scenarios": {
-   "rms": 0.2871436553697575,
-   "kurt_median": -0.4371486972976615,
-   "corr": 0.5689071572368376,
-   "sq_corr": 0.45610584734855836,
+   "rms": 0.19109896443499771,
+   "kurt_median": -0.7172078455103086,
+   "corr": -6.708040164886582e-05,
+   "sq_corr": 0.09350511171897102,
    "share_half_big": 0.0,
-   "spread_ratio": 2.8730181228309863,
-   "q001": -0.439682660050654,
-   "q999": 0.34071260530699005
+   "spread_ratio": 2.309900426483156,
+   "q001": -0.44140637725378173,
+   "q999": -0.14512470927996443
   }
  },
- "MC_voltage_minimum_pu": 0.9199602603912354,
- "MC_voltage_maximum_pu": 1.0984842777252197,
- "script_SHA256": "ddc7f3afb87d41e5b7f12981cec75b04ea19dd7ded0cd4c77b49ba79735d2a7f"
+ "MC_voltage_minimum_pu": 0.9311336278915405,
+ "MC_voltage_maximum_pu": 1.0548089742660522,
+ "script_SHA256": "9e40273d2acb026bd2e91335422fa5f72774a3e395c372cfb2bfd7ac205987e6"
 }

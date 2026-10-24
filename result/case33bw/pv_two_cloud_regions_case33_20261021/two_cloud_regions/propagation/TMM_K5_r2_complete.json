@@ -1,0 +1,23 @@
+{
+  "scene": "two_cloud_regions",
+  "K": 5,
+  "family": "TMM",
+  "replicate": 2,
+  "seed": 2026507116,
+  "candidate": "K5_p01_gmm_warm_df12_PX",
+  "model_SHA256": "584776438a8533324debc273e5e2f4f24c382a3dfa79d3db996595e3a1f5d4a1",
+  "component_counts": [
+    5421,
+    17025,
+    23751,
+    14847,
+    4492
+  ],
+  "weights_sum": 0.9999999999999987,
+  "ESS": 65535.99991746845,
+  "propagation_seconds": 2.3790068329981295,
+  "processing_seconds": 25.2063143330015,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

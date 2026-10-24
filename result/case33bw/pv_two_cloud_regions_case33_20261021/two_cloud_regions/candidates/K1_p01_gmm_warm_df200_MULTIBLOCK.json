@@ -1,0 +1,22 @@
+{
+  "status": "converged",
+  "iterations": 128,
+  "train_ll": -90.3893261715396,
+  "df1": [
+    4.78783548282118
+  ],
+  "df2": [
+    5.752760312505118
+  ],
+  "weights": [
+    1.0
+  ],
+  "seconds": 0.7255387920013163,
+  "scene": "two_cloud_regions",
+  "K": 1,
+  "family": "MBTMM",
+  "partition": 1,
+  "initial_df": 200,
+  "validation_ll": -90.76212839319882,
+  "model_sha256": "0381b681ac207e66a9ed3fb2cbd4cf178d093dff9ddb5589284f52bc76dae0b5"
+}

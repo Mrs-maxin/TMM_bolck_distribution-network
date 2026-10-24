@@ -1,0 +1,23 @@
+{
+  "scene": "two_cloud_regions",
+  "K": 5,
+  "family": "BTMM",
+  "replicate": 1,
+  "seed": 2026507115,
+  "candidate": "K5_p01_gmm_warm_df12_BLOCK",
+  "model_SHA256": "a96ea151c27bfdcdfad0df0b384f0a1c4d1b7476d3c272baaa6d3011b343dfb7",
+  "component_counts": [
+    5454,
+    16987,
+    23270,
+    15259,
+    4566
+  ],
+  "weights_sum": 0.9999999999999991,
+  "ESS": 65535.99998319989,
+  "propagation_seconds": 0.26972441701218486,
+  "processing_seconds": 4.399669500009622,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

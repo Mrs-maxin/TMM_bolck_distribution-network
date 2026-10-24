@@ -1,0 +1,19 @@
+{
+  "scene": "two_cloud_regions",
+  "K": 1,
+  "family": "TMM",
+  "replicate": 0,
+  "seed": 2026503114,
+  "candidate": "K1_p01_gmm_warm_df200_PX",
+  "model_SHA256": "500956656763615afdd6506270764d6127c1ced4bdd14b40cb83921c1eceb10a",
+  "component_counts": [
+    65536
+  ],
+  "weights_sum": 1.0,
+  "ESS": 65536.0,
+  "propagation_seconds": 1.6193757919972995,
+  "processing_seconds": 11.309999250006513,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

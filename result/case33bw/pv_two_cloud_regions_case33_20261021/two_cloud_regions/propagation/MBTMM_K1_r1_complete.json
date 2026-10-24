@@ -1,0 +1,19 @@
+{
+  "scene": "two_cloud_regions",
+  "K": 1,
+  "family": "MBTMM",
+  "replicate": 1,
+  "seed": 2026503115,
+  "candidate": "K1_p01_gmm_warm_df12_MULTIBLOCK",
+  "model_SHA256": "53cec3929ebbc2055af72fc37a16243ec15b5cc878122602323cf3baa33f27cd",
+  "component_counts": [
+    65536
+  ],
+  "weights_sum": 1.0,
+  "ESS": 65536.0,
+  "propagation_seconds": 0.286606292007491,
+  "processing_seconds": 4.058660083988798,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

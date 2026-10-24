@@ -1,0 +1,15 @@
+{
+  "scene": "nrel_ha4_40_60",
+  "split": "reference",
+  "snapshots": 32768,
+  "processes": 32768,
+  "failures": 0,
+  "max_iterations": 4,
+  "max_residual_pu": 1.2198922427764103e-13,
+  "max_balance_MW": 1.3415657473814235e-12,
+  "min_voltage_pu": 0.9313178714286902,
+  "max_voltage_pu": 1.095767805208488,
+  "seconds": 87.86630645900004,
+  "input_SHA256": "20e53f301be61891c05ff694bed33c1ae7463c38ede6de64032eb5b36dc3b78d",
+  "AC_SHA256": "758e205c0348974102081938b244d593549f552e18f3a0262b7df3d3c32f6873"
+}

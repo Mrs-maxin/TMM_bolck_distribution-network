@@ -1,0 +1,26 @@
+{
+  "scene": "nrel_ha4_40_60",
+  "K": 8,
+  "family": "SGMM",
+  "replicate": 1,
+  "seed": 2026610215,
+  "candidate": "K8_p01_SGMM",
+  "model_SHA256": "13d6c6fca4bb757c41564802beb685bf04b913c90d3f021a5ad956311a364b90",
+  "component_counts": [
+    560,
+    1264,
+    4441,
+    26651,
+    10871,
+    8774,
+    9891,
+    3084
+  ],
+  "weights_sum": 0.9999999999999987,
+  "ESS": 65535.99974101891,
+  "propagation_seconds": 0.4426451250001264,
+  "processing_seconds": 5.912302250000721,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

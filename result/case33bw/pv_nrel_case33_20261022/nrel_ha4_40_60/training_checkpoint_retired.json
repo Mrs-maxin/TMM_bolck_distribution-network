@@ -1,0 +1,6 @@
+{
+  "path": "../result/validation/pv_nrel_case33_20261022/nrel_ha4_40_60/training_AC_checkpoint.npz",
+  "bytes": 8064717,
+  "SHA256": "52655290e4f0c586b5962d4879ee4a48acf0a06a94399bf6e843dd608d6e9fde",
+  "retained_AC_SHA256": "9e356696e2e16079c2b7553d1ef70cd6aa4eaee5ae281375c8edfdeee94a6a38"
+}

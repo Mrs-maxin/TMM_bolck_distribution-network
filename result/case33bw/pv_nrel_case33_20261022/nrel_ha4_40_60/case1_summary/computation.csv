@@ -1,0 +1,3 @@
+method,AC_load_flows,AC_seconds,fitting_seconds_all_K,per_event_seconds,note
+本文方法,12288,10.411732916999426,310.5375972949987,13.36957656774996,one fit serves all 97 quantities and every limit
+LeiteDaSilva2018,398000,,,67.78807950787507,one cross-entropy run per event

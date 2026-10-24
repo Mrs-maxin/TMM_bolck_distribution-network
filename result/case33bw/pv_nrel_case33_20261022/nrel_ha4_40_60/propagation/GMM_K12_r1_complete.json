@@ -1,0 +1,30 @@
+{
+  "scene": "nrel_ha4_40_60",
+  "K": 12,
+  "family": "GMM",
+  "replicate": 1,
+  "seed": 2026614215,
+  "candidate": "K12_p01_GMM",
+  "model_SHA256": "c663b2325dfa9e8d47c0c936a99fb19a03e7f36880e2e65805eede5b244a9545",
+  "component_counts": [
+    3196,
+    5462,
+    6930,
+    4239,
+    3346,
+    15004,
+    3775,
+    2655,
+    5245,
+    5090,
+    6543,
+    4051
+  ],
+  "weights_sum": 0.9999999999999976,
+  "ESS": 65535.999785850436,
+  "propagation_seconds": 0.5619382499999119,
+  "processing_seconds": 7.783605458000238,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

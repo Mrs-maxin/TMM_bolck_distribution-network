@@ -1,0 +1,135 @@
+{
+  "events": [
+    {
+      "name": "V30 < 0.9550",
+      "object_index": 28,
+      "op": "<",
+      "value": 0.9550000000000001,
+      "rounding": "outward",
+      "AC_train_validation_fraction": 0.008870442708333334
+    },
+    {
+      "name": "V30 < 0.9450",
+      "object_index": 28,
+      "op": "<",
+      "value": 0.9450000000000001,
+      "rounding": "outward",
+      "AC_train_validation_fraction": 0.0008138020833333334
+    },
+    {
+      "name": "V33 < 0.9500",
+      "object_index": 31,
+      "op": "<",
+      "value": 0.9500000000000001,
+      "rounding": "outward",
+      "AC_train_validation_fraction": 0.006103515625
+    },
+    {
+      "name": "V33 < 0.9425",
+      "object_index": 31,
+      "op": "<",
+      "value": 0.9425,
+      "rounding": "outward",
+      "AC_train_validation_fraction": 0.0008951822916666666
+    },
+    {
+      "name": "V18 > 1.0725",
+      "object_index": 16,
+      "op": ">",
+      "value": 1.0725,
+      "rounding": "outward",
+      "AC_train_validation_fraction": 0.008463541666666666
+    },
+    {
+      "name": "V18 > 1.0875",
+      "object_index": 16,
+      "op": ">",
+      "value": 1.0875000000000001,
+      "rounding": "inward",
+      "AC_train_validation_fraction": 0.001220703125
+    },
+    {
+      "name": "V13 > 1.0525",
+      "object_index": 11,
+      "op": ">",
+      "value": 1.0525,
+      "rounding": "outward",
+      "AC_train_validation_fraction": 0.006429036458333333
+    },
+    {
+      "name": "V13 > 1.0625",
+      "object_index": 11,
+      "op": ">",
+      "value": 1.0625,
+      "rounding": "inward",
+      "AC_train_validation_fraction": 0.0013834635416666667
+    },
+    {
+      "name": "P32 < -0.4650",
+      "object_index": 63,
+      "op": "<",
+      "value": -0.465,
+      "rounding": "outward",
+      "AC_train_validation_fraction": 0.009847005208333334
+    },
+    {
+      "name": "P32 < -0.5000",
+      "object_index": 63,
+      "op": "<",
+      "value": -0.5,
+      "rounding": "inward",
+      "AC_train_validation_fraction": 0.006429036458333333
+    },
+    {
+      "name": "P16 < -0.7975",
+      "object_index": 47,
+      "op": "<",
+      "value": -0.7975,
+      "rounding": "outward",
+      "AC_train_validation_fraction": 0.009928385416666666
+    },
+    {
+      "name": "P16 < -0.9125",
+      "object_index": 47,
+      "op": "<",
+      "value": -0.9125,
+      "rounding": "inward",
+      "AC_train_validation_fraction": 0.001953125
+    },
+    {
+      "name": "P17 > 0.0125",
+      "object_index": 48,
+      "op": ">",
+      "value": 0.0125,
+      "rounding": "outward",
+      "AC_train_validation_fraction": 0.009847005208333334
+    },
+    {
+      "name": "P17 > 0.0725",
+      "object_index": 48,
+      "op": ">",
+      "value": 0.0725,
+      "rounding": "inward",
+      "AC_train_validation_fraction": 0.001220703125
+    },
+    {
+      "name": "P19 > 0.1600",
+      "object_index": 50,
+      "op": ">",
+      "value": 0.16,
+      "rounding": "outward",
+      "AC_train_validation_fraction": 0.009847005208333334
+    },
+    {
+      "name": "P19 > 0.2175",
+      "object_index": 50,
+      "op": ">",
+      "value": 0.2175,
+      "rounding": "inward",
+      "AC_train_validation_fraction": 0.00146484375
+    }
+  ],
+  "rule": "per target object and side, AC thresholds at training+validation exceedance [0.01, 0.001], rounded outward to 0.0025 p.u. or 0.0025 MW; locked after ac_only and before any fit",
+  "AC_ONLY_LOCK_SHA256": "8c0b43806216ab037821e5a8c1e76bf6786f2afa7e68d47b419744720c101197",
+  "UTC": "2026-10-22T13:18:06Z"
+}

@@ -1,0 +1,70 @@
+{
+  "status": "converged",
+  "iterations": 177,
+  "train_ll": -80.97010406887088,
+  "minimum_effective_count": 618.7660440220822,
+  "effective_counts": [
+    662.3392177084348,
+    1472.47209533666,
+    2916.911474580924,
+    862.0681185099868,
+    1659.4430498418965,
+    618.7660440220822
+  ],
+  "df": [
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity,
+    Infinity
+  ],
+  "weights": [
+    0.08085166812888707,
+    0.17971863905314497,
+    0.3558282170172219,
+    0.1054706092135359,
+    0.2026176297409717,
+    0.0755132368462374
+  ],
+  "scatter_eigen_min": [
+    0.04407633324835006,
+    0.0038808586464877093,
+    0.004896075351799755,
+    0.008895074019439491,
+    0.006767177768786894,
+    0.014334289446167988
+  ],
+  "scatter_condition": [
+    204.84779070875297,
+    375.86797035845507,
+    248.99494777950852,
+    259.97246127824667,
+    208.01203795731152,
+    488.1519664810853
+  ],
+  "floor_active_max": 0,
+  "seconds": 14.536048666999704,
+  "actual_covariance_floor": true,
+  "relative_tolerance": true,
+  "scene": "nrel_ha4_40_60",
+  "K": 6,
+  "family": "GMM",
+  "acceleration": "EM",
+  "initial_df": "Infinity",
+  "partition": 2,
+  "seed": 202610191,
+  "rule": "PC2 deterministic balanced",
+  "validation_ll": -82.85598723200293,
+  "model_sha256": "537958c3904a06e7ffbfde274a589ca4047031d71ad0c1335a37c2ae59a99cae",
+  "covariance_eigen_min": [
+    0.04407633324835006,
+    0.0038808586464877093,
+    0.004896075351799755,
+    0.008895074019439491,
+    0.006767177768786894,
+    0.014334289446167988
+  ],
+  "df_lower_boundary": false,
+  "df_upper_boundary": false
+}

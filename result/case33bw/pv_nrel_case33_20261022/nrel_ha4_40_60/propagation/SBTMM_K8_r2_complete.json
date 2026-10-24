@@ -1,0 +1,26 @@
+{
+  "scene": "nrel_ha4_40_60",
+  "K": 8,
+  "family": "SBTMM",
+  "replicate": 2,
+  "seed": 2026610216,
+  "candidate": "K8_p02_gmm_warm_df200_SBTMM",
+  "model_SHA256": "5c8c05ff64c627778fb1598ad277100ea17050d6cb89c72e6e5f259b2678f62c",
+  "component_counts": [
+    560,
+    11604,
+    4666,
+    13027,
+    18101,
+    12980,
+    1270,
+    3328
+  ],
+  "weights_sum": 0.9999999999999983,
+  "ESS": 65535.99986362217,
+  "propagation_seconds": 0.6104839589997937,
+  "processing_seconds": 7.602499374999752,
+  "all_outputs_finite": true,
+  "global_rows": 97,
+  "quantile_rows": 776
+}

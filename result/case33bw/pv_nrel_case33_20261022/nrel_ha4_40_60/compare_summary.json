@@ -1,0 +1,30 @@
+{
+  "scene": "nrel_ha4_40_60",
+  "best_K_by_validation": {
+    "BTMM": 8,
+    "GMM": 8,
+    "SBTMM": 12,
+    "SGMM": 12,
+    "TMM": 8
+  },
+  "best_validation_ll": {
+    "BTMM": -82.34019601193742,
+    "GMM": -82.75564259497756,
+    "SBTMM": -84.58308531457487,
+    "SGMM": -84.7424079979549,
+    "TMM": -82.44062946066964
+  },
+  "prediction_1_shared_raises_validation": {
+    "SBTMM_over_BTMM": false,
+    "SGMM_over_GMM": false,
+    "best_K_not_smaller": {
+      "SBTMM_vs_BTMM": true,
+      "SGMM_vs_GMM": true
+    }
+  },
+  "prediction_2": {
+    "targets_tail_SBTMM_better_than_GMM": "5/8",
+    "limit_events_SBTMM_closer_than_GMM": "13/16"
+  },
+  "criteria": "case_study_plan_20261022 section 6, fixed before the fits"
+}

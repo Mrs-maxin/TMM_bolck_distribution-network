@@ -1,0 +1,7 @@
+{
+  "GMM4_start0_model.npz": "594853605efbfb63f9715b5302ec8952066a7cb46d8421fb30a1fd55e0762ac5",
+  "standardization.npz": "7669cacc876ed9793c37df9cebb7a0acb8ba093454ce99d0c1a6bbf4c37f70eb",
+  "test_samples.npz": "e6e8eefa996aa33f6f1e7d7f5f22dafc3da74c1a259839fb34db8503ca400be9",
+  "train_samples.npz": "42bf688681feab0a66703b08245ca52c348a7c322679974e078365b8a44c3bc2",
+  "validation_samples.npz": "eb4b2e8301e20e41a30024ea9f5b3e8c7df4d3917ddd5b495ca380e5632e618b"
+}

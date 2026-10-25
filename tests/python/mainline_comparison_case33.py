@@ -18,6 +18,7 @@ sys.argv = sys.argv[:1]
 import grouped_strength_tmm_case33 as gs
 import truncated_strength_case33 as ts
 from cloud_numeric_core import initialize, fit, log_density
+import shift_grouped_t_case33 as sh
 base, chk, mm = gs.base, gs.chk, gs.mm
 
 REPO = base.REPO
@@ -28,6 +29,10 @@ KS_GMM, KS_TMM = [1, 2, 3, 4, 6, 8, 12, 16], [1, 2, 3, 4, 6, 8]
 STARTS, DRAWS = 6, 262144
 LEVELS = np.linspace(.001, .05, 50)
 MARGIN = 0.0005
+SHIFT = os.environ.get('MAIN_SHIFT') == '1'
+PROPOSED = '分组t（均值移动）' if SHIFT else '分组t'
+if SHIFT:
+    OUT = REPO/'result/case33bw/mainline_comparison_shift_20261024'/SCENE
 if os.environ.get('MAIN_SMOKE') == '1':
     KS_GMM, KS_TMM, STARTS = [1, 2], [1, 2], 2
     gs.DRAWS = 16384; OUT = OUT.parent/('smoke_'+SCENE)
@@ -88,6 +93,8 @@ def evaluate(y, w, ref):
 
 
 def outputs(model, data, seed):
+    if isinstance(model, dict) and 'shifted' in model:
+        return sh.model_outputs(model, data, seed, gs.DRAWS)
     y, w = gs.model_outputs(model, data, seed); return y, w
 
 
@@ -103,17 +110,17 @@ def claims(summary):
     for k in KS_TMM:
         row = {}
         for q in ['V', 'P', 'loss']:
-            d = s.loc[('AQGMM', k), f'{q}_heavy']-s.loc[('分组t', k), f'{q}_heavy']
+            d = s.loc[('AQGMM', k), f'{q}_heavy']-s.loc[(PROPOSED, k), f'{q}_heavy']
             row[q] = '更准' if d > MARGIN else '更差' if d < -MARGIN else '相当'
-            row[q+'_KS变差'] = bool(s.loc[('分组t', k), f'{q}_ks']-s.loc[('AQGMM', k), f'{q}_ks'] > 0.005)
+            row[q+'_KS变差'] = bool(s.loc[(PROPOSED, k), f'{q}_ks']-s.loc[('AQGMM', k), f'{q}_ks'] > 0.005)
         out['C1'][f'K={k}'] = row
     for kt in [1, 2]:
         row = {}
         for q in ['V', 'P', 'loss']:
-            target = s.loc[('分组t', kt), f'{q}_heavy']+MARGIN
+            target = s.loc[(PROPOSED, kt), f'{q}_heavy']+MARGIN
             ok = [k for k in KS_GMM if s.loc[('AQGMM', k), f'{q}_heavy'] <= target]
             row[q] = min(ok) if ok else '>16'
-        out['C2'][f'分组t K={kt}'] = row
+        out['C2'][f'{PROPOSED} K={kt}'] = row
     return out
 
 
@@ -126,6 +133,7 @@ def main():
         for c in g:
             if c >= r1:
                 groups.append(np.array([c])); smax.append(cap)
+    merged = [np.array(g) for g in split['group_cols']]
     (OUT/'split.json').write_text(json.dumps(dict(split, strength_caps=caps, model_groups=[g.tolist() for g in groups]), ensure_ascii=False, indent=1, default=float))
     print(json.dumps(dict(stage='split', groups=split['groups'], r_first_order=r1, leak=split.get('leak_directions'), caps=[round(c, 2) for c in caps]), ensure_ascii=False), flush=True)
     ref = reference(); rows = []; fits = {}
@@ -136,10 +144,13 @@ def main():
             std, _, _ = mm.moment_models(data['x'], gmm, Q1, Q2) if len(groups) else (None, None, None)
             models += [('标准TMM', std if std is not None else gmm)]
             models += [('分组t', gs.grouped_model(data['x'], gmm, Q1, Q2, groups, 'sync', rng, s_max=smax) if len(groups) else gmm)]
+            if SHIFT:
+                models += [(PROPOSED, sh.shift_grouped_model(data['x'], gmm, Q1, Q2, merged, caps) if len(merged) else gmm)]
         for name, m in models:
             y, w = outputs(m, data, 2026102460+k); per = evaluate(y, w, ref)
             per.to_csv(OUT/f'objects_{name}_K{k}.csv', index=False)
             extra = dict(df=[[round(float(v), 2) for v in c['nu']] for c in m['grouped']]) if isinstance(m, dict) and 'grouped' in m else \
+                dict(df=[[round(float(v), 2) for v in c['nu']] for c in m['shifted']], shift_scale=[round(float(c['shift_scale']), 3) for c in m['shifted']]) if isinstance(m, dict) and 'shifted' in m else \
                 dict(df=np.round(np.asarray(m['df'], float), 2).tolist()) if name == '标准TMM' else {}
             rows.append(dict(model=name, K=k, **aggregate(per), **extra))
             print(json.dumps(dict(stage='evaluated', model=name, K=k, V_heavy=round(rows[-1]['V_heavy'], 4), P_heavy=round(rows[-1]['P_heavy'], 4),

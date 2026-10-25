@@ -1,0 +1,64 @@
+{
+ "C1": {
+  "K=1": {
+   "V": "更准",
+   "V_KS变差": false,
+   "P": "更准",
+   "P_KS变差": false,
+   "loss": "更准",
+   "loss_KS变差": false
+  },
+  "K=2": {
+   "V": "相当",
+   "V_KS变差": false,
+   "P": "更差",
+   "P_KS变差": false,
+   "loss": "相当",
+   "loss_KS变差": false
+  },
+  "K=3": {
+   "V": "相当",
+   "V_KS变差": false,
+   "P": "相当",
+   "P_KS变差": false,
+   "loss": "相当",
+   "loss_KS变差": false
+  },
+  "K=4": {
+   "V": "相当",
+   "V_KS变差": false,
+   "P": "相当",
+   "P_KS变差": false,
+   "loss": "相当",
+   "loss_KS变差": false
+  },
+  "K=6": {
+   "V": "相当",
+   "V_KS变差": false,
+   "P": "相当",
+   "P_KS变差": false,
+   "loss": "相当",
+   "loss_KS变差": false
+  },
+  "K=8": {
+   "V": "相当",
+   "V_KS变差": false,
+   "P": "相当",
+   "P_KS变差": false,
+   "loss": "相当",
+   "loss_KS变差": false
+  }
+ },
+ "C2": {
+  "分组t（均值移动） K=1": {
+   "V": 2,
+   "P": 2,
+   "loss": 2
+  },
+  "分组t（均值移动） K=2": {
+   "V": 2,
+   "P": 2,
+   "loss": 2
+  }
+ }
+}

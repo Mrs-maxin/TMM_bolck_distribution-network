@@ -1,0 +1,76 @@
+{
+ "scene": "S2E1",
+ "scenarios": 8192,
+ "coamplification_threshold": 0.019,
+ "groups": [
+  [
+   "P13",
+   "P14",
+   "P15",
+   "P16",
+   "P17",
+   "P18",
+   "P22",
+   "P33"
+  ]
+ ],
+ "group_median_coamplification": [
+  0.193
+ ],
+ "r_first_order": 8,
+ "voltage_share_first_order": 0.3734475303411448,
+ "leak_directions": 4,
+ "leak_shares": [
+  0.1646,
+  0.0011,
+  0.0184,
+  0.0134
+ ],
+ "amplified_voltage_share": 0.5709228769148709,
+ "remaining_kurtosis_max_before": 17.451442729948916,
+ "remaining_kurtosis_max_after": 24.74963040845911,
+ "remaining_kurtosis_median_after": 0.021458458419358672,
+ "group_cols": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ]
+ ],
+ "strength_caps": [
+  25.7669503047961
+ ],
+ "model_groups": [
+  [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  [
+   8
+  ],
+  [
+   9
+  ],
+  [
+   10
+  ],
+  [
+   11
+  ]
+ ]
+}

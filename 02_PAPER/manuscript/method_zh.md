@@ -138,9 +138,9 @@ $$
 
 ### 4.1 物理依据
 
-天气过程同时改变一个区域内多个光伏站（或风电场、受气温影响的负荷）的预测误差幅度：云层较厚时，同一区域各站出力偏差同时变大。该区域的注入变化经网络灵敏度改变节点电压，主要落在由潮流雅可比逆矩阵对应列确定的少数电压方向上；偏差较大时，潮流的二次关系还使一部分变化落在这些方向之外。相距较远的区域受各自云团影响，偏差幅度不完全相同，但受同一天气形势驱动而同时增减。光伏出力不低于零且不超过出力上限，偏差幅度有上界。
+天气过程同时改变一个区域内多个光伏站（或风电场、受气温影响的负荷）的预测误差幅度：云层较厚时，同一区域各站出力偏差同时变大。该区域的注入变化经网络灵敏度改变节点电压，主要落在由潮流雅可比逆矩阵对应列确定的少数电压方向上；偏差较大时，潮流的二次关系还使一部分变化落在这些方向之外。相距较远的区域受各自云团影响，偏差幅度不完全相同，但受同一天气形势驱动而同时增减。光伏出力不低于零且不超过出力上限，偏差幅度有上界。预测出力接近晴空出力时，增发受晴空上限限制，云遮则可使出力骤降，偏差偏向减发一侧：云层越厚，偏差越大，电压也越整体偏向减发一侧。潮流二次响应是一阶电压偏差的平方效应，方向固定、幅度随强度增大，同样偏向一侧。
 
-据此，改进TMM在每个分量内设若干组电压方向，每组一个波动强度：同一组的方向由同一强度放大，不同组的强度由同一天气形势同步决定，强度受出力限值截断，其余方向保持高斯。统计文献中，各组强度由同一均匀随机数决定的这类分布称为分组t分布或分组正态方差混合[18]—[20]。
+据此，改进TMM在每个分量内设若干组电压方向，每组一个波动强度：同一组的方向由同一强度放大并带动均值向同一侧移动，不同组的强度由同一天气形势同步决定，强度受出力限值截断，其余方向保持高斯。统计文献中，各组强度由同一均匀随机数决定的这类分布称为分组t分布或分组正态方差混合[18]—[20]。
 
 ### 4.2 天气驱动电压方向的确定
 
@@ -182,7 +182,7 @@ $$
 
 最大可能偏差由出力限值和场景平均注入确定，二次响应方向沿用其所属一阶组的上限。
 
-分组结果为$G$组方向：每个天气过程的一阶方向为一组，每个二次响应方向单独为一组。二次响应方向的超额峰度可达一阶方向的十倍以上，单独成组使其自由度不影响一阶方向的自由度。各组方向合并为$\mathbf Q_u=[\mathbf Q_1,\ldots,\mathbf Q_G]$，维数$r=\sum_g r_g$，$\mathbf Q_w$为其正交补。
+分组结果为$G$组方向，每个天气过程一组，包含其一阶方向和归入的二次响应方向。二次响应方向与一阶方向共用同一强度，其偏向同一侧的特点由第4.3节的均值移动项表示。各组方向合并为$\mathbf Q_u=[\mathbf Q_1,\ldots,\mathbf Q_G]$，维数$r=\sum_g r_g$，$\mathbf Q_w$为其正交补。
 
 表1汇总分组所需的输入、固定阈值、输出和计算量。
 
@@ -203,10 +203,12 @@ $$
 记$\mathbf u=\mathbf Q_u^{\mathsf T}\boldsymbol\xi\in\mathbb R^{r}$，$\mathbf w=\mathbf Q_w^{\mathsf T}\boldsymbol\xi\in\mathbb R^{d-r}$，$g(j)$为第$j$个方向所属的组。第$k$个分量写为
 
 $$
-\mathbf u=\mathbf m_k+\mathbf D(U)\,\mathbf z,\qquad \mathbf z\sim\mathcal N(\mathbf 0,\tilde{\boldsymbol\Sigma}_k),\qquad
+\mathbf u=\mathbf m_k+\boldsymbol\gamma_k\odot\big(\mathbf s(U)-\mathbf 1\big)+\mathbf D(U)\,\mathbf z,\qquad \mathbf z\sim\mathcal N(\mathbf 0,\tilde{\boldsymbol\Sigma}_k),\qquad
 \mathbf D(U)=\mathrm{diag}\Big(\sqrt{S_{g(1)}(U)},\ldots,\sqrt{S_{g(r)}(U)}\Big),
 \tag{17}
 $$
+
+$\mathbf s(U)$的第$j$个元素为$S_{g(j)}(U)$，$\boldsymbol\gamma_k$为各方向的均值移动量，$\odot$为逐元素相乘。
 
 $$
 S_g(U)=F_{g,k}^{-1}(U),\qquad U\sim\mathrm{Uniform}(0,1),
@@ -218,9 +220,9 @@ $$
 \tag{19}
 $$
 
-$U$表示同一场景中天气形势的强弱，同一个$U$决定各组强度，各组强度同时增减，大小可以不同。$F_{g,k}$为截断并归一的逆伽马分布：$V=\nu_{g,k}/\chi^2_{\nu_{g,k}}$限制在$V\le v_{\max}$，$S_g=V/\mathrm E[V]$，$v_{\max}$使$S_g$的上限等于式(16)的$s_{\max,g}$（附录B）。式(19)中，与天气驱动方向相关的电压变化通过$\mathbf G_k\mathbf u$随强度放大，负荷独立小波动引起的其余变化保持高斯。
+$U$表示同一场景中天气形势的强弱，同一个$U$决定各组强度，各组强度同时增减，大小可以不同。$F_{g,k}$为截断并归一的逆伽马分布：$V=\nu_{g,k}/\chi^2_{\nu_{g,k}}$限制在$V\le v_{\max}$，$S_g=V/\mathrm E[V]$，$v_{\max}$使$S_g$的上限等于式(16)的$s_{\max,g}$（附录B）。强度大于1时，偏差放大，电压沿$\boldsymbol\gamma_k$向光伏减发一侧移动；强度小于1时，偏差缩小，电压略向另一侧回移。$\mathrm E[S_g]=1$，分量电压均值仍为$\mathbf m_k$。式(19)中，与天气驱动方向相关的电压变化通过$\mathbf G_k\mathbf u$随强度放大，负荷独立小波动引起的其余变化保持高斯。
 
-只有一组且不截断时，式(17)—(19)为一个强度只作用于天气驱动方向的TMM；各组强度不截断时，$\mathbf u$为分组t分布[18]—[20]。$(\mathbf u,\mathbf w)$整体不是多元t分布。
+$\boldsymbol\gamma_k=\mathbf 0$、只有一组且不截断时，式(17)—(19)为一个强度只作用于天气驱动方向的TMM；$\boldsymbol\gamma_k=\mathbf 0$且各组强度不截断时，$\mathbf u$为分组t分布[18]—[20]；强度同时决定均值与方差的形式在统计文献中称为正态均值方差混合【文献待核查】。$(\mathbf u,\mathbf w)$整体不是多元t分布。
 
 ### 4.4 参数估计
 
@@ -233,18 +235,24 @@ b_{g,k}=\frac{\sum_i\gamma_{ik}\delta_{ik,g}^2}{N_k\,r_g(r_g+2)},
 \tag{20}
 $$
 $\nu_{g,k}$由截断强度满足$\mathrm E[S_g^2]=b_{g,k}$的一维求根确定（附录B）；$b_{g,k}\le1.05$时该组取高斯。
-3. **散布矩阵。** 为使$\mathbf u$的协方差等于$\mathbf C_{u,k}$，
+3. **均值移动量。** 记$v_g=\mathrm{Var}(S_g)$、$\kappa_g=\mathrm E[(S_g-1)^3]$，方向$j$的分量方差$C_{u,k,jj}$和三阶中心矩$\mu_{3,j}$为$\gamma_{ik}$加权统计值。由式(17)，
 $$
-\tilde\Sigma_{k,jl}=\frac{C_{u,k,jl}}{\mathrm E\big[\sqrt{S_{g(j)}S_{g(l)}}\big]},\qquad
+\mu_{3,j}=\gamma_{k,j}^3\big(\kappa_{g(j)}-3v_{g(j)}^2\big)+3\gamma_{k,j}\,v_{g(j)}\,C_{u,k,jj},
+\tag{21a}
+$$
+取绝对值最小、且使高斯部分方差$C_{u,k,jj}-\gamma_{k,j}^2v_{g(j)}$不低于$C_{u,k,jj}$的10%的实根；无此根时该方向不设均值移动。该组取高斯时$\gamma_{k,j}=0$。
+4. **散布矩阵。** 为使$\mathbf u$的协方差等于$\mathbf C_{u,k}$，
+$$
+\tilde\Sigma_{k,jl}=\frac{C_{u,k,jl}-\gamma_{k,j}\gamma_{k,l}\,\mathrm{Cov}\big(S_{g(j)},S_{g(l)}\big)}{\mathrm E\big[\sqrt{S_{g(j)}S_{g(l)}}\big]},\qquad
 \mathrm E\big[\sqrt{S_gS_h}\big]=\int_0^1\sqrt{F_{g,k}^{-1}(U)\,F_{h,k}^{-1}(U)}\,\mathrm dU .
 \tag{21}
 $$
-同组元素的分母为$\mathrm E[S_g]=1$，保持不变。若$\tilde{\boldsymbol\Sigma}_k$不正定，按比例缩小组间元素直至正定。
-4. **其余方向。** $[\mathbf a_k,\mathbf G_k]$为$\mathbf w$对$[1,\mathbf u^{\mathsf T}]$的$\gamma_{ik}$加权最小二乘解，$\boldsymbol\Omega_k$为其加权残差协方差。
+强度的方差、三阶矩和组间协方差均为$[0,1]$上关于$U$的一维积分。若$\tilde{\boldsymbol\Sigma}_k$不正定，先按比例缩小组间元素，仍不正定时按比例减小$\boldsymbol\gamma_k$。
+5. **其余方向。** $[\mathbf a_k,\mathbf G_k]$为$\mathbf w$对$[1,\mathbf u^{\mathsf T}]$的$\gamma_{ik}$加权最小二乘解，$\boldsymbol\Omega_k$为其加权残差协方差。
 
-以上各步均为闭式或一维求根，不需要迭代。由式(9)、(21)，各分量的电压均值和协方差与AQGMM相同，电气量均值也相同。
+以上各步均为闭式或一维求根，不需要迭代。由式(9)、(21)，各分量的电压均值和协方差与AQGMM相同，电气量均值也相同；式(21a)另使天气驱动方向的三阶矩与估计参数场景一致，从而表示偏向减发一侧的尾部。
 
-每个分量的参数为：$\mathbf m_k$、$\tilde{\boldsymbol\Sigma}_k$、$\mathbf a_k$、$\mathbf G_k$、$\boldsymbol\Omega_k$，数目与同$K$标准TMM的$\boldsymbol\mu_k$、$\mathbf C_k$相同（只是同一协方差按方向重新组织），另加$G$个自由度。$s_{\max,g}$由源荷出力限值确定，不是估计参数。
+每个分量的参数为：$\mathbf m_k$、$\tilde{\boldsymbol\Sigma}_k$、$\mathbf a_k$、$\mathbf G_k$、$\boldsymbol\Omega_k$，数目与同$K$标准TMM的$\boldsymbol\mu_k$、$\mathbf C_k$相同（只是同一协方差按方向重新组织），另加$G$个自由度和$r$个均值移动量。$s_{\max,g}$由源荷出力限值确定，不是估计参数。
 
 ### 4.5 电气量分布
 
@@ -256,7 +264,7 @@ $$
 \tag{22}
 $$
 
-$\mathbf Q=[\mathbf Q_u,\mathbf Q_w]$，均值为$\mathbf Q[\mathbf m_k;\ \mathbf a_k+\mathbf G_k\mathbf m_k]$。经式(7)换回$\mathbf x$后，式(5)的条件特征函数$\psi_q(t\mid k,U)$按附录A计算，
+$\mathbf Q=[\mathbf Q_u,\mathbf Q_w]$，均值为$\mathbf Q[\mathbf m_U;\ \mathbf a_k+\mathbf G_k\mathbf m_U]$，$\mathbf m_U=\mathbf m_k+\boldsymbol\gamma_k\odot(\mathbf s(U)-\mathbf 1)$。经式(7)换回$\mathbf x$后，式(5)的条件特征函数$\psi_q(t\mid k,U)$按附录A计算，
 
 $$
 \psi_q(t)=\sum_k\pi_k\int_0^1\psi_q(t\mid k,U)\,\mathrm dU .
@@ -271,9 +279,9 @@ $$
 
 | | GMM（AQGMM） | 标准TMM | 分组t混合 |
 |---|---|---|---|
-| 每分量波动强度 | 无 | 1个，作用于全部$d$个方向 | $G$组，作用于天气驱动的$r$个方向，同步且截断 |
+| 每分量波动强度 | 无 | 1个，作用于全部$d$个方向 | $G$组，作用于天气驱动的$r$个方向，同步、截断，并带动均值移动 |
 | 强度作用范围的确定 | 无 | 无 | 第4.2节，由注入共同放大和运行点雅可比确定 |
-| 每分量参数 | $d+d(d+1)/2$ | GMM加1个自由度 | GMM加$G$个自由度 |
+| 每分量参数 | $d+d(d+1)/2$ | GMM加1个自由度 | GMM加$G$个自由度和$r$个均值移动量 |
 | 参数估计 | 期望最大化 | 在AQGMM分量归属上按矩确定 | 在AQGMM分量归属上按矩确定 |
 | 电气量计算的积分维数 | 0 | 1 | 1 |
 | 退化关系 | | $\nu_k\to\infty$为GMM | 无分组为GMM；全部注入一组且$r=d$为标准TMM |

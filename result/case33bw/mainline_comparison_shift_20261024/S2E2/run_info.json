@@ -1,0 +1,320 @@
+{
+ "scene": "S2E2",
+ "draws": 262144,
+ "starts": 6,
+ "aqgmm_fits": {
+  "1": {
+   "chosen_start": 0,
+   "selection_ll": -91.30184370790778,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -91.30184370790778,
+     "status": "converged"
+    }
+   ]
+  },
+  "2": {
+   "chosen_start": 3,
+   "selection_ll": -81.84774502783917,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -81.84775927831058,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -81.85386515185402,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -81.8477605848844,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -81.84774502783917,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -81.8528789852749,
+     "status": "converged"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -81.85328308492407,
+     "status": "converged"
+    }
+   ]
+  },
+  "3": {
+   "chosen_start": 2,
+   "selection_ll": -79.40929086839003,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -79.43251054043094,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -79.43127118949343,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -79.40929086839003,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -79.4093164257763,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -79.41001289419025,
+     "status": "converged"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -79.40931750993192,
+     "status": "converged"
+    }
+   ]
+  },
+  "4": {
+   "chosen_start": 5,
+   "selection_ll": -78.72654915145664,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -78.72693752842913,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -78.72671260783792,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -78.72689725571931,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -78.95622420598463,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -78.73283654645584,
+     "status": "converged"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -78.72654915145664,
+     "status": "converged"
+    }
+   ]
+  },
+  "6": {
+   "chosen_start": 2,
+   "selection_ll": -78.56877469462447,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -78.63417186951051,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -78.6142973496699,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -78.56877469462447,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -78.98364651317476,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -78.60351072198705,
+     "status": "converged"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -78.64248579711453,
+     "status": "converged"
+    }
+   ]
+  },
+  "8": {
+   "chosen_start": 2,
+   "selection_ll": -78.7315229458082,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -78.88007675397995,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -78.8345508240617,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -78.7315229458082,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -78.86554182803151,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -78.81560733380272,
+     "status": "converged"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -78.78735314291214,
+     "status": "converged"
+    }
+   ]
+  },
+  "12": {
+   "chosen_start": 2,
+   "selection_ll": -79.0565920591454,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -79.47879993946299,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -79.42718191066737,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -79.0565920591454,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -79.36931158139228,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -80.02909151158399,
+     "status": "collapsed_component"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -79.4642997474072,
+     "status": "converged"
+    }
+   ]
+  },
+  "16": {
+   "chosen_start": 5,
+   "selection_ll": -80.06278525676578,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -80.43836050975895,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -80.09070422002401,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -80.24288902169384,
+     "status": "collapsed_component"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -80.18237247443783,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -83.82329435946636,
+     "status": "collapsed_component"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -80.06278525676578,
+     "status": "converged"
+    }
+   ]
+  }
+ },
+ "heavy_sides": {
+  "V_lower": 32,
+  "P_lower": 0,
+  "loss": "lower"
+ },
+ "seconds": 583.9274391670042,
+ "script_SHA256": "ff87c2fab75b0d4e2148949332011d80805f3d8c945656f1f89e826b6850b64e"
+}

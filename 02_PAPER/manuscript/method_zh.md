@@ -388,7 +388,7 @@ AQGMM：课题组前作《解析交流概率潮流中的电压联合分布估计
 | 标准TMM按矩（式(9)、(10)） | `tests/python/moment_matched_tmm_case33.py`中`moment_models` | 已由数值实验支持（33节点） |
 | 稀释关系（式(12)） | 推导 | 已由理论推导支持；与33节点标准TMM自由度30—200的结果一致 |
 | 分组步骤1—4（第4.2节） | `tests/python/block_split_rule_check.py`中`split`；上限`tests/python/truncated_strength_case33.py`中`strength_cap` | 已由数值实验支持：6个已有场景、4个构造场景、AQGMM前作输入判别正确；8192个场景时2处临界误判 |
-| 分组t参数估计（第4.4节） | `tests/python/grouped_strength_tmm_case33.py`中`grouped_model`、`TruncatedStrength` | 已由代码实现支持；式(21)的期望当前以20万次强度抽样计算，正文写为一维积分，【代码待核查】 |
+| 分组t参数估计（第4.4节，含均值移动式(21a)） | `tests/python/shift_grouped_t_case33.py`中`shift_grouped_model`；截断强度`tests/python/grouped_strength_tmm_case33.py`中`TruncatedStrength` | 已由代码实现支持；强度的各阶矩按$U$的2000点均匀网格计算 |
 | 平均注入处潮流与锚点 | 当前`split`在平均注入处另求一次潮流，快速映射锚点取离平均注入最近的场景 | 两者尚未统一为同一次潮流【尚未实现】 |
 | 解析计算（式(11)、(23)、附录A） | 标准TMM与分块TMM已有`tests/python/analytic_limit_risk_pv_fixed_forecast.py`（Gauss–Laguerre，Gil-Pelaez） | 分组t的式(23)【代码尚未实现】，当前比较均为模型抽样 |
-| 两个核心论点 | 同K尾部更准；少分量达到相近精度 | 33节点电压尾部已由数值实验支持（单次运行）；支路功率部分不占优；MC方法10⁶场景复核待做 |
+| 两个核心论点 | 同K尾部更准；少分量达到相近精度 | 按实测记录构造的场景（E-MAINLINE-SHIFT-20261024）：S1（参与配置选择）与S3（独立检验）节点电压、支路有功、网损多数K下更准，S3中K=2的节点电压尾部AQGMM在K≤16内达不到；S2E1、S2E2（两种运行状态混合）只在K=1更准。单次运行，模型电压262144组 |

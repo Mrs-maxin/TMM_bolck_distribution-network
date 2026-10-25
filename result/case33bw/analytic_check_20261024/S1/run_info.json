@@ -1,0 +1,25 @@
+{
+ "quadratic_reconstruction_max_error": 1.020872275603324e-11,
+ "quadratic_forms_seconds": 1.798818625000422,
+ "u_pieces": [
+  [
+   0.0,
+   0.9
+  ],
+  [
+   0.9,
+   0.99
+  ],
+  [
+   0.99,
+   0.999
+  ],
+  [
+   0.999,
+   1.0
+  ]
+ ],
+ "u_nodes_per_piece": 12,
+ "laguerre_nodes": 40,
+ "draws": 262144
+}

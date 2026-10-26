@@ -71,8 +71,9 @@ def terms(parts,spec,level):
  return out
 
 
-def decompose(parts,spec):
- A,b=spec['A'],spec['b'];origin=spec['o'];ell=2*A@origin+b;rows=[]
+def decompose(parts,spec,center='data'):
+ parts=list(parts)
+ A,b=spec['A'],spec['b'];origin=spec['o'] if center=='data' else sum(w*m for w,m,_,_,_ in parts);ell=2*A@origin+b;rows=[]
  for w,m,B,R,nu in parts:
   delta=m-origin;es,_=scale_moments(nu);C=R+es*B;EL=ell@delta;EH,VH=exact_moments([(1.,delta,B,R,nu)],A,np.zeros(len(A)),0.);VL=ell@C@ell;cov=2*ell@C@A@delta;rows.append((w,EL,EH,VL,VH,cov))
  w,l,h,vl,vh,co=map(np.array,zip(*rows));ml=w@l;mh=w@h

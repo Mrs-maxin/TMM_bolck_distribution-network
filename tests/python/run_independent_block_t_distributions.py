@@ -6,7 +6,7 @@ import pandas as pd
 from scipy.interpolate import PchipInterpolator
 from independent_block_t_fit import OUT,SRC,geometry,dump
 from independent_block_t_numeric import specs,projected_parts,exact_moments,terms,decompose
-from direct_pv8_inversion import inverse_pdf,moments as numerical_moments
+from independent_cf_inversion import inverse_pdf,moments as numerical_moments
 from evaluate_direct_pv8_K1 import amplitude_mean
 from independent_tail_w1 import tail_w1
 G=None;SPECS=None;REF=None

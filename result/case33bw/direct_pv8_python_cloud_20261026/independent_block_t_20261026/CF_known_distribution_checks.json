@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "Gaussian linear",
+      "PDF_error": 3.885780586188048e-16,
+      "CDF_error": 1.7763568394002505e-15
+    },
+    {
+      "check": "Gaussian 64-d quadratic chi-square",
+      "PDF_error": 4.399258735077183e-15,
+      "CDF_error": 2.7450264283856995e-14
+    },
+    {
+      "check": "nu=4.1 standard t distribution using untruncated scale",
+      "scale_level": 8,
+      "PDF_error": 1.3218183982366405e-06,
+      "CDF_error": 2.9330258310977797e-07
+    }
+  ]
+}

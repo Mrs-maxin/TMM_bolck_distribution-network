@@ -1,0 +1,13 @@
+{
+  "status": "verified",
+  "archive_name": "direct_pv8_independent_block_t_20261026_results.zip",
+  "archive_bytes": 191277168,
+  "archive_sha256": "1504f593ea5b5372aaef5960b0087dc753b90625a5f2fc9dcbbf0ec34d01c2a7",
+  "archive_local_path": "/workspace/TMM_bolck_distribution-network/output/direct_pv8_independent_block_t_20261026_results.zip",
+  "members": 3260,
+  "member_sha256_checks": 3259,
+  "archive_CRC_passed": true,
+  "tables_commit": "2d3ff2c",
+  "model_and_figure_commit": "c244c551680850695ab854764fcc694138ac6b45",
+  "original_large_archive_repackaged": false
+}

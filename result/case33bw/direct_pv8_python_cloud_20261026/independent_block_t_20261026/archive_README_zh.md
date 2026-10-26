@@ -1,0 +1,15 @@
+# 独立估计三种电压模型的云端计算归档
+
+本包保留873组解析概率潮流分布、9个模型参数、35次估计记录、双尾评价表、84组PNG/SVG诊断图及曲线CSV。计算状态和数值自检见结果子目录run_manifest.json与final_validation.json。
+
+解压后目录相对于原仓库根目录。优先阅读结果子目录summary_comparison_zh.md、comparison_report_zh.md、per_object_errors_and_moments.csv、extreme_quantiles.csv。independent_AC为3504组独立交流潮流比较；estimation_dates为10512组估计日期辅助比较。后者不能替代独立日期结果。
+
+原inputs.npz、ac_results.npz、date_split.json和voltage_groups.json随包保留。原始17520组直接光伏输入、已保存电压与交流结果均复用，未重算。本包不重复包含此前163MiB完整旧档案，也不包含已暂停的其他修正模型。源荷PDF图位于上级figures，按原字节复用；tail_inventory_all97.csv是既有AC尾部清单。
+
+本包代码来自独立估计新轮及其必要通用数值依赖。evaluate_direct_pv8_K1.py仅被导入以复用amplitude_mean函数，未执行其旧K1流程，未读取旧模型。参数来源及退化极限自检见early_numerical_checks.json。
+
+P/Q和网损前两矩使用逆伽马闭式矩；nu接近4.1时有限尺度求积的二阶强度矩不作为精确方差。左右W1是按概率区间截取并归一的W1，区间[.01,.05]及[.95,.99]，经验广义逆在概率跳点处分段积分。CDF-RMSE保留原linear阈值分位约定与实际右连续经验CDF，定义见已登记计划。
+
+partial_*文件仅为中间进度快照。numerical_failures保存已修复的初次反演失败证据。未经平滑或负密度裁零的原PDF保留；最终负密度残差及PDF/CDF积分一致性见final_validation.json。尺度0端镜像加密核查覆盖18个关键非网损对象的峰值和AC尾部点，不表示对873组整个网格的严格误差界。正式论文图另行导出。
+
+ARCHIVE_SHA256SUMS.txt逐文件记录SHA256；压缩包本身的SHA256在外部同名.sha256及归档清单中。目录和ZIP内容已逐文件哈希校验。

@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "K": 1,
+  "models": [
+    "AQGMM",
+    "Standard_TMM",
+    "Grouped_TMM"
+  ],
+  "quantities": 97,
+  "reference_AC_scenarios": 3504,
+  "tail_levels_per_side": 81,
+  "quantiles": [
+    0.001,
+    0.005,
+    0.01,
+    0.99,
+    0.995,
+    0.999
+  ],
+  "variance_ddof": 0,
+  "source_load_AC_and_parameters_recomputed": false,
+  "scope": "Current date split, descriptive object-wise comparison only",
+  "plan": "01_IDEA/plans/direct_pv8_K1_evaluation_20261026.md",
+  "python": "3.12.14",
+  "seconds": 3.109858006000195,
+  "max_CDF_roundoff_correction": 6.439293542825908e-15,
+  "max_inverse_residual": 7.482903185973555e-14,
+  "max_tail_CDF_interpolation_sensitivity": 9.54883262991868e-05,
+  "max_voltage_mean_observed_integration_sensitivity": 1.8530451972864626e-07,
+  "focus_objects": [
+    "V18",
+    "V33",
+    "P1",
+    "P16",
+    "P32",
+    "Q1",
+    "Q16",
+    "Q32",
+    "loss",
+    "P22",
+    "Q22",
+    "Q13",
+    "Q14",
+    "Q17"
+  ],
+  "outputs": [
+    "tail_CDF_RMSE_all97.csv",
+    "extreme_quantiles_all97.csv",
+    "global_moments_all97.csv",
+    "evaluation_numerical_checks.csv",
+    "tail_CDF_evaluation_points.csv.gz",
+    "comparison_readable.md"
+  ],
+  "input_hash_manifest": "source_hashes.json"
+}

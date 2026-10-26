@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "folded_normal_mean": 1.0000000213881963,
+  "folded_normal_exact": 1.0000000213846623,
+  "folded_normal_difference": 3.5340619319867983e-12,
+  "CDF_RMSE_recomputed_from_47142_saved_probability_points": true,
+  "quantile_rows": 1746,
+  "quantiles_monotone": true
+}

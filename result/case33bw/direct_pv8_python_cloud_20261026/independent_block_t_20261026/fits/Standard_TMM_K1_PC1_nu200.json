@@ -1,0 +1,93 @@
+{
+  "status": "converged",
+  "iterations": 14,
+  "history": [
+    -90.62540085075925,
+    -90.58027518622663,
+    -90.5452673134074,
+    -90.51030053478388,
+    -90.4788093026775,
+    -90.4537922810936,
+    -90.43637166349883,
+    -90.42564463724656,
+    -90.41968223953502,
+    -90.41661173833279,
+    -90.41510877732924,
+    -90.41439437370677,
+    -90.41405929746374,
+    -90.41390254840158,
+    -90.41382894908476
+  ],
+  "train_ll": -90.41382894908476,
+  "minimum_effective_count": 10512.0,
+  "effective_counts": [
+    10512.0
+  ],
+  "df": [
+    35.04355111098905
+  ],
+  "weights": [
+    1.0
+  ],
+  "scatter_eigen_min": [
+    0.6834430110013855
+  ],
+  "scatter_condition": [
+    1.4661866746815655
+  ],
+  "floor_active_max": 0,
+  "floor_history": [
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      0
+    ]
+  ],
+  "seconds": 0.0857658539998738,
+  "actual_covariance_floor": true,
+  "relative_tolerance": true,
+  "family": "Standard_TMM",
+  "K": 1,
+  "partition": 1,
+  "initial_df": 200.0,
+  "selection_ll": -92.21133953845076,
+  "parameter_source": "raw voltage only; separate initialization; no other model results",
+  "old_parameters_read": false
+}

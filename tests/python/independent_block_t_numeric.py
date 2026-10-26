@@ -51,21 +51,21 @@ def exact_moments(parts,A,b,c):
  w,m,v=map(np.array,zip(*terms));mean=float(w@m);return mean,float(w@(v+(m-mean)**2))
 
 
-def scale_nodes(nu,level):
+def scale_nodes(nu,level,mirror_lower=False):
  if np.isinf(nu):return np.ones(1),np.ones(1)
  n=40*level
  if 8<nu<=300 and n<=160:
   z,w=roots_genlaguerre(n,nu/2-1);return nu/(2*z),w/w.sum()
  # Probability integration represents the actual inverse-gamma, never a forced Gaussian.
- nodes,weights=leggauss(12*level);edges=[0.,.5,.9,.99,.999,.9999,.99999,.999999,1.];p=[];w=[]
+ nodes,weights=leggauss(12*level);edges=([0.,1e-6,1e-5,1e-4,.001,.01,.1,.5] if mirror_lower else [0.,.5])+[.9,.99,.999,.9999,.99999,.999999,1.];p=[];w=[]
  for left,right in zip(edges[:-1],edges[1:]):p.extend(left+(right-left)*(nodes+1)/2);w.extend((right-left)*weights/2)
  p=np.minimum(np.array(p),np.nextafter(1.,0.));return nu/stats.chi2.isf(p,nu),np.array(w)
 
 
-def terms(parts,spec,level):
+def terms(parts,spec,level,mirror_lower=False):
  A,b,c=spec['A'],spec['b'],spec['c'];out=[]
  for w,m,B,R,nu in parts:
-  nodes,weights=scale_nodes(nu,level);ell=2*A@m+b;m0=float(m@A@m+b@m+c)
+  nodes,weights=scale_nodes(nu,level,mirror_lower=mirror_lower);ell=2*A@m+b;m0=float(m@A@m+b@m+c)
   C=R[None]+nodes[:,None,None]*B[None];C=(C+C.transpose(0,2,1))/2;vals,U=np.linalg.eigh(C);L=U*np.sqrt(np.maximum(vals,0))[:,None,:];M=L.transpose(0,2,1)@A@L;lam,rot=np.linalg.eigh(M);beta=np.einsum('nji,nj->ni',rot,np.einsum('nji,j->ni',L,ell))
   out.extend((float(w*wt),m0,la,be) for wt,la,be in zip(weights,lam,beta))
  return out

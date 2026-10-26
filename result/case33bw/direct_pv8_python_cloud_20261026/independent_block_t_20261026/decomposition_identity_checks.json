@@ -1,0 +1,329 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "K": 1,
+      "model": "AQGMM",
+      "object": "Q17",
+      "center": "data",
+      "exact_variance": 2.589435391118691e-05,
+      "decomposition_total": 2.5894353911186933e-05,
+      "absolute_difference": 2.371692252312041e-20
+    },
+    {
+      "K": 1,
+      "model": "AQGMM",
+      "object": "Q17",
+      "center": "model",
+      "exact_variance": 2.589435391118691e-05,
+      "decomposition_total": 2.589435391118691e-05,
+      "absolute_difference": 0.0
+    },
+    {
+      "K": 1,
+      "model": "AQGMM",
+      "object": "loss",
+      "center": "data",
+      "exact_variance": 0.005335067400265672,
+      "decomposition_total": 0.005335067400265672,
+      "absolute_difference": 0.0
+    },
+    {
+      "K": 1,
+      "model": "AQGMM",
+      "object": "loss",
+      "center": "model",
+      "exact_variance": 0.005335067400265672,
+      "decomposition_total": 0.005335067400265672,
+      "absolute_difference": 0.0
+    },
+    {
+      "K": 1,
+      "model": "Standard_TMM",
+      "object": "Q17",
+      "center": "data",
+      "exact_variance": 2.3426592261009437e-05,
+      "decomposition_total": 2.3426592261009417e-05,
+      "absolute_difference": 2.0328790734103208e-20
+    },
+    {
+      "K": 1,
+      "model": "Standard_TMM",
+      "object": "Q17",
+      "center": "model",
+      "exact_variance": 2.3426592261009437e-05,
+      "decomposition_total": 2.342659226100943e-05,
+      "absolute_difference": 6.776263578034403e-21
+    },
+    {
+      "K": 1,
+      "model": "Standard_TMM",
+      "object": "loss",
+      "center": "data",
+      "exact_variance": 0.005234346437340825,
+      "decomposition_total": 0.005234346437340826,
+      "absolute_difference": 8.673617379884035e-19
+    },
+    {
+      "K": 1,
+      "model": "Standard_TMM",
+      "object": "loss",
+      "center": "model",
+      "exact_variance": 0.005234346437340825,
+      "decomposition_total": 0.005234346437340824,
+      "absolute_difference": 8.673617379884035e-19
+    },
+    {
+      "K": 1,
+      "model": "Block_TMM",
+      "object": "Q17",
+      "center": "data",
+      "exact_variance": 0.0002945939216137555,
+      "decomposition_total": 0.0002945939216137554,
+      "absolute_difference": 5.421010862427522e-20
+    },
+    {
+      "K": 1,
+      "model": "Block_TMM",
+      "object": "Q17",
+      "center": "model",
+      "exact_variance": 0.0002945939216137555,
+      "decomposition_total": 0.0002945939216137554,
+      "absolute_difference": 5.421010862427522e-20
+    },
+    {
+      "K": 1,
+      "model": "Block_TMM",
+      "object": "loss",
+      "center": "data",
+      "exact_variance": 0.020887417380760134,
+      "decomposition_total": 0.020887417380760127,
+      "absolute_difference": 6.938893903907228e-18
+    },
+    {
+      "K": 1,
+      "model": "Block_TMM",
+      "object": "loss",
+      "center": "model",
+      "exact_variance": 0.020887417380760134,
+      "decomposition_total": 0.02088741738076013,
+      "absolute_difference": 3.469446951953614e-18
+    },
+    {
+      "K": 2,
+      "model": "AQGMM",
+      "object": "Q17",
+      "center": "data",
+      "exact_variance": 5.247316266695402e-06,
+      "decomposition_total": 5.247316266695401e-06,
+      "absolute_difference": 8.470329472543003e-22
+    },
+    {
+      "K": 2,
+      "model": "AQGMM",
+      "object": "Q17",
+      "center": "model",
+      "exact_variance": 5.247316266695402e-06,
+      "decomposition_total": 5.247316266695403e-06,
+      "absolute_difference": 8.470329472543003e-22
+    },
+    {
+      "K": 2,
+      "model": "AQGMM",
+      "object": "loss",
+      "center": "data",
+      "exact_variance": 0.0032834514051057586,
+      "decomposition_total": 0.0032834514051057577,
+      "absolute_difference": 8.673617379884035e-19
+    },
+    {
+      "K": 2,
+      "model": "AQGMM",
+      "object": "loss",
+      "center": "model",
+      "exact_variance": 0.0032834514051057586,
+      "decomposition_total": 0.0032834514051057586,
+      "absolute_difference": 0.0
+    },
+    {
+      "K": 2,
+      "model": "Standard_TMM",
+      "object": "Q17",
+      "center": "data",
+      "exact_variance": 5.162513765523519e-06,
+      "decomposition_total": 5.162513765523513e-06,
+      "absolute_difference": 5.929230630780102e-21
+    },
+    {
+      "K": 2,
+      "model": "Standard_TMM",
+      "object": "Q17",
+      "center": "model",
+      "exact_variance": 5.162513765523519e-06,
+      "decomposition_total": 5.1625137655235095e-06,
+      "absolute_difference": 9.317362419797304e-21
+    },
+    {
+      "K": 2,
+      "model": "Standard_TMM",
+      "object": "loss",
+      "center": "data",
+      "exact_variance": 0.0032532381296235314,
+      "decomposition_total": 0.003253238129623531,
+      "absolute_difference": 4.336808689942018e-19
+    },
+    {
+      "K": 2,
+      "model": "Standard_TMM",
+      "object": "loss",
+      "center": "model",
+      "exact_variance": 0.0032532381296235314,
+      "decomposition_total": 0.0032532381296235327,
+      "absolute_difference": 1.3010426069826053e-18
+    },
+    {
+      "K": 2,
+      "model": "Block_TMM",
+      "object": "Q17",
+      "center": "data",
+      "exact_variance": 7.787569298807882e-06,
+      "decomposition_total": 7.787569298807859e-06,
+      "absolute_difference": 2.371692252312041e-20
+    },
+    {
+      "K": 2,
+      "model": "Block_TMM",
+      "object": "Q17",
+      "center": "model",
+      "exact_variance": 7.787569298807882e-06,
+      "decomposition_total": 7.787569298807853e-06,
+      "absolute_difference": 2.879912020664621e-20
+    },
+    {
+      "K": 2,
+      "model": "Block_TMM",
+      "object": "loss",
+      "center": "data",
+      "exact_variance": 0.003638193777281129,
+      "decomposition_total": 0.0036381937772811293,
+      "absolute_difference": 4.336808689942018e-19
+    },
+    {
+      "K": 2,
+      "model": "Block_TMM",
+      "object": "loss",
+      "center": "model",
+      "exact_variance": 0.003638193777281129,
+      "decomposition_total": 0.0036381937772811293,
+      "absolute_difference": 4.336808689942018e-19
+    },
+    {
+      "K": 4,
+      "model": "AQGMM",
+      "object": "Q17",
+      "center": "data",
+      "exact_variance": 1.1739563226259333e-06,
+      "decomposition_total": 1.173956322625931e-06,
+      "absolute_difference": 2.329340604949326e-21
+    },
+    {
+      "K": 4,
+      "model": "AQGMM",
+      "object": "Q17",
+      "center": "model",
+      "exact_variance": 1.1739563226259333e-06,
+      "decomposition_total": 1.173956322625936e-06,
+      "absolute_difference": 2.752857078576476e-21
+    },
+    {
+      "K": 4,
+      "model": "AQGMM",
+      "object": "loss",
+      "center": "data",
+      "exact_variance": 0.0030688469870611395,
+      "decomposition_total": 0.0030688469870611395,
+      "absolute_difference": 0.0
+    },
+    {
+      "K": 4,
+      "model": "AQGMM",
+      "object": "loss",
+      "center": "model",
+      "exact_variance": 0.0030688469870611395,
+      "decomposition_total": 0.0030688469870611395,
+      "absolute_difference": 0.0
+    },
+    {
+      "K": 4,
+      "model": "Standard_TMM",
+      "object": "Q17",
+      "center": "data",
+      "exact_variance": 1.1597895740176013e-06,
+      "decomposition_total": 1.1597895740176047e-06,
+      "absolute_difference": 3.3881317890172014e-21
+    },
+    {
+      "K": 4,
+      "model": "Standard_TMM",
+      "object": "Q17",
+      "center": "model",
+      "exact_variance": 1.1597895740176013e-06,
+      "decomposition_total": 1.159789574017598e-06,
+      "absolute_difference": 3.3881317890172014e-21
+    },
+    {
+      "K": 4,
+      "model": "Standard_TMM",
+      "object": "loss",
+      "center": "data",
+      "exact_variance": 0.0030440213585980723,
+      "decomposition_total": 0.0030440213585980727,
+      "absolute_difference": 4.336808689942018e-19
+    },
+    {
+      "K": 4,
+      "model": "Standard_TMM",
+      "object": "loss",
+      "center": "model",
+      "exact_variance": 0.0030440213585980723,
+      "decomposition_total": 0.0030440213585980727,
+      "absolute_difference": 4.336808689942018e-19
+    },
+    {
+      "K": 4,
+      "model": "Block_TMM",
+      "object": "Q17",
+      "center": "data",
+      "exact_variance": 7.904002863346508e-06,
+      "decomposition_total": 7.9040028633465e-06,
+      "absolute_difference": 8.470329472543003e-21
+    },
+    {
+      "K": 4,
+      "model": "Block_TMM",
+      "object": "Q17",
+      "center": "model",
+      "exact_variance": 7.904002863346508e-06,
+      "decomposition_total": 7.904002863346507e-06,
+      "absolute_difference": 1.6940658945086007e-21
+    },
+    {
+      "K": 4,
+      "model": "Block_TMM",
+      "object": "loss",
+      "center": "data",
+      "exact_variance": 0.003286439872383136,
+      "decomposition_total": 0.0032864398723831357,
+      "absolute_difference": 4.336808689942018e-19
+    },
+    {
+      "K": 4,
+      "model": "Block_TMM",
+      "object": "loss",
+      "center": "model",
+      "exact_variance": 0.003286439872383136,
+      "decomposition_total": 0.0032864398723831383,
+      "absolute_difference": 2.168404344971009e-18
+    }
+  ]
+}

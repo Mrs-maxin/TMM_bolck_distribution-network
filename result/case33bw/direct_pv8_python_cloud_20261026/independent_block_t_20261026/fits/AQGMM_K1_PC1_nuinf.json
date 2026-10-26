@@ -1,0 +1,41 @@
+{
+  "status": "converged",
+  "iterations": 1,
+  "history": [
+    -90.80902184026517,
+    -90.80902184026516
+  ],
+  "train_ll": -90.80902184026516,
+  "minimum_effective_count": 10512.0,
+  "effective_counts": [
+    10512.0
+  ],
+  "df": [
+    Infinity
+  ],
+  "weights": [
+    1.0
+  ],
+  "scatter_eigen_min": [
+    0.9999048705053785
+  ],
+  "scatter_condition": [
+    1.0000000002371325
+  ],
+  "floor_active_max": 0,
+  "floor_history": [
+    [
+      0
+    ]
+  ],
+  "seconds": 0.01071516999945743,
+  "actual_covariance_floor": true,
+  "relative_tolerance": true,
+  "family": "AQGMM",
+  "K": 1,
+  "partition": 1,
+  "initial_df": Infinity,
+  "selection_ll": -92.41531186408314,
+  "parameter_source": "raw voltage only; separate initialization; no other model results",
+  "old_parameters_read": false
+}

@@ -10,17 +10,20 @@ from independent_block_t_fit import OUT,SRC,geometry
 from independent_block_t_numeric import specs
 
 
-def run():
- g=geometry();ss=specs(g);ref=np.load(SRC/'ac_results.npz')['reference'];focus=['V18','V33','P1','P16','P32','Q17','loss'];figures=OUT/'figures';figures.mkdir(exist_ok=True);audit=[];styles={'AQGMM':('#356D9A','--'),'Standard_TMM':('#98671F','-.'),'Block_TMM':('#AB4B53','-')}
+def run(partial=False):
+ g=geometry();ss=specs(g);ref=np.load(SRC/'ac_results.npz')['reference'];focus=['V18','V33','P1','P16','P32','Q17','loss'];figures=OUT/'figures';figures.mkdir(exist_ok=True);audit=[];previous=json.load(open(OUT/'figure_checks.json'))['checks'] if (OUT/'figure_checks.json').exists() else [];styles={'AQGMM':('#356D9A','--'),'Standard_TMM':('#98671F','-.'),'Block_TMM':('#AB4B53','-')}
  for name in focus:
   j=next(i for i,s in enumerate(ss) if s['name']==name);s=ss[j];values=ref[:,j];density,edges=np.histogram(values,bins='fd',density=True);pd.DataFrame(dict(left=edges[:-1],right=edges[1:],pdf=density)).to_csv(figures/f'{name}_AC_histogram.csv',index=False)
   unit='p.u.' if s['kind']=='V' else 'MVAr' if s['kind']=='Q' else 'MW';physical=f'Bus {name[1:]} voltage magnitude' if s['kind']=='V' else 'System active loss' if name=='loss' else f"Branch {name[1:]} ({s['from_bus']} to {s['to_bus']})\nsending-end {'active' if s['kind']=='P' else 'reactive'} power"
   for k in [1,2,4]:
+   if partial and not all((OUT/'distributions'/f'K{k}'/m/f'{name}.csv').exists() for m in styles):continue
    curves={m:pd.read_csv(OUT/'distributions'/f'K{k}'/m/f'{name}.csv') for m in styles};union=np.unique(np.concatenate([t.value.to_numpy() for t in curves.values()]));table=pd.DataFrame(dict(value=union))
    for model,t in curves.items():
     for column in ['pdf','cdf']:table[model+'_'+column]=np.interp(union,t.value,t[column],left=np.nan,right=np.nan)
    csv=figures/f'{name}_K{k}_curves.csv';table.to_csv(csv,index=False)
    for extent in ['full','AC_operating_range','lower','upper']:
+    cached=next((a for a in previous if a['object']==name and a['K']==k and a['extent']==extent and a['data_sha256']==hashlib.sha256(csv.read_bytes()).hexdigest()),None)
+    if cached and all((figures/f'{name}_K{k}_{extent}.{ext}').exists() for ext in ['png','svg']):audit.append(cached);continue
     with publication_context(font_family='DejaVu Sans',base_size=10):
      f,ax=plt.subplots(figsize=(100/25.4,76/25.4));ax.stairs(density,edges,fill=True,color='#D8DDE2',edgecolor='#566169',linewidth=.6,label='Independent AC')
      for model,t in curves.items():color,ls=styles[model];ax.plot(t.value,t.pdf,color=color,ls=ls,lw=1.1,label=model.replace('_',' '))
@@ -41,6 +44,8 @@ def run():
      stem=figures/f'{name}_K{k}_{extent}'
      for ext in ['png','svg']:save_figure(f,stem.with_suffix('.'+ext),dpi=200,overwrite=True)
      audit.append(dict(object=name,K=k,extent=extent,xlim=ax.get_xlim(),ylim=ax.get_ylim(),unit=unit,legend=[t.get_text() for t in ax.get_legend().get_texts()],data=csv.name,data_sha256=hashlib.sha256(csv.read_bytes()).hexdigest(),negative_values_clipped=False,smoothing=False,text_within_canvas=True));plt.close(f)
- (OUT/'figure_checks.json').write_text(json.dumps(dict(status='passed',figures=len(audit),checks=audit),indent=2)+'\n');print('PLOTS_COMPLETE',len(audit))
+ (OUT/'figure_checks.json').write_text(json.dumps(dict(status='passed' if len(audit)==84 else 'partial',figures=len(audit),checks=audit),indent=2)+'\n');print('PLOTS_COMPLETE',len(audit))
 
-if __name__=='__main__':run()
+if __name__=='__main__':
+ import sys
+ run('--partial' in sys.argv)

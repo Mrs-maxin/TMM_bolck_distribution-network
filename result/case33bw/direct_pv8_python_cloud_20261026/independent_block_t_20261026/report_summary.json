@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "selected_models": 9,
+  "distributions": 873,
+  "main_rows": 873,
+  "auxiliary_rows": 873,
+  "fit_attempts": 35,
+  "all_selected_converged": true,
+  "no_GMM_parameter_reuse": true,
+  "original_AC_recomputed": false,
+  "scope": "descriptive object-wise matched K results; no network-average ranking"
+}

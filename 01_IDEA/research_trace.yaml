@@ -381,3 +381,21 @@ direct_pv8_cloud_20261026:
   treatment: refine_Fourier_quadrature_without_smoothing_or_clipping
   prior_K2_K4: fitting_audits_and_limited_results_retained_full_parameters_not_saved
   evidence_state: numerical_checks_in_run_manifest_method_accuracy_unverified
+
+
+direct_pv8_independent_block_t_20261026:
+  provenance: ai-executed
+  type: experiment
+  user_change: restore_single_t_block_and_independent_likelihood_estimation
+  fixed_K: [1, 2, 4]
+  fixed_block_dimensions: [8, 56]
+  initialization: raw_voltage_PC1_PC2_and_df_12_40_200
+  selected_models: 9
+  all_selected_converged: true
+  analytic_distributions: 873
+  result_directory: result/case33bw/direct_pv8_python_cloud_20261026/independent_block_t_20261026
+  exact_power_moments: inverse_gamma_closed_form
+  error_metrics: [left_right_CDF_RMSE, normalized_probability_trimmed_tail_W1, extreme_quantiles, means, variances]
+  original_data_and_AC_recomputed: false
+  conclusion: object_dependent_results_no_uniform_advantage
+  evidence_state: supported_within_current_direct_output_and_date_split

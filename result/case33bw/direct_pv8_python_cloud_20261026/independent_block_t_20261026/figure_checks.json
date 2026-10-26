@@ -1,0 +1,2106 @@
+{
+  "status": "passed",
+  "figures": 84,
+  "checks": [
+    {
+      "object": "V18",
+      "K": 1,
+      "extent": "full",
+      "xlim": [
+        1e-08,
+        2.436663896547038
+      ],
+      "ylim": [
+        0.0,
+        19.903796431826603
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V18_K1_curves.csv",
+      "data_sha256": "47de3c50659f65fba39cd25446f5c28086dbfc037aed6ffe80b05d8cf20980c0",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V18",
+      "K": 1,
+      "extent": "AC_operating_range",
+      "xlim": [
+        0.9264386454743623,
+        1.1028114307227705
+      ],
+      "ylim": [
+        0.0,
+        21.23071619394838
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V18_K1_curves.csv",
+      "data_sha256": "47de3c50659f65fba39cd25446f5c28086dbfc037aed6ffe80b05d8cf20980c0",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V18",
+      "K": 1,
+      "extent": "lower",
+      "xlim": [
+        0.9452214872013731,
+        0.9650330423184033
+      ],
+      "ylim": [
+        0.0,
+        4.086663680525345
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V18_K1_curves.csv",
+      "data_sha256": "47de3c50659f65fba39cd25446f5c28086dbfc037aed6ffe80b05d8cf20980c0",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V18",
+      "K": 1,
+      "extent": "upper",
+      "xlim": [
+        1.0846853218864803,
+        1.0907224715261608
+      ],
+      "ylim": [
+        0.0,
+        9.518936133906763
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V18_K1_curves.csv",
+      "data_sha256": "47de3c50659f65fba39cd25446f5c28086dbfc037aed6ffe80b05d8cf20980c0",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V18",
+      "K": 2,
+      "extent": "full",
+      "xlim": [
+        0.5446524769058053,
+        1.3763534602668142
+      ],
+      "ylim": [
+        0.0,
+        22.250562003989398
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V18_K2_curves.csv",
+      "data_sha256": "ef971440b1bff370869949b7c8bbffdd25bcb6591ebf933531019480ca7b6192",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V18",
+      "K": 2,
+      "extent": "AC_operating_range",
+      "xlim": [
+        0.9264386454743623,
+        1.1028114307227705
+      ],
+      "ylim": [
+        0.0,
+        23.733932804255357
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V18_K2_curves.csv",
+      "data_sha256": "ef971440b1bff370869949b7c8bbffdd25bcb6591ebf933531019480ca7b6192",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V18",
+      "K": 2,
+      "extent": "lower",
+      "xlim": [
+        0.9452214872013731,
+        0.9650330423184033
+      ],
+      "ylim": [
+        0.0,
+        4.086663680525345
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V18_K2_curves.csv",
+      "data_sha256": "ef971440b1bff370869949b7c8bbffdd25bcb6591ebf933531019480ca7b6192",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V18",
+      "K": 2,
+      "extent": "upper",
+      "xlim": [
+        1.0846853218864803,
+        1.0907224715261608
+      ],
+      "ylim": [
+        0.0,
+        9.518936133906763
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V18_K2_curves.csv",
+      "data_sha256": "ef971440b1bff370869949b7c8bbffdd25bcb6591ebf933531019480ca7b6192",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V18",
+      "K": 4,
+      "extent": "full",
+      "xlim": [
+        0.5344564444158904,
+        1.3796975278695442
+      ],
+      "ylim": [
+        0.0,
+        21.94322684161352
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V18_K4_curves.csv",
+      "data_sha256": "16fbd4118131abf7ee24fcc3f9e369688231a75d6dffec4fca4042850623e5c1",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V18",
+      "K": 4,
+      "extent": "AC_operating_range",
+      "xlim": [
+        0.9264386454743623,
+        1.1028114307227705
+      ],
+      "ylim": [
+        0.0,
+        23.406108631054423
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V18_K4_curves.csv",
+      "data_sha256": "16fbd4118131abf7ee24fcc3f9e369688231a75d6dffec4fca4042850623e5c1",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V18",
+      "K": 4,
+      "extent": "lower",
+      "xlim": [
+        0.9452214872013731,
+        0.9650330423184033
+      ],
+      "ylim": [
+        0.0,
+        4.086663680525345
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V18_K4_curves.csv",
+      "data_sha256": "16fbd4118131abf7ee24fcc3f9e369688231a75d6dffec4fca4042850623e5c1",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V18",
+      "K": 4,
+      "extent": "upper",
+      "xlim": [
+        1.0846853218864803,
+        1.0907224715261608
+      ],
+      "ylim": [
+        0.0,
+        10.743878367662315
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V18_K4_curves.csv",
+      "data_sha256": "16fbd4118131abf7ee24fcc3f9e369688231a75d6dffec4fca4042850623e5c1",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V33",
+      "K": 1,
+      "extent": "full",
+      "xlim": [
+        0.4613986276183652,
+        1.4624549601276022
+      ],
+      "ylim": [
+        0.0,
+        52.50378622831087
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V33_K1_curves.csv",
+      "data_sha256": "99ea0444e51ad15b35da45a0d047db28c0cef223bd034082526f3057977f9b0d",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V33",
+      "K": 1,
+      "extent": "AC_operating_range",
+      "xlim": [
+        0.9321190291352903,
+        0.9982272751975391
+      ],
+      "ylim": [
+        0.0,
+        56.004038643486744
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V33_K1_curves.csv",
+      "data_sha256": "99ea0444e51ad15b35da45a0d047db28c0cef223bd034082526f3057977f9b0d",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V33",
+      "K": 1,
+      "extent": "lower",
+      "xlim": [
+        0.9393213538010974,
+        0.9466620523400414
+      ],
+      "ylim": [
+        0.0,
+        11.339089305594301
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V33_K1_curves.csv",
+      "data_sha256": "99ea0444e51ad15b35da45a0d047db28c0cef223bd034082526f3057977f9b0d",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V33",
+      "K": 1,
+      "extent": "upper",
+      "xlim": [
+        0.99063100157226,
+        0.9931663363697636
+      ],
+      "ylim": [
+        0.0,
+        19.561411654382415
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V33_K1_curves.csv",
+      "data_sha256": "99ea0444e51ad15b35da45a0d047db28c0cef223bd034082526f3057977f9b0d",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V33",
+      "K": 2,
+      "extent": "full",
+      "xlim": [
+        0.8195543434228727,
+        1.1110834479833105
+      ],
+      "ylim": [
+        0.0,
+        59.310951330466445
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V33_K2_curves.csv",
+      "data_sha256": "4eb4d42d291c8c2ce454466b6b4067a913cad821d20e7a236341e1d951b36253",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V33",
+      "K": 2,
+      "extent": "AC_operating_range",
+      "xlim": [
+        0.9321190291352903,
+        0.9982272751975391
+      ],
+      "ylim": [
+        0.0,
+        63.26501475249755
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V33_K2_curves.csv",
+      "data_sha256": "4eb4d42d291c8c2ce454466b6b4067a913cad821d20e7a236341e1d951b36253",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V33",
+      "K": 2,
+      "extent": "lower",
+      "xlim": [
+        0.9393213538010974,
+        0.9466620523400414
+      ],
+      "ylim": [
+        0.0,
+        11.339089305594301
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V33_K2_curves.csv",
+      "data_sha256": "4eb4d42d291c8c2ce454466b6b4067a913cad821d20e7a236341e1d951b36253",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V33",
+      "K": 2,
+      "extent": "upper",
+      "xlim": [
+        0.99063100157226,
+        0.9931663363697636
+      ],
+      "ylim": [
+        0.0,
+        21.44378468635674
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V33_K2_curves.csv",
+      "data_sha256": "4eb4d42d291c8c2ce454466b6b4067a913cad821d20e7a236341e1d951b36253",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V33",
+      "K": 4,
+      "extent": "full",
+      "xlim": [
+        0.8160803667073084,
+        1.1133437301102325
+      ],
+      "ylim": [
+        0.0,
+        52.50378622826882
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V33_K4_curves.csv",
+      "data_sha256": "218a58e8993f7646c061f06fcb4381c812e18f5d7d82ec73d2ec47adabca85da",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V33",
+      "K": 4,
+      "extent": "AC_operating_range",
+      "xlim": [
+        0.9321190291352903,
+        0.9982272751975391
+      ],
+      "ylim": [
+        0.0,
+        56.004038643486744
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V33_K4_curves.csv",
+      "data_sha256": "218a58e8993f7646c061f06fcb4381c812e18f5d7d82ec73d2ec47adabca85da",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V33",
+      "K": 4,
+      "extent": "lower",
+      "xlim": [
+        0.9393213538010974,
+        0.9466620523400414
+      ],
+      "ylim": [
+        0.0,
+        11.339089305594301
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V33_K4_curves.csv",
+      "data_sha256": "218a58e8993f7646c061f06fcb4381c812e18f5d7d82ec73d2ec47adabca85da",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "V33",
+      "K": 4,
+      "extent": "upper",
+      "xlim": [
+        0.99063100157226,
+        0.9931663363697636
+      ],
+      "ylim": [
+        0.0,
+        26.006183993487934
+      ],
+      "unit": "p.u.",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "V33_K4_curves.csv",
+      "data_sha256": "218a58e8993f7646c061f06fcb4381c812e18f5d7d82ec73d2ec47adabca85da",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P1",
+      "K": 1,
+      "extent": "full",
+      "xlim": [
+        -31.208680931957392,
+        32.070172888263606
+      ],
+      "ylim": [
+        0.0,
+        0.8131772835092311
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P1_K1_curves.csv",
+      "data_sha256": "da43350ee8c3ee38be6ef03717588d26449d2556cfc92c7a93d4fa2f662645e5",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P1",
+      "K": 1,
+      "extent": "AC_operating_range",
+      "xlim": [
+        -0.974766822549647,
+        3.2181974385240903
+      ],
+      "ylim": [
+        0.0,
+        0.8673891024098467
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P1_K1_curves.csv",
+      "data_sha256": "da43350ee8c3ee38be6ef03717588d26449d2556cfc92c7a93d4fa2f662645e5",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P1",
+      "K": 1,
+      "extent": "lower",
+      "xlim": [
+        -0.6687223038348722,
+        -0.4995194823673802
+      ],
+      "ylim": [
+        0.0,
+        0.3441381357588952
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P1_K1_curves.csv",
+      "data_sha256": "da43350ee8c3ee38be6ef03717588d26449d2556cfc92c7a93d4fa2f662645e5",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P1",
+      "K": 1,
+      "extent": "upper",
+      "xlim": [
+        2.3132574769490852,
+        2.800297488253091
+      ],
+      "ylim": [
+        0.0,
+        0.16502530486683858
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P1_K1_curves.csv",
+      "data_sha256": "da43350ee8c3ee38be6ef03717588d26449d2556cfc92c7a93d4fa2f662645e5",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P1",
+      "K": 2,
+      "extent": "full",
+      "xlim": [
+        -8.83858310751498,
+        9.699373070028512
+      ],
+      "ylim": [
+        0.0,
+        0.9058342985152252
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P1_K2_curves.csv",
+      "data_sha256": "233e7fe4fc1af10469d3f93993500537c4064e9b33b58d22222218874a2d15da",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P1",
+      "K": 2,
+      "extent": "AC_operating_range",
+      "xlim": [
+        -0.974766822549647,
+        3.2181974385240903
+      ],
+      "ylim": [
+        0.0,
+        0.9662232517495736
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P1_K2_curves.csv",
+      "data_sha256": "233e7fe4fc1af10469d3f93993500537c4064e9b33b58d22222218874a2d15da",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P1",
+      "K": 2,
+      "extent": "lower",
+      "xlim": [
+        -0.6687223038348722,
+        -0.4995194823673802
+      ],
+      "ylim": [
+        0.0,
+        0.3441381357588952
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P1_K2_curves.csv",
+      "data_sha256": "233e7fe4fc1af10469d3f93993500537c4064e9b33b58d22222218874a2d15da",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P1",
+      "K": 2,
+      "extent": "upper",
+      "xlim": [
+        2.3132574769490852,
+        2.800297488253091
+      ],
+      "ylim": [
+        0.0,
+        0.16502530486683858
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P1_K2_curves.csv",
+      "data_sha256": "233e7fe4fc1af10469d3f93993500537c4064e9b33b58d22222218874a2d15da",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P1",
+      "K": 4,
+      "extent": "full",
+      "xlim": [
+        -9.003313443386247,
+        9.882284238241947
+      ],
+      "ylim": [
+        0.0,
+        0.8698541310220875
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P1_K4_curves.csv",
+      "data_sha256": "207dd90ad9f96dfcda2b8971ea785d935468eb7aba9c3698e1a44fdcef18f54d",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P1",
+      "K": 4,
+      "extent": "AC_operating_range",
+      "xlim": [
+        -0.974766822549647,
+        3.2181974385240903
+      ],
+      "ylim": [
+        0.0,
+        0.9278444064235601
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P1_K4_curves.csv",
+      "data_sha256": "207dd90ad9f96dfcda2b8971ea785d935468eb7aba9c3698e1a44fdcef18f54d",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P1",
+      "K": 4,
+      "extent": "lower",
+      "xlim": [
+        -0.6687223038348722,
+        -0.4995194823673802
+      ],
+      "ylim": [
+        0.0,
+        0.4416797994790063
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P1_K4_curves.csv",
+      "data_sha256": "207dd90ad9f96dfcda2b8971ea785d935468eb7aba9c3698e1a44fdcef18f54d",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P1",
+      "K": 4,
+      "extent": "upper",
+      "xlim": [
+        2.3132574769490852,
+        2.800297488253091
+      ],
+      "ylim": [
+        0.0,
+        0.16502530486683858
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P1_K4_curves.csv",
+      "data_sha256": "207dd90ad9f96dfcda2b8971ea785d935468eb7aba9c3698e1a44fdcef18f54d",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P16",
+      "K": 1,
+      "extent": "full",
+      "xlim": [
+        -28.283456765955155,
+        27.18104272816357
+      ],
+      "ylim": [
+        0.0,
+        2.7183506291183166
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P16_K1_curves.csv",
+      "data_sha256": "7c487f802f0f56086d0f5d0898e82694dd68a6d9b444a43693a233ffcdc4134e",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P16",
+      "K": 1,
+      "extent": "AC_operating_range",
+      "xlim": [
+        -0.9822009082229598,
+        0.1622373977545602
+      ],
+      "ylim": [
+        0.0,
+        2.8995740043928717
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P16_K1_curves.csv",
+      "data_sha256": "7c487f802f0f56086d0f5d0898e82694dd68a6d9b444a43693a233ffcdc4134e",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P16",
+      "K": 1,
+      "extent": "lower",
+      "xlim": [
+        -0.8851050870571547,
+        -0.8305810809858709
+      ],
+      "ylim": [
+        0.0,
+        1.4261308040253984
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P16_K1_curves.csv",
+      "data_sha256": "7c487f802f0f56086d0f5d0898e82694dd68a6d9b444a43693a233ffcdc4134e",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P16",
+      "K": 1,
+      "extent": "upper",
+      "xlim": [
+        -0.04428485497793609,
+        0.09871003378104051
+      ],
+      "ylim": [
+        0.0,
+        0.7029270313679689
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P16_K1_curves.csv",
+      "data_sha256": "7c487f802f0f56086d0f5d0898e82694dd68a6d9b444a43693a233ffcdc4134e",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P16",
+      "K": 2,
+      "extent": "full",
+      "xlim": [
+        -8.5455667286361,
+        7.446828563465345
+      ],
+      "ylim": [
+        0.0,
+        2.7661728633179763
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P16_K2_curves.csv",
+      "data_sha256": "f6e5df344e0879b153a20b07739695f5e32141b13bac5a02dc4130c913df3d0b",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P16",
+      "K": 2,
+      "extent": "AC_operating_range",
+      "xlim": [
+        -0.9822009082229598,
+        0.1622373977545602
+      ],
+      "ylim": [
+        0.0,
+        2.950584387539175
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P16_K2_curves.csv",
+      "data_sha256": "f6e5df344e0879b153a20b07739695f5e32141b13bac5a02dc4130c913df3d0b",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P16",
+      "K": 2,
+      "extent": "lower",
+      "xlim": [
+        -0.8851050870571547,
+        -0.8305810809858709
+      ],
+      "ylim": [
+        0.0,
+        1.4261308040253984
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P16_K2_curves.csv",
+      "data_sha256": "f6e5df344e0879b153a20b07739695f5e32141b13bac5a02dc4130c913df3d0b",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P16",
+      "K": 2,
+      "extent": "upper",
+      "xlim": [
+        -0.04428485497793609,
+        0.09871003378104051
+      ],
+      "ylim": [
+        0.0,
+        0.7029270313679689
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P16_K2_curves.csv",
+      "data_sha256": "f6e5df344e0879b153a20b07739695f5e32141b13bac5a02dc4130c913df3d0b",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P16",
+      "K": 4,
+      "extent": "full",
+      "xlim": [
+        -8.594963817281679,
+        7.501584207142969
+      ],
+      "ylim": [
+        0.0,
+        2.718350629118317
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P16_K4_curves.csv",
+      "data_sha256": "6cfaaf1772fef46a6c0b7abbf108d24435554cf232661ca633dc105ffbe8ad60",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P16",
+      "K": 4,
+      "extent": "AC_operating_range",
+      "xlim": [
+        -0.9822009082229598,
+        0.1622373977545602
+      ],
+      "ylim": [
+        0.0,
+        2.8995740043928717
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P16_K4_curves.csv",
+      "data_sha256": "6cfaaf1772fef46a6c0b7abbf108d24435554cf232661ca633dc105ffbe8ad60",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P16",
+      "K": 4,
+      "extent": "lower",
+      "xlim": [
+        -0.8851050870571547,
+        -0.8305810809858709
+      ],
+      "ylim": [
+        0.0,
+        1.4261308040253984
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P16_K4_curves.csv",
+      "data_sha256": "6cfaaf1772fef46a6c0b7abbf108d24435554cf232661ca633dc105ffbe8ad60",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P16",
+      "K": 4,
+      "extent": "upper",
+      "xlim": [
+        -0.04428485497793609,
+        0.09871003378104051
+      ],
+      "ylim": [
+        0.0,
+        0.7029270313679689
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P16_K4_curves.csv",
+      "data_sha256": "6cfaaf1772fef46a6c0b7abbf108d24435554cf232661ca633dc105ffbe8ad60",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P32",
+      "K": 1,
+      "extent": "full",
+      "xlim": [
+        -5.013222579644424,
+        4.449038274559557
+      ],
+      "ylim": [
+        0.0,
+        5.199830069537962
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P32_K1_curves.csv",
+      "data_sha256": "8c4db5433bd575c943cd071514306b5d3f9fcc36c856e27680103b909a5910b4",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P32",
+      "K": 1,
+      "extent": "AC_operating_range",
+      "xlim": [
+        -0.5026255302149986,
+        0.07328320688710545
+      ],
+      "ylim": [
+        0.0,
+        5.546485407507159
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P32_K1_curves.csv",
+      "data_sha256": "8c4db5433bd575c943cd071514306b5d3f9fcc36c856e27680103b909a5910b4",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P32",
+      "K": 1,
+      "extent": "lower",
+      "xlim": [
+        -0.45005804652978526,
+        -0.4245402208372642
+      ],
+      "ylim": [
+        0.0,
+        3.1172652163711128
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P32_K1_curves.csv",
+      "data_sha256": "8c4db5433bd575c943cd071514306b5d3f9fcc36c856e27680103b909a5910b4",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P32",
+      "K": 1,
+      "extent": "upper",
+      "xlim": [
+        -0.024025281310422295,
+        0.03397498374212493
+      ],
+      "ylim": [
+        0.0,
+        2.0079681348696754
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P32_K1_curves.csv",
+      "data_sha256": "8c4db5433bd575c943cd071514306b5d3f9fcc36c856e27680103b909a5910b4",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P32",
+      "K": 2,
+      "extent": "full",
+      "xlim": [
+        -4.519300845128719,
+        3.9558665907368775
+      ],
+      "ylim": [
+        0.0,
+        5.281833748939405
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P32_K2_curves.csv",
+      "data_sha256": "8e74de13bcdb37932b50efcc643ce2b4b6817d4823f16e719048aed0ccdf0f4f",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P32",
+      "K": 2,
+      "extent": "AC_operating_range",
+      "xlim": [
+        -0.5026255302149986,
+        0.07328320688710545
+      ],
+      "ylim": [
+        0.0,
+        5.633955998868699
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P32_K2_curves.csv",
+      "data_sha256": "8e74de13bcdb37932b50efcc643ce2b4b6817d4823f16e719048aed0ccdf0f4f",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P32",
+      "K": 2,
+      "extent": "lower",
+      "xlim": [
+        -0.45005804652978526,
+        -0.4245402208372642
+      ],
+      "ylim": [
+        0.0,
+        3.1172652163711128
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P32_K2_curves.csv",
+      "data_sha256": "8e74de13bcdb37932b50efcc643ce2b4b6817d4823f16e719048aed0ccdf0f4f",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P32",
+      "K": 2,
+      "extent": "upper",
+      "xlim": [
+        -0.024025281310422295,
+        0.03397498374212493
+      ],
+      "ylim": [
+        0.0,
+        2.0079681348696754
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P32_K2_curves.csv",
+      "data_sha256": "8e74de13bcdb37932b50efcc643ce2b4b6817d4823f16e719048aed0ccdf0f4f",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P32",
+      "K": 4,
+      "extent": "full",
+      "xlim": [
+        -4.540653777584844,
+        3.980307154196159
+      ],
+      "ylim": [
+        0.0,
+        5.199830069537962
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P32_K4_curves.csv",
+      "data_sha256": "0847aeee776f5d9cc5665e323b87938839eb8064194fd50a50e3a4e2069e3cc8",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P32",
+      "K": 4,
+      "extent": "AC_operating_range",
+      "xlim": [
+        -0.5026255302149986,
+        0.07328320688710545
+      ],
+      "ylim": [
+        0.0,
+        5.546485407507159
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P32_K4_curves.csv",
+      "data_sha256": "0847aeee776f5d9cc5665e323b87938839eb8064194fd50a50e3a4e2069e3cc8",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P32",
+      "K": 4,
+      "extent": "lower",
+      "xlim": [
+        -0.45005804652978526,
+        -0.4245402208372642
+      ],
+      "ylim": [
+        0.0,
+        3.1172652163711128
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P32_K4_curves.csv",
+      "data_sha256": "0847aeee776f5d9cc5665e323b87938839eb8064194fd50a50e3a4e2069e3cc8",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "P32",
+      "K": 4,
+      "extent": "upper",
+      "xlim": [
+        -0.024025281310422295,
+        0.03397498374212493
+      ],
+      "ylim": [
+        0.0,
+        2.0079681348696754
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "P32_K4_curves.csv",
+      "data_sha256": "0847aeee776f5d9cc5665e323b87938839eb8064194fd50a50e3a4e2069e3cc8",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "Q17",
+      "K": 1,
+      "extent": "full",
+      "xlim": [
+        -3.591420688759539,
+        3.6544519065939
+      ],
+      "ylim": [
+        0.0,
+        1288.6641259250225
+      ],
+      "unit": "MVAr",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "Q17_K1_curves.csv",
+      "data_sha256": "56cfc18a19792f5c8b3dce731093d65e98d7ca81709bc9f5f72c55d4a0e3e166",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "Q17",
+      "K": 1,
+      "extent": "AC_operating_range",
+      "xlim": [
+        0.03084182932579012,
+        0.03364192754963651
+      ],
+      "ylim": [
+        0.0,
+        1374.5750676533576
+      ],
+      "unit": "MVAr",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "Q17_K1_curves.csv",
+      "data_sha256": "56cfc18a19792f5c8b3dce731093d65e98d7ca81709bc9f5f72c55d4a0e3e166",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "Q17",
+      "K": 1,
+      "extent": "lower",
+      "xlim": [
+        0.03141633233068514,
+        0.03166761432623276
+      ],
+      "ylim": [
+        0.0,
+        319.18971608430024
+      ],
+      "unit": "MVAr",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "Q17_K1_curves.csv",
+      "data_sha256": "56cfc18a19792f5c8b3dce731093d65e98d7ca81709bc9f5f72c55d4a0e3e166",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "Q17",
+      "K": 1,
+      "extent": "upper",
+      "xlim": [
+        0.032858339163263514,
+        0.03307388334922183
+      ],
+      "ylim": [
+        0.0,
+        314.04149485713407
+      ],
+      "unit": "MVAr",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "Q17_K1_curves.csv",
+      "data_sha256": "56cfc18a19792f5c8b3dce731093d65e98d7ca81709bc9f5f72c55d4a0e3e166",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "Q17",
+      "K": 2,
+      "extent": "full",
+      "xlim": [
+        -0.8529900285211307,
+        0.9173109743331948
+      ],
+      "ylim": [
+        0.0,
+        1288.6641259250225
+      ],
+      "unit": "MVAr",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "Q17_K2_curves.csv",
+      "data_sha256": "c41128dff5d89bfa29dbecafb33660b9bbb7859944847bfa474735e4c19675a8",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "Q17",
+      "K": 2,
+      "extent": "AC_operating_range",
+      "xlim": [
+        0.03084182932579012,
+        0.03364192754963651
+      ],
+      "ylim": [
+        0.0,
+        1374.5750676533576
+      ],
+      "unit": "MVAr",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "Q17_K2_curves.csv",
+      "data_sha256": "c41128dff5d89bfa29dbecafb33660b9bbb7859944847bfa474735e4c19675a8",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "Q17",
+      "K": 2,
+      "extent": "lower",
+      "xlim": [
+        0.03141633233068514,
+        0.03166761432623276
+      ],
+      "ylim": [
+        0.0,
+        319.18971608430024
+      ],
+      "unit": "MVAr",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "Q17_K2_curves.csv",
+      "data_sha256": "c41128dff5d89bfa29dbecafb33660b9bbb7859944847bfa474735e4c19675a8",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "Q17",
+      "K": 2,
+      "extent": "upper",
+      "xlim": [
+        0.032858339163263514,
+        0.03307388334922183
+      ],
+      "ylim": [
+        0.0,
+        372.38932992178684
+      ],
+      "unit": "MVAr",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "Q17_K2_curves.csv",
+      "data_sha256": "c41128dff5d89bfa29dbecafb33660b9bbb7859944847bfa474735e4c19675a8",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "Q17",
+      "K": 4,
+      "extent": "full",
+      "xlim": [
+        -0.5893110141016571,
+        0.6537421495967077
+      ],
+      "ylim": [
+        0.0,
+        1288.6641259250225
+      ],
+      "unit": "MVAr",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "Q17_K4_curves.csv",
+      "data_sha256": "0ebede12c875039825b5286748793f32275fc1f3793fa3f7bed6de9a4088d102",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "Q17",
+      "K": 4,
+      "extent": "AC_operating_range",
+      "xlim": [
+        0.03084182932579012,
+        0.03364192754963651
+      ],
+      "ylim": [
+        0.0,
+        1374.5750676533576
+      ],
+      "unit": "MVAr",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "Q17_K4_curves.csv",
+      "data_sha256": "0ebede12c875039825b5286748793f32275fc1f3793fa3f7bed6de9a4088d102",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "Q17",
+      "K": 4,
+      "extent": "lower",
+      "xlim": [
+        0.03141633233068514,
+        0.03166761432623276
+      ],
+      "ylim": [
+        0.0,
+        319.55546731632785
+      ],
+      "unit": "MVAr",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "Q17_K4_curves.csv",
+      "data_sha256": "0ebede12c875039825b5286748793f32275fc1f3793fa3f7bed6de9a4088d102",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "Q17",
+      "K": 4,
+      "extent": "upper",
+      "xlim": [
+        0.032858339163263514,
+        0.03307388334922183
+      ],
+      "ylim": [
+        0.0,
+        491.30367876186034
+      ],
+      "unit": "MVAr",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "Q17_K4_curves.csv",
+      "data_sha256": "0ebede12c875039825b5286748793f32275fc1f3793fa3f7bed6de9a4088d102",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "loss",
+      "K": 1,
+      "extent": "full",
+      "xlim": [
+        -35.36623753858596,
+        35.68570573441696
+      ],
+      "ylim": [
+        0.0,
+        11.354573767647768
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "loss_K1_curves.csv",
+      "data_sha256": "48861a29ba099cad2bce4830f75130e2c90c80b2c6808448dc4a30475d88e705",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "loss",
+      "K": 1,
+      "extent": "AC_operating_range",
+      "xlim": [
+        0.05347921456894062,
+        0.29626746186668346
+      ],
+      "ylim": [
+        0.0,
+        12.11154535215762
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "loss_K1_curves.csv",
+      "data_sha256": "48861a29ba099cad2bce4830f75130e2c90c80b2c6808448dc4a30475d88e705",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "loss",
+      "K": 1,
+      "extent": "lower",
+      "xlim": [
+        0.06972331145746011,
+        0.0739270948419713
+      ],
+      "ylim": [
+        0.0,
+        11.992993313980046
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "loss_K1_curves.csv",
+      "data_sha256": "48861a29ba099cad2bce4830f75130e2c90c80b2c6808448dc4a30475d88e705",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "loss",
+      "K": 1,
+      "extent": "upper",
+      "xlim": [
+        0.24736475106126896,
+        0.26969268333745333
+      ],
+      "ylim": [
+        0.0,
+        2.479263637177532
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "loss_K1_curves.csv",
+      "data_sha256": "48861a29ba099cad2bce4830f75130e2c90c80b2c6808448dc4a30475d88e705",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "loss",
+      "K": 2,
+      "extent": "full",
+      "xlim": [
+        -6.3489285060582406,
+        6.657386683056406
+      ],
+      "ylim": [
+        0.0,
+        14.416459220199012
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "loss_K2_curves.csv",
+      "data_sha256": "1c695f0a46bce4740e0ab7e0b26121b8d4d9dd54a9611f871a0bceec26dbd24d",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "loss",
+      "K": 2,
+      "extent": "AC_operating_range",
+      "xlim": [
+        0.05347921456894062,
+        0.29626746186668346
+      ],
+      "ylim": [
+        0.0,
+        15.377556501545614
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "loss_K2_curves.csv",
+      "data_sha256": "1c695f0a46bce4740e0ab7e0b26121b8d4d9dd54a9611f871a0bceec26dbd24d",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "loss",
+      "K": 2,
+      "extent": "lower",
+      "xlim": [
+        0.06972331145746011,
+        0.0739270948419713
+      ],
+      "ylim": [
+        0.0,
+        14.893650878364667
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "loss_K2_curves.csv",
+      "data_sha256": "1c695f0a46bce4740e0ab7e0b26121b8d4d9dd54a9611f871a0bceec26dbd24d",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "loss",
+      "K": 2,
+      "extent": "upper",
+      "xlim": [
+        0.24736475106126896,
+        0.26969268333745333
+      ],
+      "ylim": [
+        0.0,
+        2.479263637177532
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "loss_K2_curves.csv",
+      "data_sha256": "1c695f0a46bce4740e0ab7e0b26121b8d4d9dd54a9611f871a0bceec26dbd24d",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "loss",
+      "K": 4,
+      "extent": "full",
+      "xlim": [
+        -5.843274726232299,
+        6.151432827067566
+      ],
+      "ylim": [
+        0.0,
+        12.945520604297187
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "loss_K4_curves.csv",
+      "data_sha256": "4b3b1a1341b8eb04577a1dad1896a5f32270aa43b8aa6104a69d38e1649f5e8a",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "loss",
+      "K": 4,
+      "extent": "AC_operating_range",
+      "xlim": [
+        0.05347921456894062,
+        0.29626746186668346
+      ],
+      "ylim": [
+        0.0,
+        13.80855531125033
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "loss_K4_curves.csv",
+      "data_sha256": "4b3b1a1341b8eb04577a1dad1896a5f32270aa43b8aa6104a69d38e1649f5e8a",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "loss",
+      "K": 4,
+      "extent": "lower",
+      "xlim": [
+        0.06972331145746011,
+        0.0739270948419713
+      ],
+      "ylim": [
+        0.0,
+        13.696148288033978
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "loss_K4_curves.csv",
+      "data_sha256": "4b3b1a1341b8eb04577a1dad1896a5f32270aa43b8aa6104a69d38e1649f5e8a",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    },
+    {
+      "object": "loss",
+      "K": 4,
+      "extent": "upper",
+      "xlim": [
+        0.24736475106126896,
+        0.26969268333745333
+      ],
+      "ylim": [
+        0.0,
+        2.9054515702603956
+      ],
+      "unit": "MW",
+      "legend": [
+        "Independent AC",
+        "AQGMM",
+        "Standard TMM",
+        "Block TMM"
+      ],
+      "data": "loss_K4_curves.csv",
+      "data_sha256": "4b3b1a1341b8eb04577a1dad1896a5f32270aa43b8aa6104a69d38e1649f5e8a",
+      "negative_values_clipped": false,
+      "smoothing": false,
+      "text_within_canvas": true
+    }
+  ]
+}

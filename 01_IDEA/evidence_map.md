@@ -63,3 +63,7 @@
 ## E-DIRECT-PV8-K1-EVALUATION-20261026
 
 已由数值实验支持：用户确认口径后的K=1逐对象比较。入口`tests/python/evaluate_direct_pv8_K1.py`，方案`01_IDEA/plans/direct_pv8_K1_evaluation_20261026.md`，结果`result/case33bw/direct_pv8_python_cloud_20261026/K1_evaluation_20261026/`，说明`01_IDEA/results/direct_pv8_K1_evaluation_20261026.md`。左右尾CDF-RMSE与q99结论并不一致，Q17保留不利结果；不支持某模型全对象、全指标一致更好的结论。当前仅K=1及既定日期划分。
+
+## E-DIRECT-PV8-INDEPENDENT-BLOCK-T-20261026
+
+独立估计三模型K=1/2/4，全部9模型、873组解析PDF/CDF及双尾CDF-RMSE/W1/分位/矩完成。入口tests/python/independent_block_t_fit.py、run_independent_block_t_distributions.py；结果result/case33bw/direct_pv8_python_cloud_20261026/independent_block_t_20261026/；逐对象表per_object_errors_and_moments.csv、简报summary_comparison_zh.md。nu=4.1精确矩和尺度求积偏差分别记录。状态：已由数值实验支持，支持分对象有利/不利差异，不支持全指标或全对象统一优势。

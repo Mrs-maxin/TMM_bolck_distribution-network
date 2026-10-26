@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "models": 9,
+  "quantities": 97,
+  "distributions": 873,
+  "main_reference": "3504 independent AC",
+  "auxiliary_reference": "10512 estimation-date existing voltages",
+  "seconds": 630.403695303,
+  "original_scenarios_and_AC_recomputed": false
+}

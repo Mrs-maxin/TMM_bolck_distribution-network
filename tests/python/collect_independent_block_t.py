@@ -15,7 +15,7 @@ def collect(partial=False):
  rows=[];quants=[];diagnostics=[]
  for r in records:
   for metric in r['metrics']:
-   row=dict(metric);row.pop('W1_diagnostics');row['unit']=r['unit'];rows.append(row)
+   row=dict(metric);row.pop('W1_diagnostics');row['unit']=r['unit'];row['mean_absolute_relative_error']=abs(row['mean_relative_error']) if row.get('mean_relative_error') is not None else None;rows.append(row)
   for q in r['quantiles']:quants.append(dict(q,unit=r['unit']))
   diagnostics.append(dict(K=r['K'],model=r['family'],object=r['object'],seconds=r['seconds'],strength_level=r['strength_level'],strength_CDF_change=r['strength_history'][-1]['maximum_CDF_change'],PDF_mass=r['PDF_mass'],PDF_CDF_mass_difference=r['PDF_CDF_mass_difference'],CDF_roundoff_correction=r['CDF_roundoff_monotonic_correction'],quantile_grid_sensitivity=r['model_quantile_grid_sensitivity'],maximum_inverse_residual=r['maximum_CDF_inverse_residual'],finite_strength_variance_relative_difference=r['quadrature_variance_relative_difference']))
  prefix='partial_' if partial else ''

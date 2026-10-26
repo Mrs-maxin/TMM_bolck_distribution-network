@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "maximum_quadratic_AC_identity_error": 1.9700907571973403e-13,
+  "nu_4p1_exact_power_variance": 1166.4081632653106,
+  "nu_4p1_theoretical_variance": 1166.4081632653103,
+  "nu_4p1_finite_strength_E2": 30.35109294904813,
+  "nu_4p1_exact_strength_E2": 80.04761904761934,
+  "finite_strength_E2_not_used_for_global_variance": true
+}

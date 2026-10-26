@@ -1,0 +1,61 @@
+{
+  "status": "complete",
+  "scope": "K=1 saved voltage parameters: three models, 97 quantities each",
+  "method_accuracy_comparisons": "paused_pending_user_confirmation",
+  "saved_parameters_K": [
+    1
+  ],
+  "total_model_quantity_distributions": 291,
+  "quantities_per_model": 97,
+  "PDF_CDF_curves": 582,
+  "formats": [
+    "PNG",
+    "SVG",
+    "CSV"
+  ],
+  "mass_max_absolute_error": 3.9137443508252545e-08,
+  "mass_vs_CDF_max_error": 3.9147145747264744e-08,
+  "max_lower_boundary_probability": 9.92143583955496e-09,
+  "max_upper_omitted_probability": 5.597941221680003e-09,
+  "minimum_cdf_increment": -4.884981308350689e-15,
+  "minimum_raw_density": -3.7908020036551205e-13,
+  "maximum_strength_CDF_refinement_change": 1.9639098060242333e-05,
+  "maximum_strength_scaled_PDF_refinement_change": 4.272124562413893e-05,
+  "inputs_values_unchanged": true,
+  "AC_file_bytes_unchanged": true,
+  "parameters_reestimated_in_analytic_stage": false,
+  "archived_programs_unchanged": [
+    {
+      "path": "tests/python/archived/ac_only.py",
+      "sha256": "1af7925b1709bb6fbb07525076e0b7c8c63db658f8194c1c921b4b33c2e55546"
+    },
+    {
+      "path": "tests/python/archived/adapted_routines.py",
+      "sha256": "a75e56e73e329c94fb8061ed510d0cfca93cfd9f6c1afc55b5877b962700e0cb"
+    },
+    {
+      "path": "tests/python/archived/cloud_numeric_core.py",
+      "sha256": "755907c5278f06e811277f36517a76d14b7d0c75b710a690b5a4364b367c8a77"
+    },
+    {
+      "path": "tests/python/archived/run_cloud_passage_case33.py",
+      "sha256": "725ae590c9f7154a99379d6e13c7b7c0f5c4b1959bf09ae7f125c7fe882c282b"
+    },
+    {
+      "path": "tests/python/archived/run_cloud_study.py",
+      "sha256": "58fbb5ba2e8b33d71f86fb2ca9431e24f4f4c7e95964dba25eb4ba284b607b1b"
+    },
+    {
+      "path": "tests/python/archived/run_typhoon_comparison_K136.py",
+      "sha256": "40ce746dbe7657bf2f005141fe202f5491445e4fa72ebfd13cb8d285cc43a521"
+    }
+  ],
+  "unfinished": [
+    "Method error definitions await user confirmation; no accuracy or ranking conclusions",
+    "K=2,4 full all-object calculation not extended: old fitting audits and limited outputs retained; full parameters were not saved"
+  ],
+  "no_smoothing": true,
+  "no_negative_clipping": true,
+  "maximum_CDF_vs_integrated_PDF_difference": 4.6844766155018647e-07,
+  "figure_check_status": "582 single-model figures passed, PNG/SVG each"
+}

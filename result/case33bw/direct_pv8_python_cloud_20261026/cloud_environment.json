@@ -1,0 +1,112 @@
+{
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "executable": "/workspace/.cloud-setup/tmm/venv/bin/python",
+  "cwd": "/workspace/TMM_bolck_distribution-network",
+  "cpu_count": 5,
+  "machine": "x86_64",
+  "cloud_setup": "/workspace/.cloud-setup/tmm/activate.sh",
+  "packages": [
+    "contourpy==1.4.0",
+    "cycler==0.12.1",
+    "fonttools==4.67.0",
+    "kiwisolver==1.5.1",
+    "matplotlib==3.10.8",
+    "numpy==2.3.5",
+    "packaging==26.3",
+    "pandas==2.2.3",
+    "pillow==13.0.0",
+    "pyparsing==3.3.3",
+    "python-dateutil==3.0.0",
+    "pytz==2026.5",
+    "scipy==1.17.0",
+    "six==1.17.0",
+    "threadpoolctl==3.6.0",
+    "tzdata==2026.5"
+  ],
+  "git_head": "b8fe31e1bd2f6e973cec0e92a73f9e9905f9b2ea",
+  "git_branch": "codex/direct-pv8-cloud-test",
+  "git_tree": "51655e9f460bdd66ddc42fdb795e7e8398739d62",
+  "checkout_recovery": "GitHub connector supplied changed blobs; full tree and exact commit reconstructed and SHA-1 verified. Existing checkout and files retained.",
+  "backup_sha256": "828c35f34acf0e294c51c09b82fecbda3cb0728c76fb9705239bfaa80bcef083",
+  "input_integrity": [
+    {
+      "path": "data/nrel_sind/pv8_direct_2006/pv8_2006_5min_MW.csv",
+      "expected": "906b46175be904a5d2cb8bc74637e088e133974858616822ec93b8473433f3fc",
+      "actual": "906b46175be904a5d2cb8bc74637e088e133974858616822ec93b8473433f3fc",
+      "exact": true,
+      "CRLF_bytes_match": true
+    },
+    {
+      "path": "data/nrel_sind/pv8_direct_2006/pv8_2006_1000_1400_pu.csv",
+      "expected": "425fb960b923f2e47cc8a03a43756bd457eb7e7db54645c6e4654479c1160fd4",
+      "actual": "425fb960b923f2e47cc8a03a43756bd457eb7e7db54645c6e4654479c1160fd4",
+      "exact": true,
+      "CRLF_bytes_match": true
+    },
+    {
+      "path": "data/nrel_sind/pv8_direct_2006/sites.csv",
+      "expected": "2306b83335b4cc523a0e8a04c4573b91f6e84f45cf3e649cc129bf88d1821db9",
+      "actual": "2306b83335b4cc523a0e8a04c4573b91f6e84f45cf3e649cc129bf88d1821db9",
+      "exact": true,
+      "CRLF_bytes_match": true
+    },
+    {
+      "path": "data/nrel_sind/co/Actual_39.65_-105.15_2006_DPV_21MW_5_Min.csv",
+      "expected": "aa6dd3d345edc3d8d36e18e271e490d513a4df5c5598cfc9ba660c559c4c9414",
+      "actual": "ab9a2b1f6526d190b7215d1b9d9f9a3731956693aad03fa63f9c6668e09bfac6",
+      "exact": false,
+      "CRLF_bytes_match": true
+    },
+    {
+      "path": "data/nrel_sind/co/Actual_39.95_-105.05_2006_DPV_8MW_5_Min.csv",
+      "expected": "37fd0af7e5c740714be8123352eb20911e60cb285e51134a3fd9ed7e9dab179c",
+      "actual": "3e4da943bf12b0f37a15cca02e5c31e93c2036d01cfded464c112efe914b841c",
+      "exact": false,
+      "CRLF_bytes_match": true
+    },
+    {
+      "path": "data/nrel_sind/co/Actual_39.55_-104.95_2006_DPV_12MW_5_Min.csv",
+      "expected": "058ba11bb266910813dfc136740c7e8e9bef591ddb5a150636f53074dc5dfd1a",
+      "actual": "7a221d897cf66b95e80ba3902eedc255ac5a5c311884ce8966a4cd0825ae7308",
+      "exact": false,
+      "CRLF_bytes_match": true
+    },
+    {
+      "path": "data/nrel_sind/co/Actual_39.65_-104.95_2006_DPV_12MW_5_Min.csv",
+      "expected": "a503109cd9432913097c7de50da4f9c6ad1c44fbc6e504795f54671cf6a4dcc7",
+      "actual": "1898ff97f62c0ce6505a7a2ce51a8aa142a717fd2c6eb51037cb2cfede2af7c0",
+      "exact": false,
+      "CRLF_bytes_match": true
+    },
+    {
+      "path": "data/nrel_sind/co/Actual_39.85_-105.05_2006_DPV_16MW_5_Min.csv",
+      "expected": "c2244942509ed026fde9702afa7928d873259bbb1daaaf65e5745fa04517422c",
+      "actual": "263dddbeaa1e94270d3f00704198808456ff3a97fd0f866b2cdbd9eff1d31a89",
+      "exact": false,
+      "CRLF_bytes_match": true
+    },
+    {
+      "path": "data/nrel_sind/co/Actual_39.75_-105.05_2006_DPV_30MW_5_Min.csv",
+      "expected": "1eb7cdd51d265b6fcae01e4d5f69cf53ad8f524581f5d552d51903fdd0c4936f",
+      "actual": "71e92c5eddc15a5c05c7867b381c5fee2978d38534ed4014c8b1a896abc643c2",
+      "exact": false,
+      "CRLF_bytes_match": true
+    },
+    {
+      "path": "data/nrel_sind/co/Actual_39.65_-105.05_2006_DPV_30MW_5_Min.csv",
+      "expected": "167ac2ffd433e48bf4269af40a9057891b2edfaa6c23cf0b1491ea5f6bda22cd",
+      "actual": "9a40bddeee234ebed2defa64a6ac6facb2e32dcd7dd8c96015f77feb69910c36",
+      "exact": false,
+      "CRLF_bytes_match": true
+    },
+    {
+      "path": "data/nrel_sind/co/Actual_39.95_-104.95_2006_DPV_23MW_5_Min.csv",
+      "expected": "bb723474c1f2d46692f57a780635c783056d2ebe8448fd356b09e210607b795c",
+      "actual": "7b90318ae3dc2f63e511804a5460819519f7b168ec431cba9e212ef97e77a69b",
+      "exact": false,
+      "CRLF_bytes_match": true
+    }
+  ],
+  "source_line_endings": "Existing raw source files are LF; manifest hashes match their CRLF byte representation. All three direct-PV artifacts exactly match manifest hashes."
+}

@@ -360,3 +360,24 @@ repository_setup_20261021:
   prefix: BTMM
   current_workflow: tests/python_validation_code_MATLAB_port_pending
   next: [case141_cloud_study_plan_section_16, two_cloud_region_multi_block_TMM_section_15C]
+
+
+direct_pv8_cloud_20261026:
+  provenance: ai-executed
+  type: experiment
+  git_branch: codex/direct-pv8-cloud-test
+  baseline_commit: b8fe31e1bd2f6e973cec0e92a73f9e9905f9b2ea
+  input: 17520_synchronous_direct_PV_records_8_sites_0.60_MW_load_0.8_scale
+  result_directory: result/case33bw/direct_pv8_python_cloud_20261026
+  run_manifest: result/case33bw/direct_pv8_python_cloud_20261026/analytic_only/run_manifest.json
+  completed_AC_scenarios: 3504
+  voltage_range_pu: [0.9344555902583809, 1.094794485938752]
+  feeder_head_reverse_active_fraction: 0.3901255707762557
+  user_scope_revision: analytic_PDF_CDF_and_numerical_self_checks_only
+  comparison_status: paused_pending_user_confirmation_of_error_logic
+  retained_parameters: K1_three_joint_voltage_models
+  original_failure: fixed_frequency_truncation_caused_negative_loss_density
+  original_diagnostics: initial_attempt
+  treatment: refine_Fourier_quadrature_without_smoothing_or_clipping
+  prior_K2_K4: fitting_audits_and_limited_results_retained_full_parameters_not_saved
+  evidence_state: numerical_checks_in_run_manifest_method_accuracy_unverified

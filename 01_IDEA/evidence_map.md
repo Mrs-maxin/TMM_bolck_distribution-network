@@ -55,3 +55,7 @@
 | archived | 曾经有用，但不再支撑当前论文主线 |
 
 正式图导出后按`figure_plan.md`登记图表证据包（`.fig`、`.png`、`.svg`、绘图数据CSV、`figure_manifest.jsonl`、检查报告），当前尚无正式图。
+
+## E-DIRECT-PV8-ANALYTIC-CLOUD-20261026
+
+33节点、8站各0.60 MW的直接光伏出力云端计算，独立交流潮流3504组；K=1三种已保存联合电压分布各完成97个电气量的解析PDF/CDF及数值自检。结果目录`result/case33bw/direct_pv8_python_cloud_20261026/`，当前清单`analytic_only/run_manifest.json`，逐对象数值自检`analytic_only/numerical_self_checks.csv`，结果说明`01_IDEA/results/direct_pv8_analytic_cloud_20261026.md`。状态：已由数值实验支持，仅支持解析计算及自检完成；方法精度与优劣尚未验证，待用户确认误差口径。K=2、4旧记录保留，完整参数未保存，本阶段不重估。claimId：直接出力情形的解析概率潮流数值可计算性，不支持同K或少分量精度论断。

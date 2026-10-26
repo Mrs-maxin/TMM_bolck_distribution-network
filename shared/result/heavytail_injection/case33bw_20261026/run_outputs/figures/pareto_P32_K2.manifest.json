@@ -1,0 +1,44 @@
+{
+  "backend": "python/matplotlib",
+  "template_version": "0.4.0-py",
+  "created_utc": "2026-10-26T14:17:45.789532+00:00",
+  "width_mm": 180.34,
+  "height_mm": 67.31,
+  "dpi": 220,
+  "formats": [
+    "png",
+    "pdf"
+  ],
+  "svg_text": null,
+  "pdf_fonttype": 42,
+  "software": {
+    "python": "3.13.5",
+    "matplotlib": "3.11.0"
+  },
+  "overwrite_requested": true,
+  "provenance": {
+    "purpose": "研究讨论用诊断图，正式论文图另由MATLAB导出",
+    "data": "pareto_P32_K2.csv",
+    "palette": {
+      "AQGMM": "#568FC3",
+      "standard_TMM": "#76AAA0",
+      "grouped_t_shift": "#D8898D",
+      "pareto": "#568FC3",
+      "lognormal": "#76AAA0",
+      "loglogistic": "#D8898D"
+    },
+    "font": "Times New Roman + PingFang SC",
+    "source": "protocol.json",
+    "confidence": "MC尾概率95%逐点Wilson区间；不是同时置信带"
+  },
+  "outputs": [
+    {
+      "path": "/Users/maxin/.codex/visualizations/2026/10/26/01a177e3-6a44-76f0-9115-477bab739d90/ieee33_direct_heavytail_20261026/result/case33bw/direct_heavytail_20261026/figures/pareto_P32_K2.png",
+      "bytes": 107313
+    },
+    {
+      "path": "/Users/maxin/.codex/visualizations/2026/10/26/01a177e3-6a44-76f0-9115-477bab739d90/ieee33_direct_heavytail_20261026/result/case33bw/direct_heavytail_20261026/figures/pareto_P32_K2.pdf",
+      "bytes": 112303
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+ "chosen_start": 3,
+ "attempts": [
+  {
+   "start": 0,
+   "status": "converged",
+   "iterations": 26,
+   "selection_ll": -20.37212375636413,
+   "rule": "PC1 deterministic balanced"
+  },
+  {
+   "start": 1,
+   "status": "converged",
+   "iterations": 30,
+   "selection_ll": -19.893318920914737,
+   "rule": "PC2 deterministic balanced"
+  },
+  {
+   "start": 2,
+   "status": "converged",
+   "iterations": 25,
+   "selection_ll": -21.370150418682552,
+   "rule": "seeded random direction balanced split"
+  },
+  {
+   "start": 3,
+   "status": "converged",
+   "iterations": 22,
+   "selection_ll": -19.892867686877626,
+   "rule": "seeded random direction balanced split"
+  },
+  {
+   "start": 4,
+   "status": "converged",
+   "iterations": 28,
+   "selection_ll": -19.89364433737566,
+   "rule": "random balanced membership"
+  },
+  {
+   "start": 5,
+   "status": "converged",
+   "iterations": 35,
+   "selection_ll": -19.893660516738276,
+   "rule": "seeded random direction balanced split"
+  }
+ ]
+}

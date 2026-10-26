@@ -1,0 +1,8 @@
+{
+ "criterion": "unchanged existing MC finite-range extension flag, not model errors",
+ "object_sides": 373,
+ "CDF_rows": 4476,
+ "quantile_rows": 13428,
+ "new_metric_computation": false,
+ "new_model_fit": false
+}

@@ -1,0 +1,27 @@
+{
+ "requested_font": "DejaVu Sans",
+ "resolved_font": "DejaVu Sans",
+ "requested_font_available": true,
+ "font_families": [
+  "DejaVu Sans",
+  "Arial Unicode MS"
+ ],
+ "glyph_coverage": {
+  "fonts": [
+   {
+    "family": "DejaVu Sans",
+    "path": "/opt/homebrew/lib/python3.13/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf",
+    "resolved_style": "Book"
+   },
+   {
+    "family": "Arial Unicode MS",
+    "path": "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
+    "resolved_style": "Regular"
+   }
+  ],
+  "checked_codepoints": 50,
+  "weight": "normal",
+  "style": "normal",
+  "scope": "declared text and face cmap only; inspect the rendered export"
+ }
+}

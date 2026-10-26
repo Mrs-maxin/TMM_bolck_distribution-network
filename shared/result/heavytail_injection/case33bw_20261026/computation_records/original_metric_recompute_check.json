@@ -1,0 +1,37 @@
+{
+ "status": "complete_new_metrics_on_saved_models",
+ "CDF_rows": 9312,
+ "quantile_rows": 27936,
+ "point_rows": 465600,
+ "model_object_pairs": 4656,
+ "cases": 4,
+ "methods": 3,
+ "component_counts": [
+  1,
+  2,
+  4,
+  6
+ ],
+ "objects": 97,
+ "max_CDF_root_residual": 3.1424797208856603e-09,
+ "max_original_CDF_reproduction_difference": 6.017408793468348e-14,
+ "independent_pointwise_RMSE_difference": 1.4210854715202004e-14,
+ "checked_frequency_objects": 85,
+ "refined_frequency_objects": 7,
+ "max_frequency_refinement_difference": 6.4832566388783874e-06,
+ "preserved_archive_files": 441,
+ "preserved_archive_all_SHA256_match": true,
+ "model_parameters_changed": false,
+ "new_injections": 0,
+ "new_AC": 0,
+ "new_fits": 0,
+ "original_repository_modified": false,
+ "scope": "All current saved models; grouped-t parameter-consistency failure retained; not a repaired-method validation",
+ "uncertainty": "MC order-statistic pointwise 95% intervals are in MC分位.csv and 误差.csv; they exclude fitting uncertainty",
+ "timestamp_utc": "2026-10-26T15:32:57Z",
+ "program_SHA256": {
+  "积分检查.py": "8569fc6e21e3d26319bbeeb701177211fb3e90bad9f5c178d4b69d98c8b4fe00",
+  "查看.py": "d35ace8ffd2e1f3df5822d147cdc964ed2ec47199a0ece725809ba201168c5ce",
+  "重算.py": "3169d5d1a5b9b8bea0d041c9e04bef6024efd4a298e5543bc8bb771730e92570"
+ }
+}

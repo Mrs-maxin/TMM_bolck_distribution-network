@@ -1,0 +1,15 @@
+# IEEE 33节点直接给定重尾注入功率测试
+
+结果说明：[首轮报告](result/case33bw/direct_heavytail_20261026/report_zh.md)。
+
+本目录是原项目以外的独立快照。原项目的后续变化不会进入本次计算。数据采用data/cases/case33bw_modify.m中的原始有功和无功负荷，负荷保持恒定。
+
+算例设置见result/case33bw/direct_heavytail_20261026/protocol.json及case_setting_by_node_zh.csv。逐节点、逐支路结果见all_cases_object_errors.csv。重点电气量K=2结果见representative_K2_table.csv。
+
+执行：先设置MATPOWER_ROOT为本机MATPOWER目录；必要时设置MATLAB_BIN。运行python3 tests/python/run_direct_heavytail_case33.py all。MATLAB用于快速计算参数估计和参数选择场景的电压；MC方法采用逐场景非线性交流潮流，采用径向前推回代求解并与独立牛顿潮流核对。
+
+本轮比较相同分量数下的电气量分布精度，不据本轮混合执行方式的运行时间宣称计算加速倍数。原有电压二次型保持不变。分组t内部仍采用原实现的有限强度近似，输入电源有功分布没有截断。
+
+独立检查程序：check_direct_heavytail_probabilities.py核对电气量解析概率；check_direct_heavytail_integration.py检查强度积分加密；check_fixed_reactive_injection.py检查固定无功条件在近似电压分布中的保持情况。
+
+审阅压缩包不含100万场景的原始MC数组；原始数组保留在本目录各算例结果子目录中。压缩包将源程序与审阅结果分开放置，重新计算时从source_snapshot目录启动。

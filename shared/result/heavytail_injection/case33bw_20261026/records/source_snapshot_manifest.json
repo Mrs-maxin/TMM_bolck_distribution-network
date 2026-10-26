@@ -1,0 +1,648 @@
+{
+ "source": "/Users/maxin/Library/CloudStorage/OneDrive-个人/4-PHD/[3]博三/[1]TMM_bolck_distribution-network",
+ "files": [
+  {
+   "path": "BTMM_blog.md",
+   "SHA256": "a4f0cf259c1ad868afce34cde4af66d03e6e0da0eb1b1ec9e06b5d1e8056453b",
+   "size": 4671,
+   "mtime_ns": 1792597947847242137
+  },
+  {
+   "path": "BTMM_changelog.md",
+   "SHA256": "6749a8118ce9863854f4519ae215660d57c58b6a2327e789fb4cfbd99bae1b8b",
+   "size": 18896,
+   "mtime_ns": 1793018652935364888
+  },
+  {
+   "path": "BTMM_note.md",
+   "SHA256": "3ae1ff28b4291910146725b75f58f44242d8976612b7aae387c828ce3efb0efb",
+   "size": 50921,
+   "mtime_ns": 1792859542814618682
+  },
+  {
+   "path": "BTMM_case33bw.m",
+   "SHA256": "ec1bcd44e5d39e6239cb0b7f654d1dba16f0c8d55594e0791c253bfc10938fc0",
+   "size": 6324,
+   "mtime_ns": 1792597978581643819
+  },
+  {
+   "path": "BTMM.m",
+   "SHA256": "acd9807a70e74666efc488aca4af3b3afd90d27d2ffcb77d8640c4a8edb42134",
+   "size": 2204,
+   "mtime_ns": 1792597978582173431
+  },
+  {
+   "path": "BTMM_case141.m",
+   "SHA256": "bd90641c6df5b7cce77e27d988278376c04e6903641f0dd65ce4fe8e05c49a02",
+   "size": 6316,
+   "mtime_ns": 1792597978582907850
+  },
+  {
+   "path": "README.md",
+   "SHA256": "6c18b4c12c14ce9c00b7035e047d4e7cdd96f0e858dd2733ec3c64d0d448be7b",
+   "size": 52556,
+   "mtime_ns": 1792598400165804520
+  },
+  {
+   "path": "GEMINI.md",
+   "SHA256": "816016c5f02a0a1dd06fb1182a9c5a3346896dbcc340d27621dd54a8aa2ea791",
+   "size": 2474,
+   "mtime_ns": 1792859569976174116
+  },
+  {
+   "path": "AGENTS.md",
+   "SHA256": "0c310505f1ee05260b29eafcb8cf0d51ecb1b40a08ae08025dd85e002b1a0b8c",
+   "size": 2269,
+   "mtime_ns": 1792859569975660562
+  },
+  {
+   "path": "CLAUDE.md",
+   "SHA256": "a4af6379eadea142ec5c7b82fbb0aa52d4f3e4c3b3b0d824cb439758e774af1e",
+   "size": 2063,
+   "mtime_ns": 1792859569975961208
+  },
+  {
+   "path": "+BTMM_sota/README.md",
+   "SHA256": "caaddd67962a51bdd1522c6f18db40cfaeaca70927855398605fa459f5c9c020",
+   "size": 566,
+   "mtime_ns": 1792597978586942278
+  },
+  {
+   "path": "tests/README.md",
+   "SHA256": "db0bb0f736ff7491c96310c9d04b24aa71f8b8de237301741f2804b0433d3f0c",
+   "size": 2297,
+   "mtime_ns": 1792859535126276930
+  },
+  {
+   "path": "tests/map_injections_fast_case33.m",
+   "SHA256": "94e0ddb0734a70110b5773cb4c41ed9eae4eb47d5d28d5da53f596b1a7b41951",
+   "size": 1768,
+   "mtime_ns": 1792859108506816952
+  },
+  {
+   "path": "+BTMM_utils/README.md",
+   "SHA256": "d003e1cddf346e05ad153acb0600232d7469b3de10971fabab1d1ae20a441f93",
+   "size": 3677,
+   "mtime_ns": 1792597978594982134
+  },
+  {
+   "path": "+BTMM_core/README.md",
+   "SHA256": "9a70606423f75c9e6d13eb03ef6db0fea32df3d164cfaa6d0801cb4affe92d2e",
+   "size": 852,
+   "mtime_ns": 1792597978595880595
+  },
+  {
+   "path": "data/cases/case141_modify.m",
+   "SHA256": "4c518a8292015f3fae0ea96b18dae04c2a8c22277ea3184521216a9db8b85f9b",
+   "size": 14974,
+   "mtime_ns": 1791973451436495780
+  },
+  {
+   "path": "data/cases/case33bw_modify.m",
+   "SHA256": "33ba8ed16f41ac2afc3be109be46ed83d532c484b569e127fea236fe4b780fcc",
+   "size": 4715,
+   "mtime_ns": 1791973451436574566
+  },
+  {
+   "path": "+BTMM_core/+powerflow/evaluate_reduced_power.m",
+   "SHA256": "d2ce7f2bf8d2fbc0f1f41fb1820ddd7684aece66b9bb0aa04efb6d6b636d3437",
+   "size": 712,
+   "mtime_ns": 1792859108493924497
+  },
+  {
+   "path": "+BTMM_core/+powerflow/build_anchor.m",
+   "SHA256": "be136dea4fc98220a2d8b15cbc1746ad84d5c65d656b6942a13c56b4daf53f40",
+   "size": 2955,
+   "mtime_ns": 1792859108487677978
+  },
+  {
+   "path": "+BTMM_core/+metrics/evaluate_case_metrics.m",
+   "SHA256": "5ef7b0eeb6f8e4e227c3dad5126d475c429f2dc99eb3dfd1012f987a9886397e",
+   "size": 519,
+   "mtime_ns": 1792597978597117057
+  },
+  {
+   "path": "+BTMM_core/+inverse/refine_fixed_jacobian.m",
+   "SHA256": "64d271df1790aee75362892c428626bcab5a3764abbf8f57601ba9080d21c1a9",
+   "size": 2990,
+   "mtime_ns": 1792859108481832169
+  },
+  {
+   "path": "+BTMM_core/+inverse/map_power_samples_quadratic.m",
+   "SHA256": "c84738c99773edb7e05fb4d14db08481953b88d474185606de59153fcf0b9924",
+   "size": 1947,
+   "mtime_ns": 1792859108476082986
+  },
+  {
+   "path": "+BTMM_core/+inverse/map_samples_with_atlas.m",
+   "SHA256": "69ada2c77ddeb774458c0baabe531882de19f9559b73a8ed1b5db2e34b45e826",
+   "size": 7465,
+   "mtime_ns": 1792859108466792042
+  },
+  {
+   "path": "+BTMM_core/+methods/run_proposed_case.m",
+   "SHA256": "7fb743b92a8a30187ccafbbc10cb155f028a6d340aeecc25a87afddcffb9e982",
+   "size": 488,
+   "mtime_ns": 1792597978597800851
+  },
+  {
+   "path": "+BTMM_utils/+mc/init_seed.m",
+   "SHA256": "726a245d9a09139b6cfd00afe4399c4e28849600600f6913e158de67259a5ce8",
+   "size": 206,
+   "mtime_ns": 1792597947824553739
+  },
+  {
+   "path": "+BTMM_utils/+ui/create_task_waitbar.m",
+   "SHA256": "9ce74ce68462d9710779c706dbe8f8057948b064a9cedd87803f9378b1c1dd73",
+   "size": 1920,
+   "mtime_ns": 1792597978598799895
+  },
+  {
+   "path": "+BTMM_utils/+plotting/export_case_figures.m",
+   "SHA256": "b8ab55304c78e676a49ae4f932ed020dbe974c3668a0b2afb46e79d0a3362e1a",
+   "size": 524,
+   "mtime_ns": 1792597978599960482
+  },
+  {
+   "path": "+BTMM_utils/+plotting/save_figure.m",
+   "SHA256": "3d16e20a1c4570526c34b2aaf53937389513c41c14535913a856f297ee84acc5",
+   "size": 49533,
+   "mtime_ns": 1792597978600568734
+  },
+  {
+   "path": "+BTMM_utils/+plotting/place_legend.m",
+   "SHA256": "da3af9bc19a683ec10186a7326e2f413cf55599ae8754f7523604a1b892a543d",
+   "size": 959,
+   "mtime_ns": 1792597947826360495
+  },
+  {
+   "path": "+BTMM_utils/+plotting/resolve_figure_width.m",
+   "SHA256": "d1554c7b5d04eb3db866a3952cd657a15907d8982a8d7a11214425dbd264dad9",
+   "size": 1235,
+   "mtime_ns": 1792597978600970651
+  },
+  {
+   "path": "+BTMM_utils/+plotting/figure_profile.m",
+   "SHA256": "0b6840a67b1678c4af889456d9db4b42f698f2d414e089c1120b92f1e82b39cb",
+   "size": 2644,
+   "mtime_ns": 1792597978601262861
+  },
+  {
+   "path": "+BTMM_utils/+plotting/methodStyle.m",
+   "SHA256": "2adad3ac5eba5d4ebfadd6afe7351bcae1aee5ad614874c96d10e3b28a5963ef",
+   "size": 2150,
+   "mtime_ns": 1792597978601588237
+  },
+  {
+   "path": "+BTMM_utils/+plotting/export_project_figures.m",
+   "SHA256": "a04b8bf5b82b5781075a6f13dd2e7b8496f8b54e38258b3082d71b4a00205a1d",
+   "size": 547,
+   "mtime_ns": 1792597978601892904
+  },
+  {
+   "path": "+BTMM_utils/+plotting/plot_method_line.m",
+   "SHA256": "f5f672c92811c82dff03112342f075fe7a7e95d7399c6988b31c510ad88d973f",
+   "size": 1223,
+   "mtime_ns": 1792597978602172155
+  },
+  {
+   "path": "+BTMM_utils/+plotting/apply_figure_profile.m",
+   "SHA256": "1afb2c717ce08b798c790475ca8f8bee601b8eaee84593459726d6ca6170c900",
+   "size": 3731,
+   "mtime_ns": 1792597978602467906
+  },
+  {
+   "path": "+BTMM_utils/+plotting/create_figure.m",
+   "SHA256": "148252507ef093d4ea030b7ff931b49e533aaf21793f28db0db86b315cf2fde3",
+   "size": 970,
+   "mtime_ns": 1792597978602761823
+  },
+  {
+   "path": "+BTMM_utils/+io/ensure_dir.m",
+   "SHA256": "7fc74b9f904cd33468abaeee9e7bd1810c443afb87e9e1569768b76bb06c9924",
+   "size": 269,
+   "mtime_ns": 1792597978603123158
+  },
+  {
+   "path": "+BTMM_utils/+io/write_summary.m",
+   "SHA256": "6c971ad385d7a0cbc6ae2beaa7443c3fc0c5122fc839f77652db096ce4e8abf6",
+   "size": 1011,
+   "mtime_ns": 1792597978603585242
+  },
+  {
+   "path": "+BTMM_utils/+io/setup_project.m",
+   "SHA256": "354a1ad17f556706e0393a536f6f72933af445b8bbc7530d6dfa0efeef8dd0ee",
+   "size": 661,
+   "mtime_ns": 1792859108499758181
+  },
+  {
+   "path": "+BTMM_utils/+io/load_case_inputs.m",
+   "SHA256": "55b063174dc71c8f5dfcb80775c2d60d0eec1d05001b54ebd5d439ffa176a4aa",
+   "size": 9527,
+   "mtime_ns": 1792597978603989993
+  },
+  {
+   "path": "+BTMM_utils/+io/write_case_outputs.m",
+   "SHA256": "72fa9e3072ef1204e9bb8affacb88617acd52a125f0db6a6423dcfcb8514daa8",
+   "size": 1273,
+   "mtime_ns": 1792597978604578620
+  },
+  {
+   "path": "+BTMM_utils/+workflow/finalize_case_run.m",
+   "SHA256": "717b6b16414941927ee099db36801ee9503fd86d3b867660916d32310de3f1d9",
+   "size": 13654,
+   "mtime_ns": 1792597978605515415
+  },
+  {
+   "path": "+BTMM_utils/+workflow/prepare_case_run.m",
+   "SHA256": "9d91fa86a2df867e9b4a521969d7730f314d7dac586c042b140e39ace34fe3cc",
+   "size": 1104,
+   "mtime_ns": 1792597978606278208
+  },
+  {
+   "path": "+BTMM_utils/+workflow/finalize_failed_case_run.m",
+   "SHA256": "d2d45fc138c177ccb78692c1394fa107f8be51e9907efe7861bafe7c221f3479",
+   "size": 16158,
+   "mtime_ns": 1792597978607889755
+  },
+  {
+   "path": "+BTMM_utils/+workflow/empty_run_summary.m",
+   "SHA256": "8af2c6fe5ceb3716ddddf4b0335ffb03c84fd1b77bf77004123fffc05c7a60bb",
+   "size": 622,
+   "mtime_ns": 1792597947828445625
+  },
+  {
+   "path": "+BTMM_utils/+workflow/create_step_tracker.m",
+   "SHA256": "0ca6400faedd37c3257109be42c81009461c5a4490ebc441d8c230ff7aed8586",
+   "size": 5007,
+   "mtime_ns": 1792597978609354050
+  },
+  {
+   "path": "+BTMM_utils/+workflow/assert_stage_ready.m",
+   "SHA256": "4b05effe9047dc1edbf9996e45cdbbf49e4c05f36af8f9ee1504a98d1b4ea637",
+   "size": 1347,
+   "mtime_ns": 1792597978610341886
+  },
+  {
+   "path": "tests/python/moment_matched_tmm_case33.py",
+   "SHA256": "e291675759956d3f9f150a8fc0c24f584dbce65034b26199910b421ece31227e",
+   "size": 7946,
+   "mtime_ns": 1792859093170781782
+  },
+  {
+   "path": "tests/python/fit_nrel_two_region_case33.py",
+   "SHA256": "fac934d615076590996ab1dbe9a7a75eeec919b2260473273f37186f08d03a99",
+   "size": 6670,
+   "mtime_ns": 1792860732174019519
+  },
+  {
+   "path": "tests/python/check_record_resampling_case33.py",
+   "SHA256": "4c9d27a51eef807d3bc970f5b0990b3619bda9a5d48d1de496dde7524abfb22f",
+   "size": 2715,
+   "mtime_ns": 1792860888028242826
+  },
+  {
+   "path": "tests/python/truncated_strength_case33.py",
+   "SHA256": "de3f2c7bfd0b216faa9006f4a8d99e4714a0b9cee95dcbe849df936e8ef55f12",
+   "size": 7767,
+   "mtime_ns": 1792859046735198464
+  },
+  {
+   "path": "tests/python/summarize_pv_nrel_case33.py",
+   "SHA256": "1e6d7a213d54b1122849065164e0ded2cbc7a777f0d302243df2b036b5c8dd6b",
+   "size": 8002,
+   "mtime_ns": 1792859093176216215
+  },
+  {
+   "path": "tests/python/run_pv_fixed_forecast_case33.py",
+   "SHA256": "911415b9bd4c1dfcd524169d5884fad1efcf161757669a5dc58273d4c9d7537c",
+   "size": 57466,
+   "mtime_ns": 1792604720518354719
+  },
+  {
+   "path": "tests/python/check_nrel_sind_forecast_error.py",
+   "SHA256": "e4eb0cd5860b22fce6cbdf3419d7b110794ee12d547854b9dddd29e31403b4b3",
+   "size": 4365,
+   "mtime_ns": 1792859093168646234
+  },
+  {
+   "path": "tests/python/tail_baselines_pv_nrel_case33.py",
+   "SHA256": "1b76d5c4ed9b600084524c45205c8140e31668447449d8d46569bf611e82831c",
+   "size": 17063,
+   "mtime_ns": 1792859093175569880
+  },
+  {
+   "path": "tests/python/analytic_limit_risk_pv_fixed_forecast.py",
+   "SHA256": "2bf236ece885c3a1c03eeeef11285c3e2b36be99d63dd74f32bd953a533c7583",
+   "size": 9766,
+   "mtime_ns": 1792604720519968509
+  },
+  {
+   "path": "tests/python/mainline_comparison_case33.py",
+   "SHA256": "ff87c2fab75b0d4e2148949332011d80805f3d8c945656f1f89e826b6850b64e",
+   "size": 9105,
+   "mtime_ns": 1792878952821527004
+  },
+  {
+   "path": "tests/python/plot_case1_pdfs_pv_nrel.py",
+   "SHA256": "77e569c88d5c806ea7a7e0d596d2d6ec6e64f311dee0e99e3e31603cbf5d96f9",
+   "size": 5933,
+   "mtime_ns": 1792859093176707758
+  },
+  {
+   "path": "tests/python/mainline_analytic_case33.py",
+   "SHA256": "5429efd6b714e94ed0bc600bfa0c5b0a10a6f33747a5a019b52cb493d169e321",
+   "size": 5082,
+   "mtime_ns": 1793012667341465038
+  },
+  {
+   "path": "tests/python/plot_pv_fixed_forecast_pdfs_general.py",
+   "SHA256": "21d0df8f5a89014256c54365c3a4530906584369dfdf8c36d6651265d4e3d4c4",
+   "size": 8507,
+   "mtime_ns": 1792609308424998698
+  },
+  {
+   "path": "tests/python/feasibility_case1a_all_weather.py",
+   "SHA256": "bba18499189360f86f19031f726148e3351380acb65cd6348ddc9701fd26e478",
+   "size": 6616,
+   "mtime_ns": 1792859093174647002
+  },
+  {
+   "path": "tests/python/summarize_extreme_weather_case33.py",
+   "SHA256": "085e1a52ae200f716136a3cc4d4930521de2e6701913409d3276b5c5ad4eaad1",
+   "size": 1720,
+   "mtime_ns": 1792859093173960083
+  },
+  {
+   "path": "tests/python/limit_probability_pv_fixed_forecast.py",
+   "SHA256": "a5d08e0466551602d4b2f85c75becffc0410efc1f0e25f5407b21be5a9615b4b",
+   "size": 2838,
+   "mtime_ns": 1792604720526956644
+  },
+  {
+   "path": "tests/python/run_pv_nrel_case33.py",
+   "SHA256": "5b641d4ec5ce8b9d607867bb04ce5964aa5103fb6134523abec6b77f4a4f934f",
+   "size": 10071,
+   "mtime_ns": 1792859093167585849
+  },
+  {
+   "path": "tests/python/select_k_by_pv_block.py",
+   "SHA256": "a553853e19439f12c6fc36b40e11f0c5112a35889fd3faa322bd17b3c36f5155",
+   "size": 5473,
+   "mtime_ns": 1792859093177927595
+  },
+  {
+   "path": "tests/python/apply_block_split_rule_case33.py",
+   "SHA256": "f12b914982dc949011586d8aee9dcad475b6564d961e8a8288d2080ae4ad7201",
+   "size": 1607,
+   "mtime_ns": 1792859046722518385
+  },
+  {
+   "path": "tests/python/grouped_nu_estimation_case33.py",
+   "SHA256": "334453309b3316cb73a622886a5403dc3b297370ff94d90b3e6c6643053d2297",
+   "size": 4354,
+   "mtime_ns": 1792859046738923725
+  },
+  {
+   "path": "tests/python/extreme_weather_case33.py",
+   "SHA256": "852fc7abe5b92de8bd310a9071317d8c20d8f35d8f1cb686a1299d48a63e1ad4",
+   "size": 11253,
+   "mtime_ns": 1792859093172878980
+  },
+  {
+   "path": "tests/python/run_pv_fixed_forecast.py",
+   "SHA256": "c6db91c036f0e6d49497a3c954ab15e105181bcbcc086184b032613922791775",
+   "size": 54990,
+   "mtime_ns": 1792609308425221574
+  },
+  {
+   "path": "tests/python/plot_analytic_pdfs_pv_fixed_forecast.py",
+   "SHA256": "b76d79df3184c0ecc740464c4250cf8acac4df9addd32f8e96dcba7f20491959",
+   "size": 7424,
+   "mtime_ns": 1792604720522663848
+  },
+  {
+   "path": "tests/python/run_wind_fixed_forecast_case33.py",
+   "SHA256": "49c34794bd0da8c5dc7d11503f5952d1c685eed6226ce39198b4cc114e7e93a2",
+   "size": 14309,
+   "mtime_ns": 1792859093177470594
+  },
+  {
+   "path": "tests/python/block_split_rule_check.py",
+   "SHA256": "1e0922560a080b64723bbc32d7b2ba14aae7c57d7461746ad99cb953d6e88791",
+   "size": 7888,
+   "mtime_ns": 1793012642932028970
+  },
+  {
+   "path": "tests/python/plot_limit_risk_curves_pv_fixed_forecast.py",
+   "SHA256": "3cc05e9138c5da2cd90b1141b905d3a79dbcdf869a955f6ea9f3f7e5e8d692c3",
+   "size": 3525,
+   "mtime_ns": 1792604720524159224
+  },
+  {
+   "path": "tests/python/analytic_grouped_t_case33.py",
+   "SHA256": "218eb90e40f73ad11742797c65f665be999005a54258b35f74a4a3b40935fa2f",
+   "size": 5227,
+   "mtime_ns": 1792921595525241703
+  },
+  {
+   "path": "tests/python/compare_block_split_case33.py",
+   "SHA256": "bc747d8595e724446d8a1f4959896cf6bb141df5770ec04e9e6bfd6e3e4dd12c",
+   "size": 5048,
+   "mtime_ns": 1792859093170144530
+  },
+  {
+   "path": "tests/python/analytic_limit_risk_pv_nrel_case33.py",
+   "SHA256": "d7692e80d1b22ccb6c6273c55a5ef0300f7ed041eea5366bcbf89fb50944de2f",
+   "size": 3746,
+   "mtime_ns": 1792859093175888547
+  },
+  {
+   "path": "tests/python/check_record_tail_options_case33.py",
+   "SHA256": "1f31a04c3811e6a2842bae2333c533bccfd4f6049f0cb51d59e9d68003d2ea8b",
+   "size": 3743,
+   "mtime_ns": 1792865637613722543
+  },
+  {
+   "path": "tests/python/plot_full_distribution_grouped.py",
+   "SHA256": "3b4087c7077730814ad87b3a0c023c7813af420e4596b7e99f6dd901e2b0d5bd",
+   "size": 5369,
+   "mtime_ns": 1792859046742945779
+  },
+  {
+   "path": "tests/python/plot_pv_fixed_forecast_pdfs.py",
+   "SHA256": "e45d44609cf387ca1fc9cd55fd48f84d0e41e9f1f68900cf2c22e1f97613054b",
+   "size": 7773,
+   "mtime_ns": 1792604720525573434
+  },
+  {
+   "path": "tests/python/analytic_limit_risk_general.py",
+   "SHA256": "241a35bd6e8e68fe9e4a61bc980e83a1d6ce3a0c1003d041c1e57c396b9469a2",
+   "size": 10285,
+   "mtime_ns": 1792609308424740531
+  },
+  {
+   "path": "tests/python/grouped_strength_tmm_case33.py",
+   "SHA256": "4c40c1717d093a0bfcc0ab4a1cfea9b026274c5c271af8a61995c06ba9936065",
+   "size": 18571,
+   "mtime_ns": 1792859093171624826
+  },
+  {
+   "path": "tests/python/shift_grouped_t_case33.py",
+   "SHA256": "87307757b1f6b701cc44f00a5416968ad050a3ce5d014eaee2d0010a20c38dcc",
+   "size": 4138,
+   "mtime_ns": 1792877928993813753
+  },
+  {
+   "path": "tests/python/fast_voltage_map.py",
+   "SHA256": "d05cc792b6fbd11983ef7bef99dac99d08bf6c4252beefcee751d029bbdc0a2f",
+   "size": 2341,
+   "mtime_ns": 1792863646140565317
+  },
+  {
+   "path": "tests/python/check_analytic_grouped_t_case33.py",
+   "SHA256": "662e7ee59f820e990ce2c2a2623a75bf805b6eedbdd2340b7fc04d37a0fd61df",
+   "size": 3298,
+   "mtime_ns": 1792921621275672994
+  },
+  {
+   "path": "tests/python/generate_record_scenarios_case33.py",
+   "SHA256": "9e40273d2acb026bd2e91335422fa5f72774a3e395c372cfb2bfd7ac205987e6",
+   "size": 7668,
+   "mtime_ns": 1792868796520122470
+  },
+  {
+   "path": "tests/python/select_k_by_pv_block_shared.py",
+   "SHA256": "f076cf851190a546899ae21a457b939aa84a2da418592b79f9daf65099fd2602",
+   "size": 3436,
+   "mtime_ns": 1792859093178213221
+  },
+  {
+   "path": "tests/python/block_split_rule_scenarios.py",
+   "SHA256": "844973faf0868333d0e634db20ebfb1244b66f7012751caea2add6f934d03e1a",
+   "size": 4658,
+   "mtime_ns": 1792859046719088667
+  },
+  {
+   "path": "tests/python/fit_nrel_pv_forecast_error_case33.py",
+   "SHA256": "1b8eb9f0c84548226adfcba5fb162830df213db3d835441fc5db74207813f8f3",
+   "size": 6309,
+   "mtime_ns": 1792860667118891038
+  },
+  {
+   "path": "tests/python/check_common_cloud_input_case33.py",
+   "SHA256": "dee4008e578fdb2e53bac16e655aed1f91e333deb6079e776f68febc6ebae815",
+   "size": 2766,
+   "mtime_ns": 1793020359787856476
+  },
+  {
+   "path": "tests/python/write_run_manifest.py",
+   "SHA256": "01c80dda26ce7983d73ffae0102809479995216c86df16c2018d30743c17a779",
+   "size": 3285,
+   "mtime_ns": 1792609308425350366
+  },
+  {
+   "path": "tests/python/shared_residual_mixture.py",
+   "SHA256": "d9005c0ab9835d451b7c4710155cb6abba51e2ed50501806efc5de3a983bef7a",
+   "size": 12872,
+   "mtime_ns": 1792859046700022610
+  },
+  {
+   "path": "tests/python/run_pv_shared_residual_case33.py",
+   "SHA256": "a17ad4af3bdfeb340c71ee32b14f30bd9638bc65513b83a85082b00d7e6e9f7c",
+   "size": 4386,
+   "mtime_ns": 1792859093177075676
+  },
+  {
+   "path": "tests/python/archived/adapted_routines.py",
+   "SHA256": "a75e56e73e329c94fb8061ed510d0cfca93cfd9f6c1afc55b5877b962700e0cb",
+   "size": 11163,
+   "mtime_ns": 1792511674959422111
+  },
+  {
+   "path": "tests/python/archived/cloud_numeric_core.py",
+   "SHA256": "755907c5278f06e811277f36517a76d14b7d0c75b710a690b5a4364b367c8a77",
+   "size": 29138,
+   "mtime_ns": 1792511674960438808
+  },
+  {
+   "path": "tests/python/archived/run_typhoon_comparison_K136.py",
+   "SHA256": "40ce746dbe7657bf2f005141fe202f5491445e4fa72ebfd13cb8d285cc43a521",
+   "size": 31738,
+   "mtime_ns": 1792511674963070631
+  },
+  {
+   "path": "tests/python/archived/run_cloud_passage_case33.py",
+   "SHA256": "725ae590c9f7154a99379d6e13c7b7c0f5c4b1959bf09ae7f125c7fe882c282b",
+   "size": 21215,
+   "mtime_ns": 1792511674961397808
+  },
+  {
+   "path": "tests/python/archived/run_cloud_study.py",
+   "SHA256": "58fbb5ba2e8b33d71f86fb2ca9431e24f4f4c7e95964dba25eb4ba284b607b1b",
+   "size": 21145,
+   "mtime_ns": 1792511674962093433
+  },
+  {
+   "path": "tests/python/archived/ac_only.py",
+   "SHA256": "1af7925b1709bb6fbb07525076e0b7c8c63db658f8194c1c921b4b33c2e55546",
+   "size": 11798,
+   "mtime_ns": 1792511675413640737
+  },
+  {
+   "path": "+BTMM_sota/+baselines/run_case_baselines.m",
+   "SHA256": "85defe969d0bf4dfda60be990ae02a1835c8d8006b444ddb9d58d335a15766dd",
+   "size": 589,
+   "mtime_ns": 1792597978614160022
+  },
+  {
+   "path": ".cursor/contracts/project-template-handoff.schema.yaml",
+   "SHA256": "7ee74d071d1d179c391e57acf462d33250724fa03120d17cc03f53c9312474e4",
+   "size": 3224,
+   "mtime_ns": 1792597992154978384
+  },
+  {
+   "path": ".cursor/rules/lexicon.md",
+   "SHA256": "c05fc0bcc376481a6941961cf39f197af5aba4044c03a692fc2a416c2e00e22f",
+   "size": 7923,
+   "mtime_ns": 1792598400185274124
+  },
+  {
+   "path": ".cursor/rules/03-public-note-and-paper-skill-bridge.mdc",
+   "SHA256": "74577217d1219bf41666ebb62b09419f31007b553a31324e3d4fb7d2cef80d96",
+   "size": 25084,
+   "mtime_ns": 1792597992156565189
+  },
+  {
+   "path": ".cursor/rules/05-project-execution.mdc",
+   "SHA256": "bd6e46a5bed4788fa151be4f0c388b8c2b55c48f4b985c6b31698614a1e75994",
+   "size": 2476,
+   "mtime_ns": 1792859569976541131
+  },
+  {
+   "path": ".cursor/rules/04-case-figure-and-metric-plan.mdc",
+   "SHA256": "73061ec0882f4552a55c481528d21e8ccf996d164e41e1103673eab3156e17fc",
+   "size": 9255,
+   "mtime_ns": 1792597992156985848
+  },
+  {
+   "path": ".cursor/rules/01-matlab-code-style.mdc",
+   "SHA256": "6f56de48ccd4bb1f0b6bfc4c47b6c5e62944a68edc942bc70ad6bbb990307c21",
+   "size": 12112,
+   "mtime_ns": 1792597992158353090
+  },
+  {
+   "path": ".cursor/rules/02-local-optimizer-first.mdc",
+   "SHA256": "1affeb35b6f50ea2caffc68edf8e94bc4be254464c2332167e5314ba301cfa23",
+   "size": 3317,
+   "mtime_ns": 1792597947830796841
+  },
+  {
+   "path": ".cursor/rules/00-lightweight-research-coding.mdc",
+   "SHA256": "733a570ae004ee77b67fd797344313c186dad88f8d8ff32512d8907a8beddf75",
+   "size": 11699,
+   "mtime_ns": 1792597992160016775
+  }
+ ],
+ "git_head": "1e5b3843f06fd293acc7aaaa166be066ac480c93"
+}

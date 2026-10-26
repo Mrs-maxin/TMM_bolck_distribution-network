@@ -1,0 +1,3919 @@
+{
+ "MC_quantities": 388,
+ "MC_voltage_branch_quantities": 384,
+ "MC_tails": 776,
+ "selected_quantities": 36,
+ "selection": "MC only; top3 by robust 0.1% extension ratio within each scene and V/P/Q type",
+ "W1_rows": 9312,
+ "W1_all_numerically_converged": true,
+ "moment_rows": 4656,
+ "selected_combined_rows": 432,
+ "same_GMM_TMM_quadratic_mean_max_display_unit_difference": 2.5119661017924955e-08,
+ "figures": 108,
+ "full_and_tail_method_PDF_figures": 72,
+ "MC_comparison_figures": 36,
+ "minimum_PDF_bin_probability": -1.0163203612023608e-11,
+ "negative_PDF_mass_intervals_over_1e7": 0,
+ "frozen_archive_files": 441,
+ "frozen_archive_hash_mismatches": [],
+ "new_injection_AC_or_fitting": false,
+ "statistical_limit": "Fixed-threshold tail-shape intervals are pointwise exploratory, not simultaneous asymptotic heavy-tail proofs",
+ "moment_note": "Actual full saved-model laws; voltage magnitude, not squared magnitude; no finite model-draw moment estimates",
+ "numerical_checks": [
+  {
+   "check": "tail_W1_CDF_vs_known_quantiles",
+   "location": 0.3,
+   "scale": 1.0,
+   "a": 0.001,
+   "b": 0.05,
+   "computed": 0.30000029487526225,
+   "reference": 0.3,
+   "absolute_difference": 2.948752622633499e-07
+  },
+  {
+   "check": "tail_W1_CDF_vs_known_quantiles",
+   "location": 0.3,
+   "scale": 1.0,
+   "a": 0.95,
+   "b": 0.999,
+   "computed": 0.30000070026461184,
+   "reference": 0.2999999999999999,
+   "absolute_difference": 7.002646119635969e-07
+  },
+  {
+   "check": "tail_W1_CDF_vs_known_quantiles",
+   "location": 0.0,
+   "scale": 1.2,
+   "a": 0.001,
+   "b": 0.05,
+   "computed": 0.4072155623804656,
+   "reference": 0.4072185726461522,
+   "absolute_difference": 3.010265686609337e-06
+  },
+  {
+   "check": "tail_W1_CDF_vs_known_quantiles",
+   "location": 0.0,
+   "scale": 1.2,
+   "a": 0.95,
+   "b": 0.999,
+   "computed": 0.4072155623804628,
+   "reference": 0.4072185726461521,
+   "absolute_difference": 3.010265689273872e-06
+  },
+  {
+   "check": "tail_W1_CDF_vs_known_quantiles",
+   "location": 0.2,
+   "scale": 0.8,
+   "a": 0.001,
+   "b": 0.05,
+   "computed": 0.6072182512990231,
+   "reference": 0.6072185726461522,
+   "absolute_difference": 3.2134712912856855e-07
+  },
+  {
+   "check": "tail_W1_CDF_vs_known_quantiles",
+   "location": 0.2,
+   "scale": 0.8,
+   "a": 0.95,
+   "b": 0.999,
+   "computed": 0.20721704523542656,
+   "reference": 0.20721857264615198,
+   "absolute_difference": 1.5274107254270586e-06
+  },
+  {
+   "check": "t_quadratic_mean_and_variance",
+   "df": 5.0,
+   "mean": 0.25,
+   "reference_mean": 0.25000000000000006,
+   "variance": 0.12240000000000001,
+   "reference_variance": 0.12240000000000006
+  },
+  {
+   "check": "t_quadratic_mean_and_variance",
+   "df": 7.0,
+   "mean": 0.25,
+   "reference_mean": 0.25000000000000006,
+   "variance": 0.09,
+   "reference_variance": 0.09
+  },
+  {
+   "check": "t_quadratic_mean_and_variance",
+   "df": 10.0,
+   "mean": 0.25,
+   "reference_mean": 0.25000000000000006,
+   "variance": 0.0819,
+   "reference_variance": 0.0819
+  },
+  {
+   "check": "GPD_PWM_shape_vs_known_quantiles",
+   "reference": -0.2,
+   "computed": -0.19999784524122033
+  },
+  {
+   "check": "GPD_PWM_shape_vs_known_quantiles",
+   "reference": 0.0,
+   "computed": 1.3068477555666647e-06
+  },
+  {
+   "check": "GPD_PWM_shape_vs_known_quantiles",
+   "reference": 0.2,
+   "computed": 0.19999183714563573
+  },
+  {
+   "check": "GPD_PWM_shape_vs_known_quantiles",
+   "reference": 0.5,
+   "computed": 0.49954741418333803
+  },
+  {
+   "check": "voltage_magnitude_vs_Rice_distribution",
+   "computed_mean": 1.0050126936677422,
+   "reference_mean": 1.0050126936677417,
+   "computed_variance": 0.009949485566709158,
+   "reference_variance": 0.009949485566709911
+  }
+ ],
+ "moment_refinement_checks": [
+  {
+   "file": "pareto_K4_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 2.76623168815604e-12,
+   "variance_refinement_abs_max": 3.152866856481751e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.8231256185499191e-09,
+     "evaluations": 882
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.6457300341562353e-11,
+     "evaluations": 1260
+    }
+   ]
+  },
+  {
+   "file": "pareto_K4_grouped_t_shift_moments.json",
+   "component": 1,
+   "mean_refinement_abs_max": 1.3100631690576847e-14,
+   "variance_refinement_abs_max": 1.0191500421363742e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.4397288752725182e-09,
+     "evaluations": 1680
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.702500881120686e-11,
+     "evaluations": 1932
+    }
+   ]
+  },
+  {
+   "file": "pareto_K4_grouped_t_shift_moments.json",
+   "component": 2,
+   "mean_refinement_abs_max": 1.7763568394002505e-15,
+   "variance_refinement_abs_max": 5.962244586932286e-15,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.895917104527521e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.948107887236496e-11,
+     "evaluations": 2604
+    }
+   ]
+  },
+  {
+   "file": "pareto_K4_grouped_t_shift_moments.json",
+   "component": 3,
+   "mean_refinement_abs_max": 1.7719159473017498e-13,
+   "variance_refinement_abs_max": 4.414350829318181e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.442547383698999e-09,
+     "evaluations": 1764
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.280258416316489e-11,
+     "evaluations": 2100
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 4.546141241235091e-12,
+   "voltage_GH_refinement_variance_max_pu2": 9.336094343361662e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.875658671107704e-09,
+     "evaluations": 2646
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 6.372056086808738e-11,
+     "evaluations": 5040
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_standard_TMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 1.1102230246251565e-16,
+   "voltage_GH_refinement_variance_max_pu2": 1.7157499379583108e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.3548836331132033e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.6322219645847355e-11,
+     "evaluations": 2730
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_standard_TMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 3.325959570688736e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.3984210999239836e-09,
+     "evaluations": 2100
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 5.123424533029478e-11,
+     "evaluations": 2814
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_standard_TMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 1.1102230246251565e-16,
+   "voltage_GH_refinement_variance_max_pu2": 1.729980091472183e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.8201024507009915e-09,
+     "evaluations": 2184
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.583168486206126e-11,
+     "evaluations": 2898
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_standard_TMM_moments.json",
+   "component": 4,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.916920262931207e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.7701807366285475e-09,
+     "evaluations": 2100
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 3.067684150638414e-11,
+     "evaluations": 2856
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_standard_TMM_moments.json",
+   "component": 5,
+   "voltage_GH_refinement_mean_max_pu": 2.220446049250313e-16,
+   "voltage_GH_refinement_variance_max_pu2": 4.9276988739466177e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.1363930112553565e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.206456806528087e-11,
+     "evaluations": 2730
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K4_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 3.049318610115481e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K4_AQGMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.082197683525802e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K4_AQGMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.1858461261560205e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K4_AQGMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 6.098637220230962e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K2_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.2197274440461925e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K2_AQGMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.421010862427522e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 1.9815260543509794e-12,
+   "variance_refinement_abs_max": 3.043787444312329e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.7735889459901077e-09,
+     "evaluations": 924
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.817948143509077e-11,
+     "evaluations": 1218
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_grouped_t_shift_moments.json",
+   "component": 1,
+   "mean_refinement_abs_max": 1.4488410471358293e-14,
+   "variance_refinement_abs_max": 7.913808497406194e-15,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.7061768893839434e-09,
+     "evaluations": 1512
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.073994135167899e-11,
+     "evaluations": 1848
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_grouped_t_shift_moments.json",
+   "component": 2,
+   "mean_refinement_abs_max": 5.845324224651449e-14,
+   "variance_refinement_abs_max": 1.0705845931990865e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.311384281571645e-09,
+     "evaluations": 1386
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.5225742124306384e-11,
+     "evaluations": 1680
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_grouped_t_shift_moments.json",
+   "component": 3,
+   "mean_refinement_abs_max": 1.0258460747536446e-13,
+   "variance_refinement_abs_max": 3.141324006472601e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.3592876038833343e-09,
+     "evaluations": 1302
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.2160956161269663e-11,
+     "evaluations": 1554
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_grouped_t_shift_moments.json",
+   "component": 4,
+   "mean_refinement_abs_max": 2.4424906541753444e-14,
+   "variance_refinement_abs_max": 3.681083216022785e-15,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.9449826506042257e-09,
+     "evaluations": 1386
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.312271844536709e-11,
+     "evaluations": 1680
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_grouped_t_shift_moments.json",
+   "component": 5,
+   "mean_refinement_abs_max": 3.5083047578154947e-14,
+   "variance_refinement_abs_max": 1.5879658699091692e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.196348643055454e-09,
+     "evaluations": 1512
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.6314175066430433e-11,
+     "evaluations": 1848
+    }
+   ]
+  },
+  {
+   "file": "mixed_K1_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.168404344971009e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K4_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 4.440892098500626e-16,
+   "voltage_GH_refinement_variance_max_pu2": 8.86562280836764e-16,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.5005166478188083e-09,
+     "evaluations": 2562
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 5.857916706348639e-11,
+     "evaluations": 4326
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K4_standard_TMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 1.1102230246251565e-16,
+   "voltage_GH_refinement_variance_max_pu2": 1.7572545523737715e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.0271933594328894e-09,
+     "evaluations": 2268
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 5.3417674073914316e-11,
+     "evaluations": 2982
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K4_standard_TMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.4984083812212843e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.2183889445257453e-09,
+     "evaluations": 2184
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 5.17025408715904e-11,
+     "evaluations": 2898
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K4_standard_TMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 9.547918011776346e-15,
+   "voltage_GH_refinement_variance_max_pu2": 1.9547209716749142e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 4.081868483181838e-09,
+     "evaluations": 2562
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 6.046281377788102e-11,
+     "evaluations": 4536
+    }
+   ]
+  },
+  {
+   "file": "mixed_K1_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 9.284573110335259e-12,
+   "voltage_GH_refinement_variance_max_pu2": 1.8639185816538353e-11,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 4.8715945267315785e-09,
+     "evaluations": 3192
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 7.303862108919406e-11,
+     "evaluations": 9618
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K4_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 1.4033219031261979e-13,
+   "variance_refinement_abs_max": 7.930114898080376e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.2356721876816327e-09,
+     "evaluations": 1050
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.6980807860240085e-11,
+     "evaluations": 1386
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K4_grouped_t_shift_moments.json",
+   "component": 1,
+   "mean_refinement_abs_max": 3.2612801348363973e-14,
+   "variance_refinement_abs_max": 2.0228610453365548e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.2866847897061013e-09,
+     "evaluations": 1050
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.7674599720472212e-11,
+     "evaluations": 1386
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K4_grouped_t_shift_moments.json",
+   "component": 2,
+   "mean_refinement_abs_max": 8.681944052568724e-14,
+   "variance_refinement_abs_max": 4.525720076475892e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.6631986005964931e-09,
+     "evaluations": 1008
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.1100607972629794e-11,
+     "evaluations": 1344
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K4_grouped_t_shift_moments.json",
+   "component": 3,
+   "mean_refinement_abs_max": 4.705125178361413e-13,
+   "variance_refinement_abs_max": 1.0777490011548707e-13,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.5287909618254215e-09,
+     "evaluations": 966
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.3848585762125773e-11,
+     "evaluations": 1260
+    }
+   ]
+  },
+  {
+   "file": "mixed_K4_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 4.473754700029531e-12,
+   "voltage_GH_refinement_variance_max_pu2": 9.169330388286018e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 4.13363079491174e-09,
+     "evaluations": 2814
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 6.810954729281488e-11,
+     "evaluations": 6720
+    }
+   ]
+  },
+  {
+   "file": "mixed_K4_standard_TMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 2.220446049250313e-16,
+   "voltage_GH_refinement_variance_max_pu2": 6.164028163758994e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.4092064829646313e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.8509541787338866e-11,
+     "evaluations": 2730
+    }
+   ]
+  },
+  {
+   "file": "mixed_K4_standard_TMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 1.1102230246251565e-16,
+   "voltage_GH_refinement_variance_max_pu2": 2.926752942647784e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.5340554631242205e-09,
+     "evaluations": 2100
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.75188450865271e-11,
+     "evaluations": 2814
+    }
+   ]
+  },
+  {
+   "file": "mixed_K4_standard_TMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 8.78881386071062e-18,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.3042965854654126e-09,
+     "evaluations": 2268
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.5761514019016786e-11,
+     "evaluations": 3024
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K1_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.6263032587282567e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.541098841762901e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_AQGMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.117582368135751e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_AQGMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.6940658945086007e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_AQGMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.082197683525802e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_AQGMM_moments.json",
+   "component": 4,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 3.049318610115481e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_AQGMM_moments.json",
+   "component": 5,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.168404344971009e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K1_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 3.3506530883187224e-13,
+   "voltage_GH_refinement_variance_max_pu2": 6.723941336442968e-13,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 4.001977870475769e-09,
+     "evaluations": 2604
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 6.142414884626418e-11,
+     "evaluations": 5082
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K2_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 4.214406601477094e-13,
+   "variance_refinement_abs_max": 7.146366831634055e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.3826240355278984e-09,
+     "evaluations": 966
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.2558980741988923e-11,
+     "evaluations": 1260
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K2_grouped_t_shift_moments.json",
+   "component": 1,
+   "mean_refinement_abs_max": 2.788880237858393e-13,
+   "variance_refinement_abs_max": 7.570333249162786e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.3820519853908433e-09,
+     "evaluations": 1050
+    },
+    {
+     "GH": 32,
+     "scaled_error": 1.9768477211187275e-11,
+     "evaluations": 1344
+    }
+   ]
+  },
+  {
+   "file": "pareto_K1_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 1.8389734179891093e-12,
+   "variance_refinement_abs_max": 4.410916076835747e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.1476428757226878e-09,
+     "evaluations": 714
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.9505546876857007e-11,
+     "evaluations": 1050
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K2_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 1.1443512804021339e-11,
+   "voltage_GH_refinement_variance_max_pu2": 2.3185220941485812e-11,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 4.007124626305477e-09,
+     "evaluations": 2940
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 7.004532897701534e-11,
+     "evaluations": 7518
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K2_standard_TMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 1.1102230246251565e-16,
+   "voltage_GH_refinement_variance_max_pu2": 1.2285365866976372e-16,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.076603246019107e-09,
+     "evaluations": 1974
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 3.951902376957989e-11,
+     "evaluations": 2688
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K1_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 2.142730437526552e-13,
+   "variance_refinement_abs_max": 3.909927936973645e-13,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.071531500170641e-09,
+     "evaluations": 924
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.8788503650436227e-11,
+     "evaluations": 1218
+    }
+   ]
+  },
+  {
+   "file": "mixed_K4_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.8973538018496328e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K4_AQGMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.0328790734103208e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K4_AQGMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.082197683525802e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K4_AQGMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.5246593050577406e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 8.069100942975638e-13,
+   "variance_refinement_abs_max": 9.485745522397337e-13,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.327377564655908e-09,
+     "evaluations": 966
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.6047388364963774e-11,
+     "evaluations": 1260
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_grouped_t_shift_moments.json",
+   "component": 1,
+   "mean_refinement_abs_max": 3.3659186549073183e-13,
+   "variance_refinement_abs_max": 1.665854953980528e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.3721130455900014e-09,
+     "evaluations": 1428
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.243030437054985e-11,
+     "evaluations": 1764
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_grouped_t_shift_moments.json",
+   "component": 2,
+   "mean_refinement_abs_max": 1.7763568394002505e-13,
+   "variance_refinement_abs_max": 2.557329348285009e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.0813353352122187e-09,
+     "evaluations": 1470
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.4732010624901696e-11,
+     "evaluations": 1848
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_grouped_t_shift_moments.json",
+   "component": 3,
+   "mean_refinement_abs_max": 1.049160758270773e-14,
+   "variance_refinement_abs_max": 4.352421201225809e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.7022753091028586e-09,
+     "evaluations": 1302
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.6481928895201322e-11,
+     "evaluations": 1638
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_grouped_t_shift_moments.json",
+   "component": 4,
+   "mean_refinement_abs_max": 1.8340884366807586e-13,
+   "variance_refinement_abs_max": 1.2377598945789714e-13,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.7634224805953692e-09,
+     "evaluations": 1512
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.68364950256074e-11,
+     "evaluations": 1806
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_grouped_t_shift_moments.json",
+   "component": 5,
+   "mean_refinement_abs_max": 2.964295475749168e-13,
+   "variance_refinement_abs_max": 4.6906922790412864e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.0104690847522875e-09,
+     "evaluations": 1512
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.329421021788944e-11,
+     "evaluations": 1890
+    }
+   ]
+  },
+  {
+   "file": "pareto_K2_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 2.1969093211282598e-12,
+   "variance_refinement_abs_max": 2.4764357231532586e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.308738730627883e-09,
+     "evaluations": 840
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.656582233161752e-11,
+     "evaluations": 1134
+    }
+   ]
+  },
+  {
+   "file": "pareto_K2_grouped_t_shift_moments.json",
+   "component": 1,
+   "mean_refinement_abs_max": 2.1316282072803006e-14,
+   "variance_refinement_abs_max": 1.5393936125818186e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.2448951308487784e-09,
+     "evaluations": 1596
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.861907151236916e-11,
+     "evaluations": 1890
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 2.220446049250313e-16,
+   "voltage_GH_refinement_variance_max_pu2": 5.99377454136088e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.0548873611371188e-09,
+     "evaluations": 2142
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 5.029391364136083e-11,
+     "evaluations": 2856
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_standard_TMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.4118345164834678e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.4842526155312787e-09,
+     "evaluations": 2310
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 5.214973626264646e-11,
+     "evaluations": 3108
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_standard_TMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.6127507315721878e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.2925109016520035e-09,
+     "evaluations": 2310
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 5.306812707610162e-11,
+     "evaluations": 3066
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_standard_TMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.6816145101839625e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.994671314571934e-09,
+     "evaluations": 2226
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 5.2526216553738236e-11,
+     "evaluations": 2940
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_standard_TMM_moments.json",
+   "component": 4,
+   "voltage_GH_refinement_mean_max_pu": 1.1102230246251565e-16,
+   "voltage_GH_refinement_variance_max_pu2": 1.5479018891303986e-16,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.3883708826228708e-09,
+     "evaluations": 2520
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 5.869042211249233e-11,
+     "evaluations": 3990
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_standard_TMM_moments.json",
+   "component": 5,
+   "voltage_GH_refinement_mean_max_pu": 3.1086244689504383e-15,
+   "voltage_GH_refinement_variance_max_pu2": 6.12688068682421e-15,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.329380523455501e-09,
+     "evaluations": 2562
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 6.058248977747346e-11,
+     "evaluations": 4242
+    }
+   ]
+  },
+  {
+   "file": "pareto_K2_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 8.758771485872785e-12,
+   "voltage_GH_refinement_variance_max_pu2": 1.7833518380560784e-11,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 4.3629569304814065e-09,
+     "evaluations": 3150
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 7.21414280111417e-11,
+     "evaluations": 9030
+    }
+   ]
+  },
+  {
+   "file": "pareto_K2_standard_TMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 1.1102230246251565e-16,
+   "voltage_GH_refinement_variance_max_pu2": 3.2282119685755895e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.294231882134796e-09,
+     "evaluations": 2184
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 5.046886733115164e-11,
+     "evaluations": 2898
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K2_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 6.776263578034403e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K2_AQGMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 4.0657581468206416e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 7.047314121155779e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_AQGMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.082197683525802e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_AQGMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 3.3881317890172014e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_AQGMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.082197683525802e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_AQGMM_moments.json",
+   "component": 4,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.0328790734103208e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_AQGMM_moments.json",
+   "component": 5,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.3552527156068805e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K2_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 3.669287096386142e-12,
+   "voltage_GH_refinement_variance_max_pu2": 7.484422370057642e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 4.297368726470521e-09,
+     "evaluations": 2982
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 6.970087706202443e-11,
+     "evaluations": 8148
+    }
+   ]
+  },
+  {
+   "file": "mixed_K2_standard_TMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 3.207205551483683e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.0863325124338225e-09,
+     "evaluations": 2184
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.724701661103593e-11,
+     "evaluations": 2898
+    }
+   ]
+  },
+  {
+   "file": "mixed_K2_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 8.393286066166183e-13,
+   "variance_refinement_abs_max": 1.1733392035750967e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.006789220871251e-09,
+     "evaluations": 840
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.968729734608549e-11,
+     "evaluations": 1134
+    }
+   ]
+  },
+  {
+   "file": "mixed_K2_grouped_t_shift_moments.json",
+   "component": 1,
+   "mean_refinement_abs_max": 2.0117241206207837e-13,
+   "variance_refinement_abs_max": 2.9264785039728736e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.2210992590538053e-09,
+     "evaluations": 1386
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.1726125061027843e-11,
+     "evaluations": 1722
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K4_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 4.277516383634217e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.0827260148566137e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.087183622647548e-11,
+     "evaluations": 2730
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K4_standard_TMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.2993485410880967e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.9576675069526497e-09,
+     "evaluations": 2016
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.257975849341633e-11,
+     "evaluations": 2688
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K4_standard_TMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 1.1102230246251565e-16,
+   "voltage_GH_refinement_variance_max_pu2": 7.674118502123961e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.562830275196349e-09,
+     "evaluations": 2100
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.816990053080736e-11,
+     "evaluations": 2814
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K4_standard_TMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 5.858868945551876e-12,
+   "voltage_GH_refinement_variance_max_pu2": 1.1949238473696333e-11,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 4.018160940886547e-09,
+     "evaluations": 2688
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 6.346636829668756e-11,
+     "evaluations": 5712
+    }
+   ]
+  },
+  {
+   "file": "pareto_K4_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.168404344971009e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K4_AQGMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 6.776263578034403e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K4_AQGMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.929230630780102e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K4_AQGMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.371692252312041e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K1_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 1.5976109324356003e-12,
+   "variance_refinement_abs_max": 3.873873444248943e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.281521935885742e-09,
+     "evaluations": 630
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.275701054594419e-11,
+     "evaluations": 966
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K4_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.6940658945086007e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K4_AQGMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 6.776263578034403e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K4_AQGMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.0328790734103208e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K4_AQGMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 4.336808689942018e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.421010862427522e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_AQGMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.082197683525802e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_AQGMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.082197683525802e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_AQGMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.0164395367051604e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_AQGMM_moments.json",
+   "component": 4,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.964615315390051e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "mixed_K6_AQGMM_moments.json",
+   "component": 5,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.371692252312041e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K4_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 9.339418127751742e-12,
+   "voltage_GH_refinement_variance_max_pu2": 1.923271329522247e-11,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 4.431113007268008e-09,
+     "evaluations": 2814
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 6.715742441945899e-11,
+     "evaluations": 6720
+    }
+   ]
+  },
+  {
+   "file": "pareto_K4_standard_TMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 4.4133804683738065e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.966117569146372e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 3.198300622202486e-11,
+     "evaluations": 2814
+    }
+   ]
+  },
+  {
+   "file": "pareto_K4_standard_TMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.1520495115605739e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.2713344512272676e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.446899311663021e-11,
+     "evaluations": 2730
+    }
+   ]
+  },
+  {
+   "file": "pareto_K4_standard_TMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 1.1102230246251565e-16,
+   "voltage_GH_refinement_variance_max_pu2": 1.1477974061653573e-16,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.6719628097957197e-09,
+     "evaluations": 2100
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.956912081740512e-11,
+     "evaluations": 2814
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K4_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 1.3145040611561853e-13,
+   "variance_refinement_abs_max": 1.6854573292590658e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.372703296294423e-09,
+     "evaluations": 1470
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.294708737139969e-11,
+     "evaluations": 1764
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K4_grouped_t_shift_moments.json",
+   "component": 1,
+   "mean_refinement_abs_max": 1.2501111257279263e-13,
+   "variance_refinement_abs_max": 8.927233952071845e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.919872720380523e-09,
+     "evaluations": 1344
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.897709275569012e-11,
+     "evaluations": 1680
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K4_grouped_t_shift_moments.json",
+   "component": 2,
+   "mean_refinement_abs_max": 1.9051427102567686e-13,
+   "variance_refinement_abs_max": 8.068545831463325e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.4713889036182029e-09,
+     "evaluations": 1470
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.718020819797051e-11,
+     "evaluations": 1764
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K4_grouped_t_shift_moments.json",
+   "component": 3,
+   "mean_refinement_abs_max": 1.0197745425877258e-12,
+   "variance_refinement_abs_max": 1.512290292993157e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.420094618748713e-09,
+     "evaluations": 882
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.450344490823365e-11,
+     "evaluations": 1218
+    }
+   ]
+  },
+  {
+   "file": "pareto_K1_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 8.021361352916756e-12,
+   "voltage_GH_refinement_variance_max_pu2": 1.6096254185212974e-11,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 4.759030507219492e-09,
+     "evaluations": 3192
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 7.236010110579154e-11,
+     "evaluations": 9534
+    }
+   ]
+  },
+  {
+   "file": "pareto_K1_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.3552527156068805e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 1.7763568394002505e-15,
+   "variance_refinement_abs_max": 1.6627324517237696e-15,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.4365513188369943e-09,
+     "evaluations": 1932
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.6798766147282297e-11,
+     "evaluations": 2940
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_grouped_t_shift_moments.json",
+   "component": 1,
+   "mean_refinement_abs_max": 2.55351295663786e-15,
+   "variance_refinement_abs_max": 4.1516269588814936e-15,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.8067513499186782e-09,
+     "evaluations": 2142
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.84268962679938e-11,
+     "evaluations": 2688
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_grouped_t_shift_moments.json",
+   "component": 2,
+   "mean_refinement_abs_max": 4.929390229335695e-14,
+   "variance_refinement_abs_max": 2.5592375441085835e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.0918570606228791e-09,
+     "evaluations": 1596
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.479940745375569e-11,
+     "evaluations": 1890
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_grouped_t_shift_moments.json",
+   "component": 3,
+   "mean_refinement_abs_max": 1.2367884494324244e-13,
+   "variance_refinement_abs_max": 8.572136056539392e-15,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.4604280227407688e-09,
+     "evaluations": 1722
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.254304126951722e-11,
+     "evaluations": 2058
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_grouped_t_shift_moments.json",
+   "component": 4,
+   "mean_refinement_abs_max": 6.106226635438361e-14,
+   "variance_refinement_abs_max": 2.066749549278768e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.2618776409019986e-09,
+     "evaluations": 1806
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.8105676285654952e-11,
+     "evaluations": 2142
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_grouped_t_shift_moments.json",
+   "component": 5,
+   "mean_refinement_abs_max": 1.6138201885951275e-12,
+   "variance_refinement_abs_max": 2.116640196447861e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.3766949517993497e-09,
+     "evaluations": 966
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.2198133709024738e-11,
+     "evaluations": 1302
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 2.0659030042224913e-12,
+   "voltage_GH_refinement_variance_max_pu2": 4.227196880295797e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.888738075525181e-09,
+     "evaluations": 2562
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 6.192226206590894e-11,
+     "evaluations": 4536
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_standard_TMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.397858472853772e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.230387129891152e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.3649245773246856e-11,
+     "evaluations": 2730
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_standard_TMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.5343154806564396e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.4451786097156143e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.8299778257091216e-11,
+     "evaluations": 2730
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_standard_TMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 2.220446049250313e-16,
+   "voltage_GH_refinement_variance_max_pu2": 1.886172966945876e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.765980911393304e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.6469245703157306e-11,
+     "evaluations": 2772
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_standard_TMM_moments.json",
+   "component": 4,
+   "voltage_GH_refinement_mean_max_pu": 1.1102230246251565e-16,
+   "voltage_GH_refinement_variance_max_pu2": 1.1374636042088548e-16,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.3564337147579813e-09,
+     "evaluations": 2100
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 3.192221990827211e-11,
+     "evaluations": 2898
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K6_standard_TMM_moments.json",
+   "component": 5,
+   "voltage_GH_refinement_mean_max_pu": 1.1102230246251565e-16,
+   "voltage_GH_refinement_variance_max_pu2": 4.796408767122201e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.362697570096077e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.725471495661843e-11,
+     "evaluations": 2730
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K2_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.710505431213761e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K2_AQGMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 4.743384504624082e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.0164395367051604e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_AQGMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.964615315390051e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_AQGMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 3.3881317890172014e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_AQGMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.082197683525802e-21,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_AQGMM_moments.json",
+   "component": 4,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.6940658945086007e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_AQGMM_moments.json",
+   "component": 5,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.421010862427522e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K2_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 7.980283101005625e-13,
+   "variance_refinement_abs_max": 9.802436640171663e-13,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 2.272252890840868e-09,
+     "evaluations": 840
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.049942615415067e-11,
+     "evaluations": 1134
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K2_grouped_t_shift_moments.json",
+   "component": 1,
+   "mean_refinement_abs_max": 3.4861002973229915e-13,
+   "variance_refinement_abs_max": 3.1377678233468487e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.327682092090072e-09,
+     "evaluations": 1470
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.3374980183276446e-11,
+     "evaluations": 1806
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 1.27675647831893e-14,
+   "variance_refinement_abs_max": 1.2320006126387284e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.2675804029700619e-09,
+     "evaluations": 1134
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.4291263352099137e-11,
+     "evaluations": 1428
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_grouped_t_shift_moments.json",
+   "component": 1,
+   "mean_refinement_abs_max": 2.320088565710421e-13,
+   "variance_refinement_abs_max": 1.560522544519216e-13,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.7695200195692269e-09,
+     "evaluations": 924
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.701269794673167e-11,
+     "evaluations": 1218
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_grouped_t_shift_moments.json",
+   "component": 2,
+   "mean_refinement_abs_max": 2.503552920529728e-14,
+   "variance_refinement_abs_max": 2.3162027851242328e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 9.562190006596628e-10,
+     "evaluations": 1092
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.6150994241252717e-11,
+     "evaluations": 1344
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_grouped_t_shift_moments.json",
+   "component": 3,
+   "mean_refinement_abs_max": 1.4277468096679513e-13,
+   "variance_refinement_abs_max": 1.797034743233894e-13,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.992372596803489e-09,
+     "evaluations": 1008
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.7356386504864227e-11,
+     "evaluations": 1344
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_grouped_t_shift_moments.json",
+   "component": 4,
+   "mean_refinement_abs_max": 1.5987211554602254e-14,
+   "variance_refinement_abs_max": 8.43769498715119e-15,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.8470008812646102e-09,
+     "evaluations": 1218
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.997297333092528e-11,
+     "evaluations": 1512
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K6_grouped_t_shift_moments.json",
+   "component": 5,
+   "mean_refinement_abs_max": 4.869438186005937e-13,
+   "variance_refinement_abs_max": 1.3808398868775384e-13,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.7270683259213107e-09,
+     "evaluations": 966
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.519848403266016e-11,
+     "evaluations": 1260
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K1_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.6263032587282567e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K1_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 7.657208200839705e-12,
+   "voltage_GH_refinement_variance_max_pu2": 1.537188174601141e-11,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 4.69316309279726e-09,
+     "evaluations": 3150
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 7.236290520320819e-11,
+     "evaluations": 9324
+    }
+   ]
+  },
+  {
+   "file": "loglogistic_K1_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 1.545430450278218e-13,
+   "variance_refinement_abs_max": 6.03003758037346e-13,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.721154573021547e-09,
+     "evaluations": 714
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.930138754984582e-11,
+     "evaluations": 1050
+    }
+   ]
+  },
+  {
+   "file": "pareto_K2_AQGMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.0842021724855044e-19,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K2_AQGMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 2.0328790734103208e-20,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 0.0,
+     "evaluations": 1
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 5.3934822916417574e-18,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.3471990206348393e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.575947789412179e-11,
+     "evaluations": 2730
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_standard_TMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.7126582677008326e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.2354748456484953e-09,
+     "evaluations": 2100
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 3.636005354047838e-11,
+     "evaluations": 2856
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_standard_TMM_moments.json",
+   "component": 2,
+   "voltage_GH_refinement_mean_max_pu": 0.0,
+   "voltage_GH_refinement_variance_max_pu2": 1.3275123865843022e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.5922726811011566e-09,
+     "evaluations": 2100
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 3.581436880757613e-11,
+     "evaluations": 2814
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_standard_TMM_moments.json",
+   "component": 3,
+   "voltage_GH_refinement_mean_max_pu": 2.220446049250313e-16,
+   "voltage_GH_refinement_variance_max_pu2": 2.049057402702878e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.604538850892566e-09,
+     "evaluations": 2058
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.38320000836048e-11,
+     "evaluations": 2772
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_standard_TMM_moments.json",
+   "component": 4,
+   "voltage_GH_refinement_mean_max_pu": 2.220446049250313e-16,
+   "voltage_GH_refinement_variance_max_pu2": 9.469150723945274e-17,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.457056489828417e-09,
+     "evaluations": 2100
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 4.5813877750559205e-11,
+     "evaluations": 2814
+    }
+   ]
+  },
+  {
+   "file": "pareto_K6_standard_TMM_moments.json",
+   "component": 5,
+   "voltage_GH_refinement_mean_max_pu": 9.64517354873351e-12,
+   "voltage_GH_refinement_variance_max_pu2": 1.990344461509988e-11,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 4.003520903126098e-09,
+     "evaluations": 2772
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 6.63985692257191e-11,
+     "evaluations": 6132
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K2_standard_TMM_moments.json",
+   "component": 0,
+   "voltage_GH_refinement_mean_max_pu": 6.17284001691587e-14,
+   "voltage_GH_refinement_variance_max_pu2": 1.2585355121334102e-13,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 3.826418685945476e-09,
+     "evaluations": 2646
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 6.393731098993504e-11,
+     "evaluations": 5376
+    }
+   ]
+  },
+  {
+   "file": "lognormal_K2_standard_TMM_moments.json",
+   "component": 1,
+   "voltage_GH_refinement_mean_max_pu": 1.1102230246251565e-16,
+   "voltage_GH_refinement_variance_max_pu2": 1.2035321740946903e-16,
+   "integrations": [
+    {
+     "GH": 20,
+     "integration_scaled_error": 2.338449078857418e-09,
+     "evaluations": 2436
+    },
+    {
+     "GH": 32,
+     "integration_scaled_error": 5.605604621322327e-11,
+     "evaluations": 3276
+    }
+   ]
+  },
+  {
+   "file": "mixed_K4_grouped_t_shift_moments.json",
+   "component": 0,
+   "mean_refinement_abs_max": 8.229805725790129e-13,
+   "variance_refinement_abs_max": 1.1095985241738049e-12,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.2965603336609074e-09,
+     "evaluations": 882
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.660352026624803e-11,
+     "evaluations": 1176
+    }
+   ]
+  },
+  {
+   "file": "mixed_K4_grouped_t_shift_moments.json",
+   "component": 1,
+   "mean_refinement_abs_max": 3.574918139293004e-14,
+   "variance_refinement_abs_max": 6.28577051520196e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.7057013533412813e-09,
+     "evaluations": 1386
+    },
+    {
+     "GH": 32,
+     "scaled_error": 3.372400189931428e-11,
+     "evaluations": 1722
+    }
+   ]
+  },
+  {
+   "file": "mixed_K4_grouped_t_shift_moments.json",
+   "component": 2,
+   "mean_refinement_abs_max": 9.015010959956271e-14,
+   "variance_refinement_abs_max": 8.958112029944232e-15,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.8611579493550057e-09,
+     "evaluations": 1428
+    },
+    {
+     "GH": 32,
+     "scaled_error": 2.4210047464022162e-11,
+     "evaluations": 1722
+    }
+   ]
+  },
+  {
+   "file": "mixed_K4_grouped_t_shift_moments.json",
+   "component": 3,
+   "mean_refinement_abs_max": 1.2301271112846734e-13,
+   "variance_refinement_abs_max": 4.3380229963752015e-14,
+   "integrations": [
+    {
+     "GH": 20,
+     "scaled_error": 1.78959024758887e-09,
+     "evaluations": 1260
+    },
+    {
+     "GH": 32,
+     "scaled_error": 1.8758302357105694e-11,
+     "evaluations": 1596
+    }
+   ]
+  }
+ ],
+ "image_metadata": [
+  {
+   "file": "figures/pareto/V_all_quantities_tail_compare.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/V_mc_standardized_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/V_mc_standardized_tail_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/P_all_quantities_tail_compare.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/P_mc_standardized_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/P_mc_standardized_tail_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/Q_all_quantities_tail_compare.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/Q_mc_standardized_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/Q_mc_standardized_tail_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/V_all_quantities_tail_compare.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/V_mc_standardized_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/V_mc_standardized_tail_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/P_all_quantities_tail_compare.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/P_mc_standardized_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/P_mc_standardized_tail_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/Q_all_quantities_tail_compare.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/Q_mc_standardized_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/Q_mc_standardized_tail_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/V_all_quantities_tail_compare.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/V_mc_standardized_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/V_mc_standardized_tail_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/P_all_quantities_tail_compare.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/P_mc_standardized_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/P_mc_standardized_tail_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/Q_all_quantities_tail_compare.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/Q_mc_standardized_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/Q_mc_standardized_tail_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/V_all_quantities_tail_compare.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/V_mc_standardized_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/V_mc_standardized_tail_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/P_all_quantities_tail_compare.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/P_mc_standardized_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/P_mc_standardized_tail_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/Q_all_quantities_tail_compare.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/Q_mc_standardized_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/Q_mc_standardized_tail_pdf_compare.png",
+   "width": 2125,
+   "height": 1157,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/V22_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/V22_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/V21_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/V21_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/V20_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/V20_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/P32_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/P32_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/P17_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/P17_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/P31_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/P31_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/Q18_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/Q18_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/Q30_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/Q30_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/Q19_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/pareto/Q19_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/V22_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/V22_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/V21_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/V21_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/V20_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/V20_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/P32_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/P32_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/P31_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/P31_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/P21_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/P21_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/Q18_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/Q18_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/Q19_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/Q19_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/Q31_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/lognormal/Q31_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/V22_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/V22_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/V21_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/V21_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/V20_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/V20_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/P32_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/P32_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/P31_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/P31_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/P30_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/P30_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/Q18_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/Q18_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/Q19_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/Q19_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/Q31_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/loglogistic/Q31_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/V33_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/V33_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/V32_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/V32_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/V31_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/V31_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/P17_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/P17_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/P32_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/P32_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/P31_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/P31_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/Q30_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/Q30_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/Q31_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/Q31_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/Q29_full_pdf.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  },
+  {
+   "file": "figures/mixed/Q29_tail_pdf_zoom.png",
+   "width": 2125,
+   "height": 1476,
+   "dpi": [
+    299.9994,
+    299.9994
+   ]
+  }
+ ]
+}

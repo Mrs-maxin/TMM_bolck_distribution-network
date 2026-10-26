@@ -1,0 +1,74 @@
+{
+ "scene": "lognormal",
+ "scenarios": 8192,
+ "coamplification_threshold": 0.025,
+ "groups": [
+  [
+   "P14",
+   "P15",
+   "P16",
+   "P33"
+  ],
+  [
+   "P13",
+   "P22"
+  ]
+ ],
+ "group_median_coamplification": [
+  0.022,
+  0.044
+ ],
+ "r_first_order": 6,
+ "voltage_share_first_order": 0.18686763413638927,
+ "leak_directions": 13,
+ "leak_shares": [
+  0.198,
+  0.0305,
+  0.0066,
+  0.008,
+  0.0017,
+  0.0033,
+  0.0053,
+  0.0106,
+  0.0052,
+  0.0058,
+  0.0089,
+  0.0818,
+  0.0217
+ ],
+ "amplified_voltage_share": 0.5743000319451352,
+ "remaining_kurtosis_max_before": 26.618836703902467,
+ "remaining_kurtosis_max_after": 0.43023864706185977,
+ "remaining_kurtosis_median_after": 0.04000624112428519,
+ "group_cols": [
+  [
+   0,
+   1,
+   2,
+   3,
+   6,
+   7,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   17
+  ],
+  [
+   4,
+   5,
+   8,
+   15,
+   16,
+   18
+  ]
+ ],
+ "internal_strength_caps": [
+  32.042402749603724,
+  42.801307309205605
+ ],
+ "cap_basis": "estimation+selection only",
+ "anchor_index": 1036
+}

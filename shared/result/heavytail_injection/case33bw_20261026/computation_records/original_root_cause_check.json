@@ -1,0 +1,11 @@
+{
+ "frozen_files": 441,
+ "mismatched_files": [],
+ "original_archive_unchanged": true,
+ "random_voltage_draws_per_saved_model": 1048576,
+ "injection_or_MC_changed": false,
+ "new_power_flow": false,
+ "new_voltage_fit": false,
+ "diagnostics": "K2 terminal-Q balance and training-only V18 component-df ablation",
+ "source_script_SHA256": "e9275a7da53b52e5e96ae201f5806edd8bbf81e52857ceb2fb0e123b23424fba"
+}

@@ -1,0 +1,12 @@
+{
+ "chosen_start": 0,
+ "attempts": [
+  {
+   "start": 0,
+   "status": "converged",
+   "iterations": 1,
+   "selection_ll": -30.341141460698747,
+   "rule": "PC1 deterministic balanced"
+  }
+ ]
+}

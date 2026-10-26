@@ -1,0 +1,23 @@
+{
+  "CDF_table_is": "tail_CDF_RMSE_not_global_CDF_or_CDF_curve",
+  "tail_probability_range": [
+    0.001,
+    0.05
+  ],
+  "thresholds_per_side": 50,
+  "tail_CDF_RMSE_rows": 9312,
+  "extreme_quantile_rows": 27936,
+  "tail_curve_rows": 465600,
+  "max_recomputed_RMSE_probability_difference": 1.6653345369377348e-16,
+  "max_probability_to_percentage_point_difference": 1.4210854715202004e-14,
+  "max_quantile_signed_error_identity_difference": 1.2256862191861728e-12,
+  "max_quantile_absolute_error_identity_difference": 1.2256862191861728e-12,
+  "max_tail_probability_error_identity_difference_pp": 1.4210854715202004e-14,
+  "MC_tail_extension_objects": 373,
+  "MC_tail_extension_CDF_rows": 4476,
+  "frozen_archive_files": 441,
+  "frozen_archive_hash_mismatches": [],
+  "new_injection_or_AC_or_model_fit": false,
+  "new_error_metrics": false,
+  "note": "File organization and per-object comparison only; unfinished branch-Q integral trials are excluded."
+}

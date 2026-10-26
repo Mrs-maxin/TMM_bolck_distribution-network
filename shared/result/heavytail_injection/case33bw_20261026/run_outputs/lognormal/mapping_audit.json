@@ -1,0 +1,11 @@
+{
+ "scenarios": 12288,
+ "anchors": 1,
+ "accepted": 12288,
+ "ac_fallback": 0,
+ "map_seconds": 1.172276125,
+ "fallback_seconds": 0.0,
+ "max_power_residual_pu": 9.96807158690216e-09,
+ "polar_check_count": 128,
+ "max_voltage_difference_pu": 2.190739362416285e-08
+}

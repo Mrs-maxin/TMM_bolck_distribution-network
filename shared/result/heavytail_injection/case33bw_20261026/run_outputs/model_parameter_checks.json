@@ -1,0 +1,386 @@
+[
+ {
+  "scene": "pareto",
+  "K": 1,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 0.9998779286457604,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "pareto",
+  "K": 1,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 0.5121325975990478,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "pareto",
+  "K": 1,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 0.0026183913585682917,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "pareto",
+  "K": 2,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 2.5627722754286878e-06,
+  "weight_sum": 1.0000000000000009,
+  "finite": true
+ },
+ {
+  "scene": "pareto",
+  "K": 2,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 1.8289910387134955e-06,
+  "weight_sum": 1.0000000000000009,
+  "finite": true
+ },
+ {
+  "scene": "pareto",
+  "K": 2,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 2.007598739103763e-05,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "pareto",
+  "K": 4,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 9.999999998984047e-08,
+  "weight_sum": 0.9999999999999998,
+  "finite": true
+ },
+ {
+  "scene": "pareto",
+  "K": 4,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 2.1544929090530305e-08,
+  "weight_sum": 1.0000000000000004,
+  "finite": true
+ },
+ {
+  "scene": "pareto",
+  "K": 4,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 1.0000000003110658e-07,
+  "weight_sum": 0.9999999999999999,
+  "finite": true
+ },
+ {
+  "scene": "pareto",
+  "K": 6,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 9.999999999827912e-08,
+  "weight_sum": 0.9999999999999999,
+  "finite": true
+ },
+ {
+  "scene": "pareto",
+  "K": 6,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 2.6634887322583406e-09,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "pareto",
+  "K": 6,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 1.0565039387952817e-07,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "lognormal",
+  "K": 1,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 0.9998779279419197,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "lognormal",
+  "K": 1,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 0.5869258926424202,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "lognormal",
+  "K": 1,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 0.015194284391693813,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "lognormal",
+  "K": 2,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 0.0011100036622911573,
+  "weight_sum": 0.999999999999999,
+  "finite": true
+ },
+ {
+  "scene": "lognormal",
+  "K": 2,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 0.0007318780701207861,
+  "weight_sum": 1.0000000000000009,
+  "finite": true
+ },
+ {
+  "scene": "lognormal",
+  "K": 2,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 0.002194261633134749,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "lognormal",
+  "K": 4,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 2.6243861565513305e-05,
+  "weight_sum": 0.9999999999999998,
+  "finite": true
+ },
+ {
+  "scene": "lognormal",
+  "K": 4,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 1.8236226096502607e-05,
+  "weight_sum": 0.9999999999999998,
+  "finite": true
+ },
+ {
+  "scene": "lognormal",
+  "K": 4,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 0.00010121328942364237,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "lognormal",
+  "K": 6,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 5.787798159671564e-06,
+  "weight_sum": 1.0000000000000002,
+  "finite": true
+ },
+ {
+  "scene": "lognormal",
+  "K": 6,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 3.942629158583105e-06,
+  "weight_sum": 0.9999999999999999,
+  "finite": true
+ },
+ {
+  "scene": "lognormal",
+  "K": 6,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 7.75110537807142e-06,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "loglogistic",
+  "K": 1,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 0.9998779290175673,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "loglogistic",
+  "K": 1,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 0.5159373637856635,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "loglogistic",
+  "K": 1,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 0.73131245383489,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "loglogistic",
+  "K": 2,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 0.0006004887950761137,
+  "weight_sum": 0.9999999999999992,
+  "finite": true
+ },
+ {
+  "scene": "loglogistic",
+  "K": 2,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 0.0004738292043753168,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "loglogistic",
+  "K": 2,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 0.000634400615909848,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "loglogistic",
+  "K": 4,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 9.745005298332976e-06,
+  "weight_sum": 1.0000000000000013,
+  "finite": true
+ },
+ {
+  "scene": "loglogistic",
+  "K": 4,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 7.297964529861221e-06,
+  "weight_sum": 1.0000000000000009,
+  "finite": true
+ },
+ {
+  "scene": "loglogistic",
+  "K": 4,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 0.00023620511611257316,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "loglogistic",
+  "K": 6,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 4.2453117722698365e-06,
+  "weight_sum": 0.9999999999999997,
+  "finite": true
+ },
+ {
+  "scene": "loglogistic",
+  "K": 6,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 3.235417545594866e-06,
+  "weight_sum": 0.9999999999999999,
+  "finite": true
+ },
+ {
+  "scene": "loglogistic",
+  "K": 6,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 1.1915875986912726e-05,
+  "weight_sum": 0.9999999999999999,
+  "finite": true
+ },
+ {
+  "scene": "mixed",
+  "K": 1,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 0.9998779280548943,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "mixed",
+  "K": 1,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 0.5121325972964093,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "mixed",
+  "K": 1,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 0.16591192664609056,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "mixed",
+  "K": 2,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 6.24021092379925e-05,
+  "weight_sum": 1.0000000000000024,
+  "finite": true
+ },
+ {
+  "scene": "mixed",
+  "K": 2,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 4.491521362563777e-05,
+  "weight_sum": 1.0000000000000018,
+  "finite": true
+ },
+ {
+  "scene": "mixed",
+  "K": 2,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 7.106870240944358e-05,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "mixed",
+  "K": 4,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 2.379822743535805e-06,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "mixed",
+  "K": 4,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 1.7782542428603318e-06,
+  "weight_sum": 1.0000000000000002,
+  "finite": true
+ },
+ {
+  "scene": "mixed",
+  "K": 4,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 1.8235103483769297e-05,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "mixed",
+  "K": 6,
+  "model": "AQGMM",
+  "minimum_scatter_eigenvalue": 7.474664252693247e-07,
+  "weight_sum": 1.0,
+  "finite": true
+ },
+ {
+  "scene": "mixed",
+  "K": 6,
+  "model": "standard_TMM",
+  "minimum_scatter_eigenvalue": 5.538561164341661e-07,
+  "weight_sum": 0.9999999999999998,
+  "finite": true
+ },
+ {
+  "scene": "mixed",
+  "K": 6,
+  "model": "grouped_t_shift",
+  "minimum_scatter_eigenvalue": 1.2637962677577603e-07,
+  "weight_sum": 1.0,
+  "finite": true
+ }
+]

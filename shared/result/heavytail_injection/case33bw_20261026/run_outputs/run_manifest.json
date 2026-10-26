@@ -1,0 +1,278 @@
+{
+ "completed_utc": "2026-10-26T14:17:52Z",
+ "status": "completed_first_independent_realization",
+ "result_rows": 4656,
+ "MC_scenarios": 4000000,
+ "voltage_models": 48,
+ "electrical_quantities_per_model": 97,
+ "comparison_files": 48,
+ "CDF_checks": [
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/mixed/CDF_standard_TMM_K4.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/mixed/CDF_standard_TMM_K6.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/mixed/CDF_standard_TMM_K2.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/mixed/CDF_standard_TMM_K1.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/mixed/CDF_AQGMM_K6.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/mixed/CDF_grouped_t_shift_K1.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/mixed/CDF_AQGMM_K4.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/mixed/CDF_grouped_t_shift_K2.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/mixed/CDF_grouped_t_shift_K6.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/mixed/CDF_AQGMM_K1.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/mixed/CDF_AQGMM_K2.npz",
+   "minimum_monotonic_increment": -6.7357455291183754e-06
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/mixed/CDF_grouped_t_shift_K4.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/pareto/CDF_standard_TMM_K4.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/pareto/CDF_standard_TMM_K6.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/pareto/CDF_standard_TMM_K2.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/pareto/CDF_standard_TMM_K1.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/pareto/CDF_AQGMM_K6.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/pareto/CDF_grouped_t_shift_K1.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/pareto/CDF_AQGMM_K4.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/pareto/CDF_grouped_t_shift_K2.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/pareto/CDF_grouped_t_shift_K6.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/pareto/CDF_AQGMM_K1.npz",
+   "minimum_monotonic_increment": -1.7005286068183523e-12
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/pareto/CDF_AQGMM_K2.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/pareto/CDF_grouped_t_shift_K4.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/lognormal/CDF_standard_TMM_K4.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/lognormal/CDF_standard_TMM_K6.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/lognormal/CDF_standard_TMM_K2.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/lognormal/CDF_standard_TMM_K1.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/lognormal/CDF_AQGMM_K6.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/lognormal/CDF_grouped_t_shift_K1.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/lognormal/CDF_AQGMM_K4.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/lognormal/CDF_grouped_t_shift_K2.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/lognormal/CDF_grouped_t_shift_K6.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/lognormal/CDF_AQGMM_K1.npz",
+   "minimum_monotonic_increment": -4.181235913058856e-09
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/lognormal/CDF_AQGMM_K2.npz",
+   "minimum_monotonic_increment": -1.92783289065801e-06
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/lognormal/CDF_grouped_t_shift_K4.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/loglogistic/CDF_standard_TMM_K4.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/loglogistic/CDF_standard_TMM_K6.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/loglogistic/CDF_standard_TMM_K2.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/loglogistic/CDF_standard_TMM_K1.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/loglogistic/CDF_AQGMM_K6.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/loglogistic/CDF_grouped_t_shift_K1.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/loglogistic/CDF_AQGMM_K4.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/loglogistic/CDF_grouped_t_shift_K2.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/loglogistic/CDF_grouped_t_shift_K6.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/loglogistic/CDF_AQGMM_K1.npz",
+   "minimum_monotonic_increment": -9.965658409605282e-09
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/loglogistic/CDF_AQGMM_K2.npz",
+   "minimum_monotonic_increment": 0.0
+  },
+  {
+   "path": "result/case33bw/direct_heavytail_20261026/loglogistic/CDF_grouped_t_shift_K4.npz",
+   "minimum_monotonic_increment": 0.0
+  }
+ ],
+ "max_strength_refinement_difference": 4.748280099903246e-05,
+ "source_snapshot_SHA256": "c31b8b1327f749ec7fb21f9ce45f411dfbdf115231e008bb920ffd9a95ecc014",
+ "protocol_SHA256": "bb436e3e586b9f891dae2a0ea057093fa1f7d822fa4837605ef05050e79e6559",
+ "original_repository_written_by_this_study": false,
+ "externally_changed_original_files": [
+  {
+   "path": "BTMM_changelog.md",
+   "before": "6749a8118ce9863854f4519ae215660d57c58b6a2327e789fb4cfbd99bae1b8b",
+   "current": "4e5d4f935235cecccffcfe40d22415346d037fe831fc2a5b40aadbaa7c52a36f"
+  },
+  {
+   "path": "BTMM_note.md",
+   "before": "3ae1ff28b4291910146725b75f58f44242d8976612b7aae387c828ce3efb0efb",
+   "current": "c3f755ca8fae39ba9177b657162898338293927ab547792f5819312ddcdfd7a0"
+  }
+ ],
+ "execution": "Local macOS independent snapshot; no OpenAI cloud computation for this new test",
+ "precision_scope": "Current method implementation; no universal TMM-superiority conclusion; no runtime speedup claim",
+ "manuscript_status": "diagnostic evidence, not registered in original repository or exported as formal MATLAB figures",
+ "numerical_scripts_final_SHA256": {
+  "tests/python/analytic_grouped_t_case33.py": "218eb90e40f73ad11742797c65f665be999005a54258b35f74a4a3b40935fa2f",
+  "tests/python/analytic_limit_risk_general.py": "241a35bd6e8e68fe9e4a61bc980e83a1d6ce3a0c1003d041c1e57c396b9469a2",
+  "tests/python/analytic_limit_risk_pv_fixed_forecast.py": "2bf236ece885c3a1c03eeeef11285c3e2b36be99d63dd74f32bd953a533c7583",
+  "tests/python/analytic_limit_risk_pv_nrel_case33.py": "d7692e80d1b22ccb6c6273c55a5ef0300f7ed041eea5366bcbf89fb50944de2f",
+  "tests/python/apply_block_split_rule_case33.py": "f12b914982dc949011586d8aee9dcad475b6564d961e8a8288d2080ae4ad7201",
+  "tests/python/block_split_rule_check.py": "7cd1b2fbd32abe0e65ff57a70217d7da2ea37ec57a69d275d33131563f11ad35",
+  "tests/python/block_split_rule_scenarios.py": "844973faf0868333d0e634db20ebfb1244b66f7012751caea2add6f934d03e1a",
+  "tests/python/check_analytic_grouped_t_case33.py": "662e7ee59f820e990ce2c2a2623a75bf805b6eedbdd2340b7fc04d37a0fd61df",
+  "tests/python/check_common_cloud_input_case33.py": "dee4008e578fdb2e53bac16e655aed1f91e333deb6079e776f68febc6ebae815",
+  "tests/python/check_direct_heavytail_integration.py": "b01a3f1e8bd2b6b2654ee8760c2ae778d02e901bf193748ba00389f0f6cef994",
+  "tests/python/check_direct_heavytail_probabilities.py": "ba1e61249150cfc373324f3edfdededf8a0eb8a7ddb39ab6067fd7dcfe9187ff",
+  "tests/python/check_fixed_reactive_injection.py": "e188b7851cd269f888c401820f92e19cc0a10725caebbe049b4aff42510e677c",
+  "tests/python/check_nrel_sind_forecast_error.py": "e4eb0cd5860b22fce6cbdf3419d7b110794ee12d547854b9dddd29e31403b4b3",
+  "tests/python/check_record_resampling_case33.py": "4c9d27a51eef807d3bc970f5b0990b3619bda9a5d48d1de496dde7524abfb22f",
+  "tests/python/check_record_tail_options_case33.py": "1f31a04c3811e6a2842bae2333c533bccfd4f6049f0cb51d59e9d68003d2ea8b",
+  "tests/python/check_statewise_inversion.py": "dd3eac233fa8405b1f90c9e739d364dcfdef54f79a55069b7bc0ddc37c8be6d6",
+  "tests/python/compare_block_split_case33.py": "bc747d8595e724446d8a1f4959896cf6bb141df5770ec04e9e6bfd6e3e4dd12c",
+  "tests/python/easyplot_py.py": "0b2acbb69694fc19b095c47bbffa07b286fd51b6335a24059c97dafdd4262d48",
+  "tests/python/extreme_weather_case33.py": "852fc7abe5b92de8bd310a9071317d8c20d8f35d8f1cb686a1299d48a63e1ad4",
+  "tests/python/fast_voltage_map.py": "17951f9e7608258bcc51a35f1cd8618e5c4b0c543c9fb96ae00a19f61524069e",
+  "tests/python/feasibility_case1a_all_weather.py": "bba18499189360f86f19031f726148e3351380acb65cd6348ddc9701fd26e478",
+  "tests/python/finish_direct_heavytail_distributions.py": "36a6e66962db9c9e51426da665210c149ab866a3f163ded0d1d3ee638ba8b88c",
+  "tests/python/fit_nrel_pv_forecast_error_case33.py": "1b8eb9f0c84548226adfcba5fb162830df213db3d835441fc5db74207813f8f3",
+  "tests/python/fit_nrel_two_region_case33.py": "fac934d615076590996ab1dbe9a7a75eeec919b2260473273f37186f08d03a99",
+  "tests/python/generate_record_scenarios_case33.py": "9e40273d2acb026bd2e91335422fa5f72774a3e395c372cfb2bfd7ac205987e6",
+  "tests/python/grouped_nu_estimation_case33.py": "334453309b3316cb73a622886a5403dc3b297370ff94d90b3e6c6643053d2297",
+  "tests/python/grouped_strength_tmm_case33.py": "4c40c1717d093a0bfcc0ab4a1cfea9b026274c5c271af8a61995c06ba9936065",
+  "tests/python/limit_probability_pv_fixed_forecast.py": "a5d08e0466551602d4b2f85c75becffc0410efc1f0e25f5407b21be5a9615b4b",
+  "tests/python/mainline_analytic_case33.py": "5429efd6b714e94ed0bc600bfa0c5b0a10a6f33747a5a019b52cb493d169e321",
+  "tests/python/mainline_comparison_case33.py": "ff87c2fab75b0d4e2148949332011d80805f3d8c945656f1f89e826b6850b64e",
+  "tests/python/moment_matched_tmm_case33.py": "e291675759956d3f9f150a8fc0c24f584dbce65034b26199910b421ece31227e",
+  "tests/python/plot_analytic_pdfs_pv_fixed_forecast.py": "b76d79df3184c0ecc740464c4250cf8acac4df9addd32f8e96dcba7f20491959",
+  "tests/python/plot_case1_pdfs_pv_nrel.py": "77e569c88d5c806ea7a7e0d596d2d6ec6e64f311dee0e99e3e31603cbf5d96f9",
+  "tests/python/plot_full_distribution_grouped.py": "3b4087c7077730814ad87b3a0c023c7813af420e4596b7e99f6dd901e2b0d5bd",
+  "tests/python/plot_limit_risk_curves_pv_fixed_forecast.py": "3cc05e9138c5da2cd90b1141b905d3a79dbcdf869a955f6ea9f3f7e5e8d692c3",
+  "tests/python/plot_pv_fixed_forecast_pdfs.py": "e45d44609cf387ca1fc9cd55fd48f84d0e41e9f1f68900cf2c22e1f97613054b",
+  "tests/python/plot_pv_fixed_forecast_pdfs_general.py": "21d0df8f5a89014256c54365c3a4530906584369dfdf8c36d6651265d4e3d4c4",
+  "tests/python/report_direct_heavytail_case33.py": "c28b0da02cf4d1f1ef4efc63dfe9073c1cba2bf8a5de7be06dca5e06c1f98983",
+  "tests/python/run_direct_heavytail_case33.py": "4fdeae78e95487ead3932b35824841d879709abb570a5cf6b67dd94e3785fa5f",
+  "tests/python/run_pv_fixed_forecast.py": "c6db91c036f0e6d49497a3c954ab15e105181bcbcc086184b032613922791775",
+  "tests/python/run_pv_fixed_forecast_case33.py": "911415b9bd4c1dfcd524169d5884fad1efcf161757669a5dc58273d4c9d7537c",
+  "tests/python/run_pv_nrel_case33.py": "5b641d4ec5ce8b9d607867bb04ce5964aa5103fb6134523abec6b77f4a4f934f",
+  "tests/python/run_pv_shared_residual_case33.py": "a17ad4af3bdfeb340c71ee32b14f30bd9638bc65513b83a85082b00d7e6e9f7c",
+  "tests/python/run_wind_fixed_forecast_case33.py": "49c34794bd0da8c5dc7d11503f5952d1c685eed6226ce39198b4cc114e7e93a2",
+  "tests/python/select_k_by_pv_block.py": "a553853e19439f12c6fc36b40e11f0c5112a35889fd3faa322bd17b3c36f5155",
+  "tests/python/select_k_by_pv_block_shared.py": "f076cf851190a546899ae21a457b939aa84a2da418592b79f9daf65099fd2602",
+  "tests/python/shared_residual_mixture.py": "d9005c0ab9835d451b7c4710155cb6abba51e2ed50501806efc5de3a983bef7a",
+  "tests/python/shift_grouped_t_case33.py": "87307757b1f6b701cc44f00a5416968ad050a3ce5d014eaee2d0010a20c38dcc",
+  "tests/python/summarize_extreme_weather_case33.py": "085e1a52ae200f716136a3cc4d4930521de2e6701913409d3276b5c5ad4eaad1",
+  "tests/python/summarize_pv_nrel_case33.py": "1e6d7a213d54b1122849065164e0ded2cbc7a777f0d302243df2b036b5c8dd6b",
+  "tests/python/tail_baselines_pv_nrel_case33.py": "1b76d5c4ed9b600084524c45205c8140e31668447449d8d46569bf611e82831c",
+  "tests/python/truncated_strength_case33.py": "de3f2c7bfd0b216faa9006f4a8d99e4714a0b9cee95dcbe849df936e8ef55f12",
+  "tests/python/write_run_manifest.py": "01c80dda26ce7983d73ffae0102809479995216c86df16c2018d30743c17a779"
+ },
+ "post_computation_changes": "Only standalone entry directory creation was completed for clean extraction; no input parameters, numerical formulas or saved results changed."
+}

@@ -1,0 +1,17 @@
+scene,K,chosen_start,status,iterations
+mixed,4,0,converged,55
+mixed,2,0,converged,26
+mixed,1,0,converged,1
+mixed,6,2,converged,51
+pareto,4,3,converged,65
+pareto,2,3,converged,64
+pareto,1,0,converged,1
+pareto,6,0,converged,132
+lognormal,4,0,converged,36
+lognormal,2,3,converged,16
+lognormal,1,0,converged,1
+lognormal,6,2,converged,78
+loglogistic,4,5,converged,67
+loglogistic,2,3,converged,22
+loglogistic,1,0,converged,1
+loglogistic,6,1,converged,139

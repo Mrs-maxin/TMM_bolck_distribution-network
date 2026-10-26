@@ -1,0 +1,64 @@
+{
+ "scene": "loglogistic",
+ "scenarios": 8192,
+ "coamplification_threshold": 0.025,
+ "groups": [
+  [
+   "P13",
+   "P22"
+  ],
+  [
+   "P15",
+   "P16"
+  ]
+ ],
+ "group_median_coamplification": [
+  0.032,
+  0.044
+ ],
+ "r_first_order": 4,
+ "voltage_share_first_order": 0.12056625694529956,
+ "leak_directions": 10,
+ "leak_shares": [
+  0.0104,
+  0.0457,
+  0.0106,
+  0.0438,
+  0.0153,
+  0.0022,
+  0.003,
+  0.0291,
+  0.0169,
+  0.0117
+ ],
+ "amplified_voltage_share": 0.3092200233223842,
+ "remaining_kurtosis_max_before": 315.0247147416898,
+ "remaining_kurtosis_max_after": 36.235754616276,
+ "remaining_kurtosis_median_after": 17.30544132877282,
+ "group_cols": [
+  [
+   0,
+   1,
+   4,
+   7,
+   8,
+   9
+  ],
+  [
+   2,
+   3,
+   5,
+   6,
+   10,
+   11,
+   12,
+   13
+  ]
+ ],
+ "internal_strength_caps": [
+  170.67775660705945,
+  134.61637090086904
+ ],
+ "cap_basis": "estimation+selection only",
+ "anchor_index": 2455
+}

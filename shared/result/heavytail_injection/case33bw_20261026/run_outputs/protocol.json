@@ -1,0 +1,214 @@
+{
+ "version": "direct-generation-heavy-tails-v1",
+ "nodes": [
+  18,
+  17,
+  16,
+  15,
+  14,
+  13,
+  33,
+  22
+ ],
+ "load_multiplier": 1.0,
+ "load_randomness": false,
+ "load_P_MW": [
+  0.1,
+  0.09,
+  0.12,
+  0.06,
+  0.06,
+  0.2,
+  0.2,
+  0.06,
+  0.06,
+  0.045,
+  0.06,
+  0.06,
+  0.12,
+  0.06,
+  0.06,
+  0.06,
+  0.09,
+  0.09,
+  0.09,
+  0.09,
+  0.09,
+  0.09,
+  0.42,
+  0.42,
+  0.06,
+  0.06,
+  0.06,
+  0.12,
+  0.2,
+  0.15,
+  0.21,
+  0.06
+ ],
+ "load_Q_MVAr": [
+  0.06,
+  0.04,
+  0.08,
+  0.03,
+  0.02,
+  0.1,
+  0.1,
+  0.02,
+  0.02,
+  0.03,
+  0.035,
+  0.035,
+  0.08,
+  0.01,
+  0.02,
+  0.02,
+  0.04,
+  0.04,
+  0.04,
+  0.04,
+  0.04,
+  0.05,
+  0.2,
+  0.2,
+  0.025,
+  0.025,
+  0.02,
+  0.07,
+  0.6,
+  0.07,
+  0.1,
+  0.04
+ ],
+ "load_totals": [
+  3.7150000000000003,
+  2.3
+ ],
+ "generation_Q_MVAr": 0.0,
+ "scenes": {
+  "pareto": [
+   "pareto",
+   "pareto",
+   "pareto",
+   "pareto",
+   "pareto",
+   "pareto",
+   "pareto",
+   "pareto"
+  ],
+  "lognormal": [
+   "lognormal",
+   "lognormal",
+   "lognormal",
+   "lognormal",
+   "lognormal",
+   "lognormal",
+   "lognormal",
+   "lognormal"
+  ],
+  "loglogistic": [
+   "loglogistic",
+   "loglogistic",
+   "loglogistic",
+   "loglogistic",
+   "loglogistic",
+   "loglogistic",
+   "loglogistic",
+   "loglogistic"
+  ],
+  "mixed": [
+   "pareto",
+   "lognormal",
+   "loglogistic",
+   "pareto",
+   "lognormal",
+   "loglogistic",
+   "pareto",
+   "lognormal"
+  ]
+ },
+ "station_mean_MW": 0.25,
+ "station_sd_MW": 0.06454972243679027,
+ "power_Pearson_correlation": 0.3,
+ "marginal_parameters": {
+  "pareto": {
+   "args": [
+    5
+   ],
+   "kwds": {
+    "scale": 0.2
+   },
+   "mean": 0.25,
+   "sd": 0.06454972243679029,
+   "skew": 4.6475800154489,
+   "excess_kurtosis": 70.8
+  },
+  "lognormal": {
+   "args": [
+    0.254044329079732
+   ],
+   "kwds": {
+    "scale": 0.24206145913796356
+   },
+   "mean": 0.24999999999999997,
+   "sd": 0.06454972243679027,
+   "skew": 0.7918099285579606,
+   "excess_kurtosis": 1.1351308641975306
+  },
+  "loglogistic": {
+   "args": [
+    7.300642011841318
+   ],
+   "kwds": {
+    "scale": 0.2423555801062152
+   },
+   "mean": 0.25,
+   "sd": 0.06454972243679041,
+   "skew": 1.3778753009644302,
+   "excess_kurtosis": 6.608341281258667
+  }
+ },
+ "splits": {
+  "estimation": 8192,
+  "selection": 4096,
+  "mc": 1000000
+ },
+ "K": [
+  1,
+  2,
+  4,
+  6
+ ],
+ "gmm_starts": 6,
+ "models": [
+  "AQGMM",
+  "standard_TMM_moment",
+  "grouped_t_shift_current"
+ ],
+ "input_clipping": false,
+ "input_recentering": false,
+ "input_outlier_removal": false,
+ "correlation_assumption": "Gaussian copula, Nataf calibration to injection-power Pearson coefficients; not a tail-dependence study",
+ "voltage_coordinates": "SVD retained singular values > 1e-8 times largest; independent selection reconstruction checked",
+ "MC_solver": "per-scenario nonlinear radial AC sweeps, residual <1e-10 pu, independent polar Newton audit",
+ "fit_voltage": "MATLAB fast mapping with original default tolerances; only independent snapshot used",
+ "grouped_model_scope": "Existing method unchanged apart from numerical rank support; internal strength cap estimated only from estimation+selection injections; input laws remain unbounded. This cap is a model approximation, not a generator limit.",
+ "tail_screen": "MC only before model error: q0.5%/q99.5% distance from median divided by SD*normal q99.5% >1.15; finite-range extension, not proof of asymptotic heavy tail",
+ "metric": "At 50 MC thresholds from 0.1% to 5% per side: mean absolute probability error; report percentage points; full CDF grid error retained for every object",
+ "selection_rule": "Gaussian joint voltage likelihood on independent selection scenarios; no MC output errors used",
+ "representative_rule": "Before fitting: strongest extended V, P, Q side plus V18,V33,P1,P17,P24,Q17,loss; all objects retained",
+ "uncertainty": "One independent scenario realization per input law; no claim of repeat stability; MC95% pointwise Wilson intervals at each tail threshold",
+ "frozen_before_computation": true,
+ "source_snapshot_manifest": "source_snapshot_manifest.json",
+ "environment": {
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "numpy": "2.3.2"
+ },
+ "sources": [
+  "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pareto.html",
+  "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.fisk.html",
+  "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.lognorm.html",
+  "https://uqpyproject.readthedocs.io/en/latest/transformations/nataf.html"
+ ]
+}

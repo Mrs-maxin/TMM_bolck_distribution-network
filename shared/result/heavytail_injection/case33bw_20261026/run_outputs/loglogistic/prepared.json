@@ -1,0 +1,10 @@
+{
+ "mc_scenarios": 1000000,
+ "max_power_residual_pu": 2.1047608100843718e-12,
+ "newton_fallback": 0,
+ "radial_vs_polar_max_pu": 1.826462396665026e-14,
+ "mc_seconds": 6.035703625000679,
+ "voltage_min_pu": 0.9305654959654529,
+ "voltage_max_pu": 1.130143527593851,
+ "power_corr_max_error": 0.0016109310366730911
+}

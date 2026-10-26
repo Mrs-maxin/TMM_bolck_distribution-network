@@ -1,0 +1,113 @@
+[
+ {
+  "check": "tail_W1_CDF_vs_known_quantiles",
+  "location": 0.3,
+  "scale": 1.0,
+  "a": 0.001,
+  "b": 0.05,
+  "computed": 0.30000029487526225,
+  "reference": 0.3,
+  "absolute_difference": 2.948752622633499e-07
+ },
+ {
+  "check": "tail_W1_CDF_vs_known_quantiles",
+  "location": 0.3,
+  "scale": 1.0,
+  "a": 0.95,
+  "b": 0.999,
+  "computed": 0.30000070026461184,
+  "reference": 0.2999999999999999,
+  "absolute_difference": 7.002646119635969e-07
+ },
+ {
+  "check": "tail_W1_CDF_vs_known_quantiles",
+  "location": 0.0,
+  "scale": 1.2,
+  "a": 0.001,
+  "b": 0.05,
+  "computed": 0.4072155623804656,
+  "reference": 0.4072185726461522,
+  "absolute_difference": 3.010265686609337e-06
+ },
+ {
+  "check": "tail_W1_CDF_vs_known_quantiles",
+  "location": 0.0,
+  "scale": 1.2,
+  "a": 0.95,
+  "b": 0.999,
+  "computed": 0.4072155623804628,
+  "reference": 0.4072185726461521,
+  "absolute_difference": 3.010265689273872e-06
+ },
+ {
+  "check": "tail_W1_CDF_vs_known_quantiles",
+  "location": 0.2,
+  "scale": 0.8,
+  "a": 0.001,
+  "b": 0.05,
+  "computed": 0.6072182512990231,
+  "reference": 0.6072185726461522,
+  "absolute_difference": 3.2134712912856855e-07
+ },
+ {
+  "check": "tail_W1_CDF_vs_known_quantiles",
+  "location": 0.2,
+  "scale": 0.8,
+  "a": 0.95,
+  "b": 0.999,
+  "computed": 0.20721704523542656,
+  "reference": 0.20721857264615198,
+  "absolute_difference": 1.5274107254270586e-06
+ },
+ {
+  "check": "t_quadratic_mean_and_variance",
+  "df": 5.0,
+  "mean": 0.25,
+  "reference_mean": 0.25000000000000006,
+  "variance": 0.12240000000000001,
+  "reference_variance": 0.12240000000000006
+ },
+ {
+  "check": "t_quadratic_mean_and_variance",
+  "df": 7.0,
+  "mean": 0.25,
+  "reference_mean": 0.25000000000000006,
+  "variance": 0.09,
+  "reference_variance": 0.09
+ },
+ {
+  "check": "t_quadratic_mean_and_variance",
+  "df": 10.0,
+  "mean": 0.25,
+  "reference_mean": 0.25000000000000006,
+  "variance": 0.0819,
+  "reference_variance": 0.0819
+ },
+ {
+  "check": "GPD_PWM_shape_vs_known_quantiles",
+  "reference": -0.2,
+  "computed": -0.19999784524122033
+ },
+ {
+  "check": "GPD_PWM_shape_vs_known_quantiles",
+  "reference": 0.0,
+  "computed": 1.3068477555666647e-06
+ },
+ {
+  "check": "GPD_PWM_shape_vs_known_quantiles",
+  "reference": 0.2,
+  "computed": 0.19999183714563573
+ },
+ {
+  "check": "GPD_PWM_shape_vs_known_quantiles",
+  "reference": 0.5,
+  "computed": 0.49954741418333803
+ },
+ {
+  "check": "voltage_magnitude_vs_Rice_distribution",
+  "computed_mean": 1.0050126936677422,
+  "reference_mean": 1.0050126936677417,
+  "computed_variance": 0.009949485566709158,
+  "reference_variance": 0.009949485566709911
+ }
+]

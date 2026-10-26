@@ -1,0 +1,27 @@
+{
+ "requested_font": "Times New Roman",
+ "resolved_font": "Times New Roman",
+ "requested_font_available": true,
+ "font_families": [
+  "Times New Roman",
+  "PingFang SC"
+ ],
+ "glyph_coverage": {
+  "fonts": [
+   {
+    "family": "Times New Roman",
+    "path": "/System/Library/Fonts/Supplemental/Times New Roman.ttf",
+    "resolved_style": "Regular"
+   },
+   {
+    "family": "PingFang SC",
+    "path": "/System/Library/AssetsV2/com_apple_MobileAsset_Font8/86ba2c91f017a3749571a82f2c6d890ac7ffb2fb.asset/AssetData/PingFang.ttc",
+    "resolved_style": "Regular"
+   }
+  ],
+  "checked_codepoints": 40,
+  "weight": "normal",
+  "style": "normal",
+  "scope": "declared text and face cmap only; inspect the rendered export"
+ }
+}

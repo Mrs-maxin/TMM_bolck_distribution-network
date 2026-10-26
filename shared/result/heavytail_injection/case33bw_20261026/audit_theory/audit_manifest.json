@@ -1,0 +1,26 @@
+{
+ "status": "grouped_model_moment_checks_failed",
+ "numerical_results_retained": true,
+ "original_repository_modified": false,
+ "new_injections": 0,
+ "new_AC_solutions": 0,
+ "refitted_models": 0,
+ "active_method_source": "/Users/maxin/Library/CloudStorage/OneDrive-个人/4-PHD/[3]博三/[1]TMM_bolck_distribution-network/02_PAPER/manuscript/method_zh.md",
+ "active_method_SHA256": "7c04ba4be71584d59bf4d75b08adf4b232c0ef08340c751392b477ced3d4b129",
+ "scope": "52 saved components for each of standard TMM and grouped t; four scenarios and K=1,2,4,6",
+ "audit_files": {
+  "group_voltage_fourth_moments_K2.csv": "562c78c8918c05c35011ac46060f4d2f201c6c3ce12fd9b96c768464ef4ee589",
+  "electrical_mean_consistency.csv": "aea22b2efe0365ff77c5cb365d601439272b623655fa2d1be055b052b8d5cb1e",
+  "group_voltage_fourth_moments.csv": "0cf8f2820743f1cc6f48308286fad3aeab37d210b8fb25831e6f8531c1aca599",
+  "audit_execution.log": "7acf1ebde4c3635bcc8647c3f2dc3fb2025b744c9691cb5557e555c00e4e9fc2",
+  "physical_voltage_moment_consistency_K2.csv": "9fcea40978177ac18c1fd1ef1fc2521082edadca818903686d47fe06c9faeeb1",
+  "physical_voltage_moment_consistency.csv": "c0c3256deedf77f488c862d170cee56affff4f75c7c7e1ff95de26e19a3eb612",
+  "group_coverage.csv": "7071b51f18935fc30278f5548e29f6711f96134d3f0cc062e8d66bb1c831afda",
+  "README_zh.md": "f299b03899b90ffc37356f85bcea50501d8be7267003bdc25d2942f5927d1a1b",
+  "method_zh_readonly_snapshot.md": "7c04ba4be71584d59bf4d75b08adf4b232c0ef08340c751392b477ced3d4b129",
+  "check_model_moments.py": "96791c33ada4ffee16f5d8b06b3b356c044457e929a383a2e987f31eeee8586e",
+  "strength_moment_consistency.csv": "7063f8388388a6e21179bbaa4c3a161dc7fc0756c507897d2771995df0a3cc22",
+  "standard_TMM_fourth_moment_consistency.csv": "4ed8ef3294778eae5609d706d734f61a8fdb8bc2bea390a05269401f8fbab83d",
+  "component_moment_consistency.csv": "62aefd7b8463051985426a15a18eba2f1505e1c2b11780a245d55c7dc6802031"
+ }
+}

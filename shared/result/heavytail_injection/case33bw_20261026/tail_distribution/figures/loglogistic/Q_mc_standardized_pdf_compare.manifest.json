@@ -1,0 +1,44 @@
+{
+  "backend": "python/matplotlib",
+  "template_version": "0.4.0-py",
+  "created_utc": "2026-10-26T19:22:52.005767+00:00",
+  "width_mm": 180.0,
+  "height_mm": 98.0,
+  "dpi": 300,
+  "formats": [
+    "png",
+    "pdf"
+  ],
+  "svg_text": null,
+  "pdf_fonttype": 42,
+  "software": {
+    "python": "3.13.5",
+    "matplotlib": "3.11.0"
+  },
+  "overwrite_requested": true,
+  "provenance": {
+    "palette": {
+      "MC": "#707983",
+      "AQGMM": "#568FC3",
+      "标准TMM": "#BB9491",
+      "分组t": "#F59092"
+    },
+    "source": "frozen MC and saved analytic voltage laws",
+    "purpose": "independent-copy research figures",
+    "情形": "对数逻辑斯蒂",
+    "电气量": "支路无功",
+    "图式": "MC标准化PDF比较",
+    "范围": "MC先行前三项及较弱比较项",
+    "单位": "标准化"
+  },
+  "outputs": [
+    {
+      "path": "/Users/maxin/Documents/Codex/IEEE33重尾/tail_distribution/figures/loglogistic/Q_mc_standardized_pdf_compare.png",
+      "bytes": 90336
+    },
+    {
+      "path": "/Users/maxin/Documents/Codex/IEEE33重尾/tail_distribution/figures/loglogistic/Q_mc_standardized_pdf_compare.pdf",
+      "bytes": 53462
+    }
+  ]
+}

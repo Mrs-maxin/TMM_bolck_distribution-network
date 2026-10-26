@@ -1,0 +1,18 @@
+[
+ {
+  "scene": "pareto",
+  "MC_terminal_balance_max_Mvar": 1.8591532827128e-11
+ },
+ {
+  "scene": "lognormal",
+  "MC_terminal_balance_max_Mvar": 6.850261677349145e-12
+ },
+ {
+  "scene": "loglogistic",
+  "MC_terminal_balance_max_Mvar": 1.5419057523835544e-11
+ },
+ {
+  "scene": "mixed",
+  "MC_terminal_balance_max_Mvar": 7.293363135651987e-11
+ }
+]

@@ -1,0 +1,656 @@
+{
+ "files": 108,
+ "all_single_page": true,
+ "all_fonts_embedded": true,
+ "font_type_warnings": 0,
+ "checks": [
+  {
+   "file": "figures/loglogistic/P30_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/P30_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/P31_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/P31_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/P32_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/P32_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/P_mc_standardized_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/P_mc_standardized_tail_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/P_all_quantities_tail_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/Q18_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/Q18_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/Q19_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/Q19_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/Q31_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/Q31_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/Q_mc_standardized_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/Q_mc_standardized_tail_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/Q_all_quantities_tail_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/V20_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/V20_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/V21_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/V21_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/V22_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/V22_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/V_mc_standardized_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/V_mc_standardized_tail_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/loglogistic/V_all_quantities_tail_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/P21_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/P21_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/P31_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/P31_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/P32_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/P32_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/P_mc_standardized_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/P_mc_standardized_tail_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/P_all_quantities_tail_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/Q18_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/Q18_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/Q19_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/Q19_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/Q31_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/Q31_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/Q_mc_standardized_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/Q_mc_standardized_tail_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/Q_all_quantities_tail_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/V20_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/V20_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/V21_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/V21_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/V22_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/V22_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/V_mc_standardized_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/V_mc_standardized_tail_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/lognormal/V_all_quantities_tail_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/P17_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/P17_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/P31_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/P31_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/P32_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/P32_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/P_mc_standardized_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/P_mc_standardized_tail_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/P_all_quantities_tail_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/Q29_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/Q29_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/Q30_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/Q30_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/Q31_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/Q31_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/Q_mc_standardized_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/Q_mc_standardized_tail_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/Q_all_quantities_tail_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/V31_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/V31_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/V32_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/V32_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/V33_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/V33_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/V_mc_standardized_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/V_mc_standardized_tail_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/mixed/V_all_quantities_tail_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/P17_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/P17_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/P31_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/P31_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/P32_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/P32_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/P_mc_standardized_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/P_mc_standardized_tail_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/P_all_quantities_tail_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/Q18_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/Q18_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/Q19_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/Q19_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/Q30_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/Q30_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/Q_mc_standardized_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/Q_mc_standardized_tail_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/Q_all_quantities_tail_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/V20_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/V20_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/V21_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/V21_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/V22_full_pdf.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/V22_tail_pdf_zoom.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/V_mc_standardized_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/V_mc_standardized_tail_pdf_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  },
+  {
+   "file": "figures/pareto/V_all_quantities_tail_compare.pdf",
+   "pages": 1,
+   "font_warnings": false,
+   "fonts_embedded": true
+  }
+ ]
+}

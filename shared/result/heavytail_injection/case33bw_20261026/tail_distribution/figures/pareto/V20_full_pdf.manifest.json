@@ -1,0 +1,44 @@
+{
+  "backend": "python/matplotlib",
+  "template_version": "0.4.0-py",
+  "created_utc": "2026-10-26T19:23:04.179263+00:00",
+  "width_mm": 180.0,
+  "height_mm": 125.0,
+  "dpi": 300,
+  "formats": [
+    "png",
+    "pdf"
+  ],
+  "svg_text": null,
+  "pdf_fonttype": 42,
+  "software": {
+    "python": "3.13.5",
+    "matplotlib": "3.11.0"
+  },
+  "overwrite_requested": true,
+  "provenance": {
+    "palette": {
+      "MC": "#707983",
+      "AQGMM": "#568FC3",
+      "标准TMM": "#BB9491",
+      "分组t": "#F59092"
+    },
+    "source": "frozen MC and saved analytic voltage laws",
+    "purpose": "independent-copy research figures",
+    "情形": "Pareto",
+    "电气量": "V20",
+    "图式": "全分布PDF",
+    "范围": "MC0.01%—99.99%显示范围",
+    "单位": "p.u."
+  },
+  "outputs": [
+    {
+      "path": "/Users/maxin/Documents/Codex/IEEE33重尾/tail_distribution/figures/pareto/V20_full_pdf.png",
+      "bytes": 167020
+    },
+    {
+      "path": "/Users/maxin/Documents/Codex/IEEE33重尾/tail_distribution/figures/pareto/V20_full_pdf.pdf",
+      "bytes": 53679
+    }
+  ]
+}

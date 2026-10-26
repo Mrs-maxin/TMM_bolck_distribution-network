@@ -32,6 +32,10 @@ S1、S2E1、S2E2、S3（`scenario_lock_20261024.md`第4.1、4.2节定稿），�
 
 不成立的对象逐一判断原因属于方法还是算例设置，作为后续分析，不改动本方案的指标与判定。
 
+## 4.1 改为解析计算（2026-10-26，用户要求，计算前登记）
+
+三种模型的电气量分布全部由电压二次型解析计算（条件特征函数、强度积分、Gil-Pelaez反演，`tests/python/analytic_grouped_t_case33.py`），不再按电压分布模型抽取电压。尾段误差在MC方法0.1%—5%分位处计算（不变），完整分布误差改为在MC方法401个等距分位处的累积概率最大差。分组规则步骤2的雅可比矩阵改为快速映射锚点处的雅可比矩阵：锚点为估计参数场景中离平均注入最近的场景，其电压由锚点交流潮流求得，全流程只需这1次交流潮流。模型为AQGMM、标准TMM、分组t（均值移动，derivation.md式(M1)—(M3)），其余设置与判定规则不变。结果目录`result/case33bw/mainline_comparison_analytic_20261026/`。
+
 ## 5 入口与结果
 
 入口`tests/python/mainline_comparison_case33.py <运行条件>`，结果`result/case33bw/mainline_comparison_20261024/<运行条件>/`：`objects_<模型>_K<K>.csv`（逐电气量指标）、`summary.csv`、`claims_check.json`、`split.json`、`run_info.json`。

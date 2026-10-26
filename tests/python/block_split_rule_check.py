@@ -53,10 +53,12 @@ def weather_groups(target, rng):
     return groups, float(null), c, keep
 
 
-def split(target, x_white, basis, scale, rng, label, group_target=None, return_q=False):
+def split(target, x_white, basis, scale, rng, label, group_target=None, return_q=False, v0=None):
     groups, null, c, keep = weather_groups(target if group_target is None else group_target, rng)
     pos = {k: i for i, k in enumerate(keep)}
-    v0, _ = base.polar_ac(target.mean(0), base.Y, tolerance=1e-11); Ji = np.linalg.inv(rect_jacobian(v0, base.Y))
+    if v0 is None:
+        v0, _ = base.polar_ac(target.mean(0), base.Y, tolerance=1e-11)
+    Ji = np.linalg.inv(rect_jacobian(v0, base.Y))
     Wm = basis.T/scale[:, None]; total = np.sum(scale**2)
     def phys_share(q):
         return float(np.sum((scale[:, None]*q)**2)/total)

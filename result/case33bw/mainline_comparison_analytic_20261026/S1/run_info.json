@@ -1,0 +1,419 @@
+{
+ "scene": "S1",
+ "method": "analytic",
+ "starts": 6,
+ "quadratic_check": 1.020872275603324e-11,
+ "anchor_scenario": 1893,
+ "aqgmm_fits": {
+  "1": {
+   "chosen_start": 0,
+   "selection_ll": -91.9205257789321,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -91.9205257789321,
+     "status": "converged"
+    }
+   ]
+  },
+  "2": {
+   "chosen_start": 5,
+   "selection_ll": -87.36577799268449,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -87.37121426102685,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -87.36724113632258,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -87.36617344374858,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -87.36594663848098,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -87.36603571373664,
+     "status": "converged"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -87.36577799268449,
+     "status": "converged"
+    }
+   ]
+  },
+  "3": {
+   "chosen_start": 1,
+   "selection_ll": -86.55012592594815,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -86.55224092592351,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -86.55012592594815,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -86.55235802514377,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -86.55231729393482,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -86.70382429219265,
+     "status": "converged"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -86.71276403059576,
+     "status": "converged"
+    }
+   ]
+  },
+  "4": {
+   "chosen_start": 5,
+   "selection_ll": -86.17985884229971,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -86.18894128705551,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -86.65481285016207,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -86.1907701566788,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -86.18474733637208,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -86.32705850625828,
+     "status": "converged"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -86.17985884229971,
+     "status": "converged"
+    }
+   ]
+  },
+  "6": {
+   "chosen_start": 5,
+   "selection_ll": -86.18290472255948,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -86.48558343265648,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -86.21150781193957,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -86.49038427022806,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -86.22307912716002,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -86.5031226866023,
+     "status": "converged"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -86.18290472255948,
+     "status": "converged"
+    }
+   ]
+  },
+  "8": {
+   "chosen_start": 5,
+   "selection_ll": -86.39983411231616,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -86.47085926809831,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -86.50353476448879,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -86.80783896183902,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -86.69749553521538,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -86.59204616450468,
+     "status": "converged"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -86.39983411231616,
+     "status": "converged"
+    }
+   ]
+  },
+  "12": {
+   "chosen_start": 1,
+   "selection_ll": -86.90705993544131,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -87.07323793322095,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -86.90705993544131,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -87.03654232940106,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -87.39687862840267,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -87.49381575054849,
+     "status": "converged"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -87.02210625706165,
+     "status": "converged"
+    }
+   ]
+  },
+  "16": {
+   "chosen_start": 2,
+   "selection_ll": -87.56314510189115,
+   "starts": [
+    {
+     "start": 0,
+     "rule": "PC1 deterministic balanced",
+     "selection_ll": -87.59067768076,
+     "status": "converged"
+    },
+    {
+     "start": 1,
+     "rule": "PC2 deterministic balanced",
+     "selection_ll": -87.98307179285378,
+     "status": "converged"
+    },
+    {
+     "start": 2,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -87.56314510189115,
+     "status": "converged"
+    },
+    {
+     "start": 3,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -88.13113580722766,
+     "status": "converged"
+    },
+    {
+     "start": 4,
+     "rule": "random balanced membership",
+     "selection_ll": -88.4783744974661,
+     "status": "converged"
+    },
+    {
+     "start": 5,
+     "rule": "seeded random direction balanced split",
+     "selection_ll": -87.7442345840283,
+     "status": "converged"
+    }
+   ]
+  }
+ },
+ "timing": [
+  {
+   "model": "AQGMM",
+   "K": 1,
+   "analytic_seconds": 3.1447411669996654
+  },
+  {
+   "model": "标准TMM",
+   "K": 1,
+   "analytic_seconds": 41.84346074999985
+  },
+  {
+   "model": "分组t（均值移动）",
+   "K": 1,
+   "analytic_seconds": 68.71911408300002
+  },
+  {
+   "model": "AQGMM",
+   "K": 2,
+   "analytic_seconds": 6.801482834000126
+  },
+  {
+   "model": "标准TMM",
+   "K": 2,
+   "analytic_seconds": 81.5731274169998
+  },
+  {
+   "model": "分组t（均值移动）",
+   "K": 2,
+   "analytic_seconds": 152.54575079200004
+  },
+  {
+   "model": "AQGMM",
+   "K": 3,
+   "analytic_seconds": 12.718194208000114
+  },
+  {
+   "model": "标准TMM",
+   "K": 3,
+   "analytic_seconds": 154.20911854199994
+  },
+  {
+   "model": "分组t（均值移动）",
+   "K": 3,
+   "analytic_seconds": 238.6303452090001
+  },
+  {
+   "model": "AQGMM",
+   "K": 4,
+   "analytic_seconds": 11.76379045900012
+  },
+  {
+   "model": "标准TMM",
+   "K": 4,
+   "analytic_seconds": 179.04632654200032
+  },
+  {
+   "model": "分组t（均值移动）",
+   "K": 4,
+   "analytic_seconds": 317.386991458
+  },
+  {
+   "model": "AQGMM",
+   "K": 6,
+   "analytic_seconds": 16.2309017080006
+  },
+  {
+   "model": "标准TMM",
+   "K": 6,
+   "analytic_seconds": 175.86616070899981
+  },
+  {
+   "model": "分组t（均值移动）",
+   "K": 6,
+   "analytic_seconds": 486.2694893329999
+  },
+  {
+   "model": "AQGMM",
+   "K": 8,
+   "analytic_seconds": 18.625738333999834
+  },
+  {
+   "model": "标准TMM",
+   "K": 8,
+   "analytic_seconds": 186.97694450000017
+  },
+  {
+   "model": "分组t（均值移动）",
+   "K": 8,
+   "analytic_seconds": 710.9385424580005
+  },
+  {
+   "model": "AQGMM",
+   "K": 12,
+   "analytic_seconds": 32.520206125000186
+  },
+  {
+   "model": "AQGMM",
+   "K": 16,
+   "analytic_seconds": 27.278168084000754
+  }
+ ],
+ "seconds": 3393.378390584,
+ "script_SHA256": "5429efd6b714e94ed0bc600bfa0c5b0a10a6f33747a5a019b52cb493d169e321"
+}

@@ -1,0 +1,123 @@
+{
+  "selected_parameter_files": [
+    {
+      "path": "AQGMM_K4.npz",
+      "bytes": 86226,
+      "sha256": "8265498ad869c6a92bb676b5ee3be4bc990558b664b1af3ce72bc23125aa1db5"
+    },
+    {
+      "path": "Standard_TMM_K4.npz",
+      "bytes": 86263,
+      "sha256": "19afda070693e5986598032310911bb0dc4c042c7b62d0684f5b8bbc3687cee3"
+    },
+    {
+      "path": "Block_TMM_K4.npz",
+      "bytes": 82235,
+      "sha256": "5332d2df9030e71c707c5fcb470911a46db2a0852f9de4d2b82d4bebf21401a1"
+    },
+    {
+      "path": "AQGMM_K1.npz",
+      "bytes": 16539,
+      "sha256": "6a3da05268dab3c77a987092620cd913b103b1d542f3028f6d2e9b0e84eae397"
+    },
+    {
+      "path": "Block_TMM_K1.npz",
+      "bytes": 17691,
+      "sha256": "750769fb6edbea9eb72839744e976bd32391a9d3e3f4c967c722af1631281a40"
+    },
+    {
+      "path": "Standard_TMM_K2.npz",
+      "bytes": 43460,
+      "sha256": "b9e8b3ee5d55d3548b8a61f0d2c428cd6ae04734970db28f675435f7effd91be"
+    },
+    {
+      "path": "AQGMM_K2.npz",
+      "bytes": 43406,
+      "sha256": "d149baae1860a155d8f7958bec536742ebf80a1367065c242c329943fde23388"
+    },
+    {
+      "path": "Block_TMM_K2.npz",
+      "bytes": 41874,
+      "sha256": "d04fa557a5f9bb3b39ba8d9041544329398779257719ff754def4cf3ef64afbc"
+    },
+    {
+      "path": "Standard_TMM_K1.npz",
+      "bytes": 22048,
+      "sha256": "a8c8aeb825ab9b0c72be2f17fbe88a6fd0e7e723daa187ce82e67071d1b917d2"
+    },
+    {
+      "path": "coordinate_transform.npz",
+      "bytes": 67861,
+      "sha256": "b4437b09ab40f91ad569ab0f3f9a5c9ed2a4f1ef853215fb9b17ad2647c3afa8"
+    }
+  ],
+  "selected_figure_files": [
+    "figures/P16_K1_AC_operating_range.png",
+    "figures/P16_K1_AC_operating_range.svg",
+    "figures/P16_K2_AC_operating_range.png",
+    "figures/P16_K2_AC_operating_range.svg",
+    "figures/P16_K4_AC_operating_range.png",
+    "figures/P16_K4_AC_operating_range.svg",
+    "figures/P1_K1_AC_operating_range.png",
+    "figures/P1_K1_AC_operating_range.svg",
+    "figures/P1_K2_AC_operating_range.png",
+    "figures/P1_K2_AC_operating_range.svg",
+    "figures/P1_K4_AC_operating_range.png",
+    "figures/P1_K4_AC_operating_range.svg",
+    "figures/P32_K1_AC_operating_range.png",
+    "figures/P32_K1_AC_operating_range.svg",
+    "figures/P32_K2_AC_operating_range.png",
+    "figures/P32_K2_AC_operating_range.svg",
+    "figures/P32_K4_AC_operating_range.png",
+    "figures/P32_K4_AC_operating_range.svg",
+    "figures/Q17_K1_AC_operating_range.png",
+    "figures/Q17_K1_AC_operating_range.svg",
+    "figures/Q17_K1_full.png",
+    "figures/Q17_K1_full.svg",
+    "figures/Q17_K2_AC_operating_range.png",
+    "figures/Q17_K2_AC_operating_range.svg",
+    "figures/Q17_K2_full.png",
+    "figures/Q17_K2_full.svg",
+    "figures/Q17_K4_AC_operating_range.png",
+    "figures/Q17_K4_AC_operating_range.svg",
+    "figures/Q17_K4_full.png",
+    "figures/Q17_K4_full.svg",
+    "figures/V18_K1_AC_operating_range.png",
+    "figures/V18_K1_AC_operating_range.svg",
+    "figures/V18_K1_upper.png",
+    "figures/V18_K1_upper.svg",
+    "figures/V18_K2_AC_operating_range.png",
+    "figures/V18_K2_AC_operating_range.svg",
+    "figures/V18_K2_upper.png",
+    "figures/V18_K2_upper.svg",
+    "figures/V18_K4_AC_operating_range.png",
+    "figures/V18_K4_AC_operating_range.svg",
+    "figures/V18_K4_upper.png",
+    "figures/V18_K4_upper.svg",
+    "figures/V33_K1_AC_operating_range.png",
+    "figures/V33_K1_AC_operating_range.svg",
+    "figures/V33_K2_AC_operating_range.png",
+    "figures/V33_K2_AC_operating_range.svg",
+    "figures/V33_K4_AC_operating_range.png",
+    "figures/V33_K4_AC_operating_range.svg",
+    "figures/loss_K1_AC_operating_range.png",
+    "figures/loss_K1_AC_operating_range.svg",
+    "figures/loss_K1_upper.png",
+    "figures/loss_K1_upper.svg",
+    "figures/loss_K2_AC_operating_range.png",
+    "figures/loss_K2_AC_operating_range.svg",
+    "figures/loss_K2_upper.png",
+    "figures/loss_K2_upper.svg",
+    "figures/loss_K4_AC_operating_range.png",
+    "figures/loss_K4_AC_operating_range.svg",
+    "figures/loss_K4_upper.png",
+    "figures/loss_K4_upper.svg"
+  ],
+  "complete_figure_count": 84,
+  "complete_figure_formats": [
+    "PNG",
+    "SVG"
+  ],
+  "complete_plot_data_CSV": "cloud archive figures/*_curves.csv",
+  "original_source_injection_figures": "reused unchanged from parent figures/PV*_active_output and bus*_net_P/Q"
+}

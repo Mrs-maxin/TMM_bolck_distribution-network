@@ -7,6 +7,8 @@ alwaysApply: true
 
 ## Project Boundary
 
+Project override (2026-10-26): this repository holds two papers. Read every root-level path below as follows: code, `data/`, `cache/`, `result/`, `tests/`, `03_REFERENCE/` and the `BTMM*.m` entries live under `shared/`; `BTMM_note.md`, `BTMM_changelog.md`, `01_IDEA/` and `02_PAPER/` live in each of `paper_standardTMM/` and `paper_groupedT/`; `archive/` holds pre-split material. See `.cursor/rules/05-project-execution.mdc`.
+
 This repository uses the project root as the MATLAB code root. Do not recreate legacy staged coding or paper automation scaffolding such as `02_Coding/`, `03_Paper/`, `00_MEMORY/`, or staged experiment trees unless the user explicitly asks for them.
 
 Keep the visible root small:

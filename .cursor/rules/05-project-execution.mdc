@@ -1,17 +1,19 @@
 ---
-description: Project execution policy for the block-TMM distribution-network study
+description: Project execution policy for the two-paper TMM distribution-network study
 alwaysApply: true
 ---
 # Active execution policy
 
-- The current numerical workflow is the Python validation code in `tests/python/`, authorized by the user on 2026-10-21 for local and cloud execution. `tests/python/archived/` holds the original photovoltaic-case routines byte-identical; do not edit them, call them through the workflow scripts.
-- The 141-bus study follows section 16 of `01_IDEA/pv_fixed_forecast_common_scale_plan_20261021.md` and runs in the cloud. Cases above 500 buses remain deferred.
-- Since 2026-10-24 this repository is the working directory of the paper. The research goal is fixed: at equal component count TMM computes voltage, branch-power and loss tails more accurately than GMM, and fewer TMM components reach the accuracy of more GMM components. Fitting choices and TMM forms serve this goal; when it fails, diagnose whether the cause is the method or the case setup before changing either.
-- The paper keeps three voltage-distribution models: AQGMM, standard TMM and the grouped t mixture defined in `02_PAPER/manuscript/method_zh.md`. Do not change the voltage-to-branch-power quadratic forms.
-- Fitting voltages are computed by the fast power-to-voltage mapping (`tests/map_injections_fast_case33.m`, `+BTMM_core/+inverse/`, MATLAB with MATPOWER). The MC method uses 10^6 scenarios by default and serves only as the exact reference. Comparisons use the same K for GMM and TMM; the effect of K is shown separately.
-- Inputs are forecast scenarios built from the NREL records in `data/nrel_sind/`. Comparison methods follow the original papers in `03_REFERENCE/`.
+- Since 2026-10-26 the repository holds two papers. `shared/` is the code root (MATLAB packages, `BTMM*.m`, `tests/`, `data/`, `cache/`, `result/`, `protocols/`, `03_REFERENCE/`). `paper_standardTMM/` compares standard TMM with AQGMM. `paper_groupedT/` studies the grouped t mixture against AQGMM and standard TMM. Each paper folder has its own `BTMM_note.md`, `BTMM_changelog.md`, `01_IDEA/`, `02_PAPER/` and `result/`. `archive/` holds the pre-split combined records, legacy results, legacy scripts and the reorganization scripts; do not edit archived files.
+- The current numerical workflow is the Python validation code in `shared/tests/python/`, authorized by the user on 2026-10-21 for local and cloud execution. `shared/tests/python/archived/` holds the original photovoltaic-case routines byte-identical; do not edit them, call them through the workflow scripts.
+- Results are grouped by case group: `heavytail_injection/` (source outputs follow given heavy- or long-tailed distributions, loads fixed) and `actual_output/` (NREL 2006 PV8 measured outputs injected directly). The NREL forecast-error scenarios S1 to S3 and the 2026-10-21 to 2026-10-23 parametric results are archived.
+- All three models are computed in one run; raw results go to `shared/result/<case group>/<case>/`. `shared/tests/python/split_results_by_paper.py` copies the paper tables: the standard TMM paper keeps AQGMM and standard TMM only, with comparison columns recomputed; the grouped t paper keeps all three.
+- Research goal: at equal component count TMM computes voltage, branch-power and loss tails more accurately than GMM, and fewer TMM components reach the accuracy of more GMM components. Fitting choices and TMM forms serve this goal; when it fails, diagnose whether the cause is the method or the case setup before changing either.
+- Do not change the voltage-to-branch-power quadratic forms. The grouped t mixture is defined in `paper_groupedT/02_PAPER/manuscript/method_zh.md`; standard TMM in `paper_standardTMM/02_PAPER/manuscript/method_zh.md`.
+- Fitting voltages are computed by the fast power-to-voltage mapping (`shared/tests/map_injections_fast_case33.m`, `shared/+BTMM_core/+inverse/`, MATLAB with MATPOWER). The MC method uses 10^6 scenarios by default and serves only as the exact reference. Comparisons use the same K for GMM and TMM; the effect of K is shown separately.
+- Comparison methods follow the original papers in `shared/03_REFERENCE/`.
 - Do not modify, branch on or push to `wuhanichina/AQPPF_TMM`; push only to `Mrs-maxin/TMM_bolck_distribution-network`.
-- Register every new scenario, model, threshold, or judgment rule in `01_IDEA/` before computing. Keep unfavourable results; do not change injection-power settings in response to model errors.
+- Register every new scenario, model, threshold, or judgment rule in `shared/protocols/` and the affected paper's `01_IDEA/` before computing. Keep unfavourable results; do not change injection-power settings in response to model errors.
 - Limit-violation risk is computed analytically from the voltage distribution model (characteristic function, strength integration, Gil–Pelaez inversion). The exact AC result for comparison is the violation frequency over AC power-flow solutions of every source-load scenario.
 - Formal paper figures are exported later through the MATLAB `save_figure` path; Python figures are diagnostic.
 - Follow the power-system wording section of `lexicon.md` in all replies and documents.

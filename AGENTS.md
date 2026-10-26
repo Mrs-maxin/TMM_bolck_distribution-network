@@ -42,11 +42,16 @@ Run only the project-specific checks explicitly selected by the author.
 
 ## Current project override
 
-Read `.cursor/rules/05-project-execution.mdc` before execution. The current
-numerical workflow is the Python validation code in `tests/python/`; the user
-authorized local and cloud execution on 2026-10-21. Since 2026-10-24 the
-fitting voltages come from the MATLAB fast mapping called by
-`tests/python/fast_voltage_map.py`; the MC method (per-scenario AC power flow)
-is only the exact reference. Do not modify or push the original project
-`wuhanichina/AQPPF_TMM`; push only to this repository. Use power-system
-probabilistic power-flow wording as required by `.cursor/rules/lexicon.md`.
+Read `.cursor/rules/05-project-execution.mdc` before execution. Since
+2026-10-26 the repository holds two papers: `paper_standardTMM/` (standard TMM
+versus AQGMM) and `paper_groupedT/` (grouped t mixture versus AQGMM and
+standard TMM). Shared code, data and raw results live in `shared/`; pre-split
+material lives in `archive/`. The current numerical workflow is the Python
+validation code in `shared/tests/python/`; the user authorized local and cloud
+execution on 2026-10-21. Fitting voltages come from the MATLAB fast mapping
+called by `shared/tests/python/fast_voltage_map.py`; the MC method
+(per-scenario AC power flow) is only the exact reference. Results are grouped
+into `heavytail_injection/` and `actual_output/` case groups. Do not modify or
+push the original project `wuhanichina/AQPPF_TMM`; push only to this
+repository. Use power-system probabilistic power-flow wording as required by
+`.cursor/rules/lexicon.md`.

@@ -1,0 +1,270 @@
+{
+ "case": "heavytail_injection/case33bw_20261026",
+ "source": "shared/result/heavytail_injection/case33bw_20261026",
+ "methods": [
+  "AQGMM",
+  "标准TMM"
+ ],
+ "command": "python3 shared/tests/python/split_results_by_paper.py heavytail_injection/case33bw_20261026",
+ "tables": [
+  {
+   "table": "model_parameter_checks/standard_TMM_dof_fourth_moments.csv",
+   "source_SHA256": "4ed8ef3294778eae5609d706d734f61a8fdb8bc2bea390a05269401f8fbab83d",
+   "SHA256": "4ed8ef3294778eae5609d706d734f61a8fdb8bc2bea390a05269401f8fbab83d",
+   "rows": 52,
+   "treatment": "copied"
+  },
+  {
+   "table": "model_parameter_checks/voltage_mean_cov_third_moments.csv",
+   "source_SHA256": "62aefd7b8463051985426a15a18eba2f1505e1c2b11780a245d55c7dc6802031",
+   "SHA256": "0d66a03cf143c2d57140d7ec1d99dee99f9068dce4870b3ac2b2d938692db396",
+   "rows": 52,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "results/extreme_quantile_error_all_quantities.csv",
+   "source_SHA256": "8be0d42bf4032aea9e5eeac3ee4029753785139e64600b33d8f19870e49dd643",
+   "SHA256": "e2cce38656655b75a88624189715679846aed14a03fa10aa9a85f4e67d05640c",
+   "rows": 18624,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "results/extreme_quantile_error_method_compare.csv",
+   "source_SHA256": "1bb8741ef754df717e6b5ab79c0248d8b905aed3bfe699989d835e511c63b285",
+   "SHA256": "2469e0aaecd0e8c0385b0c1762a999b73c489f65a34ebd330d0dba9823d815e2",
+   "rows": 9312,
+   "treatment": "grouped_t_columns_removed"
+  },
+  {
+   "table": "results/full_mean_variance_all_quantities.csv",
+   "source_SHA256": "8c89d290d65eb386e849be08532f008198260f39e3e6b6137faf809b4b3a7fff",
+   "SHA256": "97f902f3cc9644e2ddf03b8a6311313799105018e935dc048cf17dd59bdd4106",
+   "rows": 3104,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "results/full_mean_variance_method_compare.csv",
+   "source_SHA256": "fa5d396f1d234b333baaacf6ddc80a47c7f3c1eb5293b93bb6192f349d06e82b",
+   "SHA256": "e5969d5fc5d74bdd64366ca2f236eb3a6391dd66b34f32febdde59fbcb8b65e4",
+   "rows": 1552,
+   "treatment": "grouped_t_columns_removed"
+  },
+  {
+   "table": "results/mc_extreme_quantiles_ci95.csv",
+   "source_SHA256": "1ec335fd658b28feb3858018c21b1ff55a5f7e05371afc618727278149dce6a3",
+   "SHA256": "1ec335fd658b28feb3858018c21b1ff55a5f7e05371afc618727278149dce6a3",
+   "rows": 2328,
+   "treatment": "copied"
+  },
+  {
+   "table": "results/mc_quantity_distribution_features.csv",
+   "source_SHA256": "5ab1d2d29d4d585f312c3acbefbdfc690cbb5e5895e9a4070336871a0cdd5b95",
+   "SHA256": "5ab1d2d29d4d585f312c3acbefbdfc690cbb5e5895e9a4070336871a0cdd5b95",
+   "rows": 388,
+   "treatment": "copied"
+  },
+  {
+   "table": "results/quantity_ids_units.csv",
+   "source_SHA256": "e6d3ab88507904be109b9248e523a9ba23b293ca5a006628f8ded6ed81f1aa9a",
+   "SHA256": "e6d3ab88507904be109b9248e523a9ba23b293ca5a006628f8ded6ed81f1aa9a",
+   "rows": 97,
+   "treatment": "copied"
+  },
+  {
+   "table": "results/tail_cdf_per_threshold.csv",
+   "source_SHA256": "f7cd3855b7d796c64567d0054b4a210d94db9f69cacb1eacd0ec16d972f0a780",
+   "SHA256": "96e076ce56b205d20774f7ec6110b0890f10cc4eedbd399aa66adee8e9ee49d6",
+   "rows": 310400,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "results/tail_cdf_rmse_all_quantities.csv",
+   "source_SHA256": "89a20c6b94ceab9c9939cadc52b4756530786506845c780868db2d11284c115b",
+   "SHA256": "f9f5502113817f946fae1f096e270e7bb06e02b9a55d7e18b07814d6865f74dc",
+   "rows": 6208,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "results/tail_cdf_rmse_method_compare.csv",
+   "source_SHA256": "3ee42ef4bde684dc53b5502b3d69db8225050f22cce1c607b77538510d241339",
+   "SHA256": "b31aeb9c4ead28e874be7169efc3cabb4142253717f69d89f2fed08e2ffaf6f4",
+   "rows": 3104,
+   "treatment": "grouped_t_columns_removed"
+  },
+  {
+   "table": "results/tail_quantile_w1_all_quantities.csv",
+   "source_SHA256": "11903d49cb715737b968ad78e6a4b7b700ef1385fa40b1137d3efb106c7f0014",
+   "SHA256": "71f6b935e89e96577efd53b26b607b0e88fa1552aeeb42fca634faff796765e9",
+   "rows": 6208,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "results/tail_quantile_w1_method_compare.csv",
+   "source_SHA256": "37f00a07e574345e2b74be60c6e36d704c46c2c7355f22371c47eaf52e248d5d",
+   "SHA256": "74e84631ee10a36af5d06ed294161063569fbd6c403b21e70b45a6c0a8516be8",
+   "rows": 3104,
+   "treatment": "grouped_t_columns_removed"
+  },
+  {
+   "table": "results/tail_two_metrics_merged.csv",
+   "source_SHA256": "c1155c2a117f4fd0e83c2305254609682ab16a1bde0f6153e98cece4a76e6519",
+   "SHA256": "c4289fc69de2c624338ac1d3d95e200dc7ba1036d7ff018ce74f49457a76e81b",
+   "rows": 18624,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "tail_distribution/focus_location_summary.csv",
+   "source_SHA256": "4e0eddfabaee627e5addd5044a0483a2d05f40972e54acdb22d2d39ac81ccf3b",
+   "SHA256": "4e0eddfabaee627e5addd5044a0483a2d05f40972e54acdb22d2d39ac81ccf3b",
+   "rows": 4,
+   "treatment": "copied"
+  },
+  {
+   "table": "tail_distribution/focus_quantities_full_mean_variance_method_compare.csv",
+   "source_SHA256": "7061ec3d43a0985007116827048d95db9a0f47ed7f5018e5073c27c7e6b35222",
+   "SHA256": "d28a8c0eac959eeb45637e9bd04d6c513b85046be903535eda243008501d14d3",
+   "rows": 144,
+   "treatment": "grouped_t_columns_removed"
+  },
+  {
+   "table": "tail_distribution/focus_quantities_mc_extreme_variance_share.csv",
+   "source_SHA256": "bfdcc526788228dad20335cb8e3b0425f6f1e2496eec5218480198354d1f5ab9",
+   "SHA256": "bfdcc526788228dad20335cb8e3b0425f6f1e2496eec5218480198354d1f5ab9",
+   "rows": 36,
+   "treatment": "copied"
+  },
+  {
+   "table": "tail_distribution/focus_quantities_mc_selection.csv",
+   "source_SHA256": "36c5ae13cd234e514e1e79d2caa5ecfa7077407b834ffc815ccac7e6d38e1523",
+   "SHA256": "36c5ae13cd234e514e1e79d2caa5ecfa7077407b834ffc815ccac7e6d38e1523",
+   "rows": 36,
+   "treatment": "copied"
+  },
+  {
+   "table": "tail_distribution/focus_quantities_tail_quantile_w1_method_compare.csv",
+   "source_SHA256": "664dce534a3bd9444dc1ee68a034b8b69d7517866f9ca6ba7078603a68533a4f",
+   "SHA256": "61a8c20a3b2fddb08156399075a1ca44cbfa44ec8a12c8e5e56fca3414e27ae6",
+   "rows": 144,
+   "treatment": "grouped_t_columns_removed"
+  },
+  {
+   "table": "tail_distribution/focus_quantities_three_metrics_mean_variance.csv",
+   "source_SHA256": "874f92dfa76ba3d7cb3c1ad4ce23c20942f8c9e6898e1a9849e000e2a77874a3",
+   "SHA256": "c4f41e5e7c2ed4cf07ac53fd1b9a70176c0517f597f80aa5ab63b926218e578a",
+   "rows": 288,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "tail_distribution/mc_full_mean_variance_raw_units.csv",
+   "source_SHA256": "53482baceed369195a16e30c35ba45e128896f78741308aa72e6658a48ac0399",
+   "SHA256": "53482baceed369195a16e30c35ba45e128896f78741308aa72e6658a48ac0399",
+   "rows": 388,
+   "treatment": "copied"
+  },
+  {
+   "table": "tail_distribution/mc_tail_features_all_quantities.csv",
+   "source_SHA256": "15aefa31d9ec9850c5035a4793e69bacd5d11969d31263d805a52fc39e0ba09f",
+   "SHA256": "15aefa31d9ec9850c5035a4793e69bacd5d11969d31263d805a52fc39e0ba09f",
+   "rows": 776,
+   "treatment": "copied"
+  },
+  {
+   "table": "tail_distribution/pdf_bin_mean_density.csv",
+   "source_SHA256": "0f81587fc847aff779516230e51b2d065fcec1f5f3b90415856bbc1c6cd4b79b",
+   "SHA256": "59e8a4ccb8e18ece891ace4eaa7a9cb6d4602e2e7ffba0d1fe731ef69a7962ea",
+   "rows": 78336,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "tail_distribution/pdf_display_range_check.csv",
+   "source_SHA256": "c69a6d9de74803e51a81db3133720f3a631cc14979549743ecafeba074d1a5f9",
+   "SHA256": "006f0dabd8dbfae3c2ebb54d734466d85c26eab6f0b61657bd034305621fa28c",
+   "rows": 576,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "tail_distribution/weak_tail_reference_quantities.csv",
+   "source_SHA256": "c66f32cf60c963a55d693a3dec0fabb58dfd0dc91ccf287383407206b71bcbc8",
+   "SHA256": "c66f32cf60c963a55d693a3dec0fabb58dfd0dc91ccf287383407206b71bcbc8",
+   "rows": 12,
+   "treatment": "copied"
+  },
+  {
+   "table": "tail_screening/extreme_quantile_error_method_compare.csv",
+   "source_SHA256": "077bbe57832fc8036e8c59592a5fd882809d95e4d18e0a591011eac35f042996",
+   "SHA256": "9338b449d15ae597c0bfbddbf77e0afc13021650b5a20dbee7df56f4f37a33d4",
+   "rows": 4476,
+   "treatment": "grouped_t_columns_removed"
+  },
+  {
+   "table": "tail_screening/extreme_quantile_error_screened_quantities.csv",
+   "source_SHA256": "a879dd6a02ea3ddb024059be9db70bd85e60ac8d5ae140b78a19bad352e9a001",
+   "SHA256": "d795678337d71b14c4c835e3d70c7b1202a7745aa21276a1d08f61d22a3816c4",
+   "rows": 8952,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "tail_screening/extreme_quantile_win_counts_by_K_level.csv",
+   "source_SHA256": "321798bd53d8c95d9ada7de5b0b0b3f3ceed6b96889dcc61f7f89fe82df262ee",
+   "SHA256": "11142deb29249f7378f9c79bb2e2f6e61e09b4f458c1c97cd4c2ef27879fa25d",
+   "rows": 24,
+   "treatment": "win_counts_recomputed_two_methods"
+  },
+  {
+   "table": "tail_screening/tail_cdf_rmse_method_compare.csv",
+   "source_SHA256": "845b7dd33f0eba4dce31f1b595c67a1a4472eff9cc567523432eb4f930c61822",
+   "SHA256": "d2850339e55b62a3cd98f6cddd970a4d2e8a4bc6ed23cc022321b52ced989871",
+   "rows": 1492,
+   "treatment": "grouped_t_columns_removed"
+  },
+  {
+   "table": "tail_screening/tail_cdf_rmse_screened_quantities.csv",
+   "source_SHA256": "96bd9b4ec0fab3462d9d9372cc159a9f6dd520fec716c15dac18119d13e0cbf5",
+   "SHA256": "5376632f2e7714b6c0914a9163c9185d09201f09e2ec029aee84ccf299d16a6d",
+   "rows": 2984,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "tail_screening/tail_cdf_rmse_win_counts_by_K.csv",
+   "source_SHA256": "fee43453ed2fea332bbcb99ac589f49dbce7477066b5470bd08faf1e966cef25",
+   "SHA256": "0ca3a302c00fc4b5ad22feb4e36d7d51a688354e39afe5fc911a7e638f933471",
+   "rows": 4,
+   "treatment": "win_counts_recomputed_two_methods"
+  },
+  {
+   "table": "tail_screening/tail_extended_quantity_list.csv",
+   "source_SHA256": "29fd6bde35b5f97bda9d7c10efdee16749ee47411e8216cfe2b49b3306c6c521",
+   "SHA256": "29fd6bde35b5f97bda9d7c10efdee16749ee47411e8216cfe2b49b3306c6c521",
+   "rows": 373,
+   "treatment": "copied"
+  },
+  {
+   "table": "tail_screening/tail_two_metrics_screened_merged.csv",
+   "source_SHA256": "bb651441441166d6251d920e536234e0e36996c421e7eddeb6fba4a5d433b7b7",
+   "SHA256": "f4bda85b91c5123b37a33b31189bfbe0f59dec3a2579bcb747b76260cd8b5528",
+   "rows": 8952,
+   "treatment": "rows_filtered"
+  },
+  {
+   "table": "case_settings.csv",
+   "source_SHA256": "d91f94ca0e456015037d56226913bc47a7a75c25f01f3390bb63439585a348d1",
+   "SHA256": "d91f94ca0e456015037d56226913bc47a7a75c25f01f3390bb63439585a348d1",
+   "rows": "",
+   "treatment": "copied"
+  },
+  {
+   "table": "error_metrics.md",
+   "source_SHA256": "0ebf0625cc3b56bc1e9d45c64d3b5b7098adb1471a0b76070aa588cc6e09133a",
+   "SHA256": "0ebf0625cc3b56bc1e9d45c64d3b5b7098adb1471a0b76070aa588cc6e09133a",
+   "rows": "",
+   "treatment": "copied"
+  },
+  {
+   "table": "injection_power_pdf.png",
+   "source_SHA256": "530f3db18b28df6e63e0ae3c45fe4e0a2969fa116135dbcdb3cedb1783568ae4",
+   "SHA256": "530f3db18b28df6e63e0ae3c45fe4e0a2969fa116135dbcdb3cedb1783568ae4",
+   "rows": "",
+   "treatment": "copied"
+  }
+ ]
+}

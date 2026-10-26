@@ -1,0 +1,140 @@
+{
+  "estimation_scenarios": 10512,
+  "reference_scenarios": 3504,
+  "results": [
+    {
+      "object": "V18",
+      "estimation_mean": 1.0465262261926827,
+      "reference_mean": 1.0432651669272972,
+      "estimation_variance": 0.0010138391561669848,
+      "reference_variance": 0.0013857702684104318,
+      "actual_linear_variance": 0.004529227819219717,
+      "actual_quadratic_variance": 7.268753317347735e-06,
+      "twice_actual_linear_quadratic_covariance": -0.00023307410620629663,
+      "gaussian_linear_variance": 0.004529227819219715,
+      "gaussian_quadratic_variance": 5.655314026575321e-06,
+      "actual_sum_variance": 0.004303422466330768
+    },
+    {
+      "object": "V33",
+      "estimation_mean": 0.9763357852807341,
+      "reference_mean": 0.9751960822798698,
+      "estimation_variance": 0.00014209194749388669,
+      "reference_variance": 0.00019097784443682453,
+      "actual_linear_variance": 0.0005450913343317471,
+      "actual_quadratic_variance": 1.166423121516156e-07,
+      "twice_actual_linear_quadratic_covariance": -1.0385235547330057e-05,
+      "gaussian_linear_variance": 0.0005450913343317469,
+      "gaussian_quadratic_variance": 9.199956956881181e-08,
+      "actual_sum_variance": 0.0005348227410965687
+    },
+    {
+      "object": "P1",
+      "estimation_mean": 0.4188167302252836,
+      "reference_mean": 0.49215825597080587,
+      "estimation_variance": 0.5819800902115034,
+      "reference_variance": 0.7890496501421037,
+      "actual_linear_variance": 0.5819800902115171,
+      "actual_quadratic_variance": 0.0,
+      "twice_actual_linear_quadratic_covariance": 0.0,
+      "gaussian_linear_variance": 0.5819800902115172,
+      "gaussian_quadratic_variance": 0.0,
+      "actual_sum_variance": 0.5819800902115171
+    },
+    {
+      "object": "P16",
+      "estimation_mean": -0.548470128672814,
+      "reference_mean": -0.5342389936782593,
+      "estimation_variance": 0.04789748402148891,
+      "reference_variance": 0.0625670794913575,
+      "actual_linear_variance": 0.05019335527525025,
+      "actual_quadratic_variance": 8.804394570163916e-05,
+      "twice_actual_linear_quadratic_covariance": -0.002383915199462374,
+      "gaussian_linear_variance": 0.05019335527525023,
+      "gaussian_quadratic_variance": 7.228648954531354e-05,
+      "actual_sum_variance": 0.04789748402148951
+    },
+    {
+      "object": "P32",
+      "estimation_mean": -0.2829493910858411,
+      "reference_mean": -0.2746650265157626,
+      "estimation_variance": 0.013211452432333876,
+      "reference_variance": 0.016406618294345515,
+      "actual_linear_variance": 0.01350313875068915,
+      "actual_quadratic_variance": 4.1961161363532005e-06,
+      "twice_actual_linear_quadratic_covariance": -0.00029588243449215956,
+      "gaussian_linear_variance": 0.013503138750689151,
+      "gaussian_quadratic_variance": 3.496279990859479e-06,
+      "actual_sum_variance": 0.013211452432333343
+    },
+    {
+      "object": "Q1",
+      "estimation_mean": 1.9549922833751618,
+      "reference_mean": 1.954667472867847,
+      "estimation_variance": 0.001968493089011474,
+      "reference_variance": 0.0021491848488005205,
+      "actual_linear_variance": 0.0019684930890129797,
+      "actual_quadratic_variance": 2.694523893748122e-34,
+      "twice_actual_linear_quadratic_covariance": -3.7067559818591404e-19,
+      "gaussian_linear_variance": 0.0019684930890129797,
+      "gaussian_quadratic_variance": 2.1679802394919347e-34,
+      "actual_sum_variance": 0.0019684930890129793
+    },
+    {
+      "object": "Q16",
+      "estimation_mean": 0.05164097960182351,
+      "reference_mean": 0.0516157566446475,
+      "estimation_variance": 4.55505074821837e-06,
+      "reference_variance": 5.228602309422263e-06,
+      "actual_linear_variance": 4.033085072384602e-05,
+      "actual_quadratic_variance": 4.4812731563910806e-05,
+      "twice_actual_linear_quadratic_covariance": -8.05885315395351e-05,
+      "gaussian_linear_variance": 4.033085072384601e-05,
+      "gaussian_quadratic_variance": 3.632752092398208e-05,
+      "actual_sum_variance": 4.555050748221719e-06
+    },
+    {
+      "object": "Q17",
+      "estimation_mean": 0.03226428858741632,
+      "reference_mean": 0.03225622710607924,
+      "estimation_variance": 1.2713661455508707e-07,
+      "reference_variance": 1.281618511796405e-07,
+      "actual_linear_variance": 1.3848739762391766e-05,
+      "actual_quadratic_variance": 1.4066007264963805e-05,
+      "twice_actual_linear_quadratic_covariance": -2.7787610412800614e-05,
+      "gaussian_linear_variance": 1.3848739762391762e-05,
+      "gaussian_quadratic_variance": 1.2045614148794568e-05,
+      "actual_sum_variance": 1.2713661455495572e-07
+    },
+    {
+      "object": "Q32",
+      "estimation_mean": 0.032320963440339585,
+      "reference_mean": 0.03231021063511775,
+      "estimation_variance": 1.3683541022307338e-07,
+      "reference_variance": 1.3922722728865108e-07,
+      "actual_linear_variance": 1.7831201763336033e-06,
+      "actual_quadratic_variance": 1.8515357568299748e-06,
+      "twice_actual_linear_quadratic_covariance": -3.4978205229406207e-06,
+      "gaussian_linear_variance": 1.783120176333603e-06,
+      "gaussian_quadratic_variance": 1.6032400335370568e-06,
+      "actual_sum_variance": 1.3683541022295773e-07
+    },
+    {
+      "object": "loss",
+      "estimation_mean": 0.15476652380773093,
+      "reference_mean": 0.15466252894245508,
+      "estimation_variance": 0.003066701934825912,
+      "reference_variance": 0.0033465903957827186,
+      "actual_linear_variance": 0.004686092149639247,
+      "actual_quadratic_variance": 0.0008378736505402748,
+      "twice_actual_linear_quadratic_covariance": -0.002457263865414663,
+      "gaussian_linear_variance": 0.004686092149639246,
+      "gaussian_quadratic_variance": 0.0006489752505429273,
+      "actual_sum_variance": 0.003066701934764859
+    }
+  ],
+  "standard_df": [
+    40.25024922984541
+  ],
+  "scope": "saved-state calculations only; no AC solve or parameter estimation"
+}

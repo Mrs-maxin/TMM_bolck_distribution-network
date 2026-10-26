@@ -1,0 +1,79 @@
+{
+  "reference_center": "AQGMM mean, same center for all terms",
+  "conditional_strength_nodes": 80,
+  "group_nodes_per_piece": 24,
+  "rows": [
+    {
+      "model": "AQGMM",
+      "object": "Q17",
+      "var_linear": 1.3848739762391762e-05,
+      "var_quadratic": 1.2045614148794568e-05,
+      "twice_covariance": 0.0,
+      "total_variance": 2.589435391118633e-05
+    },
+    {
+      "model": "AQGMM",
+      "object": "Q16",
+      "var_linear": 4.033085072384601e-05,
+      "var_quadratic": 3.632752092398208e-05,
+      "twice_covariance": 0.0,
+      "total_variance": 7.665837164782808e-05
+    },
+    {
+      "model": "AQGMM",
+      "object": "loss",
+      "var_linear": 0.004686092149639246,
+      "var_quadratic": 0.0006489752505429273,
+      "twice_covariance": 0.0,
+      "total_variance": 0.005335067400182173
+    },
+    {
+      "model": "Standard TMM",
+      "object": "Q17",
+      "var_linear": 1.3848739762391759e-05,
+      "var_quadratic": 1.2988208147793792e-05,
+      "twice_covariance": 0.0,
+      "total_variance": 2.683694791018555e-05
+    },
+    {
+      "model": "Standard TMM",
+      "object": "Q16",
+      "var_linear": 4.0330850723846005e-05,
+      "var_quadratic": 3.926436605929386e-05,
+      "twice_covariance": 0.0,
+      "total_variance": 7.959521678313987e-05
+    },
+    {
+      "model": "Standard TMM",
+      "object": "loss",
+      "var_linear": 0.004686092149639246,
+      "var_quadratic": 0.0007033505779828503,
+      "twice_covariance": 0.0,
+      "total_variance": 0.005389442727622096
+    },
+    {
+      "model": "Grouped TMM",
+      "object": "Q17",
+      "var_linear": 1.3848740883185514e-05,
+      "var_quadratic": 1.491173753844048e-05,
+      "twice_covariance": -1.324446459030498e-07,
+      "total_variance": 2.8628033775722946e-05
+    },
+    {
+      "model": "Grouped TMM",
+      "object": "Q16",
+      "var_linear": 4.033103461671762e-05,
+      "var_quadratic": 4.446651087700994e-05,
+      "twice_covariance": -2.8220882402854477e-06,
+      "total_variance": 8.197545725344211e-05
+    },
+    {
+      "model": "Grouped TMM",
+      "object": "loss",
+      "var_linear": 0.004686215692330763,
+      "var_quadratic": 0.0007888670532418256,
+      "twice_covariance": 0.00032398025336845406,
+      "total_variance": 0.0057990629989410425
+    }
+  ]
+}

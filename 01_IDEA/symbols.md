@@ -1,5 +1,18 @@
 # Symbols
 
+## 2026-10-26 新稿符号说明
+
+新稿`02_PAPER/manuscript/introduction_method_tail_zh.md`的主要物理量沿用原方法稿。补充记号只用于局部推导和消除补充方向加入前后的混用。
+
+| 符号 | 新稿含义 | 与当前实现的关系 |
+| --- | --- | --- |
+| $\mathbf w^{(0)}$ | 加入补充方向之前，一阶方向以外的归一化电压 | `block_split_rule_check.py:split`中调用`fobi(w)`时的`w` |
+| $\mathbf w$ | 方向确定完成后，剩余归一化电压 | 参数估计中的`W = x @ Q2` |
+| $e_{i,\max}$ | 第$i$项注入在输入场景中的最大绝对偏差 | `truncated_strength_case33.py:strength_cap`中的`dmax` |
+| $\mathbf T$ | 原电压坐标恢复矩阵，$\mathbf W^{-1}$ | `basis * scale` |
+| $\mathbf B_k$ | $\mathbf Q_u+\mathbf Q_w\mathbf G_k$，用于紧凑表示条件协方差 | 原块协方差的等价整理，无新增参数 |
+| $S_{g,k}$ | 第$k$分量中第$g$组强度 | 原$S_g$的分量下标显式写出 |
+
 论文符号以`02_PAPER/manuscript/method_zh.md`附录C为准。本表补充代码变量对应关系；新增或修改符号时同步更新`method_zh.md`、`derivation.md`、`BTMM_note.md`和`BTMM_changelog.md`。
 
 | 符号 | 含义 | 维度/单位 | 代码变量（`tests/python/`） |

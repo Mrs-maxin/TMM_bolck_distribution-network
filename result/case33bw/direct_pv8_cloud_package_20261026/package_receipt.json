@@ -1,0 +1,12 @@
+{
+  "status": "packaged_not_executed",
+  "path": "result/case33bw/direct_pv8_cloud_package_20261026/direct_pv8_cloud_test.zip",
+  "bytes": 1513833,
+  "sha256": "d1b2ae2058280663e20bff677fde0be4a9cbb63d04edbd435138082a3a12ea78",
+  "members": 83,
+  "python_files_syntax_checked": 55,
+  "CRC_verified": true,
+  "member_SHA256_verified": true,
+  "numerical_execution_performed": false,
+  "figures_generated": false
+}

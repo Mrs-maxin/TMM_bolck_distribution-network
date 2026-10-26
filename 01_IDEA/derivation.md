@@ -344,3 +344,8 @@ E[q]=\mu^TA\mu+b^T\mu+c+\operatorname{tr}(AC),
 \]
 
 Gaussian 极限令后两项系数为 2、0。混合方差包含分量间均值差。ν≤4 时一般网损方差标为 Inf。该核用于区别模型自身的矩失配与 Monte Carlo 波动。
+
+
+## 2026-10-26 独立Block_TMM测试补充
+
+u=Q1ᵀxi，w=Q2ᵀxi。u|s,k~N(mu_uk,s Sigma_uk)，s=nu/chi²_nu；Sigma是scatter，Cov(u)=nu/(nu-2)Sigma。w|u,k~N(a_k+G_k u,Omega_k)，残差独立。条件协方差为[[sSigma,sSigma Gᵀ],[G sSigma,G sSigma Gᵀ+Omega]]。nu>=4.1确保标准t二次功率方差存在；r=d时才等价标准t，单一注入组不足以保证此条件。无均值移动、截断或多组同步。W1_[a,b]表示各自按概率区间截取并归一分布之间的W1，等于integral_a^b |Qmodel-QAC|dp/(b-a)，单位与物理量一致。方案及初始化独立性约束见plans/direct_pv8_independent_block_t_20261026.md。

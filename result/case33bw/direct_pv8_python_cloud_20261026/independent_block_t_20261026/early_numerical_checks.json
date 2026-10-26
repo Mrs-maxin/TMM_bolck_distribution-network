@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "standard t density",
+      "maximum_difference": 8.881784197001252e-16
+    },
+    {
+      "check": "r=d block equals standard t",
+      "maximum_difference": 8.881784197001252e-16
+    },
+    {
+      "check": "block Gaussian limit",
+      "maximum_difference": 3.552713678800501e-15
+    },
+    {
+      "check": "r=0 Gaussian",
+      "maximum_difference": 1.7763568394002505e-15
+    },
+    {
+      "check": "large finite nu Gaussian limit without forced substitution",
+      "nu": 1000000.0,
+      "maximum_difference": 1.2892859810875734e-06
+    },
+    {
+      "check": "W1 same empirical distribution zero",
+      "value": 0.0
+    },
+    {
+      "check": "W1 shift identity",
+      "window": [
+        0.01,
+        0.05
+      ],
+      "value": 0.37000000000000016
+    },
+    {
+      "check": "W1 shift identity",
+      "window": [
+        0.95,
+        0.99
+      ],
+      "value": 0.37000000000000005
+    },
+    {
+      "check": "W1 empirical jumps convergence and units",
+      "value": 0.0012154519609997366,
+      "scaled": 0.012154519609997364,
+      "diagnostic": {
+        "window": [
+          0.95,
+          0.99
+        ],
+        "empirical_inverse": "ceil(N p)-1",
+        "segments": 281,
+        "unnormalized_integral": 4.861807843998951e-05,
+        "normalized_W1": 0.0012154519609997366,
+        "refinement_difference": 4.553649124439119e-18,
+        "absolute_tolerance": 9.998127964580297e-08,
+        "history": [
+          {
+            "order": 8,
+            "unnormalized_integral": 4.861807843998933e-05,
+            "normalized_W1": 0.001215451960999732,
+            "change": Infinity
+          },
+          {
+            "order": 16,
+            "unnormalized_integral": 4.861807843998951e-05,
+            "normalized_W1": 0.0012154519609997366,
+            "change": 4.553649124439119e-18
+          }
+        ]
+      }
+    },
+    {
+      "check": "parameter origin and selected-model convergence",
+      "forbidden_calls_absent": true,
+      "old_parameter_files_read": false,
+      "selected_models": 9
+    }
+  ]
+}

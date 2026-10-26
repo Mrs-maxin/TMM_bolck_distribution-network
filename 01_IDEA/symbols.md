@@ -20,3 +20,8 @@
 | $U$, $S_g$, $\nu_{g,k}$, $b_{g,k}$ | 天气形势强弱、组强度、组自由度、组峰度比 | | `uniform`；`TruncatedStrength.draw`；`nu`；`m` |
 | $\tilde{\boldsymbol\Sigma}_k$ | 散布矩阵（按$\mathrm E[\sqrt{S_gS_h}]$折算） | $r\times r$ | `scatter`；`mean_pair` |
 | $\mathbf a_k$, $\mathbf G_k$, $\boldsymbol\Omega_k$ | 其余方向截距、回归系数、残差协方差 | | `intercept`, `coefficient`, `residual` |
+
+
+## 2026-10-26 独立Block_TMM测试补充
+
+u=Q1ᵀxi，w=Q2ᵀxi。u|s,k~N(mu_uk,s Sigma_uk)，s=nu/chi²_nu；Sigma是scatter，Cov(u)=nu/(nu-2)Sigma。w|u,k~N(a_k+G_k u,Omega_k)，残差独立。条件协方差为[[sSigma,sSigma Gᵀ],[G sSigma,G sSigma Gᵀ+Omega]]。nu>=4.1确保标准t二次功率方差存在；r=d时才等价标准t，单一注入组不足以保证此条件。无均值移动、截断或多组同步。W1_[a,b]表示各自按概率区间截取并归一分布之间的W1，等于integral_a^b |Qmodel-QAC|dp/(b-a)，单位与物理量一致。方案及初始化独立性约束见plans/direct_pv8_independent_block_t_20261026.md。

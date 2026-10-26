@@ -1,0 +1,27 @@
+# 8站直接出力：独立估计AQGMM、标准TMM、Block_TMM新一轮测试
+
+用户2026-10-26新指示优先。本轮停止扩展条件修正、均值移动、同步截断分组等模型；保留全部旧程序及结果。输入固定8站各0.60MW、原负荷、219/73/73天划分、已保存10512/3504个快速映射电压及3504个独立AC解。原AQPPF_TMM不修改。本轮结果目录为result/case33bw/direct_pv8_python_cloud_20261026/independent_block_t_20261026/。
+
+## 模型
+
+共同K=1、2、4。AQGMM为独立估计的完整高斯混合。标准TMM每分量一个标准多元t：x|s,k~N(mu_k,s Sigma_k)，s=nu_k/chi²_nu_k，Sigma为scatter，Cov=nu/(nu-2)*Sigma。Block_TMM固定已有Q1/Q2的8/56维分块：u|s,k~N(mu_uk,s Sigma_uk)，w|u,k~N(a_k+G_k u,Omega_k)，残差独立，nu>=4.1。无强度截断、强度均值移动或多组同步。条件协方差为[[sSigma,sSigma Gᵀ],[G sSigma,G sSigma Gᵀ+Omega]]，再由[Q1,Q2]回到电压坐标。r=d时等价标准t，nu→∞时为对应Gaussian，r=0时为Gaussian。旧“全部注入一组便等价标准t”的条件缺少r=d，予以更正。
+
+## 独立估计与初始化
+
+直接从同一估计日期的原电压重新计算中心/SVD坐标。固定分块Q1/Q2只取原已登记的源荷及映射电压分块，不读取旧K1模型参数；分块数值须保存到独立geometry.npz后后续入口禁止读旧models/K1.pkl。每方法各自从原电压PC1/PC2等人数划分初始化；K1只用一个划分。GMM每划分一次；标准/Block t每划分分别nu=12/40/200，位置、scatter、残差回归初值都直接用该划分内原电压统计，不从GMM参数或归属转换。三方法各自更新联合似然责任度、权重及所有参数，选择只按3504个selection电压联合似然。每次记录完整历史、有效分量数、nu、协方差下限、耗时及初值来源。相对每场景对数似然改变量阈值1e-6，初次上限1200次；未收敛可追加同精度迭代但不可作为已收敛选中，collapsed明确保留并排除。保留全部9个选中模型及所有尝试。
+
+## 解析与误差
+
+97电气量共用原精确交流电压二次式，条件Gaussian特征函数、尺度积分、Fourier反演；不抽取模型电压。必须检查scatter/cov换算、尺度加密、频率与边界、PDF积分和CDF单调性。P/Q/网损解析矩使用nu>4的确切尺度一二阶矩；幅值矩用同一特征函数Laplace积分或完整幅值PDF积分并留诊断。
+
+主要比较独立3504组AC，辅助10512估计日期原电压对应功率，明确不同口径。逐对象左右CDF-RMSE各81个名义p=.01-.05/.95-.99的AC linear经验分位阈值，实际右连续经验CDF作基准。q01/q99主要，q005/q995辅助，均值/方差记录有符号、绝对及相对误差。
+
+新增概率区间截取并归一分布的尾部W1：W1_[a,b]=integral_a^b |Q_model(p)-Q_AC(p)|dp/(b-a)，left[.01,.05]，right[.95,.99]，单位为物理单位，不是固定物理阈值条件分布W1，不是全分布W1。Q_AC(p)=order statistic ceil(Np)-1，与q01/q99表使用linear经验分位的用途区分。积分按AC跳点p=i/N分段，分段Gauss求积并加密比较，保存未归一积分与W1；模型分位由解析CDF反求。
+
+## 验证与交付
+
+检查Gaussian/t密度、Block Gaussian极限、r=d标准t等价、r=0 Gaussian、参数来源隔离、W1同分布零值与平移恒等、单位和经验跳点积分收敛。保留Q17一次/二次项方差及交叉项、隐含Q18方差，不据此调参数。
+
+诊断图优先V18/V33/P1/P16/P32/Q17/loss，各K三方法及AC经验密度，同源注入图复用旧图并注明。PNG/SVG及CSV保存；正式论文MATLAB导出另做。小型表与选图同步Git，大数组云端归档，不将旧大结果或无关untracked提交。研究记录更新，但暂不大改正式论文。
+
+数值补充：对各分量直接使用E[S]=nu/(nu-2)、E[S²]=nu²/((nu-2)(nu-4))，C(s)=sB+R时，E q=q(m)+E[S]tr(AB)+tr(AR)；Var q=E[S]ellᵀB ell+ellᵀR ell+2E[S²]tr(ABAB)+4E[S]tr(ABAR)+2tr(ARAR)+Var(S)tr(AB)²。混合按全方差公式。有限尺度节点仅计算分布和幅值矩，记录其矩偏差；nu接近4.1时尤其不能以其E[S²]代替精确值。不因nu>1000自动当作Gaussian。

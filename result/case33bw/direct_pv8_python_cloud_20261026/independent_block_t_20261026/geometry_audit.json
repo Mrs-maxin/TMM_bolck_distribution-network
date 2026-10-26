@@ -1,0 +1,14 @@
+{
+  "rows": [
+    10512,
+    3504
+  ],
+  "block_dimensions": [
+    8,
+    56
+  ],
+  "projection_orthogonality": 9.992007221626409e-16,
+  "physical_share": 0.5050544606222349,
+  "old_parameter_files_read": false,
+  "source": "saved raw voltages, inputs, registered injection groups only"
+}

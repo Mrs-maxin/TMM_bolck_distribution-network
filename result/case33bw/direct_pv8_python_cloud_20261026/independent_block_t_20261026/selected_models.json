@@ -1,0 +1,170 @@
+[
+  {
+    "family": "AQGMM",
+    "K": 1,
+    "source": "fits/AQGMM_K1_PC1_nuinf",
+    "status": "converged",
+    "selection_ll": -92.41531186408314,
+    "train_ll": -90.80902184026516,
+    "df": [
+      Infinity
+    ],
+    "weights": [
+      1.0
+    ],
+    "iterations": 1,
+    "seconds": 0.01071516999945743
+  },
+  {
+    "family": "Standard_TMM",
+    "K": 1,
+    "source": "fits/Standard_TMM_K1_PC1_nu40",
+    "status": "converged",
+    "selection_ll": -92.21133016257593,
+    "train_ll": -90.41382837018328,
+    "df": [
+      35.07524911281478
+    ],
+    "weights": [
+      1.0
+    ],
+    "iterations": 7,
+    "seconds": 0.04524934300025052
+  },
+  {
+    "family": "Block_TMM",
+    "K": 1,
+    "source": "fits/Block_TMM_K1_PC1_nu200",
+    "status": "converged",
+    "selection_ll": -91.94789161484564,
+    "train_ll": -90.33246823489766,
+    "df": [
+      4.1
+    ],
+    "weights": [
+      1.0
+    ],
+    "iterations": 33,
+    "seconds": 0.20745289200021944
+  },
+  {
+    "family": "AQGMM",
+    "K": 2,
+    "source": "fits/AQGMM_K2_PC1_nuinf",
+    "status": "converged",
+    "selection_ll": -87.2761374936539,
+    "train_ll": -85.26295699745893,
+    "df": [
+      Infinity,
+      Infinity
+    ],
+    "weights": [
+      0.40233236340931966,
+      0.5976676365906827
+    ],
+    "iterations": 21,
+    "seconds": 0.26909858099952544
+  },
+  {
+    "family": "Standard_TMM",
+    "K": 2,
+    "source": "fits/Standard_TMM_K2_PC1_nu40",
+    "status": "converged",
+    "selection_ll": -87.15471312336683,
+    "train_ll": -85.11789213183319,
+    "df": [
+      86.87027644106583,
+      55.80322142301
+    ],
+    "weights": [
+      0.40358444609301547,
+      0.5964155539069843
+    ],
+    "iterations": 17,
+    "seconds": 0.23088032899977406
+  },
+  {
+    "family": "Block_TMM",
+    "K": 2,
+    "source": "fits/Block_TMM_K2_PC1_nu12",
+    "status": "converged",
+    "selection_ll": -86.83880014748055,
+    "train_ll": -84.79561568377392,
+    "df": [
+      4.1,
+      4.617784150894562
+    ],
+    "weights": [
+      0.4002534291840134,
+      0.5997465708159867
+    ],
+    "iterations": 18,
+    "seconds": 0.2644740810001167
+  },
+  {
+    "family": "AQGMM",
+    "K": 4,
+    "source": "fits/AQGMM_K4_PC1_nuinf",
+    "status": "converged",
+    "selection_ll": -83.89617165439654,
+    "train_ll": -81.27006238276233,
+    "df": [
+      Infinity,
+      Infinity,
+      Infinity,
+      Infinity
+    ],
+    "weights": [
+      0.17711686522522285,
+      0.2342617845086313,
+      0.3000671212840787,
+      0.28855422898206745
+    ],
+    "iterations": 51,
+    "seconds": 1.2745696169995426
+  },
+  {
+    "family": "Standard_TMM",
+    "K": 4,
+    "source": "fits/Standard_TMM_K4_PC2_nu12",
+    "status": "converged",
+    "selection_ll": -83.77193191834915,
+    "train_ll": -81.18862404970132,
+    "df": [
+      184.59551849437534,
+      100.74733727057439,
+      68.42465330916417,
+      102.2305783605841
+    ],
+    "weights": [
+      0.17556886171526062,
+      0.2866164934779303,
+      0.30233481017432084,
+      0.23547983463248828
+    ],
+    "iterations": 52,
+    "seconds": 1.3624256310004057
+  },
+  {
+    "family": "Block_TMM",
+    "K": 4,
+    "source": "fits/Block_TMM_K4_PC2_nu200",
+    "status": "converged",
+    "selection_ll": -83.38817693718764,
+    "train_ll": -80.8757147222007,
+    "df": [
+      4.1,
+      7.758504104351119,
+      4.1,
+      8.865773552079403
+    ],
+    "weights": [
+      0.17729239682600972,
+      0.27791288127304425,
+      0.31068348392502676,
+      0.23411123797591926
+    ],
+    "iterations": 64,
+    "seconds": 1.831458305000524
+  }
+]

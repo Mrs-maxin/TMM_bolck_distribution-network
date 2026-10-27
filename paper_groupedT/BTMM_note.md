@@ -47,4 +47,4 @@
 
 ## 6 拆分前记录
 
-合并版研究记录见`archive/combined_paper_20261026/BTMM_note.md`。Git：拆分前提交`f341202`；拆分提交【Git 待提交】。
+合并版研究记录见`archive/combined_paper_20261026/BTMM_note.md`。Git：拆分前提交`f341202`；拆分提交`56ae188`（代码、数据、文档与归档）、`6bc0d03`（重尾分布注入公共结果）、`d3fdfc5`（各论文结果表），已推送。
